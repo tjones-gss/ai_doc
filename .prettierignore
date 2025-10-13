@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+build/
+build-test/
+.docusaurus/
+
+# Cache
+.cache-loader
+
+# Package lock files
+package-lock.json
+yarn.lock
+
+# Logs
+*.log
+
+# OS
+.DS_Store

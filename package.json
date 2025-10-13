@@ -1,0 +1,86 @@
+{
+  "name": "software-modernization-ai-guide",
+  "version": "1.0.0",
+  "description": "Living documentation for AI-assisted COBOL development at Global Shop Solutions",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "test:all": "npm run test:build && npm run test:links && npm run test:markdown && npm run test:frontmatter",
+    "test:build": "docusaurus build --out-dir build-test",
+    "test:links": "node scripts/validate-links.js",
+    "test:markdown": "markdownlint \"docs/**/*.md\" --config .markdownlint.json",
+    "test:frontmatter": "node scripts/validate-frontmatter.js",
+    "test:structure": "node scripts/validate-structure.js",
+    "validate": "node scripts/validate-all.js",
+    "validate:structure": "node scripts/validate-structure.js",
+    "validate:images": "node scripts/check-images.js",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 0",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,css}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,md,json,css}\"",
+    "type-check": "tsc --noEmit",
+    "prebuild": "npm run validate",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.0.0",
+    "@docusaurus/preset-classic": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "clsx": "^2.0.0",
+    "prism-react-renderer": "^2.1.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "^3.0.0",
+    "@docusaurus/types": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "glob": "^10.3.0",
+    "gray-matter": "^4.0.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.0",
+    "markdownlint-cli": "^0.37.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{md,json,css}": [
+      "prettier --write"
+    ],
+    "docs/**/*.md": [
+      "markdownlint --fix"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0"
+  }
+}
