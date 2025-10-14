@@ -1,14 +1,18 @@
 /* Hero Banner */
 .heroBanner {
-  padding: 4rem 0;
+  padding: 8rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 4rem 2rem;
+    min-height: 60vh;
   }
 }
 
@@ -16,89 +20,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
-/* Features Section */
-.features {
-  display: flex;
-  align-items: center;
-  padding: 4rem 0;
-  width: 100%;
-}
-
-.feature {
-  margin-bottom: 2rem;
-}
-
-.featureIcon {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-
-/* Quick Links Section */
-.quickLinks {
-  padding: 4rem 0;
-  background-color: var(--ifm-background-surface-color);
-}
-
-.quickLinkCard {
-  height: 100%;
-  transition:
-    transform 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out;
-  text-decoration: none;
-  color: var(--ifm-font-color-base);
-}
-
-.quickLinkCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  color: var(--ifm-font-color-base);
-}
-
-.quickLinkCard .card__header h3 {
-  margin-bottom: 0;
+.buttons .button {
   font-size: 1.2rem;
-}
-
-.quickLinkCard .card__body p {
-  margin-bottom: 0;
-  color: var(--ifm-color-emphasis-600);
-}
-
-/* Call to Action */
-.cta {
-  padding: 4rem 0;
-  background: linear-gradient(
-    135deg,
-    var(--ifm-color-primary-lighter) 0%,
-    var(--ifm-color-primary-light) 100%
-  );
-}
-
-.cta h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: var(--ifm-color-primary-darkest);
-}
-
-.cta p {
-  font-size: 1.2rem;
-  color: var(--ifm-color-emphasis-700);
-}
-
-.ctaButtons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-  .ctaButtons {
-    flex-direction: column;
-  }
+  padding: 1rem 2.5rem;
 }
