@@ -12,14 +12,14 @@ const config = {
   favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
-  url: 'https://global-shop-solutions.github.io',
+  url: 'https://tjones-gss.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/software-modernization-ai-guide/',
+  baseUrl: '/ai_doc/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'global-shop-solutions', // Usually your GitHub org/user name.
-  projectName: 'software-modernization-ai-guide', // Usually your repo name.
+  organizationName: 'tjones-gss', // Usually your GitHub org/user name.
+  projectName: 'ai_doc', // Usually your repo name.
 
   onBrokenLinks: 'warn',
 
@@ -43,8 +43,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Edit this page links - update with your actual repo URL
-          editUrl:
-            'https://github.com/global-shop-solutions/software-modernization-ai-guide/tree/main/',
+          editUrl: 'https://github.com/tjones-gss/ai_doc/tree/main/',
         },
         blog: false,
         theme: {
@@ -73,7 +72,7 @@ const config = {
             label: 'Documentation',
           },
           {
-            href: 'https://github.com/global-shop-solutions/software-modernization-ai-guide',
+            href: 'https://github.com/tjones-gss/ai_doc',
             label: 'GitHub',
             position: 'right',
           },
