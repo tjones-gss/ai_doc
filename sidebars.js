@@ -38,6 +38,12 @@ const sidebars = {
       collapsed: false,
       items: ['templates', 'prompt-library', 'troubleshooting'],
     },
+    {
+      type: 'category',
+      label: 'Modernization',
+      collapsed: false,
+      items: ['cobol-migration-playbook'],
+    },
   ],
 };
 

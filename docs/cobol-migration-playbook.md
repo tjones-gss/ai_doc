@@ -279,7 +279,7 @@ Create a Mermaid diagram showing data flow through the program.
 
 - **Business Rules**:
   - Optimistic locking check (row version)
-  - Credit limit increase >20% requires manager approval
+  - Credit limit increase greater than 20% requires manager approval
   - Cannot change customer number
   - Audit trail required for all changes
 
@@ -847,7 +847,7 @@ public string TrimFromCobol(string value)
    - Unit test coverage: Target 80%+
    - Integration test coverage: Target 90%+
    - Code review completion: 100%
-   - Static analysis issues: <5 critical
+   - Static analysis issues: fewer than 5 critical
 
 3. **Functional Equivalence**
    - Regression test pass rate: 100%

@@ -104,7 +104,7 @@ End Function
 
 ' Clean COBOL strings (remove trailing spaces)
 Public Function TrimCobolString(value As String) As String
-    Return value?.TrimEnd() ?? ""
+    Return If(value?.TrimEnd(), "")
 End Function
 
 ' Example usage
