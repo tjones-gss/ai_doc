@@ -908,11 +908,11 @@ Before decommissioning COBOL program:
 
 ### Tools
 
-- **Microsoft Semantic Kernel**: <https://github.com/microsoft/semantic-kernel>
-- **Astadia CodeTurn**: <https://www.astadia.com/products/codeturn>
-- **Ispirer Toolkit**: <https://www.ispirer.com>
-- **GitHub Copilot**: <https://github.com/features/copilot>
-- **LegacyMap**: <https://sector7.com/legacymap>
+- **Microsoft Semantic Kernel**: [https://github.com/microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel)
+- **Astadia CodeTurn**: [https://www.astadia.com/products/codeturn](https://www.astadia.com/products/codeturn)
+- **Ispirer Toolkit**: [https://www.ispirer.com](https://www.ispirer.com)
+- **GitHub Copilot**: [https://github.com/features/copilot](https://github.com/features/copilot)
+- **LegacyMap**: [https://sector7.com/legacymap](https://sector7.com/legacymap)
 
 ### Documentation
 
