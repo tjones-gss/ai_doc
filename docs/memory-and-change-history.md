@@ -418,7 +418,7 @@ Add audit trail to customer updates per SPEC-audit-trail.md
 
 - Affects: CUSTMAINT.cob, new file CP-CUST-AUDIT.cpy
 - Risk level: Medium - adds file I/O to update path
-- Performance: <50ms per update (measured in clinic)
+- Performance: less than 50ms per update (measured in clinic)
 
 ### Rollback Plan
 
