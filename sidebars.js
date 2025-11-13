@@ -34,6 +34,24 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Stack Guides',
+      collapsed: false,
+      items: ['architecture-overview', 'legacy-modern-handbook'],
+    },
+    {
+      type: 'category',
+      label: 'Engineering Practices',
+      collapsed: false,
+      items: ['testing-strategy'],
+    },
+    {
+      type: 'category',
+      label: 'Platform Guides',
+      collapsed: false,
+      items: ['datalayer-guide', 'devexpress-ui-guide'],
+    },
+    {
+      type: 'category',
       label: 'Resources',
       collapsed: false,
       items: ['templates', 'prompt-library', 'troubleshooting'],

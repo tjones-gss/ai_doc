@@ -158,6 +158,24 @@ project-root/
 └── AGENTS.md (alternative approach)
 ```
 
+### Tailoring Rules to Our ERP Stack
+
+- **By lane:** keep separate rule packs such as `.cursor/rules/legacy-core.md`, `.cursor/rules/devexpress-ui.md`, and `.cursor/rules/cloud-services.md`. This lets COBOL, DevExpress, and C# contributors load focused guidance without wading through unrelated noise.
+- **Call out stack specifics:** include canonical command snippets (`scripts/cobol/run_harness.sh`, `dotnet test src/services/sp2/...`) and terminology (SP2, DataLayer, ShopFloor) so Cursor learns the vocabulary older programmers already use.
+- **Module overrides:** place additional `rules.md` inside module folders (e.g., `src/services/datalayer/rules.md`) to remind the AI about copybook names, DevExpress bindings, or VB.NET interop decisions when working locally.
+- **Program guardrails:** document fragile COBOL paragraphs, DevExpress designer files, or SP2 metadata limitations so Cursor refuses destructive edits without an explicit confirmation prompt.
+
+### Project Context Bundles
+
+- **Context packs:** create `.cursor/context/*.ctx.json` entries that pin the architecture diagram, DataLayer guide, and relevant source files. Toggle between `legacy-core` and `modern-cloud` packs depending on the task so both veteran and modern teams get the right prompt mix.
+- **Prompt macros:** use Cursor's `snippets/` to store reusable modernization prompts (e.g., _“Rewrite this COBOL paragraph using DataLayer shim XYZ and include cursor-based acceptance tests”_). Reference `prompt-library.md` so the macro stays updated.
+- **System prompts for audits:** when running large refactors, load `docs/testing-strategy.md` and `docs/legacy-modern-handbook.md` via `@Docs` so the AI keeps shared QA and hand-off rules in memory.
+
+### Accessibility Tips for Legacy Teams
+
+- Surface Cursor command palettes and macros via printable cheat sheets stored in `docs/handouts/`. Include keyboard-only workflows and guidance for low-bandwidth RDP sessions common on shop-floor machines.
+- Encourage pairing sessions where modern engineers record walkthroughs of Cursor usage on COBOL/DataLayer projects, then archive them alongside the written rules for on-demand refreshers.
+
 ### What to Include in Rules
 
 - **Coding standards** - Naming conventions, formatting, comment styles
