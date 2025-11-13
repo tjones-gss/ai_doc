@@ -56,14 +56,47 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      // SEO Metadata
+      metadata: [
+        {
+          name: 'keywords',
+          content: 'AI, modernization, COBOL, software development, Cursor, ChatGPT, OpenAI, code generation, legacy code',
+        },
+        {
+          name: 'description',
+          content: 'Comprehensive guide for AI-assisted COBOL modernization using Cursor, ChatGPT Enterprise, and OpenAI Codex. Learn workflows, best practices, and proven templates.',
+        },
+        {
+          name: 'og:title',
+          content: 'Software Modernization AI Guide - Global Shop Solutions',
+        },
+        {
+          name: 'og:description',
+          content: 'Transform legacy code with AI assistance. Complete guide with workflows, templates, and best practices.',
+        },
+        {
+          name: 'og:type',
+          content: 'website',
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+      ],
+
+      // Social card
       image: 'img/docusaurus-social-card.svg',
+
+      // Navbar Configuration
       navbar: {
         title: 'AI Modernization Guide',
         logo: {
           alt: 'Global Shop Solutions Logo',
           src: 'img/logo.svg',
+          width: 32,
+          height: 32,
         },
+        hideOnScroll: false,
         items: [
           {
             type: 'docSidebar',
@@ -72,12 +105,37 @@ const config = {
             label: 'Documentation',
           },
           {
+            type: 'dropdown',
+            label: 'Tools',
+            position: 'left',
+            items: [
+              {
+                label: 'Cursor',
+                to: '/docs/cursor',
+              },
+              {
+                label: 'ChatGPT Enterprise',
+                to: '/docs/chatgpt',
+              },
+              {
+                label: 'OpenAI Codex',
+                to: '/docs/codex',
+              },
+            ],
+          },
+          {
+            to: '/docs/prompt-library',
+            label: 'Templates',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/tjones-gss/ai_doc',
             label: 'GitHub',
             position: 'right',
           },
         ],
       },
+      // Footer Configuration
       footer: {
         style: 'dark',
         links: [
@@ -99,10 +157,10 @@ const config = {
             ],
           },
           {
-            title: 'Tools',
+            title: 'AI Tools',
             items: [
               {
-                label: 'Cursor',
+                label: 'Cursor IDE',
                 to: '/docs/cursor',
               },
               {
@@ -110,7 +168,7 @@ const config = {
                 to: '/docs/chatgpt',
               },
               {
-                label: 'Codex',
+                label: 'OpenAI Codex',
                 to: '/docs/codex',
               },
             ],
@@ -128,18 +186,73 @@ const config = {
               },
             ],
           },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'GitHub',
+                href: 'https://github.com/tjones-gss/ai_doc',
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Global Shop Solutions. Built with Docusaurus.`,
+        copyright: `
+          <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p style="margin-bottom: 0.5rem;">Copyright © ${new Date().getFullYear()} Global Shop Solutions. All rights reserved.</p>
+            <p style="font-size: 0.9rem; opacity: 0.8;">Built with Docusaurus</p>
+          </div>
+        `,
       },
+      // Syntax Highlighting
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['bash', 'diff', 'json', 'markdown', 'powershell'],
+        additionalLanguages: [
+          'bash',
+          'diff',
+          'json',
+          'markdown',
+          'powershell',
+          'javascript',
+          'typescript',
+          'python',
+          'java',
+          'csharp',
+          'cpp',
+          'sql',
+        ],
+        magicComments: [
+          {
+            className: 'theme-code-block-highlighted-line',
+            line: 'highlight-next-line',
+            block: { start: 'highlight-start', end: 'highlight-end' },
+          },
+          {
+            className: 'code-block-error-line',
+            line: 'error-next-line',
+          },
+        ],
       },
+
+      // Color Mode
       colorMode: {
         defaultMode: 'light',
         disableSwitch: false,
         respectPrefersColorScheme: true,
+      },
+
+      // Docs Sidebar
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
+
+      // Table of Contents
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 4,
       },
     }),
 };
