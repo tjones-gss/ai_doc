@@ -5,37 +5,31 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
 
-// Feature data structure
-const FeatureList = [
+// Quick links for easy navigation
+const QuickLinks = [
   {
-    title: 'AI-Powered Modernization',
-    icon: '🤖',
-    description: 'Leverage cutting-edge AI tools like Cursor and ChatGPT Enterprise to accelerate COBOL modernization with intelligent code suggestions and automated refactoring.',
+    title: 'Getting Started',
+    icon: '📖',
+    description: 'Learn the basics of using AI tools for COBOL development.',
+    link: '/docs/overview',
   },
   {
-    title: 'Proven Workflows',
+    title: 'Workflows',
     icon: '⚡',
-    description: 'Follow battle-tested workflows and best practices developed through real-world modernization projects at Global Shop Solutions.',
+    description: 'Step-by-step guides for common modernization tasks.',
+    link: '/docs/workflow',
   },
   {
-    title: 'Comprehensive Templates',
+    title: 'Prompt Templates',
     icon: '📋',
-    description: 'Access ready-to-use prompt templates, code patterns, and documentation templates to jumpstart your modernization efforts.',
+    description: 'Ready-to-use prompts for various development scenarios.',
+    link: '/docs/prompt-library',
   },
   {
-    title: 'Multi-Tool Integration',
+    title: 'Troubleshooting',
     icon: '🔧',
-    description: 'Integrate seamlessly with Cursor, ChatGPT Enterprise, and OpenAI Codex to create a powerful AI-assisted development environment.',
-  },
-  {
-    title: 'Best Practices',
-    icon: '✅',
-    description: 'Learn industry best practices for code review, testing, security, and quality assurance in AI-assisted development.',
-  },
-  {
-    title: 'Troubleshooting Guide',
-    icon: '🔍',
-    description: 'Quickly resolve common issues with our comprehensive troubleshooting guide and solutions database.',
+    description: 'Solutions to common issues and problems.',
+    link: '/docs/troubleshooting',
   },
 ];
 
@@ -60,21 +54,15 @@ const ToolsList = [
   },
 ];
 
-const Stats = [
-  { value: '10x', label: 'Faster Development' },
-  { value: '85%', label: 'Code Accuracy' },
-  { value: '50+', label: 'Ready Templates' },
-  { value: '24/7', label: 'AI Assistance' },
-];
 
-function Feature({ title, icon, description }) {
+function QuickLink({ title, icon, description, link }) {
   return (
-    <div className={clsx('col col--4', styles.feature)}>
-      <div className={styles.featureCard}>
-        <div className={styles.featureIcon}>{icon}</div>
+    <div className={clsx('col col--6 col--lg-3', styles.quickLinkItem)}>
+      <Link to={link} className={styles.quickLinkCard}>
+        <div className={styles.quickLinkIcon}>{icon}</div>
         <h3>{title}</h3>
         <p>{description}</p>
-      </div>
+      </Link>
     </div>
   );
 }
@@ -106,40 +94,26 @@ function HomepageHeader() {
               className={clsx('button button--primary button--lg', styles.primaryButton)}
               to="/docs/overview"
             >
-              Get Started →
-            </Link>
-            <Link
-              className={clsx('button button--outline button--lg', styles.secondaryButton)}
-              to="/docs/workflow"
-            >
-              View Workflow
+              Get Started
             </Link>
           </div>
-        </div>
-        <div className={styles.statsContainer}>
-          {Stats.map((stat, idx) => (
-            <div key={idx} className={styles.statItem}>
-              <div className={styles.statValue}>{stat.value}</div>
-              <div className={styles.statLabel}>{stat.label}</div>
-            </div>
-          ))}
         </div>
       </div>
     </header>
   );
 }
 
-function FeaturesSection() {
+function QuickLinksSection() {
   return (
-    <section className={styles.features}>
+    <section className={styles.quickLinks}>
       <div className="container">
         <div className={styles.sectionHeader}>
-          <h2>Why Choose Our AI Modernization Guide?</h2>
-          <p>Everything you need to modernize legacy code with AI assistance</p>
+          <h2>Quick Links</h2>
+          <p>Jump to the section you need</p>
         </div>
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {QuickLinks.map((props, idx) => (
+            <QuickLink key={idx} {...props} />
           ))}
         </div>
       </div>
@@ -152,8 +126,8 @@ function ToolsSection() {
     <section className={styles.toolsSection}>
       <div className="container">
         <div className={styles.sectionHeader}>
-          <h2>Powerful AI Tools at Your Fingertips</h2>
-          <p>Integrate the best AI development tools for maximum productivity</p>
+          <h2>Available AI Tools</h2>
+          <p>Documentation for the AI tools we use</p>
         </div>
         <div className="row">
           {ToolsList.map((props, idx) => (
@@ -165,71 +139,7 @@ function ToolsSection() {
   );
 }
 
-function QuickStartSection() {
-  return (
-    <section className={styles.quickStart}>
-      <div className="container">
-        <div className={styles.sectionHeader}>
-          <h2>Quick Start</h2>
-          <p>Get up and running in minutes</p>
-        </div>
-        <div className={styles.quickStartGrid}>
-          <div className={styles.quickStartCard}>
-            <div className={styles.stepNumber}>1</div>
-            <h3>Read the Overview</h3>
-            <p>Understand the fundamentals of AI-assisted modernization</p>
-            <Link to="/docs/overview" className={styles.cardLink}>
-              Start Reading →
-            </Link>
-          </div>
-          <div className={styles.quickStartCard}>
-            <div className={styles.stepNumber}>2</div>
-            <h3>Set Up Your Tools</h3>
-            <p>Configure Cursor, ChatGPT, or Codex for your environment</p>
-            <Link to="/docs/cursor" className={styles.cardLink}>
-              Configure Tools →
-            </Link>
-          </div>
-          <div className={styles.quickStartCard}>
-            <div className={styles.stepNumber}>3</div>
-            <h3>Follow the Workflow</h3>
-            <p>Apply proven workflows to your modernization projects</p>
-            <Link to="/docs/workflow" className={styles.cardLink}>
-              View Workflow →
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
-function CTASection() {
-  return (
-    <section className={styles.ctaSection}>
-      <div className="container">
-        <div className={styles.ctaContent}>
-          <h2>Ready to Modernize Your Legacy Code?</h2>
-          <p>Start leveraging AI to accelerate your development today</p>
-          <div className={styles.ctaButtons}>
-            <Link
-              className={clsx('button button--primary button--lg', styles.ctaButton)}
-              to="/docs/overview"
-            >
-              Get Started Now
-            </Link>
-            <Link
-              className={clsx('button button--outline button--lg', styles.ctaButtonSecondary)}
-              to="/docs/prompt-library"
-            >
-              Explore Templates
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 export default function Home() {
   return (
@@ -239,10 +149,8 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
-        <FeaturesSection />
+        <QuickLinksSection />
         <ToolsSection />
-        <QuickStartSection />
-        <CTASection />
       </main>
     </Layout>
   );
