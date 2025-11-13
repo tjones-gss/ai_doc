@@ -115,7 +115,11 @@ body {
   opacity: 0.8;
 }
 
-/* Mobile Menu Fixes */
+/* ========================================
+   MOBILE MENU FIXES - UNIVERSAL SOLUTION
+   ======================================== */
+
+/* Base Mobile Sidebar Styling */
 .navbar-sidebar {
   background: var(--ifm-background-color);
   z-index: 9999 !important;
@@ -126,6 +130,19 @@ body {
   height: 100vh !important;
 }
 
+/* Light Theme - Explicit Background and Text Colors */
+[data-theme='light'] .navbar-sidebar {
+  background: #ffffff !important;
+  color: #1a1a1a !important;
+}
+
+/* Dark Theme - Explicit Background and Text Colors */
+[data-theme='dark'] .navbar-sidebar {
+  background: #0f172a !important;
+  color: #ffffff !important;
+}
+
+/* Backdrop Styling */
 .navbar-sidebar__backdrop {
   z-index: 9998 !important;
   position: fixed !important;
@@ -135,12 +152,25 @@ body {
   height: 100vh !important;
 }
 
+/* Brand Area - Prevent Logo Overlap with Hamburger */
 .navbar-sidebar__brand {
   background: var(--ifm-navbar-background-color);
   z-index: 10000;
   position: relative;
+  padding-right: 3.5rem;
 }
 
+[data-theme='light'] .navbar-sidebar__brand {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+[data-theme='dark'] .navbar-sidebar__brand {
+  background: #0f172a !important;
+  border-bottom: 1px solid #334155;
+}
+
+/* Sidebar Items Container */
 .navbar-sidebar__items {
   height: 100%;
   display: flex !important;
@@ -155,13 +185,28 @@ body {
   position: relative;
 }
 
+/* Hamburger Toggle - Prevent Logo Overlap */
 .navbar__toggle {
   color: var(--ifm-navbar-link-color);
   z-index: 10001 !important;
   position: relative !important;
+  margin-right: 0.5rem;
 }
 
-/* Ensure mobile menu items are visible and clickable */
+/* When menu is open, fix toggle button position */
+.navbar-sidebar--show .navbar__toggle {
+  position: fixed !important;
+  top: 0.75rem;
+  right: 1rem;
+  z-index: 10002 !important;
+}
+
+/* ========================================
+   NAVIGATION LINKS - ALL TYPES
+   Fix for disappearing links on all pages
+   ======================================== */
+
+/* Menu Links (Sidebar Navigation) */
 .navbar-sidebar .menu {
   padding: 0.5rem;
   z-index: 10000;
@@ -170,28 +215,89 @@ body {
 }
 
 .navbar-sidebar .menu__link {
-  color: var(--ifm-font-color-base);
+  color: var(--ifm-font-color-base) !important;
   padding: 0.75rem 1rem;
+  display: block !important;
   z-index: 10000;
   position: relative;
   pointer-events: auto;
   cursor: pointer;
+  text-decoration: none;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .navbar-sidebar .menu__link:hover {
   background: var(--ifm-color-emphasis-100);
+  text-decoration: none;
 }
 
+/* Navbar Items (Top Navigation) */
 .navbar-sidebar .navbar__item {
   z-index: 10000;
   position: relative;
   pointer-events: auto;
+  display: block !important;
 }
 
+/* Navbar Links (Documentation, Cursor, ChatGPT, etc.) */
 .navbar-sidebar .navbar__link {
+  color: var(--ifm-font-color-base) !important;
+  padding: 0.75rem 1rem;
+  display: block !important;
   z-index: 10000;
   position: relative;
   pointer-events: auto;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.navbar-sidebar .navbar__link:hover {
+  background: var(--ifm-color-emphasis-100);
+  text-decoration: none;
+}
+
+/* ========================================
+   THEME-SPECIFIC LINK COLORS
+   Ensures visibility in both themes
+   ======================================== */
+
+/* Light Theme - Dark Text on White Background */
+[data-theme='light'] .navbar-sidebar .menu__link,
+[data-theme='light'] .navbar-sidebar .navbar__link,
+[data-theme='light'] .navbar-sidebar .navbar__item a {
+  color: #1a1a1a !important;
+}
+
+[data-theme='light'] .navbar-sidebar .menu__link:hover,
+[data-theme='light'] .navbar-sidebar .navbar__link:hover {
+  background: #f3f4f6 !important;
+  color: #1a1a1a !important;
+}
+
+/* Dark Theme - Light Text on Dark Background */
+[data-theme='dark'] .navbar-sidebar .menu__link,
+[data-theme='dark'] .navbar-sidebar .navbar__link,
+[data-theme='dark'] .navbar-sidebar .navbar__item a {
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .navbar-sidebar .menu__link:hover,
+[data-theme='dark'] .navbar-sidebar .navbar__link:hover {
+  background: #1e293b !important;
+  color: #ffffff !important;
+}
+
+/* Universal Link Visibility Override */
+.navbar-sidebar a.menu__link,
+.navbar-sidebar a.navbar__link,
+.navbar-sidebar .navbar__item a {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  pointer-events: auto !important;
 }
 
 /* Ensure dropdown menus work on mobile */
