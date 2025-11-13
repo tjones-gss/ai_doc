@@ -110,6 +110,12 @@ body {
 /* Mobile Menu Fixes */
 .navbar-sidebar {
   background: var(--ifm-background-color);
+  z-index: 1000 !important;
+  position: fixed !important;
+}
+
+.navbar-sidebar__backdrop {
+  z-index: 999 !important;
 }
 
 .navbar-sidebar__brand {
@@ -118,16 +124,17 @@ body {
 
 .navbar-sidebar__items {
   height: 100%;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
 }
 
 .navbar-sidebar__item {
-  display: block;
+  display: block !important;
 }
 
 .navbar__toggle {
   color: var(--ifm-navbar-link-color);
+  z-index: 1001;
 }
 
 /* Ensure mobile menu items are visible and clickable */
