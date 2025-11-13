@@ -105,23 +105,19 @@ const config = {
             label: 'Documentation',
           },
           {
-            type: 'dropdown',
-            label: 'Tools',
+            to: '/docs/cursor',
+            label: 'Cursor',
             position: 'left',
-            items: [
-              {
-                label: 'Cursor',
-                to: '/docs/cursor',
-              },
-              {
-                label: 'ChatGPT Enterprise',
-                to: '/docs/chatgpt',
-              },
-              {
-                label: 'OpenAI Codex',
-                to: '/docs/codex',
-              },
-            ],
+          },
+          {
+            to: '/docs/chatgpt',
+            label: 'ChatGPT',
+            position: 'left',
+          },
+          {
+            to: '/docs/codex',
+            label: 'Codex',
+            position: 'left',
           },
           {
             to: '/docs/prompt-library',
