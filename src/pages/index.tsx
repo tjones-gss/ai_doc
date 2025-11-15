@@ -54,7 +54,6 @@ const ToolsList = [
   },
 ];
 
-
 function QuickLink({ title, icon, description, link }) {
   return (
     <div className={clsx('col col--6 col--lg-3', styles.quickLinkItem)}>
@@ -138,8 +137,6 @@ function ToolsSection() {
     </section>
   );
 }
-
-
 
 export default function Home() {
   return (

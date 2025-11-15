@@ -60,11 +60,13 @@ const config = {
       metadata: [
         {
           name: 'keywords',
-          content: 'AI, modernization, COBOL, software development, Cursor, ChatGPT, OpenAI, code generation, legacy code',
+          content:
+            'AI, modernization, COBOL, software development, Cursor, ChatGPT, OpenAI, code generation, legacy code',
         },
         {
           name: 'description',
-          content: 'Comprehensive guide for AI-assisted COBOL modernization using Cursor, ChatGPT Enterprise, and OpenAI Codex. Learn workflows, best practices, and proven templates.',
+          content:
+            'Comprehensive guide for AI-assisted COBOL modernization using Cursor, ChatGPT Enterprise, and OpenAI Codex. Learn workflows, best practices, and proven templates.',
         },
         {
           name: 'og:title',
@@ -72,7 +74,8 @@ const config = {
         },
         {
           name: 'og:description',
-          content: 'Transform legacy code with AI assistance. Complete guide with workflows, templates, and best practices.',
+          content:
+            'Transform legacy code with AI assistance. Complete guide with workflows, templates, and best practices.',
         },
         {
           name: 'og:type',
@@ -93,7 +96,6 @@ const config = {
         logo: {
           alt: 'Global Shop Solutions Logo',
           src: 'img/logo.svg',
-          width: 32,
           height: 32,
         },
         hideOnScroll: false,

@@ -24,7 +24,8 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -129,7 +130,9 @@
   border-radius: 50%;
   background: rgba(45, 159, 72, 0.1);
   transform: translate(-50%, -50%);
-  transition: width 0.6s, height 0.6s;
+  transition:
+    width 0.6s,
+    height 0.6s;
 }
 
 .primaryButton:hover::before {
@@ -289,4 +292,3 @@
 .toolCard:hover .toolLink {
   transform: translateX(5px);
 }
-
