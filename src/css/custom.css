@@ -115,6 +115,30 @@ body {
   opacity: 0.8;
 }
 
+/* Logo Styling - Maintain Aspect Ratio */
+.navbar__logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar__logo img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Mobile logo adjustments */
+@media (max-width: 996px) {
+  .navbar__logo {
+    height: 28px;
+  }
+
+  .navbar__logo img {
+    height: 28px;
+  }
+}
+
 /* ========================================
    MOBILE MENU FIXES - UNIVERSAL SOLUTION
    ======================================== */
