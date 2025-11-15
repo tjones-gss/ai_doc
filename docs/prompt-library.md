@@ -659,6 +659,298 @@ Analyze the customer update logic in CUSTMAINT.cob paragraph UPDATE-CUSTOMER
 
 ---
 
+## COBOL Development (Fujitsu NetCOBOL)
+
+### COBOL Specification Drafting
+
+**Minimal Context Bundle:**
+
+- Program from `fujsource/<PROGRAM>.CBL`
+- All copybooks from `fujcopy/` (`*.FD`, `.SL`, `.NM`, `.LK`)
+- Panel from `panels/<PROGRAM>.PNL` or `sp2panels/`
+- Recent `listing.txt` from `Projects/<PROGRAM>/<PROGRAM>/`
+
+**Cursor IDE Prompt:**
+
+```
+@explain Create a spec for AP0043GI using the open files (CBL, copybooks, panel, listing.txt).
+
+Detail:
+- Business purpose and triggers
+- All file READ/WRITE operations with copybook field names
+- UI fields and validation from SP2 panel
+- Test data setup using datasets from distributables/files
+
+Return Markdown with sections:
+- Purpose
+- Data Sources
+- UI Notes
+- Acceptance Criteria
+```
+
+**ChatGPT Prompt:**
+
+````markdown
+You are documenting Fujitsu NetCOBOL module AP0043GI for Global Shop Solutions.
+
+Context files:
+
+- Program:
+
+```cobol
+[Paste fujsource/AP0043GI.CBL - include ENVIRONMENT DIVISION and all PERFORM targets]
+```
+
+- Copybooks:
+
+```cobol
+[Paste OPHDR.FD, COMMONSN.CPY, etc.]
+```
+
+- Panel:
+
+```cobol
+[Paste panels/AP0043GI.PNL or sp2panels excerpt]
+```
+
+- Compiler Output:
+
+```
+[Paste relevant listing.txt warnings/notes]
+```
+
+Tasks:
+
+1. Summarize the business goal and triggers
+2. List every file READ/WRITE with copybook field names
+3. Describe UI fields and validation using SP2 panel labels
+4. Provide test data setup (reference datasets in distributables/files)
+5. Flag any missing copybooks or unclear dependencies
+
+Format as Markdown with sections:
+
+- Purpose
+- Data Sources
+- UI Notes
+- Acceptance Criteria
+- Open Questions
+````
+
+### COBOL Bug Triage
+
+**Minimal Context Bundle:**
+
+- Failing transaction data or log excerpt
+- Target program from `fujsource/` + legacy from `source/` or `anssource/` if needed
+- Copybooks touched by suspect RECORD/FILE
+- Snippet of `listing.txt` showing compiler/runtime error
+
+**Cursor IDE Prompt:**
+
+```
+@explain Debug AP0043GI with the open files.
+
+Listing.txt shows: [paste error]
+
+Walk the CALL stack and copybooks to pinpoint the issue. Suggest a patch that:
+- Keeps Fujitsu NetCOBOL syntax (including @OPTIONS)
+- Preserves existing business logic
+- Adds proper error handling
+
+After proposing the diff, list which copybooks/programs must be retested.
+```
+
+**ChatGPT Prompt:**
+
+````markdown
+A defect was reported in AP0043GI. Symptoms:
+[Describe: wrong calculation, null value, screen freeze, etc.]
+
+Compiler output shows:
+
+```
+[Paste listing.txt error or warning]
+```
+
+Context files:
+
+- Fujitsu version:
+
+```cobol
+[Paste fujsource excerpt with suspect PERFORM or SECTION]
+```
+
+- Legacy version (for comparison):
+
+```cobol
+[Paste source/ or anssource/ equivalent if relevant]
+```
+
+- Copybooks:
+
+```cobol
+[Paste affected FD/SL/NM definitions]
+```
+
+Tasks:
+
+1. Identify the failing paragraph and field(s) involved
+2. Compare Fujitsu vs legacy implementations (what changed?)
+3. Recommend minimal code/copybook fix
+4. List other programs using same copybooks (impact analysis)
+5. Outline rebuild steps (which .cobproj to compile)
+
+Keep all syntax Fujitsu NetCOBOL compatible.
+````
+
+### COBOL Custom Feature Request
+
+**Minimal Context Bundle:**
+
+- Customer requirement verbatim
+- Target records/panels from `fujcopy/*.FD`, `panels/*.PNL`
+- Repository bindings (`*.REP`) if applicable
+- Non-Fujitsu dependencies from `nonfujprojects/` if code crosses to .NET
+
+**Cursor IDE Prompt:**
+
+```
+@plan Implement [customer feature] using the pinned files (CBL, copybooks, panel, external C# helper).
+
+Build multi-step plan:
+1. Analyze current behavior
+2. Identify touchpoints (data, UI, interfaces)
+3. Design data/UI changes
+4. Describe validation approach
+
+Keep references to exact file paths and use Fujitsu syntax.
+```
+
+**ChatGPT Prompt:**
+
+````markdown
+Customer request: [paste exact requirement]
+
+Priority: [High/Medium/Low]
+Target release: 2019.1
+
+Relevant assets:
+
+- Programs:
+
+```cobol
+[Paste candidate program excerpts]
+```
+
+- Copybooks:
+
+```cobol
+[Paste OPHDR.FD, related definitions]
+```
+
+- Panels:
+
+```cobol
+[Paste AP0043GI.PNL or relevant UI]
+```
+
+- .NET Libraries (if applicable):
+
+```csharp
+[Paste nonfujprojects/ snippets if CALL exists]
+```
+
+Produce:
+
+1. Impact analysis (data files, UI, external interfaces, reports)
+2. Ordered implementation steps (specific file changes)
+3. Risks/unknowns + questions for customer
+4. Validation plan using distributables/files datasets
+````
+
+### COBOL Daily Throughput
+
+**Batch Documentation:**
+
+```markdown
+Create program summaries for these critical modules:
+
+- AP0043GI (Accounts Payable)
+- SYS080 (System Configuration)
+- ORD147 (Order Entry)
+
+For each program:
+
+1. Scan fujsource/<ID>.CBL and fujcopy/ copybooks
+2. Summarize business purpose and data flow
+3. List all COPY statements with file types (FD/SL/NM)
+4. Note .NET CALLs if any
+5. Export as Markdown in docs/cobol-programs/
+
+Run for all 3 programs and save outputs for team reference.
+```
+
+**Automated Checklist (Cursor):**
+
+```
+@tasks Generate a Composer template for COBOL workflow:
+
+1. Gather program + copybooks from fujsource/fujcopy
+2. Pull listing.txt from Projects/<id>/<id>/
+3. Run msbuild and capture output
+4. Summarize changes + required tests
+
+Output the task definition to save in Cursor settings.
+```
+
+### COBOL Syntax Preservation Reminder
+
+**Always Include:**
+
+```
+Keep Fujitsu NetCOBOL syntax including:
+- @OPTIONS header directives
+- Fujitsu-specific intrinsics
+- SP2 panel CALL conventions (SP2PANEL BY REFERENCE)
+- Repository bindings format
+
+Do NOT use generic COBOL-85 syntax that won't compile with Fujitsu.
+```
+
+### COBOL Copybook-First Analysis
+
+**Before analyzing data flow:**
+
+```markdown
+Before analyzing this program, first review these copybooks:
+
+- OPHDR.FD (file definition)
+- OPHDR.SL (select clause)
+- OPHDR-REC.NM (record layout)
+
+Then identify which fields in the program map to which copybook structures.
+
+Only reference fields that exist in these copybooks - do not invent field names.
+```
+
+### COBOL Debugging with Listing.txt
+
+**When compiler errors occur:**
+
+```markdown
+The Fujitsu compiler reports:
+[Paste listing.txt error lines]
+
+Given this actual compiler output, explain:
+
+1. What line is failing
+2. What the copybook expects vs what the code provides
+3. How to fix while staying COBOL-85 compliant
+4. Whether other programs using same copybooks need updates
+```
+
+---
+
 ## Next Steps
 
 - Apply these prompts to your projects

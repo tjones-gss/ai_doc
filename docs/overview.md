@@ -51,11 +51,23 @@ Our recommended approach for AI-assisted development:
 
 This guide is organized into the following sections:
 
+### AI Tools
+
 - **[Cursor](./cursor.md)** - IDE setup, rules, and best practices
 - **[ChatGPT](./chatgpt.md)** - Enterprise features and personalization
 - **[Codex](./codex.md)** - CLI and web interface usage
+
+### Methodology
+
 - **[Workflow](./workflow.md)** - Spec → Plan → Code → Review methodology
 - **[Memory & Change History](./memory-and-change-history.md)** - Context tracking system
+
+### Stack Guides
+
+- **[COBOL Development Guide](./cobol-development-guide.md)** - Fujitsu NetCOBOL workflows, repository structure, and AI-assisted COBOL development
+
+### Resources
+
 - **[Templates](./templates.md)** - Starter files and examples
 - **[Troubleshooting](./troubleshooting.md)** - Common issues and solutions
 - **[Prompt Library](./prompt-library.md)** - Reusable prompts for common tasks

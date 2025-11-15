@@ -30,13 +30,13 @@ const sidebars = {
       type: 'category',
       label: 'Methodology',
       collapsed: false,
-      items: ['workflow', 'memory-and-change-history'],
+      items: ['workflow', 'memory-and-change-history', 'ai-workflow-svn'],
     },
     {
       type: 'category',
       label: 'Stack Guides',
       collapsed: false,
-      items: ['architecture-overview', 'legacy-modern-handbook'],
+      items: ['architecture-overview', 'legacy-modern-handbook', 'cobol-development-guide'],
     },
     {
       type: 'category',
@@ -55,12 +55,6 @@ const sidebars = {
       label: 'Resources',
       collapsed: false,
       items: ['templates', 'prompt-library', 'troubleshooting'],
-    },
-    {
-      type: 'category',
-      label: 'Modernization',
-      collapsed: false,
-      items: ['cobol-migration-playbook'],
     },
   ],
 };
