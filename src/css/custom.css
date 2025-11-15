@@ -126,6 +126,15 @@ body {
   height: 32px;
   width: auto;
   object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+/* Dark mode - Add background card for visibility */
+[data-theme='dark'] .navbar__logo img {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 4px 8px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Mobile logo adjustments */
@@ -136,6 +145,10 @@ body {
 
   .navbar__logo img {
     height: 28px;
+  }
+
+  [data-theme='dark'] .navbar__logo img {
+    padding: 3px 6px;
   }
 }
 
