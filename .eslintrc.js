@@ -46,6 +46,13 @@ module.exports = {
         'no-console': 'off',
       },
     },
+    {
+      // Allow console.log in test files (needed for debugging tests)
+      files: ['tests/**/*.js', '**/*.spec.js', '**/*.test.js'],
+      rules: {
+        'no-console': 'off',
+      },
+    },
   ],
   ignorePatterns: ['build/', 'build-test/', '.docusaurus/', 'node_modules/', '*.config.js'],
 };
