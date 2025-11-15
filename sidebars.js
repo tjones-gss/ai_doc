@@ -36,7 +36,7 @@ const sidebars = {
       type: 'category',
       label: 'Stack Guides',
       collapsed: false,
-      items: ['architecture-overview', 'legacy-modern-handbook'],
+      items: ['architecture-overview', 'legacy-modern-handbook', 'cobol-development-guide'],
     },
     {
       type: 'category',
