@@ -1,9 +1,9 @@
 ---
 title: Troubleshooting
-description: Common issues and solutions
+description: Common issues and solutions for AI development tools
 sidebar_position: 8
-last_updated: 2025-10-10
-tags: [troubleshooting, faq, common-issues]
+last_updated: 2026-01-16
+tags: [troubleshooting, faq, common-issues, cursor, chatgpt, codex, augment-ai, claude-code]
 ---
 
 # Troubleshooting
@@ -363,6 +363,243 @@ This page covers common issues you may encounter when using AI tools for develop
    Read PROJECT_MEMORY.md for project context, then analyze CUSTMAINT.cob
    ```
 
+## Augment AI Issues
+
+### Context Engine Not Indexing
+
+**Symptoms:**
+
+- Augment doesn't understand your codebase
+- Suggestions are generic or miss project patterns
+- "Context not available" messages
+
+**Solutions:**
+
+1. **Check indexing status:**
+   - Look for indexing indicator in IDE status bar
+   - Wait for initial indexing to complete (can take several minutes for large codebases)
+
+2. **Verify workspace configuration:**
+   - Ensure you've opened the correct workspace root
+   - Check that `.augment` folder exists and is not in `.gitignore`
+
+3. **Force re-index:**
+   - Use Command Palette → "Augment: Reindex Workspace"
+   - Close and reopen the workspace
+
+4. **Check file exclusions:**
+   - Review `.augmentignore` for overly broad patterns
+   - Ensure COBOL files (`.cob`, `.cpy`) are not excluded
+
+### IDE Extension Not Responding
+
+**Symptoms:**
+
+- Augment panel is blank or unresponsive
+- Commands don't execute
+- Extension appears disconnected
+
+**Solutions:**
+
+1. **Restart the extension:**
+   - Disable and re-enable the Augment extension
+   - Reload the IDE window
+
+2. **Check authentication:**
+   - Verify you're logged in to Augment
+   - Re-authenticate if session expired
+
+3. **Review logs:**
+   - Open Output panel → Select "Augment"
+   - Look for error messages or connection issues
+
+4. **Update extension:**
+   - Check for extension updates in marketplace
+   - Install latest version
+
+### Auggie CLI Connection Issues
+
+**Symptoms:**
+
+- CLI commands hang or timeout
+- "Unable to connect" errors
+- Authentication failures
+
+**Solutions:**
+
+1. **Verify authentication:**
+
+   ```bash
+   auggie auth status
+   auggie auth login
+   ```
+
+2. **Check network connectivity:**
+   - Verify internet connection
+   - Check firewall/proxy settings
+
+3. **Update CLI:**
+
+   ```bash
+   npm update -g @anthropic-ai/auggie
+   ```
+
+4. **Clear cache:**
+   ```bash
+   auggie cache clear
+   ```
+
+### Code Review Not Generating Comments
+
+**Symptoms:**
+
+- PR reviews are empty or incomplete
+- GitHub integration not working
+- Comments not appearing on PRs
+
+**Solutions:**
+
+1. **Verify GitHub app installation:**
+   - Check repository settings for Augment app
+   - Ensure proper permissions are granted
+
+2. **Check PR eligibility:**
+   - Verify PR is not a draft
+   - Ensure changes are within supported file types
+
+3. **Review webhook status:**
+   - Check GitHub webhook delivery logs
+   - Verify webhook URL is accessible
+
+## Claude Code Issues
+
+### CLI Installation Problems
+
+**Symptoms:**
+
+- `claude` command not found
+- Installation fails or hangs
+- Version mismatch errors
+
+**Solutions:**
+
+1. **Verify Node.js version:**
+
+   ```bash
+   node --version  # Should be 18+
+   ```
+
+2. **Clean install:**
+
+   ```bash
+   npm uninstall -g @anthropic-ai/claude-code
+   npm cache clean --force
+   npm install -g @anthropic-ai/claude-code
+   ```
+
+3. **Check PATH:**
+   - Ensure npm global bin directory is in PATH
+   - On Windows: `%APPDATA%\npm`
+   - On macOS/Linux: `~/.npm-global/bin` or `/usr/local/bin`
+
+### Authentication Failures
+
+**Symptoms:**
+
+- "Invalid API key" errors
+- "Unauthorized" responses
+- Session expired messages
+
+**Solutions:**
+
+1. **Re-authenticate:**
+
+   ```bash
+   claude auth logout
+   claude auth login
+   ```
+
+2. **Verify API key:**
+   - Check Anthropic Console for valid API key
+   - Ensure key has appropriate permissions
+
+3. **Check environment variables:**
+   ```bash
+   echo $ANTHROPIC_API_KEY
+   ```
+
+### Plan Mode Not Working
+
+**Symptoms:**
+
+- Plan files not being created
+- Plan Mode commands ignored
+- `plan.md` not updating
+
+**Solutions:**
+
+1. **Enable Plan Mode explicitly:**
+
+   ```bash
+   claude --plan "Your task description"
+   ```
+
+2. **Check working directory:**
+   - Ensure you're in a writable directory
+   - Verify `plan.md` is not read-only
+
+3. **Review plan file:**
+   - Open `plan.md` to verify content
+   - Edit plan manually if needed before execution
+
+### Context Compaction Issues
+
+**Symptoms:**
+
+- "Context too long" errors
+- Session losing important context
+- Unexpected behavior after long sessions
+
+**Solutions:**
+
+1. **Start fresh session:**
+
+   ```bash
+   claude --new "Continue from where we left off with [summary]"
+   ```
+
+2. **Use effort parameter:**
+
+   ```bash
+   claude --effort medium "Your task"  # Reduces token usage
+   ```
+
+3. **Summarize context manually:**
+   - Provide a brief summary of previous work
+   - Reference specific files instead of full history
+
+### Desktop App Integration Issues
+
+**Symptoms:**
+
+- CLI and desktop app not syncing
+- Multiple sessions conflicting
+- State inconsistencies
+
+**Solutions:**
+
+1. **Use separate sessions:**
+   - Keep CLI and desktop app tasks independent
+   - Avoid working on same files simultaneously
+
+2. **Sync manually:**
+   - Save all changes before switching tools
+   - Refresh file state in each tool
+
+3. **Check for updates:**
+   - Ensure both CLI and desktop app are latest versions
+   - Restart both applications
+
 ## General AI Issues
 
 ### AI Suggesting Insecure or Bad Practices
@@ -563,6 +800,8 @@ If you're still stuck after trying these solutions:
    - [Cursor Docs](https://cursor.com/docs)
    - [OpenAI Documentation](https://platform.openai.com/docs)
    - [ChatGPT Help](https://help.openai.com/)
+   - [Augment AI Docs](https://docs.augmentcode.com/)
+   - [Claude Code Docs](https://docs.anthropic.com/claude-code)
 
 4. **Document the solution:**
    - When you find a fix, add it to PROJECT_MEMORY

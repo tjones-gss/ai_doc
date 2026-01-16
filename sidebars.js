@@ -24,7 +24,7 @@ const sidebars = {
       type: 'category',
       label: 'AI Tools',
       collapsed: false,
-      items: ['cursor', 'chatgpt', 'codex'],
+      items: ['cursor', 'chatgpt', 'codex', 'augment-ai', 'claude-code'],
     },
     {
       type: 'category',
@@ -49,6 +49,12 @@ const sidebars = {
       label: 'Platform Guides',
       collapsed: false,
       items: ['datalayer-guide', 'devexpress-ui-guide'],
+    },
+    {
+      type: 'category',
+      label: 'Guides',
+      collapsed: false,
+      items: ['prompting-guide', 'qa-workflows'],
     },
     {
       type: 'category',

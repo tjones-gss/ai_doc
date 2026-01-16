@@ -96,7 +96,6 @@ const config = {
         logo: {
           alt: 'Global Shop Solutions Logo',
           src: 'img/logo.svg',
-          height: 32,
         },
         hideOnScroll: false,
         items: [
@@ -119,6 +118,16 @@ const config = {
           {
             to: '/docs/codex',
             label: 'Codex',
+            position: 'left',
+          },
+          {
+            to: '/docs/augment-ai',
+            label: 'Augment AI',
+            position: 'left',
+          },
+          {
+            to: '/docs/claude-code',
+            label: 'Claude Code',
             position: 'left',
           },
           {
@@ -162,12 +171,20 @@ const config = {
                 to: '/docs/cursor',
               },
               {
-                label: 'ChatGPT Enterprise',
+                label: 'ChatGPT Pro 5.2',
                 to: '/docs/chatgpt',
               },
               {
                 label: 'OpenAI Codex',
                 to: '/docs/codex',
+              },
+              {
+                label: 'Augment AI',
+                to: '/docs/augment-ai',
+              },
+              {
+                label: 'Claude Code',
+                to: '/docs/claude-code',
               },
             ],
           },
