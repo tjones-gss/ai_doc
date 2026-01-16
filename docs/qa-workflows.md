@@ -870,4 +870,4 @@ Test scenarios:
 - Review [Codex 5.2](./codex.md) for test automation
 - See [ChatGPT Pro 5.2](./chatgpt.md) for test case design
 - Follow the [Spec → Plan → Code → Review workflow](./workflow.md)
-- Reference the [COBOL Migration Playbook](./cobol-migration-playbook.md) for migration testing
+- Reference the [COBOL Development Guide](./cobol-development-guide.md) for migration testing
