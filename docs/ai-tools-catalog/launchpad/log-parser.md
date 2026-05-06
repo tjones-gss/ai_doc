@@ -49,7 +49,7 @@ Don't use it for:
 
 1. **Upload the log.** Two paths:
    - **Preferred:** HTTP upload via the `mcp-intelligence` relay using a Bearer token. Files up to 50 MB; no token cost for content.
-   - **Fallback:** small files (<100 KB) can be inlined via the `upload_log` MCP tool.
+   - **Fallback:** small files (under 100 KB) can be inlined via the `upload_log` MCP tool.
 2. **Parse and query.** Available tools include:
    - `parse_log(path)` — auto-detect format, return metadata.
    - `search_log(...)` — filter by severity / program / pattern / time range.
