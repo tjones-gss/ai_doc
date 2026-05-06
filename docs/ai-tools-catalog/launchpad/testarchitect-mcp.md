@@ -1,21 +1,23 @@
 ---
 title: "testarchitect-mcp"
-description: "An MCP server that gives AI assistants access to TestArchitect test management data. Lets Claude answer questions about which tests exist, what they cov..."
+description: "An MCP server that gives AI assistants access to TestArchitect test management data. Lets AI agents answer questions about which tests exist, what they ..."
 sidebar_position: 36
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
-> **TL;DR** — An MCP server that gives AI assistants access to TestArchitect test management data. Lets Claude answer questions about which tests exist, what they cover, and how they've been running.
+# testarchitect-mcp
+
+> **TL;DR** — An MCP server that gives AI assistants access to TestArchitect test management data. Lets AI agents answer questions about which tests exist, what they cover, and how they've been running.
 
 ## Overview
 
-TestArchitect is GSS's automated UI test framework. The data it produces — test cases, runs, pass/fail history, coverage — is dense and useful but historically lived behind TA's own UI. `testarchitect-mcp` exposes that data over the Model Context Protocol so Claude Code can search and reason about it as part of normal coding/testing work.
+TestArchitect is GSS's automated UI test framework. The data it produces — test cases, runs, pass/fail history, coverage — is dense and useful but historically lived behind TA's own UI. `testarchitect-mcp` exposes that data over the Model Context Protocol so your AI agent can search and reason about it as part of normal coding/testing work.
 
 ## Why use it
 
 - **Test discoverability.** "Are there existing tests that cover the customer login flow?" becomes a one-question lookup.
-- **Coverage decisions.** When adding a feature, ask Claude which tests already touch the area and which gaps need new coverage.
+- **Coverage decisions.** When adding a feature, ask your AI agent which tests already touch the area and which gaps need new coverage.
 - **Run history context.** "Has this test been flaky?" becomes answerable without opening the TA dashboard.
 
 ## When to use it
@@ -33,7 +35,7 @@ TestArchitect is GSS's automated UI test framework. The data it produces — tes
 
 ## How it works
 
-The MCP wraps TestArchitect's data store with read-friendly operations (search, fetch, history) and exposes them as MCP tools. Connected Claude Code sessions call those tools when relevant.
+The MCP wraps TestArchitect's data store with read-friendly operations (search, fetch, history) and exposes them as MCP tools. Connected AI agent sessions call those tools when relevant.
 
 ## Owner & support
 

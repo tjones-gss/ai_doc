@@ -104,7 +104,7 @@ GSS-internal:
 - [internal-tools-status](mcp-servers/internal-tools-status.md) — Health/status checks for internal tools.
 - [book-of-armaments](mcp-servers/book-of-armaments.md) — Semantic search over Helpjuice articles.
 - [cobol-codebase](mcp-servers/cobol-codebase.md) — Reads our COBOL source repo (used by `cobol-mcp` on LaunchPad).
-- [microsoft-365](mcp-servers/microsoft-365.md) — Searches Outlook, SharePoint, and Teams content via Claude.
+- [microsoft-365](mcp-servers/microsoft-365.md) — Searches Outlook, SharePoint, and Teams content.
 - [devexpress](mcp-servers/devexpress.md) — Searches the DevExpress documentation.
 
 Third-party:

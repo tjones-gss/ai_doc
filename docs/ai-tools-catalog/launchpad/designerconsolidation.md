@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# designerconsolidation
+
 > **TL;DR** — A smart WinForms `.Designer.vb` merge tool that resolves DevExpress designer-file conflicts at the control-and-property level. Replaces hours of manual line-by-line diffing with a 5-minute guided workflow.
 
 ## Overview

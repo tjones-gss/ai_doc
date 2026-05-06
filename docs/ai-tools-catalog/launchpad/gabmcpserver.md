@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# gabmcpserver
+
 > **TL;DR** — An MCP server related to GAB (GSS's scripting language). Owner contact below for the specific scope.
 
 <!-- TODO: confirm with owner — exact capabilities. The LaunchPad tile description currently reads "GAB MCP server" with no further detail. Likely complements the existing gab-codeeditor-mcp app. -->

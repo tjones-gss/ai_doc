@@ -6,14 +6,16 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
-> **TL;DR** — A team-organized library of AI skills, rules, and agent definitions. The artifacts in this library are read at runtime by the [mcp-intelligence MCP server](../mcp-servers/mcp-intelligence.md) — so the things you save here actually shape how Claude Code behaves across the company.
+# mcp-artifacts
+
+> **TL;DR** — A team-organized library of AI skills, rules, and agent definitions. The artifacts in this library are read at runtime by the [mcp-intelligence MCP server](../mcp-servers/mcp-intelligence.md) — so the things you save here actually shape how AI agents behave across the company.
 
 ## Overview
 
 mcp-artifacts is the central library where teams contribute the AI assets that should be available to everyone:
 
-- **Skills** — reusable Claude Code prompts that automate specific workflows.
-- **Rules** — shared guidance Claude should follow ("always run tests before committing in repo X," "never paste customer data into prompts").
+- **Skills** — reusable AI agent prompts that automate specific workflows.
+- **Rules** — shared guidance your AI agent should follow ("always run tests before committing in repo X," "never paste customer data into prompts").
 - **Agent definitions** — pre-configured agent personalities for specific roles (frontend-design, code-reviewer, etc.).
 
 The contents are organized by team so each group can manage their own artifacts.
@@ -26,9 +28,9 @@ The contents are organized by team so each group can manage their own artifacts.
 
 ## When to use it
 
-- You built a useful Claude Code skill or agent and want others to use it.
+- You built a useful agent or skill and want others to use it.
 - You're starting a new project and want to see what skills/rules already exist.
-- A team is establishing standards they want Claude to enforce.
+- A team is establishing standards they want your AI agent to enforce.
 
 Don't use it for:
 - Personal-only configurations (those go in your `~/.claude/` folder).
@@ -50,11 +52,11 @@ Don't use it for:
 
 ## How it works
 
-mcp-artifacts is a UI on top of a Git-backed library. The [mcp-intelligence MCP server](../mcp-servers/mcp-intelligence.md) reads from the same library at runtime, exposing the artifacts to AI clients (Claude Code) when relevant. So adding a skill or rule here actually changes how Claude behaves in sessions where it's relevant.
+mcp-artifacts is a UI on top of a Git-backed library. The [mcp-intelligence MCP server](../mcp-servers/mcp-intelligence.md) reads from the same library at runtime, exposing the artifacts to AI clients (Cursor, Claude Code, Codex) when relevant. So adding a skill or rule here actually changes how Claude behaves in sessions where it's relevant.
 
 ## Common questions
 
-**If I add a skill here, will Claude pick it up automatically?**
+**If I add a skill here, will AI agents pick it up automatically?**
 For shared skills/rules used by mcp-intelligence, yes — typically with a refresh interval. Confirm with the maintainers for cache behavior.
 
 **Can I edit someone else's artifact?**

@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# gsshelp-letterpress
+
 > **TL;DR** — Exports articles from Helpjuice into Word or PDF using the official GSS letterhead. Lets you turn an online doc into a polished, shareable file customers (and execs) recognize.
 
 ## Overview

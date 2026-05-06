@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# TAD-Weekly-Stats
+
 > **TL;DR** — Weekly TestArchitect testing statistics dashboard. Shows what got tested, what passed, what failed, and how that's trending — at a weekly cadence.
 
 ## Overview

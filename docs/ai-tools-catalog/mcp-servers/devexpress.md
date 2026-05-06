@@ -1,16 +1,18 @@
 ---
 title: "MCP Server: DevExpress Docs"
-description: "Lets Claude Code search and pull DevExpress documentation directly into a session. Saves you from hunting through docs.devexpress.com when wiring up gri..."
+description: "Lets your AI agent search and pull DevExpress documentation directly into a session. Saves you from hunting through docs.devexpress.com when wiring up g..."
 sidebar_position: 3
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, mcp-server, claude-code]
 ---
 
-> **TL;DR** — Lets Claude Code search and pull DevExpress documentation directly into a session. Saves you from hunting through `docs.devexpress.com` when wiring up grids, charts, or report controls.
+# MCP Server: DevExpress Docs
+
+> **TL;DR** — Lets your AI agent search and pull DevExpress documentation directly into a session. Saves you from hunting through `docs.devexpress.com` when wiring up grids, charts, or report controls.
 
 ## Overview
 
-DevExpress is the third-party UI control library underpinning much of the GSSERP WinForms surface (and the bane of the [designerconsolidation](../launchpad/designerconsolidation.md) tool's existence). Their docs are extensive and not always easy to navigate. The DevExpress Docs MCP server wraps the official documentation index so Claude can search and retrieve it on demand.
+DevExpress is the third-party UI control library underpinning much of the GSSERP WinForms surface (and the bane of the [designerconsolidation](../launchpad/designerconsolidation.md) tool's existence). Their docs are extensive and not always easy to navigate. The DevExpress Docs MCP server wraps the official documentation index so your AI agent can search and retrieve it on demand.
 
 Two operations:
 
@@ -19,8 +21,8 @@ Two operations:
 
 ## Why use it
 
-- **Faster lookups.** Ask Claude how to wire a `GridControl` filter event; it pulls the doc page and answers.
-- **Better answers.** Claude has the actual current docs, not its training-data approximation.
+- **Faster lookups.** Ask your AI agent how to wire a `GridControl` filter event; it pulls the doc page and answers.
+- **Better answers.** Your AI agent has the actual current docs, not its training-data approximation.
 
 ## When to use it
 
@@ -28,7 +30,7 @@ You're working on WinForms code that uses DevExpress controls and have a "how do
 
 ## How to access it
 
-- **MCP:** Connected by default in the GSS Claude Code setup.
+- **MCP:** Connected by default in the GSS AI tooling setup.
 - **Auth:** No special auth required (public docs).
 
 ## Common questions
@@ -41,10 +43,10 @@ Refreshes from upstream on a schedule. Confirm cadence with the owner if a brand
 
 ## How it works
 
-A small service that wraps the DevExpress documentation site and exposes search/fetch over MCP. Claude calls those tools when relevant.
+A small service that wraps the DevExpress documentation site and exposes search/fetch over MCP. Your AI agent calls those tools when relevant.
 
 ## Owner & support
 
 - **Owner:** GSS engineering platform team
 - **Last reviewed:** 2026-05-05
-- **Note:** This MCP was disconnected during one of our sessions. If Claude can't reach it, the platform team can re-enable.
+- **Note:** This MCP was disconnected during one of our sessions. If your AI agent can't reach it, the platform team can re-enable.

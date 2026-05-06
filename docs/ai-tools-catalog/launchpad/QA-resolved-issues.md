@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# QA-resolved-issues
+
 > **TL;DR** — A dashboard of every issue resolved by QA. Useful for weekly status, retrospectives, and showing "what we got done" to leadership.
 
 ## Overview

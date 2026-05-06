@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# arc-scanner
+
 > **TL;DR** — A web tool that scans every repo in a GitHub org for SQL table references and join relationships pulled from GabScript and SQL files, then visualizes the result as a heatmap, ranked list, and per-repo breakdown. Helps you see which tables are hot and which repos touch them.
 
 ## Overview

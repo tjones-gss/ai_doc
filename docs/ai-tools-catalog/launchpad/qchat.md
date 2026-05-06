@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# qchat
+
 > **TL;DR** — Schedule quarterly check-ins. A lightweight tool to make sure the every-quarter career / status conversation actually happens, without manual calendar wrangling.
 
 ## Overview

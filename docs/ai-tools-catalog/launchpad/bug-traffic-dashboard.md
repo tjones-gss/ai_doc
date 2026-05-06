@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# bug-traffic-dashboard
+
 > **TL;DR** — A real-time dashboard that tracks how service calls flow through the P&E Bugs queue. Shows incoming vs. closed vs. in-QA-testing volumes by team, weekly trends, and call-level drill-down.
 
 ## Overview

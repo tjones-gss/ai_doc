@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# TABugTracking
+
 > **TL;DR** — Tracks bugs caught by Test Architect (TA) tests. The official place to see "which production bugs would have been caught by automation if we had the right test?".
 
 ## Overview

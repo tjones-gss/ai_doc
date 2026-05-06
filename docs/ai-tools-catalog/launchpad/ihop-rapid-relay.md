@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# ihop-rapid-relay
+
 > **TL;DR** — A LaunchPad app related to IHOP (the GSS service-call backend) and an ATG-Edge "rapid relay" workflow. Owner contact below for the specific use case.
 
 <!-- TODO: confirm with owner — concrete description, target audience, golden-path workflow. The LaunchPad tile description currently reads "Internal app created via Launchpad by rravindranath@gssmail.com" with no further detail. -->

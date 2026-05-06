@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# log-parser
+
 > **TL;DR** — An MCP server that parses GSS SP2 log files (CoreLog, GSSEO, OCTSRS, ACU COBOL traces) into structured, noise-filtered records that AI assistants can actually reason about. Replaces brittle line-by-line log reading with a proper parser.
 
 ## Overview
@@ -18,7 +20,7 @@ SP2 log files are messy. Each format has its own quirks:
 - **ACU COBOL traces** carry ~26% noise from DLL search-path probing and `DLL_CONVENTION` toggles, plus a header block with no timestamps.
 - All formats routinely exceed 100K characters, which makes naive windowed reading unreliable.
 
-`log-parser` does the parsing server-side and returns structured records. Claude (or any MCP client) gets clean, query-friendly data instead of having to wade through raw text.
+`log-parser` does the parsing server-side and returns structured records. Your AI agent (or any MCP client) gets clean, query-friendly data instead of having to wade through raw text.
 
 ## Why use it
 
@@ -45,7 +47,7 @@ Don't use it for:
 - **Status:** Configured (not yet Live — confirm with owner).
 - **Kind:** MCP server.
 
-## How to use it (from Claude Code)
+## How to use it
 
 1. **Upload the log.** Two paths:
    - **Preferred:** HTTP upload via the `mcp-intelligence` relay using a Bearer token. Files up to 50 MB; no token cost for content.

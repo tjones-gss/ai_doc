@@ -1,16 +1,18 @@
 ---
 title: "svn-ops (svn-mcp)"
-description: "A general-purpose Subversion MCP server. Exposes the full SVN command surface (checkout, log, diff, blame, commit, branch, etc.) to Claude Code and othe..."
+description: "A general-purpose Subversion MCP server. Exposes the full SVN command surface (checkout, log, diff, blame, commit, branch, etc.) to MCP-compatible clien..."
 sidebar_position: 35
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
-> **TL;DR** — A general-purpose Subversion MCP server. Exposes the full SVN command surface (checkout, log, diff, blame, commit, branch, etc.) to Claude Code and other MCP clients over Streamable HTTP. The repo is named `svn-ops`; the service identifies itself as `svn-mcp`.
+# svn-ops (svn-mcp)
+
+> **TL;DR** — A general-purpose Subversion MCP server. Exposes the full SVN command surface (checkout, log, diff, blame, commit, branch, etc.) to MCP-compatible clients (Cursor, Claude Code, Codex) over Streamable HTTP. The repo is named `svn-ops`; the service identifies itself as `svn-mcp`.
 
 ## Overview
 
-GSSERP still lives in SVN, but most modern AI tooling assumes Git. `svn-ops` bridges the gap: a self-contained service that runs SVN operations on managed working copies and exposes them as MCP tools. Any consumer that speaks MCP — `team-3-app`, Cursor agents, custom Claude Code skills — can call SVN ops via `call_proxy_tool(server="svn-mcp", ...)` through MCP-Intelligence.
+GSSERP still lives in SVN, but most modern AI tooling assumes Git. `svn-ops` bridges the gap: a self-contained service that runs SVN operations on managed working copies and exposes them as MCP tools. Any consumer that speaks MCP — `team-3-app`, Cursor agents, custom skills — can call SVN ops via `call_proxy_tool(server="svn-mcp", ...)` through MCP-Intelligence.
 
 ## Why use it
 
@@ -21,7 +23,7 @@ GSSERP still lives in SVN, but most modern AI tooling assumes Git. `svn-ops` bri
 ## When to use it
 
 - You're building an AI workflow that needs to read or modify SVN-tracked code.
-- You want history (`svn log`, `svn blame`, `svn diff`) accessible to Claude without the user pasting in command output.
+- You want history (`svn log`, `svn blame`, `svn diff`) accessible to AI agents without the user pasting in command output.
 - You're building an automated branch / patch / commit flow.
 
 ## How to access it

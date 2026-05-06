@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# featuretoggles
+
 > **TL;DR** — Controls which features are turned on in the system. Lets us ship code dark, roll a feature out gradually, or kill-switch something quickly without redeploying.
 
 ## Overview

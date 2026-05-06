@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# queue-routing
+
 > **TL;DR** — An MCP server that triages the P&E Bugs queue on Service Web. Analyzes incoming calls, recommends which team queue they belong in, and (when authorized) executes the transfer with code-impact analysis notes. Has a webhook endpoint for Power Automate integration.
 
 ## Overview

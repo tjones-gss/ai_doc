@@ -1,12 +1,14 @@
 ---
 title: "MCP Server: mcp-intelligence"
-description: "The shared \"memory\" layer for AI tools at GSS. When Claude Code (or any other AI agent) finishes a meaningful piece of work — a deployment, a bug fix, a..."
+description: "The shared \"memory\" layer for AI tools at GSS. When your AI agent finishes a meaningful piece of work — a deployment, a bug fix, a design decision — it ..."
 sidebar_position: 7
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, mcp-server, claude-code]
 ---
 
-> **TL;DR** — The shared "memory" layer for AI tools at GSS. When Claude Code (or any other AI agent) finishes a meaningful piece of work — a deployment, a bug fix, a design decision — it logs the outcome here. Future sessions can search that history and pick up where the last one left off.
+# MCP Server: mcp-intelligence
+
+> **TL;DR** — The shared "memory" layer for AI tools at GSS. When your AI agent finishes a meaningful piece of work — a deployment, a bug fix, a design decision — it logs the outcome here. Future sessions can search that history and pick up where the last one left off.
 
 ## Overview
 
@@ -25,12 +27,12 @@ The data sits in a central store the whole team's AI tools can read from. The co
 
 Two big problems it solves:
 
-1. **AI session amnesia.** Each Claude Code session starts fresh. Without `mcp-intelligence`, the next session has to rediscover everything — including stuff the prior session figured out 10 minutes ago.
+1. **AI session amnesia.** Each AI agent session starts fresh. Without `mcp-intelligence`, the next session has to rediscover everything — including stuff the prior session figured out 10 minutes ago.
 2. **Tribal knowledge loss.** When someone resolves a tricky bug or makes a non-obvious design call, that knowledge usually lives only in their head (or an Outlook thread). Logging it here makes it searchable for everyone, human or AI.
 
 ## When to use it
 
-The intelligence MCP is enabled in every Claude Code session by default. The instruction Claude reads (from your global `CLAUDE.md`) is:
+The intelligence MCP is enabled in every AI agent session by default. The instruction your AI agent reads (from your global `CLAUDE.md`) is:
 
 - **`intel_add_timeline`** — after deploying, shipping a feature, fixing a major bug, or completing a spike.
 - **`intel_write_doc`** — when creating or updating an app/infra/troubleshooting page.
@@ -43,7 +45,7 @@ Don't use it for:
 
 ## How to use it
 
-You don't call `mcp-intelligence` directly — Claude Code does. As long as the server is running and connected (it is, by default in our setup), Claude will log events automatically when the work fits the criteria.
+You don't call `mcp-intelligence` directly — your AI agent does. As long as the server is running and connected (it is, by default in our setup), It will log events automatically when the work fits the criteria.
 
 If you want to view or search the logged data, see the **mcp-artifacts** LaunchPad app (which is a UI on top of the intelligence store).
 
@@ -60,7 +62,7 @@ Yes — `intel_write_doc` updates pages in place. Timeline entries and resolutio
 
 ## How it works
 
-`mcp-intelligence` is a small backend that exposes its functions over the Model Context Protocol (MCP). Claude (and other AI clients that support MCP) connects to it, sees the available tools, and calls them when prompted by user instructions or its system context.
+`mcp-intelligence` is a small backend that exposes its functions over the Model Context Protocol (MCP). It (and other AI clients that support MCP) connects to it, sees the available tools, and calls them when prompted by user instructions or its system context.
 
 ## Owner & support
 

@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# weekly-performance-dashboard
+
 > **TL;DR** — Weekly performance dashboard for the Maintenance Operations, Maintenance OE, and PPT-Bugs teams. Shows applied hours vs. call counts with status breakdowns (Completed, In Testing) per employee and sub-team, with expandable call details.
 
 ## Overview

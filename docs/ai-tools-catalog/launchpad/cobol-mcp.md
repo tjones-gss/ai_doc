@@ -1,28 +1,30 @@
 ---
 title: "cobol-mcp"
-description: "An MCP server hosted on LaunchPad that lets AI assistants reach into our COBOL source code repo and SVN log history. The primary way Claude Code answers..."
+description: "An MCP server hosted on LaunchPad that lets AI assistants reach into our COBOL source code repo and SVN log history. The primary way our AI agents answe..."
 sidebar_position: 15
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
-> **TL;DR** — An MCP server hosted on LaunchPad that lets AI assistants reach into our COBOL source code repo and SVN log history. The primary way Claude Code answers COBOL questions at GSS.
+# cobol-mcp
+
+> **TL;DR** — An MCP server hosted on LaunchPad that lets AI assistants reach into our COBOL source code repo and SVN log history. The primary way our AI agents answer COBOL questions at GSS.
 
 ## Overview
 
-cobol-mcp wraps a kept-up-to-date mirror of GSSERP's COBOL source code and SVN log data, exposing it over the Model Context Protocol (MCP). Once an AI client (like Claude Code) is connected, it can search programs by name, read file contents, and look up commit history without you doing the legwork.
+cobol-mcp wraps a kept-up-to-date mirror of GSSERP's COBOL source code and SVN log data, exposing it over the Model Context Protocol (MCP). Once an AI client (Cursor, Claude Code, Codex) is connected, it can search programs by name, read file contents, and look up commit history without you doing the legwork.
 
-It's the LaunchPad-hosted face of the [cobol-codebase MCP server](../mcp-servers/cobol-codebase.md) — same backing data, exposed for any team's Claude Code to use.
+It's the LaunchPad-hosted face of the [cobol-codebase MCP server](../mcp-servers/cobol-codebase.md) — same backing data, exposed for any team’s AI agent to use.
 
 ## Why use it
 
-GSSERP's COBOL codebase is huge and old. Browsing it by hand to answer "what does program X do" or "when did the bug in PROC-LOAD-SCREEN start" eats hours. With cobol-mcp connected, those become one-question, one-answer interactions in Claude Code.
+GSSERP's COBOL codebase is huge and old. Browsing it by hand to answer "what does program X do" or "when did the bug in PROC-LOAD-SCREEN start" eats hours. With cobol-mcp connected, those become one-question, one-answer interactions in your AI agent.
 
 It's also the data source behind automated COBOL refactors (e.g., SP2-to-SCR100 grid conversions) that need to read source files and SVN log to do their work.
 
 ## When to use it
 
-Anytime a Claude Code task involves COBOL source. The MCP is connected by default in the GSS Claude Code setup; no per-task action is needed.
+Anytime an AI agent task involves COBOL source. The MCP is connected by default in the GSS AI tooling setup; no per-task action is needed.
 
 Don't use it for:
 - Modifying COBOL source — this MCP is read-only. Edits happen in your local working copy.
@@ -32,13 +34,13 @@ Don't use it for:
 - **URL:** [https://launchpad.globalshopsolutions.dev/apps/cobol-mcp](https://launchpad.globalshopsolutions.dev/apps/cobol-mcp)
 - **Login:** Sign in with your Global Shop Office 365 account (SAML).
 - **Status:** Live.
-- **As an MCP server:** Already wired into Claude Code if you're using the standard GSS setup. Otherwise, get the connection details from the LaunchPad app page.
+- **As an MCP server:** Already wired into your AI agent if you're using the standard GSS setup. Otherwise, get the connection details from the LaunchPad app page.
 
 ## How to use it
 
-You don't need to "use" the LaunchPad page directly except to confirm it's running or grab connection details. The tool is consumed by Claude Code (and any other MCP-compatible client) automatically.
+You don't need to "use" the LaunchPad page directly except to confirm it's running or grab connection details. The tool is consumed by any MCP-compatible client (Cursor, Claude Code, Codex, etc.) automatically.
 
-Example Claude Code prompts that lean on it:
+Example AI agent prompts that lean on it:
 
 - "What does GL0025 do?"
 - "Find every COBOL program that touches the IM_INVENTORY file."
@@ -53,7 +55,7 @@ The COBOL source mirror is kept up to date — exact refresh cadence is document
 No. Read-only.
 
 **Is the SVN log searchable?**
-Yes — Claude can ask for log entries by file, author, or date range.
+Yes — your AI agent can ask for log entries by file, author, or date range.
 
 ## How it works
 

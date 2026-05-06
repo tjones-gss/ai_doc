@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# rapid-ihop-relay
+
 > **TL;DR** — A LaunchPad app related to IHOP and a "rapid relay" workflow, owned by the ATG-Edge team. Sister app to [ihop-rapid-relay](ihop-rapid-relay.md). Owner contact below for the specific use case.
 
 <!-- TODO: confirm with owner — concrete description and how this app differs from ihop-rapid-relay. The tile shows "Internal app created via Launchpad by rravindranath@gssmail.com" with no further detail. -->

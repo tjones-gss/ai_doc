@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# CausingIssueDashboard
+
 > **TL;DR** — A dashboard for viewing issues that have a "Causing Issue" relationship in Issue Maintenance — i.e., bugs whose root cause is another bug. Helps you see the actual root, not just the symptom.
 
 ## Overview

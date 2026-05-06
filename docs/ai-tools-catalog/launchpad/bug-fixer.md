@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# bug-fixer
+
 > **TL;DR** — A LaunchPad-hosted MCP server for bug-fix automation. Owner contact below for the specific scope.
 
 <!-- TODO: confirm with owner — exact capabilities. The LaunchPad tile description currently reads "Internal app created via Launchpad by zsandford@gssmail.com" with no further detail. -->

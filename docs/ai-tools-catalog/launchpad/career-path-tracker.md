@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# career-path-tracker
+
 > **TL;DR** — Track your career path through quarters. Log skills, achievements, and growth markers; export your data for review conversations and self-assessment.
 
 ## Overview

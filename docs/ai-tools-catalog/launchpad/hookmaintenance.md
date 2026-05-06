@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# hookmaintenance
+
 > **TL;DR** — Defines hook ID ranges and manages script hooks within them — their details, settings, and activation status. The internal control panel for the hook system that customers and partners use to extend GSSERP.
 
 ## Overview

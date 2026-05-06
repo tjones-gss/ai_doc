@@ -6,7 +6,7 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, cursor, umbrella]
 ---
 
-> **TL;DR** — Cursor is the AI-first IDE most of P&E uses for daily coding. Same MCP servers as Claude Code, same internal tools, different shape: it lives in your editor instead of the terminal. This article covers how Cursor fits into the GSS setup. For depth on Cursor's general feature set (Composer, Agents, Bugbot, etc.), see the [main Cursor doc](../../cursor.md).
+> **TL;DR** — Cursor is the AI-first IDE most of P&E uses for daily coding. Same MCP servers as Claude Code, same internal tools, different shape: it lives in your editor instead of the terminal. This article covers how Cursor fits into the GSS setup. For depth on Cursor's general feature set (Composer, Agents, Bugbot, etc.), see the [main Cursor doc](../cursor.md).
 
 ## Overview
 
@@ -47,7 +47,7 @@ Many engineers use both, picking per-task.
 - **Download:** [cursor.com](https://cursor.com)
 - **Plan:** GSS-licensed seats (request from your manager). Free tier exists but is rate-limited.
 - **Sign in:** Use the email tied to your GSS Cursor seat.
-- **Setup details:** see the [main Cursor doc](../../cursor.md) for keybindings, model selection, rule files, and pricing tiers.
+- **Setup details:** see the [main Cursor doc](../cursor.md) for keybindings, model selection, rule files, and pricing tiers.
 
 ## Easy MCP setup at GSS (the recommended path)
 
@@ -82,7 +82,7 @@ For the full inventory of MCP servers exposed via mcp-intelligence, see the **MC
 6. Switch to Agent mode (Composer) for multi-step, multi-file tasks.
 7. For longer async work, kick off a Cloud Agent — let it run in the background and PR back.
 
-For more depth on each of those, the [main Cursor doc](../../cursor.md) is the source of truth.
+For more depth on each of those, the [main Cursor doc](../cursor.md) is the source of truth.
 
 ## Common questions
 
@@ -106,6 +106,6 @@ Cursor is built on VS Code's open-source Code OSS. It adds an AI layer that talk
 
 - **Vendor:** Anysphere (Cursor)
 - **Docs:** [docs.cursor.com](https://docs.cursor.com)
-- **Main internal doc:** [Cursor (full feature reference)](../../cursor.md)
+- **Main internal doc:** [Cursor (full feature reference)](../cursor.md)
 - **GSS account/access:** Request a seat from your manager.
 - **Last reviewed:** 2026-05-06

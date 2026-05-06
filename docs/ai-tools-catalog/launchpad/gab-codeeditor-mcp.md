@@ -6,13 +6,15 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# gab-codeeditor-mcp
+
 > **TL;DR** — A LaunchPad-hosted MCP server for the GAB code editor. Pre-dates the LaunchPad MCP kind tag, so it's still labeled "Web App" — but functionally it's an MCP. Owner contact below.
 
 <!-- TODO: confirm with owner — exact capabilities. Tile description: "This is the mcp for gab codeeditor". Likely exposes GAB code editor operations (read/write GAB scripts, search by hook ID, run validations) over MCP. -->
 
 ## Overview
 
-`gab-codeeditor-mcp` is a LaunchPad-hosted MCP server tied to the GAB code editor. The naming and brief description suggest it lets Claude Code interact with GAB scripts the way a developer would in the editor — read, search, validate, possibly edit — but the owner should confirm specifics.
+`gab-codeeditor-mcp` is a LaunchPad-hosted MCP server tied to the GAB code editor. The naming and brief description suggest it lets your AI agent interact with GAB scripts the way a developer would in the editor — read, search, validate, possibly edit — but the owner should confirm specifics.
 
 ## How to access it
 

@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# zen-log-parser
+
 > **TL;DR** — Parses and analyzes Pervasive Zen database log files. Turns a wall of cryptic log text into a tabbed interface where you can sift through queries, find slow ones, and identify optimization opportunities.
 
 ## Overview

@@ -6,13 +6,15 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# issue-manager-mcp
+
 > **TL;DR** — A LaunchPad-hosted MCP server for issue/project creation. Pre-dates the LaunchPad MCP kind tag, so it's still labeled "Web App" — but functionally it's an MCP. Owner contact below.
 
-<!-- TODO: confirm with owner — exact capabilities. Tile description: "mcp server for handling issue/project creation". Likely exposes Issue Maintenance / project-management create-and-update operations to Claude Code. -->
+<!-- TODO: confirm with owner — exact capabilities. Tile description: "mcp server for handling issue/project creation". Likely exposes Issue Maintenance / project-management create-and-update operations to your AI agent. -->
 
 ## Overview
 
-`issue-manager-mcp` is a LaunchPad-hosted MCP server. Per the tile, it handles issue/project creation — likely letting Claude Code create or update Issue Maintenance records and project entries on a developer's behalf. The owner should confirm specifics.
+`issue-manager-mcp` is a LaunchPad-hosted MCP server. Per the tile, it handles issue/project creation — likely letting your AI agent create or update Issue Maintenance records and project entries on a developer's behalf. The owner should confirm specifics.
 
 ## How to access it
 

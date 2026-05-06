@@ -6,11 +6,13 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# pervasiveschema
+
 > **TL;DR** — A LaunchPad-hosted MCP server exposing the schema of all Pervasive tables and columns, plus their mappings to the EO Objects namespace (object name, grouping, property names). Lets AI assistants answer schema questions without you opening a DB tool.
 
 ## Overview
 
-The Pervasive schema is the foundation of GSSERP's data layer, and the EO Objects namespace is the application-level mapping on top. Understanding both is essential for anyone touching data, but neither is easy to browse by hand. `pervasiveschema` exposes both via MCP so Claude Code can answer questions like "what columns are on the IM_INVENTORY table?" or "which EO Object property maps to OE_HEADER.HEADER_ID?".
+The Pervasive schema is the foundation of GSSERP's data layer, and the EO Objects namespace is the application-level mapping on top. Understanding both is essential for anyone touching data, but neither is easy to browse by hand. `pervasiveschema` exposes both via MCP so your AI agent can answer questions like "what columns are on the IM_INVENTORY table?" or "which EO Object property maps to OE_HEADER.HEADER_ID?".
 
 ## Why use it
 

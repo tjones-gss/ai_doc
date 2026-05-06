@@ -6,16 +6,18 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
-> **TL;DR** — An MCP gateway server that bundles COBOL, GitHub, Service Web, and test-case tools behind a single endpoint, plus a curated set of Skills, Agents, and Rules tuned for triaging bugs. Drop one MCP into Claude Code and you've got the full bug-triage toolkit.
+# bug-triage-pack
+
+> **TL;DR** — An MCP gateway server that bundles COBOL, GitHub, Service Web, and test-case tools behind a single endpoint, plus a curated set of Skills, Agents, and Rules tuned for triaging bugs. Drop one MCP into your AI agent and you've got the full bug-triage toolkit.
 
 ## Overview
 
-Bug triage at GSS pulls from many sources: the COBOL repo, GitHub PRs, Service Web service calls, test cases. Wiring all those up individually in Claude Code is fiddly. `bug-triage-pack` is a single MCP gateway that aggregates them, plus packaged Skills/Agents/Rules so Claude approaches a bug the way a senior engineer would.
+Bug triage at GSS pulls from many sources: the COBOL repo, GitHub PRs, Service Web service calls, test cases. Wiring all those up individually for each AI agent is fiddly. `bug-triage-pack` is a single MCP gateway that aggregates them, plus packaged Skills/Agents/Rules so your AI agent approaches a bug the way a senior engineer would.
 
 ## Why use it
 
-- **One MCP instead of five.** Reduces configuration sprawl in Claude Code.
-- **Triage-tuned defaults.** The bundled rules and skills bias Claude toward useful triage behavior (find similar past bugs, suggest a routing team, identify code impact).
+- **One MCP instead of five.** Reduces configuration sprawl in your AI agent.
+- **Triage-tuned defaults.** The bundled rules and skills bias the agent toward useful triage behavior (find similar past bugs, suggest a routing team, identify code impact).
 - **Power Automate integration.** A webhook endpoint lets Power Automate kick off triage flows automatically.
 
 ## When to use it
@@ -33,7 +35,7 @@ Bug triage at GSS pulls from many sources: the COBOL repo, GitHub PRs, Service W
 
 ## How to use it
 
-The MCP exposes its tools to any connected Claude Code session. Typical prompts:
+The MCP exposes its tools to any connected AI agent session. Typical prompts:
 
 - "Triage call GLO010-XXXX-XX — find similar past bugs and recommend routing."
 - "What's the code impact of this fix? Which tests should run?"

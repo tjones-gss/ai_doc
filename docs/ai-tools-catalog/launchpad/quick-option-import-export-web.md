@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# quick-option-import-export-web
+
 > **TL;DR** — A web-based tool for importing, editing, and exporting Option JSON files. Spreadsheet-style editing with full round-trip preservation, so the JSON you export matches what the WinForm tool would produce.
 
 ## Overview

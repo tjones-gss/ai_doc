@@ -6,6 +6,8 @@ last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
+# Globe TV
+
 > **TL;DR** — GSS's internal home for help videos. Think of it as a private YouTube — staff can find, watch, and (with permissions) upload short-form videos that explain how things work, walk through customer scenarios, or capture training content.
 
 ## Overview
