@@ -21,7 +21,7 @@ ChatGPT Pro 5.5 provides:
 - **SharePoint Integration** - Connect to company documentation
 - **Code Interpreter** - Run Python code for data analysis
 - **Custom GPTs** - Create specialized AI assistants for specific tasks
-- **Improved Memory** - Enhanced memory capabilities for Plus and Pro users (January 2026)
+- **Improved Memory** - Persistent memory across sessions for Plus, Pro, Business, and Enterprise users
 - **Excel & Chrome Integration** - Work directly in spreadsheets and browser tabs
 
 ## Key Features
