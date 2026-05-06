@@ -2,7 +2,7 @@
 title: Workflow - Spec → Plan → Code → Review
 description: AI-assisted development methodology
 sidebar_position: 5
-last_updated: 2025-10-10
+last_updated: 2026-05-06
 tags: [workflow, methodology, best-practices]
 ---
 

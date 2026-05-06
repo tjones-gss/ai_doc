@@ -2,7 +2,7 @@
 title: Memory & Change History
 description: Context tracking and knowledge management system
 sidebar_position: 6
-last_updated: 2025-10-10
+last_updated: 2026-05-06
 tags: [memory, change-history, documentation, context]
 ---
 

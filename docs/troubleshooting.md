@@ -2,7 +2,7 @@
 title: Troubleshooting
 description: Common issues and solutions for AI development tools
 sidebar_position: 8
-last_updated: 2026-01-16
+last_updated: 2026-05-06
 tags: [troubleshooting, faq, common-issues, cursor, chatgpt, codex, augment-ai, claude-code]
 ---
 
@@ -746,7 +746,7 @@ This page covers common issues you may encounter when using AI tools for develop
 
 2. **Use faster model:**
    - Switch to GPT-3.5 for simple tasks
-   - Save GPT-4/Claude for complex reasoning
+   - Save Composer 2 / Claude / GPT for complex reasoning
 
 3. **Break down requests:**
    - Smaller, focused requests respond faster

@@ -2,8 +2,8 @@
 title: Overview
 description: Software Modernization AI Guide for Global Shop Solutions
 sidebar_position: 1
-last_updated: 2026-01-16
-tags: [overview, getting-started, ai-tools, gpt-5.2, claude-opus-4.5]
+last_updated: 2026-05-06
+tags: [overview, getting-started, ai-tools, gpt-5.5, claude-opus-4.7]
 ---
 
 # Software Modernization AI Guide
@@ -33,18 +33,18 @@ Think of our AI tools this way:
 | Tool                    | Role                                         | Best For                                                      |
 | ----------------------- | -------------------------------------------- | ------------------------------------------------------------- |
 | **Cursor**              | Your pair programmer                         | Fast, contextual editing and refactoring within your codebase |
-| **ChatGPT Pro 5.2**     | Your senior architect / research assistant   | Research, planning, documentation, architectural ideation     |
-| **Codex 5.2**           | Your junior dev team handling delegated work | Deep code understanding across files, tests, and architecture |
+| **ChatGPT Pro 5.5**     | Your senior architect / research assistant   | Research, planning, documentation, architectural ideation     |
+| **Codex 5.5**           | Your junior dev team handling delegated work | Deep code understanding across files, tests, and architecture |
 | **Augment AI (Auggie)** | Your context-aware coding partner            | Large codebase understanding, code review, IDE integration    |
 | **Claude Code**         | Your agentic coding assistant                | Long-horizon coding tasks, Plan Mode, complex refactoring     |
 
 ### Tool Comparison
 
-| Capability           | Cursor       | ChatGPT Pro 5.2 | Codex 5.2           | Augment AI         | Claude Code     |
+| Capability           | Cursor       | ChatGPT Pro 5.5 | Codex 5.5           | Augment AI         | Claude Code     |
 | -------------------- | ------------ | --------------- | ------------------- | ------------------ | --------------- |
 | **IDE Integration**  | Native       | Web/API         | CLI + IDE Extension | VS Code, JetBrains | CLI + Desktop   |
 | **Codebase Context** | Open files   | Upload files    | Full repo           | Context Engine     | Session-based   |
-| **Best Model**       | GPT-4/Claude | GPT-5.2         | GPT-5.2-Codex       | Claude Opus 4.5    | Claude Opus 4.5 |
+| **Best Model**       | Composer 2 / Claude / GPT | GPT-5.5         | GPT-5.5-Codex       | Claude Opus 4.7    | Claude Opus 4.7 |
 | **Agentic Coding**   | Composer     | N/A             | Full agent          | IDE Agents         | Plan Mode       |
 | **Code Review**      | Inline       | Manual          | PR integration      | GitHub integration | GitHub app      |
 
@@ -66,8 +66,8 @@ This guide is organized into the following sections:
 ### AI Tools
 
 - **[Cursor](./cursor.md)** - IDE setup, rules, and best practices
-- **[ChatGPT Pro 5.2](./chatgpt.md)** - GPT-5.2 features and personalization
-- **[Codex 5.2](./codex.md)** - CLI, IDE extension, and integrations
+- **[ChatGPT Pro 5.5](./chatgpt.md)** - GPT-5.5 features and personalization
+- **[Codex 5.5](./codex.md)** - CLI, IDE extension, and integrations
 - **[Augment AI](./augment-ai.md)** - Context Engine, IDE agents, and code review
 - **[Claude Code](./claude-code.md)** - Agentic coding CLI and Plan Mode
 
@@ -88,7 +88,7 @@ This guide is organized into the following sections:
 
 ## Getting Started
 
-1. **Set up your tools** - Install Cursor, configure ChatGPT Pro 5.2, install Codex CLI, and optionally set up Augment AI or Claude Code
+1. **Set up your tools** - Install Cursor, configure ChatGPT Pro 5.5, install Codex CLI, and optionally set up Augment AI or Claude Code
 2. **Configure your project** - Add rules files and initialize memory banks
 3. **Start with a small task** - Test the workflow on a simple change
 4. **Iterate and improve** - Update memory and change history as you learn

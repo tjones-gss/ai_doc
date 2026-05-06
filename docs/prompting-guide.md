@@ -1,14 +1,14 @@
 ---
 title: AI Prompting Guide
-description: Master the art of effective prompting for AI-assisted COBOL modernization with ChatGPT Pro 5.2, Codex 5.2, Augment AI, Claude Code, and Cursor
+description: Master the art of effective prompting for AI-assisted COBOL modernization with ChatGPT Pro 5.5, Codex 5.5, Augment AI, Claude Code, and Cursor
 sidebar_position: 7
-last_updated: 2026-01-16
+last_updated: 2026-05-06
 tags: [prompting, best-practices, chatgpt, codex, augment-ai, claude-code, cursor, cobol]
 ---
 
 # AI Prompting Guide
 
-Master the art of effective prompting to maximize AI productivity in your COBOL modernization work. This guide covers universal principles and tool-specific techniques for ChatGPT Pro 5.2, Codex 5.2, Augment AI, Claude Code, and Cursor.
+Master the art of effective prompting to maximize AI productivity in your COBOL modernization work. This guide covers universal principles and tool-specific techniques for ChatGPT Pro 5.5, Codex 5.5, Augment AI, Claude Code, and Cursor.
 
 ## Why Effective Prompting Matters
 
@@ -160,11 +160,11 @@ our standard batch processing pattern from PROJECT_MEMORY.md.
 
 Each AI tool has unique strengths and optimal prompting patterns. Match your prompts to the tool's capabilities.
 
-### ChatGPT Pro 5.2 Prompts
+### ChatGPT Pro 5.5 Prompts
 
 **Best for:** Architecture analysis, code explanation, documentation, research, planning
 
-ChatGPT Pro 5.2 with GPT-5.2 excels at high-level reasoning and multi-turn conversations. Use it as your senior architect for planning and analysis.
+ChatGPT Pro 5.5 with GPT-5.5 excels at high-level reasoning and multi-turn conversations. Use it as your senior architect for planning and analysis.
 
 #### Key Features to Leverage
 
@@ -205,7 +205,7 @@ indexed files? Include:
 - How this applies to Fujitsu NetCOBOL specifically
 ```
 
-**Template: COBOL Analysis with ChatGPT Pro 5.2**
+**Template: COBOL Analysis with ChatGPT Pro 5.5**
 
 ```
 [Upload relevant files or paste code]
@@ -230,11 +230,11 @@ Analyze this [program/module/system] and provide:
 Context: [Describe your specific situation, constraints, or goals]
 ```
 
-### Codex 5.2 Prompts
+### Codex 5.5 Prompts
 
 **Best for:** Code generation, file editing, batch operations, automated refactoring
 
-Codex 5.2 with GPT-5.2-Codex is your coding specialist. Use it for hands-on implementation work.
+Codex 5.5 with GPT-5.5-Codex is your coding specialist. Use it for hands-on implementation work.
 
 #### Key Features to Leverage
 
@@ -370,7 +370,7 @@ other than [primary-file] for my approval.
 
 **Best for:** Complex reasoning, multi-file edits, planning, long-horizon refactoring
 
-Claude Code with Claude Opus 4.5 excels at autonomous, long-running coding sessions and complex reasoning tasks.
+Claude Code with Claude Opus 4.7 excels at autonomous, long-running coding sessions and complex reasoning tasks.
 
 #### Key Features to Leverage
 
@@ -1026,8 +1026,8 @@ Using any tool for everything without considering strengths
 
 | Task                                      | Best Tool       |
 | ----------------------------------------- | --------------- |
-| Architecture analysis, research, planning | ChatGPT Pro 5.2 |
-| Code generation, batch operations         | Codex 5.2       |
+| Architecture analysis, research, planning | ChatGPT Pro 5.5 |
+| Code generation, batch operations         | Codex 5.5       |
 | Cross-file understanding, IDE workflows   | Augment AI      |
 | Complex planning, multi-file refactoring  | Claude Code     |
 | Quick edits, inline completions           | Cursor          |
@@ -1114,8 +1114,8 @@ ERR-xxxx codes and AUDIT-FILE logging.
 - Share successful prompts with your team via PROJECT_MEMORY.md
 - Review the [Prompt Library](./prompt-library.md) for additional templates
 - Set up your preferred tools using our tool-specific guides:
-  - [ChatGPT Pro 5.2](./chatgpt.md)
-  - [Codex 5.2](./codex.md)
+  - [ChatGPT Pro 5.5](./chatgpt.md)
+  - [Codex 5.5](./codex.md)
   - [Augment AI](./augment-ai.md)
   - [Claude Code](./claude-code.md)
   - [Cursor](./cursor.md)

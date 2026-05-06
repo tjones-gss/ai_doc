@@ -2,7 +2,7 @@
 title: QA Analyst AI Workflows
 description: Leverage AI tools for test case generation, bug analysis, automated testing, and quality assurance in COBOL modernization projects
 sidebar_position: 8
-last_updated: 2026-01-16
+last_updated: 2026-05-06
 tags: [qa, testing, automation, test-cases, bug-analysis, cobol, quality-assurance]
 ---
 
@@ -10,7 +10,7 @@ tags: [qa, testing, automation, test-cases, bug-analysis, cobol, quality-assuran
 
 ## Introduction
 
-AI tools are transforming quality assurance workflows for legacy COBOL modernization projects. By leveraging ChatGPT Pro 5.2, Codex 5.2, Claude Code, and Augment AI, QA analysts can dramatically accelerate test case generation, automate bug analysis, and ensure comprehensive coverage of complex business logic.
+AI tools are transforming quality assurance workflows for legacy COBOL modernization projects. By leveraging ChatGPT Pro 5.5, Codex 5.5, Claude Code, and Augment AI, QA analysts can dramatically accelerate test case generation, automate bug analysis, and ensure comprehensive coverage of complex business logic.
 
 This guide provides practical workflows and templates specifically designed for QA analysts working with Fujitsu COBOL and Visual Studio 2015 at Global Shop Solutions.
 
@@ -28,9 +28,9 @@ This guide provides practical workflows and templates specifically designed for 
 
 ## Test Case Generation
 
-### Using ChatGPT Pro 5.2 for Test Case Design
+### Using ChatGPT Pro 5.5 for Test Case Design
 
-ChatGPT Pro 5.2 excels at understanding business requirements and generating comprehensive test scenarios:
+ChatGPT Pro 5.5 excels at understanding business requirements and generating comprehensive test scenarios:
 
 ```markdown
 Template: Generate test cases for this COBOL program that handles [describe functionality]
@@ -81,9 +81,9 @@ Focus on:
 - Currency rounding (2 decimal precision)
 ```
 
-### Using Codex 5.2 for Automated Test Script Generation
+### Using Codex 5.5 for Automated Test Script Generation
 
-Codex 5.2 translates test cases into executable test scripts:
+Codex 5.5 translates test cases into executable test scripts:
 
 ```markdown
 @ARCALC.cob
@@ -113,13 +113,13 @@ risk-based prioritization."
 
 | Category              | Description                                   | Priority | AI Tool         |
 | --------------------- | --------------------------------------------- | -------- | --------------- |
-| **Boundary Tests**    | Min/max values, field limits, date boundaries | High     | ChatGPT Pro 5.2 |
+| **Boundary Tests**    | Min/max values, field limits, date boundaries | High     | ChatGPT Pro 5.5 |
 | **Edge Cases**        | Empty files, zero records, null handling      | High     | Claude Code     |
 | **Regression Tests**  | Existing functionality preservation           | Critical | Augment AI      |
-| **Integration Tests** | Cross-program data flow, copybook consistency | High     | Codex 5.2       |
-| **Performance Tests** | Large file processing, batch timing           | Medium   | ChatGPT Pro 5.2 |
+| **Integration Tests** | Cross-program data flow, copybook consistency | High     | Codex 5.5       |
+| **Performance Tests** | Large file processing, batch timing           | Medium   | ChatGPT Pro 5.5 |
 | **Security Tests**    | Authorization checks, data masking            | High     | Claude Code     |
-| **Negative Tests**    | Invalid inputs, corrupted data, file locks    | Medium   | ChatGPT Pro 5.2 |
+| **Negative Tests**    | Invalid inputs, corrupted data, file locks    | Medium   | ChatGPT Pro 5.5 |
 
 ---
 
@@ -335,9 +335,9 @@ Provide severity rating (Critical/High/Medium/Low) for each finding.
 | Metric                 | Target             | AI Tool for Analysis |
 | ---------------------- | ------------------ | -------------------- |
 | Cyclomatic Complexity  | < 15 per paragraph | Claude Code          |
-| Comment Ratio          | > 20%              | ChatGPT Pro 5.2      |
+| Comment Ratio          | > 20%              | ChatGPT Pro 5.5      |
 | Dead Code              | 0%                 | Augment AI           |
-| Duplicate Logic        | < 5%               | Codex 5.2            |
+| Duplicate Logic        | < 5%               | Codex 5.5            |
 | Error Handler Coverage | 100%               | Claude Code          |
 | Copybook Consistency   | 100%               | Augment AI           |
 
@@ -774,13 +774,13 @@ Test scenarios:
 
 | QA Task                       | Best Tool       | Why                                                                             | Integration              |
 | ----------------------------- | --------------- | ------------------------------------------------------------------------------- | ------------------------ |
-| **Test Case Design**          | ChatGPT Pro 5.2 | Excels at understanding business context and generating comprehensive scenarios | Export to Excel/TestRail |
-| **Test Script Generation**    | Codex 5.2       | Purpose-built for code generation with high accuracy                            | Direct IDE integration   |
+| **Test Case Design**          | ChatGPT Pro 5.5 | Excels at understanding business context and generating comprehensive scenarios | Export to Excel/TestRail |
+| **Test Script Generation**    | Codex 5.5       | Purpose-built for code generation with high accuracy                            | Direct IDE integration   |
 | **Test Coverage Analysis**    | Augment AI      | Context engine understands full codebase relationships                          | VS Code, JetBrains       |
 | **Bug Root Cause Analysis**   | Claude Code     | Deep reasoning for complex multi-file issues                                    | CLI, plan mode           |
 | **Regression Test Selection** | Augment AI      | Tracks dependencies across programs                                             | GitHub integration       |
 | **Security Testing**          | Claude Code     | Thorough vulnerability analysis                                                 | CLI review command       |
-| **Performance Testing**       | ChatGPT Pro 5.2 | Test plan generation and analysis                                               | Export to JMeter         |
+| **Performance Testing**       | ChatGPT Pro 5.5 | Test plan generation and analysis                                               | Export to JMeter         |
 | **Documentation Generation**  | All tools       | Each provides unique perspective                                                | Markdown export          |
 
 ### Integration with Test Management Tools
@@ -788,7 +788,7 @@ Test scenarios:
 ```markdown
 ## TestRail Integration Workflow
 
-1. Generate test cases with ChatGPT Pro 5.2
+1. Generate test cases with ChatGPT Pro 5.5
 2. Export as CSV with required fields:
    - Title, Section, Priority, Type
    - Preconditions, Steps, Expected Results
@@ -797,7 +797,7 @@ Test scenarios:
 
 ## Azure DevOps Integration
 
-1. Use Codex 5.2 to generate test methods
+1. Use Codex 5.5 to generate test methods
 2. Tag with [TestCategory] for organization
 3. Link test cases to work items
 4. Execute via Azure Pipelines
@@ -819,11 +819,11 @@ Test scenarios:
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                  │
 │  PLANNING PHASE                                                  │
-│  ├── ChatGPT Pro 5.2: Test strategy and case design             │
+│  ├── ChatGPT Pro 5.5: Test strategy and case design             │
 │  └── Augment AI: Coverage gap analysis                          │
 │                                                                  │
 │  DEVELOPMENT PHASE                                               │
-│  ├── Codex 5.2: Automated test script generation                │
+│  ├── Codex 5.5: Automated test script generation                │
 │  └── Claude Code: Code review and security analysis             │
 │                                                                  │
 │  EXECUTION PHASE                                                 │
@@ -831,7 +831,7 @@ Test scenarios:
 │  └── All tools: Defect analysis and triage                      │
 │                                                                  │
 │  REPORTING PHASE                                                 │
-│  ├── ChatGPT Pro 5.2: Test summary generation                   │
+│  ├── ChatGPT Pro 5.5: Test summary generation                   │
 │  └── Claude Code: Technical root cause documentation            │
 │                                                                  │
 └─────────────────────────────────────────────────────────────────┘
@@ -867,7 +867,7 @@ Test scenarios:
 
 - Explore [Augment AI](./augment-ai.md) for context-aware testing
 - Learn [Claude Code](./claude-code.md) for deep code analysis
-- Review [Codex 5.2](./codex.md) for test automation
-- See [ChatGPT Pro 5.2](./chatgpt.md) for test case design
+- Review [Codex 5.5](./codex.md) for test automation
+- See [ChatGPT Pro 5.5](./chatgpt.md) for test case design
 - Follow the [Spec → Plan → Code → Review workflow](./workflow.md)
 - Reference the [COBOL Development Guide](./cobol-development-guide.md) for migration testing

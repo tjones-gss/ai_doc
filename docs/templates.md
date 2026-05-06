@@ -2,7 +2,7 @@
 title: Templates
 description: Starter files and reusable templates
 sidebar_position: 7
-last_updated: 2025-10-10
+last_updated: 2026-05-06
 tags: [templates, examples, starter-files]
 ---
 

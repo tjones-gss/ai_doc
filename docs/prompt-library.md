@@ -2,7 +2,7 @@
 title: Prompt Library
 description: Reusable prompts for common development tasks
 sidebar_position: 9
-last_updated: 2025-10-10
+last_updated: 2026-05-06
 tags: [prompts, examples, best-practices]
 ---
 

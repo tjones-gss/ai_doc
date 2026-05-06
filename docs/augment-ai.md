@@ -2,7 +2,7 @@
 title: Augment AI (Auggie)
 description: Comprehensive guide to using Augment AI and Auggie CLI for AI-assisted COBOL modernization
 sidebar_position: 4
-last_updated: 2026-01-16
+last_updated: 2026-05-06
 tags: [augment, auggie, ai-tools, context-engine, code-review]
 ---
 
@@ -326,4 +326,4 @@ auggie status
 - Configure [Cursor](./cursor.md) for complementary AI editing
 - Set up [Codex CLI](./codex.md) for deep code analysis
 - Learn the [Spec → Plan → Code → Review workflow](./workflow.md)
-- Review [ChatGPT Pro 5.2](./chatgpt.md) for research tasks
+- Review [ChatGPT Pro 5.5](./chatgpt.md) for research tasks

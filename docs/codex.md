@@ -1,20 +1,20 @@
 ---
-title: Codex 5.2
+title: Codex 5.5
 description: Developer-focused AI for deep code understanding and agentic coding
 sidebar_position: 3
-last_updated: 2026-01-16
-tags: [codex, cli, code-analysis, gpt-5.2-codex, agentic-coding, mcp]
+last_updated: 2026-05-06
+tags: [codex, cli, code-analysis, gpt-5.5-codex, agentic-coding, mcp]
 ---
 
-# Codex 5.2 - Your Junior Dev Team
+# Codex 5.5 - Your Junior Dev Team
 
 Codex is a developer-focused AI model optimized for code reasoning, refactoring, and automation. Think of it as your junior dev team handling delegated work with deep code understanding across files, tests, and architecture.
 
-**Current Version:** CLI v0.87.0 (January 16, 2026) with GPT-5.2-Codex model
+**Current Version:** latest CLI (as of May 2026) with GPT-5.5-Codex model
 
 ## What Is Codex?
 
-Codex is OpenAI's specialized model for code generation and understanding. The latest GPT-5.2-Codex model (released December 18, 2025) is specifically optimized for agentic coding workflows. It excels at:
+Codex is OpenAI's specialized model for code generation and understanding. The latest GPT-5.5-Codex model (released April 2026) is specifically optimized for agentic coding workflows. It excels at:
 
 - Deep code analysis across multiple files
 - Understanding complex architectures
@@ -110,13 +110,13 @@ Codex will make changes automatically but will ask for confirmation on destructi
 
 ### Model Selection
 
-Use the GPT-5.2-Codex model for agentic coding tasks:
+Use the GPT-5.5-Codex model for agentic coding tasks:
 
 ```bash
-/model gpt-5.2-codex
+/model gpt-5.5-codex
 ```
 
-> **💡 Tip:** GPT-5.2-Codex is optimized for agentic coding workflows including multi-file refactoring, autonomous task execution, and complex architectural analysis.
+> **💡 Tip:** GPT-5.5-Codex is optimized for agentic coding workflows including multi-file refactoring, autonomous task execution, and complex architectural analysis.
 
 ### Interrupting Codex
 
@@ -315,7 +315,7 @@ MCP enables:
 
 | Tool                   | What It Is                                                                                            | Best Use                                                                                                                     |
 | ---------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| **Codex 5.2**          | Agentic coding AI with GPT-5.2-Codex model, CLI/Web/IDE integration, Skills, and MCP support          | Deep code understanding, multi-file refactoring, autonomous task execution, and enterprise workflows                         |
+| **Codex 5.5**          | Agentic coding AI with GPT-5.5-Codex model, CLI/Web/IDE integration, Skills, and MCP support          | Deep code understanding, multi-file refactoring, autonomous task execution, and enterprise workflows                         |
 | **Cursor**             | AI-powered IDE (VS Code-based) with native AI editing and inline commands                             | Fast, contextual editing and refactoring within your codebase                                                                |
 | **ChatGPT Enterprise** | Full-featured conversational environment with advanced reasoning, larger context, and document upload | Research, planning, documentation, architectural ideation, and integration with Company Documentation (SharePoint connector) |
 
