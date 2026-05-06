@@ -86,13 +86,16 @@ These are tools built in-house at GSS and hosted on [LaunchPad](https://launchpa
 
 ---
 
-## Claude Code & internal AI agents
+## AI coding agents at GSS
 
-Claude Code is a coding-focused AI assistant built by Anthropic. We've connected it to several **MCP servers** (gateways that let Claude read or write to our internal systems).
+GSS engineers use two main AI coding agents day-to-day. Both connect to the same internal MCP servers and respect the same `AGENTS.md` rules; pick the one that fits your workflow.
 
-- [Claude Code at GSS](claude-code-at-gss.md) — *Start here.* What Claude Code is and how it's used at GSS.
+- [Cursor at GSS](cursor-at-gss.md) — *Most of P&E uses this.* AI-first IDE (VS Code-based) with Tab autocomplete, Composer/Agent mode, Cloud Agents, and Bugbot.
+- [Claude Code at GSS](claude-code-at-gss.md) — Terminal/IDE-based coding agent from Anthropic, with deep MCP integration and subagents.
 
-### MCP servers (Claude Code connections)
+> **💡 Easiest MCP setup.** Don't wire each MCP up by hand. Connect your agent (Cursor or Claude Code) to **`mcp-intelligence`** — it proxies every other downstream MCP we run, so you get the whole toolkit through one connection. Even easier: ask the agent to do it for you. "Configure my MCP for the GSS internal toolkit" with repo access is enough; the agent writes the config file. See either umbrella article for the one-line config block.
+
+### MCP servers (used by Cursor and Claude Code alike)
 
 GSS-internal:
 
@@ -112,7 +115,7 @@ Third-party:
 
 ### Claude Code concepts
 
-How Claude Code itself works under the hood. Useful background for anyone configuring or extending it:
+How Claude Code itself works under the hood. Useful background for anyone configuring or extending it. Cursor has analogues for most of these (rules, MCPs, Cloud Agents) — the underlying ideas transfer.
 
 - [Plugins](concepts/plugins.md) — Bundles of slash commands, skills, agents, hooks, and MCPs.
 - [Skills](concepts/skills.md) — Reusable task playbooks (the building blocks of plugins).

@@ -68,6 +68,7 @@ const sidebars = {
       collapsed: false,
       items: [
         'ai-tools-catalog/overview',
+        'ai-tools-catalog/cursor-at-gss',
         'ai-tools-catalog/claude-code-at-gss',
         {
           type: 'category',

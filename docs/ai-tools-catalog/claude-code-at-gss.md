@@ -28,6 +28,7 @@ What makes our setup different from "vanilla" Claude Code:
 
 - **Internal MCP servers.** Bridges that let Claude read from internal systems — our COBOL source code, internal-tools docs, Outlook/SharePoint, the LaunchPad app catalog, and more.
 - **Shared institutional knowledge.** The `mcp-intelligence` MCP server logs significant work (decisions, deploys, bug fixes) so the next person — or the next AI session — can find context.
+- **Easy MCP setup.** Connect to `mcp-intelligence` once, and it proxies every other downstream MCP. No per-server wiring. (Same pattern works in [Cursor](cursor-at-gss.md) too.)
 
 ## Why use it
 
@@ -91,7 +92,7 @@ For Claude Code itself, file an issue on Anthropic's [GitHub](https://github.com
 
 **What's the difference between this and ChatGPT or Cursor?**
 - **ChatGPT** is a chat web UI (GPT-5.2) — great for general questions, brainstorming, writing assistance. Not deeply integrated with your code.
-- **Cursor** is an AI-first IDE — runs alongside your editor and edits inline.
+- **Cursor** is an AI-first IDE — runs alongside your editor and edits inline. Most of P&E uses Cursor for daily coding. See [Cursor at GSS](cursor-at-gss.md).
 - **Claude Code** is a terminal/CLI agent (Claude Opus 4.7 / Sonnet 4.6) that can read files, run commands, edit code, spawn subagents, and call internal MCPs. It's the most "agentic" of the three: you can give it a task and let it work.
 
 We use all of them at GSS for different things. See the External AI Services section of the catalog.
