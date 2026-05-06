@@ -2,13 +2,13 @@
 title: Claude Code
 description: Comprehensive guide to using Claude Code CLI for AI-assisted COBOL modernization
 sidebar_position: 5
-last_updated: 2026-01-16
-tags: [claude, anthropic, ai-tools, cli, agentic-coding]
+last_updated: 2026-05-06
+tags: [claude, anthropic, ai-tools, cli, agentic-coding, mcp, skills, plugins, hooks]
 ---
 
-# Claude Code - Agentic Coding CLI
+# Claude Code — Agentic Coding CLI
 
-Claude Code is Anthropic's command-line interface for agentic coding, powered by Claude Opus 4.5—the state-of-the-art model for coding, agents, and computer use. It enables long-horizon autonomous coding sessions directly in your terminal.
+Claude Code is Anthropic's command-line / IDE assistant for agentic coding. It runs on the Claude family — currently **Claude Opus 4.7** (1M-token context), **Sonnet 4.6**, and **Haiku 4.5** — and supports long-horizon autonomous coding sessions, MCP-based tool access, hooks, subagents, plugins, and skills.
 
 ## Quick Start
 
@@ -41,13 +41,24 @@ claude --resume
 
 ## Key Features
 
-### Claude Opus 4.5 Model
+### Models (May 2026)
 
-Released November 24, 2025, Claude Opus 4.5 delivers state-of-the-art performance for coding, agents, and computer use. Key specifications:
+| Model | Best for | Notes |
+|---|---|---|
+| **Claude Opus 4.7** | Hardest tasks, deep reasoning, long-horizon agents | 1M-token context window |
+| **Claude Sonnet 4.6** | Balanced day-to-day default | Faster than Opus; very strong on code |
+| **Claude Haiku 4.5** | Cheap/fast tasks — bulk processing, simple commands | Lowest cost, lowest latency |
 
-- **Pricing:** $5/$25 per million tokens (input/output)
-- **API Identifier:** `claude-opus-4-5-20251101`
-- **Availability:** Claude apps, API, Amazon Bedrock, Google Cloud Vertex AI
+Available through Claude apps, the Anthropic API, Amazon Bedrock, and Google Cloud Vertex AI. Skills can declare which model they run on (`opus` / `sonnet` / `haiku`); otherwise the session default applies.
+
+### Skills, plugins, hooks, subagents
+
+Beyond core CLI usage, the modern Claude Code feature set includes:
+
+- **Skills** — reusable, structured prompts that teach Claude how to handle a specific kind of task (e.g., "review a PR," "convert a COBOL program to a grid"). Triggered by slash command or context.
+- **Plugins** — installable bundles of slash commands + skills + agents + hooks + MCP server definitions. Distributed via marketplace (`claude-plugins-official` is the main one).
+- **Hooks** — shell commands the harness runs automatically on events (`PreToolUse`, `PostToolUse`, `SessionStart`, etc.). Enforce policy and add side effects without trusting the model.
+- **Subagents** — focused sub-Claudes the lead session can spawn for parallel research, specialized review, or scoped implementation. Each runs with its own context.
 
 ### Agentic Coding
 
@@ -72,6 +83,29 @@ This generates an editable `plan.md` file you can review and modify before execu
 
 Run multiple local and remote sessions in parallel through the Claude Desktop application. Ideal for managing several workstreams simultaneously.
 
+### Easy MCP setup at GSS
+
+Don't wire each MCP server up by hand. Connect Claude Code to **`mcp-intelligence`** — it acts as a proxy that exposes every downstream MCP we run (cobol-mcp, log-parser, queue-routing, svn-mcp, book-of-armaments, testarchitect-mcp, clinic-utilities, agents registry, GitHub MCP, M365 MCP, Notion, monday.com, and more).
+
+Minimum viable `~/.claude/settings.json` MCP entry (the same pattern works in [Cursor](./cursor.md) too):
+
+```json
+{
+  "mcpServers": {
+    "mcp-intelligence": {
+      "type": "http",
+      "url": "https://mcp-intelligence.globalshopsolutions.dev/mcp"
+    }
+  }
+}
+```
+
+Once connected, Claude calls any registered downstream tool via `call_proxy_tool(server="<name>", tool_name="<tool>", arguments=...)`. New MCP servers register themselves with mcp-intelligence as they come online — Claude picks them up without you editing config.
+
+> **💡 Even easier:** ask Claude to do it. With repo access and a one-line prompt — *"configure my Claude Code MCP for the GSS internal toolkit"* — it'll write the settings file, drop in any auth env vars, and be ready.
+
+For the full inventory of MCP servers exposed via mcp-intelligence, see the [AI Tools at GSS Catalog](./ai-tools-catalog/overview.md).
+
 ### GitHub Integration
 
 Install the Claude GitHub app for seamless PR workflows:
@@ -80,7 +114,7 @@ Install the Claude GitHub app for seamless PR workflows:
 - PR description generation
 - Issue triage and response
 
-## Deep Dive: Claude Opus 4.5 Capabilities
+## Deep Dive: Claude Opus 4.7 Capabilities
 
 ### Effort Parameter
 

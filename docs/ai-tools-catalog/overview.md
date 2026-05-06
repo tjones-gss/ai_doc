@@ -86,16 +86,13 @@ These are tools built in-house at GSS and hosted on [LaunchPad](https://launchpa
 
 ---
 
-## AI coding agents at GSS
+## Internal MCP servers and concepts
 
-GSS engineers use two main AI coding agents day-to-day. Both connect to the same internal MCP servers and respect the same `AGENTS.md` rules; pick the one that fits your workflow.
+Everything below works with **any MCP-compatible AI agent** — Cursor, Claude Code, Codex, Augment AI, or anything else that speaks Model Context Protocol. Each agent has its own page in the **AI Tools** sidebar (Cursor, Claude Code, Codex, ChatGPT, Augment AI); this section covers the GSS-specific tools your agent can plug into.
 
-- [Cursor at GSS](cursor-at-gss.md) — *Most of P&E uses this.* AI-first IDE (VS Code-based) with Tab autocomplete, Composer/Agent mode, Cloud Agents, and Bugbot.
-- [Claude Code at GSS](claude-code-at-gss.md) — Terminal/IDE-based coding agent from Anthropic, with deep MCP integration and subagents.
+> **💡 Easiest MCP setup.** Don't wire each MCP up by hand. Connect your AI agent to **`mcp-intelligence`** — it proxies every other downstream MCP we run, so you get the whole toolkit through one connection. Even easier: ask the agent to do it for you. "Configure my MCP for the GSS internal toolkit" with repo access is enough; the agent writes the config file. See [Cursor](../cursor.md#easy-mcp-setup-at-gss) or [Claude Code](../claude-code.md#easy-mcp-setup-at-gss) for the one-line config block.
 
-> **💡 Easiest MCP setup.** Don't wire each MCP up by hand. Connect your agent (Cursor or Claude Code) to **`mcp-intelligence`** — it proxies every other downstream MCP we run, so you get the whole toolkit through one connection. Even easier: ask the agent to do it for you. "Configure my MCP for the GSS internal toolkit" with repo access is enough; the agent writes the config file. See either umbrella article for the one-line config block.
-
-### MCP servers (used by Cursor and Claude Code alike)
+### MCP servers (used by any MCP-compatible AI agent)
 
 GSS-internal:
 
@@ -113,14 +110,14 @@ Third-party:
 - [Notion](mcp-servers/notion.md) — Search and read Notion content.
 - [monday.com](mcp-servers/monday.md) — Read and update monday.com boards.
 
-### Claude Code concepts
+### AI agent concepts
 
-How Claude Code itself works under the hood. Useful background for anyone configuring or extending it. Cursor has analogues for most of these (rules, MCPs, Cloud Agents) — the underlying ideas transfer.
+Background for anyone configuring or extending an AI coding agent. The framing is Claude Code's terminology; Cursor has direct analogues for each (`.cursor/rules/` for rules, `.cursor/mcp.json` for MCPs, Composer/Cloud Agents for agentic runs).
 
 - [Plugins](concepts/plugins.md) — Bundles of slash commands, skills, agents, hooks, and MCPs.
 - [Skills](concepts/skills.md) — Reusable task playbooks (the building blocks of plugins).
 - [Hooks](concepts/hooks.md) — Shell commands that fire on events (logging, policy, side effects).
-- [Subagents](concepts/subagents.md) — Spawning focused sub-Claudes for parallel or specialized work.
+- [Subagents](concepts/subagents.md) — Spawning focused sub-agents for parallel or specialized work.
 
 ---
 

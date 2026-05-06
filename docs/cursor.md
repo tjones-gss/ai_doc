@@ -133,7 +133,28 @@ For our org, Bugbot is most useful on the larger modernization PRs — leave a `
 
 Cursor speaks MCP (Model Context Protocol) natively. Configure servers in `.cursor/mcp.json` (project-level) or globally. Supports both `http` and `stdio` server types, with auth helpers for Bearer tokens, OAuth, and static API keys.
 
-For GSS, you can wire up our internal MCPs (cobol-mcp, mcp-intelligence, log-parser, queue-routing, svn-ops, etc.) directly into Cursor — same servers Claude Code uses. See the **AI Tools at GSS Catalog** sidebar for the inventory.
+#### Easy MCP setup at GSS
+
+Don't wire each MCP server up by hand. Connect Cursor to **`mcp-intelligence`** — it acts as a proxy that exposes every downstream MCP we run (cobol-mcp, log-parser, queue-routing, svn-mcp, book-of-armaments, testarchitect-mcp, clinic-utilities, agents registry, GitHub MCP, M365 MCP, Notion, monday.com, and more).
+
+Minimum viable `.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "mcp-intelligence": {
+      "type": "http",
+      "url": "https://mcp-intelligence.globalshopsolutions.dev/mcp"
+    }
+  }
+}
+```
+
+Once connected, Cursor calls any registered downstream tool via `call_proxy_tool(server="<name>", tool_name="<tool>", arguments=...)`. New MCP servers register themselves with mcp-intelligence as they come online — Cursor picks them up without you editing config.
+
+> **💡 Even easier:** ask your Cursor agent to do it. With repo access and a one-line prompt — *"configure my Cursor MCP for the GSS internal toolkit"* — it'll write `.cursor/mcp.json` for you, drop in any auth env vars, and be ready.
+
+The same pattern works in [Claude Code](./claude-code.md) and any other MCP-compatible AI agent. See the [AI Tools at GSS Catalog](./ai-tools-catalog/overview.md) for the full inventory of MCP servers behind the proxy.
 
 ### Memories
 

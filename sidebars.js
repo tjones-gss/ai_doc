@@ -68,8 +68,6 @@ const sidebars = {
       collapsed: false,
       items: [
         'ai-tools-catalog/overview',
-        'ai-tools-catalog/cursor-at-gss',
-        'ai-tools-catalog/claude-code-at-gss',
         {
           type: 'category',
           label: 'LaunchPad Apps',
@@ -118,7 +116,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'MCP Servers (Claude Code)',
+          label: 'MCP Servers (any AI agent)',
           collapsed: true,
           items: [
             'ai-tools-catalog/mcp-servers/mcp-intelligence',
@@ -135,7 +133,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Claude Code Concepts',
+          label: 'AI Agent Concepts',
           collapsed: true,
           items: [
             'ai-tools-catalog/concepts/plugins',
