@@ -39,5 +39,6 @@ The MCP wraps TestArchitect's data store with read-friendly operations (search, 
 
 - **Owner:** *Listed on the LaunchPad app page.*
 - **App page:** [testarchitect-mcp on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/testarchitect-mcp)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/testarchitect-mcp](https://github.com/GlobalShopSolutions-InternalTools/testarchitect-mcp)
 - **Related apps:** [TABugTracking](TABugTracking.md), [TAD-Weekly-Stats](TAD-Weekly-Stats.md)
 - **Last reviewed:** 2026-05-05

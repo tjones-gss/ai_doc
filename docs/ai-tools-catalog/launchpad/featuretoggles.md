@@ -57,4 +57,5 @@ Engineering creates flags as part of the code that uses them. Talk to the team a
 
 - **Owner:** bbrambila@gssmail.com
 - **App page:** [featuretoggles on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/featuretoggles)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/featuretoggles](https://github.com/GlobalShopSolutions-InternalTools/featuretoggles)
 - **Last reviewed:** 2026-05-04

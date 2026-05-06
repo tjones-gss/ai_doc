@@ -52,4 +52,5 @@ To the customer's connected bank account, per their Stripe Connect setup.
 
 - **Owner:** mfranzen@gssmail.com
 - **App page:** [gss-stripe-connect on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/gss-stripe-connect)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/gss-stripe-connect](https://github.com/GlobalShopSolutions-InternalTools/gss-stripe-connect)
 - **Last reviewed:** 2026-05-04

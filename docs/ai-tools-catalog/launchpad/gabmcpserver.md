@@ -25,5 +25,6 @@ tags: [ai-tools, gss-internal, launchpad]
 
 - **Owner:** bbaker@gssmail.com
 - **App page:** [gabmcpserver on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/gabmcpserver)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/gabmcpserver](https://github.com/GlobalShopSolutions-InternalTools/gabmcpserver)
 - **Last reviewed:** 2026-05-05
 - **Status:** Stub — needs owner contribution before publication.

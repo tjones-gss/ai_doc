@@ -64,5 +64,6 @@ Generally no — each team owns their artifacts. Discuss with the owning team or
 
 - **Owner:** *See app page (no individual owner listed on the tile).*
 - **App page:** [mcp-artifacts on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/mcp-artifacts)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/mcp-artifacts](https://github.com/GlobalShopSolutions-InternalTools/mcp-artifacts)
 - **Related MCP:** [mcp-intelligence](../mcp-servers/mcp-intelligence.md)
 - **Last reviewed:** 2026-05-04

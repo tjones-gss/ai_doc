@@ -56,4 +56,5 @@ Audit info is on the hook detail page.
 
 - **Owner:** bbrambila@gssmail.com
 - **App page:** [hookmaintenance on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/hookmaintenance)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/hookmaintenance](https://github.com/GlobalShopSolutions-InternalTools/hookmaintenance)
 - **Last reviewed:** 2026-05-04

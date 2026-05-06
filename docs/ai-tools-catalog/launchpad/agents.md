@@ -41,5 +41,6 @@ A Claude Code "agent" is a packaged AI personality (system prompt + tools + mode
 
 - **Owner:** hfutrell@gssmail.com
 - **App page:** [agents on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/agents)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/agents](https://github.com/GlobalShopSolutions-InternalTools/agents)
 - **Related apps:** [mcp-artifacts](mcp-artifacts.md), [mcp-intelligence](../mcp-servers/mcp-intelligence.md)
 - **Last reviewed:** 2026-05-05

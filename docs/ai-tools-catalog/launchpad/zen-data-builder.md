@@ -60,4 +60,5 @@ A Windows Forms (.NET) application that uses ODBC to talk to Zen / Pervasive dat
 
 - **Owner:** *Listed on the LaunchPad app page — confirm before publishing.*
 - **App page:** [zen-data-builder on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/zen-data-builder)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/zen-data-builder](https://github.com/GlobalShopSolutions-InternalTools/zen-data-builder)
 - **Last reviewed:** 2026-05-04

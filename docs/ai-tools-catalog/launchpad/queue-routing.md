@@ -43,5 +43,6 @@ The MCP looks at the programs affected by the call and figures out which team ow
 
 - **Owner:** *Listed on the LaunchPad app page.*
 - **App page:** [queue-routing on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/queue-routing)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/queue-routing](https://github.com/GlobalShopSolutions-InternalTools/queue-routing)
 - **Related apps:** [bug-traffic-dashboard](bug-traffic-dashboard.md), [bug-triage-pack](bug-triage-pack.md)
 - **Last reviewed:** 2026-05-05

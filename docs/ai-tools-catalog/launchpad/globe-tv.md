@@ -60,6 +60,7 @@ Globe TV is a React 19 + Vite + Tailwind frontend wired to an internal API that 
 
 ## Owner & support
 
-- **Owner:** Tim Jones (tjones@gssmail.com)
+- **Owner:** Travis Jones (tjones@gssmail.com)
 - **App page:** [globe-tv on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/globe-tv)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/globe-tv](https://github.com/GlobalShopSolutions-InternalTools/globe-tv)
 - **Last reviewed:** 2026-05-05

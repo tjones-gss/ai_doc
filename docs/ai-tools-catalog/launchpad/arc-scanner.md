@@ -61,4 +61,5 @@ The parsing is deterministic, not AI. The visualization is a standard web dashbo
 
 - **Owner:** avaldez@gssmail.com
 - **App page:** [arc-scanner on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/arc-scanner)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/arc-scanner](https://github.com/GlobalShopSolutions-InternalTools/arc-scanner)
 - **Last reviewed:** 2026-05-04

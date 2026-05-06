@@ -63,4 +63,5 @@ cobol-mcp is a small service (LaunchPad-hosted) that wraps the COBOL repo and SV
 
 - **Owner:** *Owner listed on the LaunchPad app page — confirm before publishing.*
 - **App page:** [cobol-mcp on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/cobol-mcp)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/cobol-mcp](https://github.com/GlobalShopSolutions-InternalTools/cobol-mcp)
 - **Last reviewed:** 2026-05-05

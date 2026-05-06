@@ -58,4 +58,5 @@ No. It only operates on the designer file.
 
 - **Owner:** mgumudavally@gssmail.com
 - **App page:** [designerconsolidation on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/designerconsolidation)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/designerconsolidation](https://github.com/GlobalShopSolutions-InternalTools/designerconsolidation)
 - **Last reviewed:** 2026-05-04

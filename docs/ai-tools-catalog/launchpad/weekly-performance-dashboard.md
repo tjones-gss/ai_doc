@@ -58,4 +58,5 @@ Confirm with the owner — typically near-real-time, sourced from the underlying
 
 - **Owner:** rravindranath@gssmail.com
 - **App page:** [weekly-performance-dashboard on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/weekly-performance-dashboard)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/weekly-performance-dashboard](https://github.com/GlobalShopSolutions-InternalTools/weekly-performance-dashboard)
 - **Last reviewed:** 2026-05-04

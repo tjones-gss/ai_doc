@@ -25,6 +25,7 @@ tags: [ai-tools, gss-internal, launchpad]
 
 - **Owner:** dgordon@gssmail.com
 - **App page:** [issue-manager-mcp on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/issue-manager-mcp)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/issue-manager-mcp](https://github.com/GlobalShopSolutions-InternalTools/issue-manager-mcp)
 - **Related apps:** [program-issue-tracker](program-issue-tracker.md), [CausingIssueDashboard](CausingIssueDashboard.md), [traveler](https://launchpad.globalshopsolutions.dev/apps/traveler)
 - **Last reviewed:** 2026-05-05
 - **Status:** Stub — needs owner contribution before publication.

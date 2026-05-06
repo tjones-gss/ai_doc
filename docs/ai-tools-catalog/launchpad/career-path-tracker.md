@@ -53,4 +53,5 @@ Only if you share the export with them.
 
 - **Owner:** *Owner listed on the LaunchPad app page.*
 - **App page:** [career-path-tracker on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/career-path-tracker)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/career-path-tracker](https://github.com/GlobalShopSolutions-InternalTools/career-path-tracker)
 - **Last reviewed:** 2026-05-04

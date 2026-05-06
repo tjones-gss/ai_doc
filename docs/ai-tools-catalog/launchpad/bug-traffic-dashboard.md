@@ -56,4 +56,5 @@ The focus is the P&E Bugs queue. For other queues, see related dashboards (e.g.,
 
 - **Owner:** rravindranath@gssmail.com
 - **App page:** [bug-traffic-dashboard on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/bug-traffic-dashboard)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/bug-traffic-dashboard](https://github.com/GlobalShopSolutions-InternalTools/bug-traffic-dashboard)
 - **Last reviewed:** 2026-05-04

@@ -51,4 +51,5 @@ Fix it in Issue Maintenance and the dashboard will reflect the change after its 
 
 - **Owner:** *Owner listed on the LaunchPad app page.*
 - **App page:** [CausingIssueDashboard on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/CausingIssueDashboard)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/CausingIssueDashboard](https://github.com/GlobalShopSolutions-InternalTools/CausingIssueDashboard)
 - **Last reviewed:** 2026-05-04

@@ -40,4 +40,5 @@ A small but useful tool for the QA team's daily standup ritual. The app maintain
 
 - **Owner:** *Owner listed on the LaunchPad app page.*
 - **App page:** [QA-daily-standup-rotation on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/QA-daily-standup-rotation)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/QA-daily-standup-rotation](https://github.com/GlobalShopSolutions-InternalTools/QA-daily-standup-rotation)
 - **Last reviewed:** 2026-05-04

@@ -24,5 +24,6 @@ ihop-rapid-relay is one of two related "rapid relay" apps owned by the ATG-Edge 
 
 - **Owner:** rravindranath@gssmail.com
 - **App page:** [ihop-rapid-relay on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/ihop-rapid-relay)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/ihop-rapid-relay](https://github.com/GlobalShopSolutions-InternalTools/ihop-rapid-relay)
 - **Last reviewed:** 2026-05-04
 - **Status:** Stub — needs owner contribution before publication.

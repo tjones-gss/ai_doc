@@ -46,5 +46,6 @@ Issues moved to a resolved state where QA was the closer — exact rules per the
 
 - **Owner:** *Owner listed on the LaunchPad app page.*
 - **App page:** [QA-resolved-issues on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/QA-resolved-issues)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/QA-resolved-issues](https://github.com/GlobalShopSolutions-InternalTools/QA-resolved-issues)
 - **Related apps:** [CausingIssueDashboard](CausingIssueDashboard.md), [program-issue-tracker](program-issue-tracker.md), [bug-traffic-dashboard](bug-traffic-dashboard.md)
 - **Last reviewed:** 2026-05-04

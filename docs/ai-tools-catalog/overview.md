@@ -2,7 +2,7 @@
 title: "AI Tools at GSS"
 description: "Plain-English directory of AI tools, services, and dev infrastructure used at Global Shop Solutions. Written for non-technical readers."
 sidebar_position: 1
-last_updated: 2026-05-05
+last_updated: 2026-05-06
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -39,12 +39,12 @@ These are tools built in-house at GSS and hosted on [LaunchPad](https://launchpa
 - [gab-codeeditor-mcp](launchpad/gab-codeeditor-mcp.md) — *Stub — owner to fill in.*
 - [gabmcpserver](launchpad/gabmcpserver.md) — *Stub — owner to fill in.*
 - [issue-manager-mcp](launchpad/issue-manager-mcp.md) — *Stub — owner to fill in.*
-- [log-parser](launchpad/log-parser.md) — *Stub — owner to fill in.*
+- [log-parser](launchpad/log-parser.md) — Parses GSS SP2 log files (CoreLog/GSSEO/OCTSRS/ACU traces) into noise-filtered records.
 - [mcp-artifacts](launchpad/mcp-artifacts.md) — Team-organized library of AI skills, rules, and agent definitions.
 - [mcp-intelligence](mcp-servers/mcp-intelligence.md) — Development intelligence engine. *(LaunchPad app + MCP server.)*
 - [pervasiveschema](launchpad/pervasiveschema.md) — Pervasive table/column schema + EO Object mappings exposed over MCP.
 - [queue-routing](launchpad/queue-routing.md) — Triages the P&E Bugs queue with AI-recommended team routing.
-- [svn-ops](launchpad/svn-ops.md) — *Stub — owner to fill in.*
+- [svn-ops](launchpad/svn-ops.md) — General-purpose SVN MCP server (checkout, log, diff, blame, commit, branch).
 - [testarchitect-mcp](launchpad/testarchitect-mcp.md) — Exposes TestArchitect test management data to AI assistants.
 
 ### QA & testing
@@ -79,10 +79,10 @@ These are tools built in-house at GSS and hosted on [LaunchPad](https://launchpa
 
 - [gss-stripe-connect](launchpad/gss-stripe-connect.md) — Onboards customers as GSS Stripe Connect Accounts.
 - [weekly-performance-dashboard](launchpad/weekly-performance-dashboard.md) — Maintenance & PPT-Bugs team weekly performance.
-- [mobile-crm-status](launchpad/mobile-crm-status.md) — Mobile CRM status view.
-- [ihop-rapid-relay](launchpad/ihop-rapid-relay.md) — *Description on tile is thin — see article for owner contact.*
-- [rapid-ihop-relay](launchpad/rapid-ihop-relay.md) — *Description on tile is thin — see article for owner contact.*
-- [quick-option-import-export-web](launchpad/quick-option-import-export-web.md) — *Description on tile is thin — see article for owner contact.*
+- [mobile-crm-status](launchpad/mobile-crm-status.md) — Monitors MobileCRM endpoints and pings Teams when one goes down.
+- [ihop-rapid-relay](launchpad/ihop-rapid-relay.md) — *Stub — owner to fill in.*
+- [rapid-ihop-relay](launchpad/rapid-ihop-relay.md) — *Stub — owner to fill in.*
+- [quick-option-import-export-web](launchpad/quick-option-import-export-web.md) — Web tool for importing, editing, and exporting Option JSON files.
 
 ---
 
@@ -137,6 +137,6 @@ Third-party AI tools the company uses or licenses.
 
 ## Missing something?
 
-If a tool isn't listed and you think it should be, ping the catalog owner (Tim Jones — tjones@gssmail.com) with the tool name, link if any, and a one-liner about what it does. We add new entries on a rolling basis.
+If a tool isn't listed and you think it should be, ping the catalog owner (Travis Jones — tjones@gssmail.com) with the tool name, link if any, and a one-liner about what it does. We add new entries on a rolling basis.
 
-> **Catalog last updated:** 2026-05-05
+> **Catalog last updated:** 2026-05-06

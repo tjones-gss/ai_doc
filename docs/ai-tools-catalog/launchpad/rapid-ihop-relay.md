@@ -24,6 +24,7 @@ rapid-ihop-relay is a Live LaunchPad-hosted app maintained by the ATG-Edge team.
 
 - **Owner:** rravindranath@gssmail.com (per related apps from the same team)
 - **App page:** [rapid-ihop-relay on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/rapid-ihop-relay)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/rapid-ihop-relay](https://github.com/GlobalShopSolutions-InternalTools/rapid-ihop-relay)
 - **Sibling:** [ihop-rapid-relay](ihop-rapid-relay.md)
 - **Last reviewed:** 2026-05-04
 - **Status:** Stub — needs owner contribution before publication.

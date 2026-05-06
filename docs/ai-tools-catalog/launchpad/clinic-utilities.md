@@ -33,4 +33,5 @@ Clinic environments at GSS each have a company code with associated metadata —
 
 - **Owner:** bcorbin@gssmail.com
 - **App page:** [clinic-utilities on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/clinic-utilities)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/clinic-utilities](https://github.com/GlobalShopSolutions-InternalTools/clinic-utilities)
 - **Last reviewed:** 2026-05-05

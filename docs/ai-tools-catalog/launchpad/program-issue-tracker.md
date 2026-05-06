@@ -49,5 +49,6 @@ Confirm with the owner; export support may be limited.
 
 - **Owner:** pfuentes@gssmail.com
 - **App page:** [program-issue-tracker on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/program-issue-tracker)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/program-issue-tracker](https://github.com/GlobalShopSolutions-InternalTools/program-issue-tracker)
 - **Related apps:** [CausingIssueDashboard](CausingIssueDashboard.md), [QA-resolved-issues](QA-resolved-issues.md)
 - **Last reviewed:** 2026-05-04

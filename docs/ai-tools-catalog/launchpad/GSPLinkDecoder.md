@@ -39,4 +39,5 @@ tags: [ai-tools, gss-internal, launchpad]
 
 - **Owner:** *Owner listed on the LaunchPad app page.*
 - **App page:** [GSPLinkDecoder on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/GSPLinkDecoder)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/GSPLinkDecoder](https://github.com/GlobalShopSolutions-InternalTools/GSPLinkDecoder)
 - **Last reviewed:** 2026-05-04

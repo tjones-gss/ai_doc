@@ -50,5 +50,6 @@ A webhook endpoint that lets Power Automate workflows kick off triage. Useful fo
 
 - **Owner:** *Listed on the LaunchPad app page.*
 - **App page:** [bug-triage-pack on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/bug-triage-pack)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/bug-triage-pack](https://github.com/GlobalShopSolutions-InternalTools/bug-triage-pack)
 - **Related apps:** [queue-routing](queue-routing.md), [bug-traffic-dashboard](bug-traffic-dashboard.md), [cobol-mcp](cobol-mcp.md)
 - **Last reviewed:** 2026-05-05

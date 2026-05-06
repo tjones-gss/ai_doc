@@ -25,6 +25,7 @@ tags: [ai-tools, gss-internal, launchpad]
 
 - **Owner:** tparvathaneni@gssmail.com
 - **App page:** [gab-codeeditor-mcp on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/gab-codeeditor-mcp)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/gab-codeeditor-mcp](https://github.com/GlobalShopSolutions-InternalTools/gab-codeeditor-mcp)
 - **Related apps:** [gabmcpserver](gabmcpserver.md), [hookmaintenance](hookmaintenance.md)
 - **Last reviewed:** 2026-05-05
 - **Status:** Stub — needs owner contribution before publication.

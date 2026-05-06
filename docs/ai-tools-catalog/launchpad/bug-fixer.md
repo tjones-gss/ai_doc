@@ -25,6 +25,7 @@ tags: [ai-tools, gss-internal, launchpad]
 
 - **Owner:** zsandford@gssmail.com
 - **App page:** [bug-fixer on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/bug-fixer)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/bug-fixer](https://github.com/GlobalShopSolutions-InternalTools/bug-fixer)
 - **Related apps:** [bug-triage-pack](bug-triage-pack.md), [queue-routing](queue-routing.md)
 - **Last reviewed:** 2026-05-05
 - **Status:** Stub — needs owner contribution before publication.

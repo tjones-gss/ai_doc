@@ -35,5 +35,6 @@ The Pervasive schema is the foundation of GSSERP's data layer, and the EO Object
 
 - **Owner:** aakram@gssmail.com
 - **App page:** [pervasiveschema on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/pervasiveschema)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/pervasiveschema](https://github.com/GlobalShopSolutions-InternalTools/pervasiveschema)
 - **Related apps:** [arc-scanner](arc-scanner.md), [zen-data-builder](zen-data-builder.md)
 - **Last reviewed:** 2026-05-05

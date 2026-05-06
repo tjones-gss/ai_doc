@@ -58,5 +58,6 @@ Confirm with the owner — depends on whether parsing happens client-side or ser
 
 - **Owner:** cvanroekel@gssmail.com
 - **App page:** [zen-log-parser on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/zen-log-parser)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/zen-log-parser](https://github.com/GlobalShopSolutions-InternalTools/zen-log-parser)
 - **Related app:** [zen-data-builder](zen-data-builder.md) (test data for the same database family).
 - **Last reviewed:** 2026-05-04

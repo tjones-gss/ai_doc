@@ -52,4 +52,5 @@ The default uses the GSS standard. Confirm with the owner if you need a variant.
 
 - **Owner:** *Owner listed on the LaunchPad app page.*
 - **App page:** [gsshelp-letterpress on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/gsshelp-letterpress)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/gsshelp-letterpress](https://github.com/GlobalShopSolutions-InternalTools/gsshelp-letterpress)
 - **Last reviewed:** 2026-05-04

@@ -52,4 +52,5 @@ Yes if you set a seed. Without a seed, runs differ.
 
 - **Owner:** ashirley@gssmail.com
 - **App page:** [bom-compare-generator on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/bom-compare-generator)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/bom-compare-generator](https://github.com/GlobalShopSolutions-InternalTools/bom-compare-generator)
 - **Last reviewed:** 2026-05-04

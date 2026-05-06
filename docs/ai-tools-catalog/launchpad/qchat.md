@@ -39,5 +39,6 @@ Most people mean to do quarterly check-ins. They forget. qchat is a small schedu
 
 - **Owner:** asmith@gssmail.com
 - **App page:** [qchat on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/qchat)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/qchat](https://github.com/GlobalShopSolutions-InternalTools/qchat)
 - **Related app:** [career-path-tracker](career-path-tracker.md) (the data you might bring to the check-in).
 - **Last reviewed:** 2026-05-04

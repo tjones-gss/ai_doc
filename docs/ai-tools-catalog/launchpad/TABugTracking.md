@@ -52,5 +52,6 @@ No — Issue Maintenance is the system of record. This is a focused view onto TA
 
 - **Owner:** *Owner listed on the LaunchPad app page.*
 - **App page:** [TABugTracking on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/TABugTracking)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/TABugTracking](https://github.com/GlobalShopSolutions-InternalTools/TABugTracking)
 - **Related app:** [TAD-Weekly-Stats](TAD-Weekly-Stats.md)
 - **Last reviewed:** 2026-05-04

@@ -45,5 +45,6 @@ Confirm with the owner — typically yes, but specific suites may be excluded.
 
 - **Owner:** *Owner listed on the LaunchPad app page.*
 - **App page:** [TAD-Weekly-Stats on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/TAD-Weekly-Stats)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/TAD-Weekly-Stats](https://github.com/GlobalShopSolutions-InternalTools/TAD-Weekly-Stats)
 - **Related app:** [TABugTracking](TABugTracking.md)
 - **Last reviewed:** 2026-05-04
