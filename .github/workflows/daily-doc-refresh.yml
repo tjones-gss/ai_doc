@@ -53,7 +53,11 @@ jobs:
 
       - name: Run check-updates.sh
         env:
+          # Default token — used for issue/PR creation in *this* repo
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional PAT with cross-org read for GlobalShopSolutions-InternalTools.
+          # If unset, the internal-tools section will show a setup-required note.
+          GH_PAT: ${{ secrets.GH_PAT }}
           DRY_RUN: ${{ github.event.inputs.dry_run || '0' }}
           SKIP_PR: ${{ github.event.inputs.skip_pr || '0' }}
         run: |

@@ -70,13 +70,21 @@ check_internal_tools() {
   local now_epoch
   now_epoch="$(date -u +%s)"
 
-  # Pull all repos (paginated)
-  local repos_json
-  repos_json=$(gh api -X GET "orgs/$ORG/repos?per_page=100" --paginate \
-    --jq '[.[] | {name, description, pushed_at, created_at, archived, html_url, topics}]' 2>/dev/null) || repos_json="[]"
+  # The default GITHUB_TOKEN can't read other orgs. Prefer GH_PAT if set —
+  # it should be a fine-grained or classic PAT with `read:org` and `repo`
+  # scopes for GlobalShopSolutions-InternalTools.
+  local token="${GH_PAT:-$GH_TOKEN}"
 
-  if [ -z "$repos_json" ] || [ "$repos_json" = "[]" ]; then
-    section "Internal tools (GitHub org)" "_Could not fetch org repos. Check token permissions._"
+  # Pull all repos (paginated). Use curl directly so we can choose which token.
+  local repos_json
+  repos_json=$(curl -fsSL --max-time 30 \
+    -H "Authorization: Bearer $token" \
+    -H "Accept: application/vnd.github+json" \
+    "https://api.github.com/orgs/$ORG/repos?per_page=100" 2>/dev/null \
+    | jq '[.[] | {name, description, pushed_at, created_at, archived, html_url, topics}]') || repos_json="[]"
+
+  if [ -z "$repos_json" ] || [ "$repos_json" = "[]" ] || [ "$repos_json" = "null" ]; then
+    section "Internal tools (GitHub org)" "$(printf '_Could not fetch \`%s\` org repos._\n\nThe default `GITHUB_TOKEN` has no cross-org read access. To enable: create a fine-grained PAT with **read access to GlobalShopSolutions-InternalTools repos** and add it as a repo secret named `GH_PAT`.' "$ORG")"
     return
   fi
 
@@ -228,22 +236,25 @@ check_codex() {
 # ----------------------------------------------------------------------------
 check_chatgpt() {
   log "Checking ChatGPT release notes…"
+  # OpenAI's help-center page is JS-rendered and Cloudflare-shielded; curl
+  # can't reach it reliably. Fall back to the OpenAI changelog page which
+  # is static enough to grep. If both fail, just print the manual link.
   local html
-  html=$(fetch "https://help.openai.com/en/articles/6825453-chatgpt-release-notes")
+  html=$(fetch "https://platform.openai.com/docs/changelog")
   if [ -z "$html" ]; then
-    section "ChatGPT" "_Couldn't fetch the release notes page._"
-    return
+    html=$(fetch "https://openai.com/news/")
   fi
-  # Look for the most-recent dated heading (best-effort match)
-  local latest
-  latest=$(echo "$html" | grep -oE '(January|February|March|April|May|June|July|August|September|October|November|December) [0-9]{1,2}, 20[0-9]{2}' | head -3 | tr '\n' '|' | sed 's/|$//' | tr '|' '\n' | head -1)
+  local latest=""
+  if [ -n "$html" ]; then
+    latest=$(echo "$html" | grep -oE '(January|February|March|April|May|June|July|August|September|October|November|December) [0-9]{1,2},? 20[0-9]{2}' | head -1)
+  fi
   local body
   if [ -n "$latest" ]; then
-    body="Most recent dated entry on the release-notes page: **$latest** — review at https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    body="Most-recent dated mention found: **$latest**.\n\nManual links:\n- https://platform.openai.com/docs/changelog\n- https://help.openai.com/en/articles/6825453-chatgpt-release-notes\n- https://openai.com/news/"
   else
-    body="_Couldn't parse a date from the page._ Manual link: https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    body="_Couldn't auto-fetch a date (OpenAI's help center is JS-rendered)._\n\nManual links:\n- https://platform.openai.com/docs/changelog\n- https://help.openai.com/en/articles/6825453-chatgpt-release-notes\n- https://openai.com/news/"
   fi
-  section "ChatGPT" "$body"
+  section "ChatGPT / OpenAI" "$(printf '%b' "$body")"
 }
 
 # ----------------------------------------------------------------------------
