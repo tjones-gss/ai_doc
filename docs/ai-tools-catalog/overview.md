@@ -1,8 +1,8 @@
 ---
 title: "AI Tools at GSS"
-description: "Plain-English directory of AI tools, services, and dev infrastructure used at Global Shop Solutions. Written for non-technical readers."
+description: ""
 sidebar_position: 1
-last_updated: 2026-05-06
+last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -32,25 +32,38 @@ These are tools built in-house at GSS and hosted on [LaunchPad](https://launchpa
 
 - [agents](launchpad/agents.md) — Registry for sharing and managing agent files across teams.
 - [book-of-armaments](mcp-servers/book-of-armaments.md) — Semantic search MCP for the Helpjuice knowledge base. *(LaunchPad app + MCP server.)*
+- [brain](launchpad/brain.md) — Institutional-memory layer; top of the GSS AI platform stack.
 - [bug-fixer](launchpad/bug-fixer.md) — *Stub — owner to fill in.*
 - [bug-triage-pack](launchpad/bug-triage-pack.md) — MCP gateway aggregating COBOL, GitHub, Service Web, and test-case tools for bug triage.
 - [clinic-utilities](launchpad/clinic-utilities.md) — Returns Clinic company-code info to AI assistants.
 - [cobol-mcp](launchpad/cobol-mcp.md) — Lets AI assistants read our COBOL source and SVN history.
+- [DashboardDesAIgner](launchpad/DashboardDesAIgner.md) — AI agent that turns plain English into DevExpress Dashboard XML.
 - [gab-codeeditor-mcp](launchpad/gab-codeeditor-mcp.md) — *Stub — owner to fill in.*
 - [gabmcpserver](launchpad/gabmcpserver.md) — *Stub — owner to fill in.*
+- [gss-doc-api](launchpad/gss-doc-api.md) — Document parsing API powered by OpenAI (invoices, sales orders).
+- [issue-maintenance-api](launchpad/issue-maintenance-api.md) — JWT-authenticated container version of the Issue Maintenance API.
 - [issue-manager-mcp](launchpad/issue-manager-mcp.md) — *Stub — owner to fill in.*
 - [log-parser](launchpad/log-parser.md) — Parses GSS SP2 log files (CoreLog/GSSEO/OCTSRS/ACU traces) into noise-filtered records.
 - [mcp-artifacts](launchpad/mcp-artifacts.md) — Team-organized library of AI skills, rules, and agent definitions.
 - [mcp-intelligence](mcp-servers/mcp-intelligence.md) — Development intelligence engine. *(LaunchPad app + MCP server.)*
+- [pe-ai-library](launchpad/pe-ai-library.md) — Centralized engineering AI rules and skills (global / guild / team-specific).
 - [pervasiveschema](launchpad/pervasiveschema.md) — Pervasive table/column schema + EO Object mappings exposed over MCP.
+- [qTest-MCP-Server](launchpad/qTest-MCP-Server.md) — Read-only MCP for qTest Manager (test cases, runs, requirements, defects).
 - [queue-routing](launchpad/queue-routing.md) — Triages the P&E Bugs queue with AI-recommended team routing.
+- [service-web-api](launchpad/service-web-api.md) — Modern .NET 9 API for IHOP_Net data, with built-in MCP endpoint.
 - [svn-ops](launchpad/svn-ops.md) — General-purpose SVN MCP server (checkout, log, diff, blame, commit, branch).
+- [team-14-zen-tunnel](launchpad/team-14-zen-tunnel.md) — Read-only Vanna-native SQL agent for Team 14's AI alerts data.
 - [testarchitect-mcp](launchpad/testarchitect-mcp.md) — Exposes TestArchitect test management data to AI assistants.
 
 ### QA & testing
 
 - [TABugTracking](launchpad/TABugTracking.md) — Tracks bugs caught by Test Architect tests.
+- [tad-dashboard](launchpad/tad-dashboard.md) — Real-time UI for the Test Architect Distributed (TAD) platform.
+- [tad-database-service](launchpad/tad-database-service.md) — Central data store and REST API for TAD.
+- [tad-host-manager-service](launchpad/tad-host-manager-service.md) — TAD orchestration / control-plane service.
+- [tad-worker-service](launchpad/tad-worker-service.md) — Background job processor for TAD.
 - [TAD-Weekly-Stats](launchpad/TAD-Weekly-Stats.md) — Weekly TestArchitect testing statistics dashboard.
+- [Test-Case-Dashboard](launchpad/Test-Case-Dashboard.md) — Unified qTest + TestArchitect coverage dashboard.
 - [QA-daily-standup-rotation](launchpad/QA-daily-standup-rotation.md) — Picks who runs QA standup each day.
 - [QA-resolved-issues](launchpad/QA-resolved-issues.md) — Dashboard of issues resolved by QA.
 - [bug-traffic-dashboard](launchpad/bug-traffic-dashboard.md) — Real-time view of how service calls flow through P&E Bugs.
@@ -62,6 +75,10 @@ These are tools built in-house at GSS and hosted on [LaunchPad](https://launchpa
 
 - [arc-scanner](launchpad/arc-scanner.md) — Visualizes SQL table usage across our GitHub org.
 - [designerconsolidation](launchpad/designerconsolidation.md) — Smart WinForms `.Designer.vb` merge tool.
+- [globe-toolbox](launchpad/globe-toolbox.md) — Cross-platform tray launcher for GSS apps (Electron + React).
+- [gssbrowser](launchpad/gssbrowser.md) — GSS Browser on the web — for bug repro and AI-driven testing.
+- [GSSEOtogo](launchpad/GSSEOtogo.md) — *Stub — owner to fill in (GSSEO I/O over the web).*
+- [launchpad](launchpad/launchpad.md) — The host platform itself: how internal apps get scaffolded and deployed.
 - [zen-log-parser](launchpad/zen-log-parser.md) — Reads Zen / Pervasive database logs into a tabbed UI.
 - [bom-compare-generator](launchpad/bom-compare-generator.md) — Generates BOM .xlsx files for BOM Compare testing.
 - [hookmaintenance](launchpad/hookmaintenance.md) — Defines hook ID ranges and manages script hooks.
@@ -125,13 +142,10 @@ Background for anyone configuring or extending an AI coding agent. The framing i
 
 Third-party AI tools the company uses or licenses.
 
-- [Claude Code](../claude-code.md) — Anthropic's CLI/IDE assistant (Opus 4.7, Sonnet 4.6, Haiku 4.5).
-- [ChatGPT](../chatgpt.md) — OpenAI's chat assistant (GPT-5.2).
-- [Cursor](../cursor.md) — AI-first code editor used for in-IDE pair programming.
-- [Codex](../codex.md) — OpenAI's coding agent (GPT-5.2-Codex).
-- [Augment AI](../augment-ai.md) — Context-aware coding partner with deep codebase indexing.
-
-> The articles linked above live in the broader **AI Tools** sidebar. They cover external/vendor products in depth. The catalog you're reading focuses on **how those tools fit into GSS** plus our internal apps and MCP servers.
+- [Claude (claude.ai + Claude Code)](external/claude.md) — Anthropic's chat interface and CLI/IDE assistant.
+- [ChatGPT](external/chatgpt.md) — OpenAI's chat assistant.
+- [Cursor](external/cursor.md) — AI-first code editor used for in-IDE pair programming.
+- [Codex](external/codex.md) — OpenAI's code assistant.
 
 ---
 

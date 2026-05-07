@@ -1,7 +1,7 @@
 ---
 title: "QA-daily-standup-rotation"
 description: "Picks who runs QA standup each day. Removes the awkward \"uh, who's leading today?\" moment. Just opens the page, see whose turn it is."
-sidebar_position: 3
+sidebar_position: 5
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

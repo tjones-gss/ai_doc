@@ -1,7 +1,7 @@
 ---
 title: "zen-data-builder"
 description: "A Windows desktop tool that browses, generates, and manages test data inside Actian Zen / Pervasive PSQL databases (the legacy ERP backend). Built for Q..."
-sidebar_position: 38
+sidebar_position: 55
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

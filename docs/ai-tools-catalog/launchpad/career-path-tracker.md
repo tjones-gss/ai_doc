@@ -1,7 +1,7 @@
 ---
 title: "career-path-tracker"
 description: "Track your career path through quarters. Log skills, achievements, and growth markers; export your data for review conversations and self-assessment."
-sidebar_position: 13
+sidebar_position: 17
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "bom-compare-generator"
 description: "A Python tool that generates a Bill of Material .xlsx file with user-defined or randomly-generated parts, used as input for BOM Compare testing."
-sidebar_position: 9
+sidebar_position: 12
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "bug-triage-pack"
 description: "An MCP gateway server that bundles COBOL, GitHub, Service Web, and test-case tools behind a single endpoint, plus a curated set of Skills, Agents, and R..."
-sidebar_position: 12
+sidebar_position: 16
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

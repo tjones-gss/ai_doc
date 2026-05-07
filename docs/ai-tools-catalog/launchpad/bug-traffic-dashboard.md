@@ -1,7 +1,7 @@
 ---
 title: "bug-traffic-dashboard"
 description: "A real-time dashboard that tracks how service calls flow through the P&E Bugs queue. Shows incoming vs. closed vs. in-QA-testing volumes by team, weekly..."
-sidebar_position: 11
+sidebar_position: 15
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

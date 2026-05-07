@@ -1,7 +1,7 @@
 ---
 title: "weekly-performance-dashboard"
 description: "Weekly performance dashboard for the Maintenance Operations, Maintenance OE, and PPT-Bugs teams. Shows applied hours vs. call counts with status breakdo..."
-sidebar_position: 37
+sidebar_position: 54
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

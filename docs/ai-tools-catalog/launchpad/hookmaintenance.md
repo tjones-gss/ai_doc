@@ -1,7 +1,7 @@
 ---
 title: "hookmaintenance"
 description: "Defines hook ID ranges and manages script hooks within them — their details, settings, and activation status. The internal control panel for the hook sy..."
-sidebar_position: 23
+sidebar_position: 30
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

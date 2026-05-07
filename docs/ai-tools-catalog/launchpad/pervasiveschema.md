@@ -1,7 +1,7 @@
 ---
 title: "pervasiveschema"
 description: "A LaunchPad-hosted MCP server exposing the schema of all Pervasive tables and columns, plus their mappings to the EO Objects namespace (object name, gro..."
-sidebar_position: 29
+sidebar_position: 39
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

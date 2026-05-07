@@ -1,7 +1,7 @@
 ---
 title: "QA-resolved-issues"
 description: "A dashboard of every issue resolved by QA. Useful for weekly status, retrospectives, and showing \"what we got done\" to leadership."
-sidebar_position: 4
+sidebar_position: 6
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

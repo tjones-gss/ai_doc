@@ -1,7 +1,7 @@
 ---
 title: "arc-scanner"
 description: "A web tool that scans every repo in a GitHub org for SQL table references and join relationships pulled from GabScript and SQL files, then visualizes th..."
-sidebar_position: 8
+sidebar_position: 11
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

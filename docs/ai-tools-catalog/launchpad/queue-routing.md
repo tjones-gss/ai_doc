@@ -1,7 +1,7 @@
 ---
 title: "queue-routing"
 description: "An MCP server that triages the P&E Bugs queue on Service Web. Analyzes incoming calls, recommends which team queue they belong in, and (when authorized)..."
-sidebar_position: 32
+sidebar_position: 43
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

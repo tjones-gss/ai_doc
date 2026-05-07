@@ -1,7 +1,7 @@
 ---
 title: "agents"
 description: "A LaunchPad-hosted MCP server for sharing, distributing, and managing agent files across teams. Think of it as the \"agent registry\" for GSS — somewhere ..."
-sidebar_position: 7
+sidebar_position: 10
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

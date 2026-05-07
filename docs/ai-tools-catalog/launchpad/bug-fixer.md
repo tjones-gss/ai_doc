@@ -1,7 +1,7 @@
 ---
 title: "bug-fixer"
 description: "A LaunchPad-hosted MCP server for bug-fix automation. Owner contact below for the specific scope."
-sidebar_position: 10
+sidebar_position: 14
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

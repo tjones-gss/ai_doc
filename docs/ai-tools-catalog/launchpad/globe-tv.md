@@ -1,7 +1,7 @@
 ---
 title: "Globe TV"
 description: "GSS's internal home for help videos. Think of it as a private YouTube — staff can find, watch, and (with permissions) upload short-form videos that expl..."
-sidebar_position: 20
+sidebar_position: 25
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "qchat"
 description: "Schedule quarterly check-ins. A lightweight tool to make sure the every-quarter career / status conversation actually happens, without manual calendar w..."
-sidebar_position: 31
+sidebar_position: 42
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

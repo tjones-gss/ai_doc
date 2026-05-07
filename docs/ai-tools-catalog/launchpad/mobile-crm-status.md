@@ -1,7 +1,7 @@
 ---
 title: "mobile-crm-status"
 description: "Monitors MobileCRM endpoints (production, edge, and tenant APIs) and pings Microsoft Teams when one goes down. The \"is mobile CRM healthy right now?\" page."
-sidebar_position: 28
+sidebar_position: 37
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

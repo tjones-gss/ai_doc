@@ -1,7 +1,7 @@
 ---
 title: "log-parser"
 description: "An MCP server that parses GSS SP2 log files (CoreLog, GSSEO, OCTSRS, ACU COBOL traces) into structured, noise-filtered records that AI assistants can ac..."
-sidebar_position: 26
+sidebar_position: 35
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

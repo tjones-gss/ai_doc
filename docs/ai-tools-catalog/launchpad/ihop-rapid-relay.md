@@ -1,7 +1,7 @@
 ---
 title: "ihop-rapid-relay"
 description: "A LaunchPad app related to IHOP (the GSS service-call backend) and an ATG-Edge \"rapid relay\" workflow. Owner contact below for the specific use case."
-sidebar_position: 24
+sidebar_position: 31
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

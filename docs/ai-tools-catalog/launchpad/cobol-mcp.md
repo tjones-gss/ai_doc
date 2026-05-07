@@ -1,7 +1,7 @@
 ---
 title: "cobol-mcp"
 description: "An MCP server hosted on LaunchPad that lets AI assistants reach into our COBOL source code repo and SVN log history. The primary way our AI agents answe..."
-sidebar_position: 15
+sidebar_position: 19
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

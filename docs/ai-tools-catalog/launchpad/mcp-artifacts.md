@@ -1,7 +1,7 @@
 ---
 title: "mcp-artifacts"
 description: "A team-organized library of AI skills, rules, and agent definitions. The artifacts in this library are read at runtime by the mcp-intelligence MCP serve..."
-sidebar_position: 27
+sidebar_position: 36
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

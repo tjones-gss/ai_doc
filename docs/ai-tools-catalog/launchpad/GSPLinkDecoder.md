@@ -1,7 +1,7 @@
 ---
 title: "GSPLinkDecoder"
 description: "A tiny web app that quickly decodes gsp:// links. Paste a link in, see what it points to. Saves you the hand-decoding when chasing bug reports or suppor..."
-sidebar_position: 2
+sidebar_position: 3
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

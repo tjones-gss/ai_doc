@@ -1,7 +1,7 @@
 ---
 title: "svn-ops (svn-mcp)"
 description: "A general-purpose Subversion MCP server. Exposes the full SVN command surface (checkout, log, diff, blame, commit, branch, etc.) to MCP-compatible clien..."
-sidebar_position: 35
+sidebar_position: 47
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

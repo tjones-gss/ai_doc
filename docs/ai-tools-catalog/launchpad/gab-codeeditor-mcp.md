@@ -1,7 +1,7 @@
 ---
 title: "gab-codeeditor-mcp"
 description: "A LaunchPad-hosted MCP server for the GAB code editor. Pre-dates the LaunchPad MCP kind tag, so it's still labeled \"Web App\" — but functionally it's an ..."
-sidebar_position: 18
+sidebar_position: 22
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

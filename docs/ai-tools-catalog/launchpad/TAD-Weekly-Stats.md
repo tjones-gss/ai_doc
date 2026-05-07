@@ -1,7 +1,7 @@
 ---
 title: "TAD-Weekly-Stats"
 description: "Weekly TestArchitect testing statistics dashboard. Shows what got tested, what passed, what failed, and how that's trending — at a weekly cadence."
-sidebar_position: 6
+sidebar_position: 8
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

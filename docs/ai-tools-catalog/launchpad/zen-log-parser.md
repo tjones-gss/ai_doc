@@ -1,7 +1,7 @@
 ---
 title: "zen-log-parser"
 description: "Parses and analyzes Pervasive Zen database log files. Turns a wall of cryptic log text into a tabbed interface where you can sift through queries, find ..."
-sidebar_position: 39
+sidebar_position: 56
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

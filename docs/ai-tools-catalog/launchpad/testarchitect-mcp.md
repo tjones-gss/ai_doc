@@ -1,7 +1,7 @@
 ---
 title: "testarchitect-mcp"
 description: "An MCP server that gives AI assistants access to TestArchitect test management data. Lets AI agents answer questions about which tests exist, what they ..."
-sidebar_position: 36
+sidebar_position: 53
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

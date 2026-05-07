@@ -1,7 +1,7 @@
 ---
 title: "issue-manager-mcp"
 description: "A LaunchPad-hosted MCP server for issue/project creation. Pre-dates the LaunchPad MCP kind tag, so it's still labeled \"Web App\" — but functionally it's ..."
-sidebar_position: 25
+sidebar_position: 33
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

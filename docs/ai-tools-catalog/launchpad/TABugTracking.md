@@ -1,7 +1,7 @@
 ---
 title: "TABugTracking"
 description: "Tracks bugs caught by Test Architect (TA) tests. The official place to see \"which production bugs would have been caught by automation if we had the rig..."
-sidebar_position: 5
+sidebar_position: 7
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

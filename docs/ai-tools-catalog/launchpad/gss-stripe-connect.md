@@ -1,7 +1,7 @@
 ---
 title: "gss-stripe-connect"
 description: "A tool to onboard customers as GSS Stripe Connect Accounts — the workflow that lets a customer accept payments through GSS using Stripe under the hood."
-sidebar_position: 21
+sidebar_position: 27
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

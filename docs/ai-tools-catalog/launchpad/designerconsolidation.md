@@ -1,7 +1,7 @@
 ---
 title: "designerconsolidation"
 description: "A smart WinForms .Designer.vb merge tool that resolves DevExpress designer-file conflicts at the control-and-property level. Replaces hours of manual li..."
-sidebar_position: 16
+sidebar_position: 20
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

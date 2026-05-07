@@ -1,7 +1,7 @@
 ---
 title: "clinic-utilities"
 description: "An MCP server that returns information about Clinic company codes, meant for AI assistants. Likely to grow with more Clinic-related lookups over time."
-sidebar_position: 14
+sidebar_position: 18
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

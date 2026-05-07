@@ -1,7 +1,7 @@
 ---
 title: "rapid-ihop-relay"
 description: "A LaunchPad app related to IHOP and a \"rapid relay\" workflow, owned by the ATG-Edge team. Sister app to ihop-rapid-relay. Owner contact below for the sp..."
-sidebar_position: 34
+sidebar_position: 45
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "gabmcpserver"
 description: "An MCP server related to GAB (GSS's scripting language). Owner contact below for the specific scope."
-sidebar_position: 19
+sidebar_position: 23
 last_updated: 2026-05-05
 tags: [ai-tools, gss-internal, launchpad]
 ---
