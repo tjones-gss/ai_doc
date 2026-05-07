@@ -1,0 +1,61 @@
+name: Daily doc refresh
+
+# Surfaces what changed in the AI tooling and internal-tools world each
+# weekday morning. Opens a GitHub issue summarizing deltas, and a PR if
+# any tracked version bumps were detected.
+#
+# See scripts/check-updates.sh for the actual logic.
+
+on:
+  # Mon–Fri at 12:00 UTC = ~7am US Central (CDT)
+  schedule:
+    - cron: "0 12 * * 1-5"
+  # Manual trigger from the Actions tab — useful when seeding state or
+  # debugging. Pass dry_run: "1" to skip issue / PR creation.
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run — print findings, don't open issue/PR"
+        required: false
+        default: "0"
+      skip_pr:
+        description: "Skip the auto-PR step (still opens the issue)"
+        required: false
+        default: "0"
+
+permissions:
+  contents: write       # to commit state file updates and push the branch
+  issues: write         # to open the daily issue
+  pull-requests: write  # to open the version-bump PR
+
+# Don't pile up runs if a previous one is still going.
+concurrency:
+  group: daily-doc-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Need full history so we can push commits back.
+          fetch-depth: 0
+          # Use the GH token so subsequent git ops authenticate.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Ensure required CLIs are present
+        run: |
+          gh --version
+          jq --version
+          curl --version
+
+      - name: Run check-updates.sh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || '0' }}
+          SKIP_PR: ${{ github.event.inputs.skip_pr || '0' }}
+        run: |
+          chmod +x scripts/check-updates.sh
+          scripts/check-updates.sh
