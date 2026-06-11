@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-05-07",
+  "_updated": "2026-06-11",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.132",
+    "claude_code_cli_release": "v2.1.173",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -11,11 +11,11 @@
     "chatgpt_version": "5.5",
     "gpt_model": "5.5",
     "codex_model": "5.5-Codex",
-    "codex_cli_npm": "0.129.0"
+    "codex_cli_npm": "0.139.0"
   },
   "cursor": {
     "composer_model": "Composer 2",
-    "latest_changelog_date": "2026-05-06"
+    "latest_changelog_date": "2026-06-10"
   },
   "internal_tools": {
     "_comment": "Last-seen list of repo names in GlobalShopSolutions-InternalTools, sorted. The workflow diffs this list against current to detect new/removed apps.",
