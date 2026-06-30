@@ -81,20 +81,20 @@ npm run serve
 
 ## Useful commands
 
-| Command | Purpose |
-| --- | --- |
-| `npm start` | Run the local Docusaurus dev server. |
-| `npm run build` | Build the production site. |
-| `npm run test:build` | Build into `build-test` for CI-style validation. |
-| `npm run test:links` | Validate Markdown links. |
-| `npm run test:markdown` | Run Markdown linting for docs. |
-| `npm run test:frontmatter` | Validate required doc front matter. |
-| `npm run test:e2e` | Run Playwright smoke tests. |
-| `npm run validate` | Run the repository validation script. |
-| `npm run lint` | Run ESLint for JavaScript and TypeScript files. |
-| `npm run format:check` | Check Prettier formatting. |
-| `npm run type-check` | Run TypeScript type checking. |
-| `npm run test:all` | Run the full validation chain. |
+| Command                    | Purpose                                          |
+| -------------------------- | ------------------------------------------------ |
+| `npm start`                | Run the local Docusaurus dev server.             |
+| `npm run build`            | Build the production site.                       |
+| `npm run test:build`       | Build into `build-test` for CI-style validation. |
+| `npm run test:links`       | Validate Markdown links.                         |
+| `npm run test:markdown`    | Run Markdown linting for docs.                   |
+| `npm run test:frontmatter` | Validate required doc front matter.              |
+| `npm run test:e2e`         | Run Playwright smoke tests.                      |
+| `npm run validate`         | Run the repository validation script.            |
+| `npm run lint`             | Run ESLint for JavaScript and TypeScript files.  |
+| `npm run format:check`     | Check Prettier formatting.                       |
+| `npm run type-check`       | Run TypeScript type checking.                    |
+| `npm run test:all`         | Run the full validation chain.                   |
 
 ## Documentation workflow
 
