@@ -23,6 +23,7 @@
     "test:e2e:debug": "playwright test --debug",
     "test:e2e:ui": "playwright test --ui",
     "test:structure": "node scripts/validate-structure.js",
+    "catalog:apply-handoffs": "node scripts/apply-tool-handoffs.js",
     "catalog:overview": "node scripts/update-catalog-overview.js",
     "validate": "node scripts/validate-all.js",
     "validate:structure": "node scripts/validate-structure.js",
