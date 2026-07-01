@@ -1,0 +1,37 @@
+name: Auto-merge doc-draft PRs
+
+# Lands the Stage-2 (Cursor) article PRs on main automatically, so new-tool
+# docs "always push to main" with no manual click.
+#
+# PREREQS (one-time):
+#   * Settings → General → "Allow auto-merge" = ON.
+#   * Settings → Actions → General → Workflow permissions = "Read and write".
+#
+# SAFETY: this merges UNREVIEWED, AI-written docs. Tighten the `if:` below
+# (title / author) if you ever want a narrower gate.
+
+on:
+  pull_request_target:
+    types: [opened, reopened, ready_for_review]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  automerge:
+    if: >
+      startsWith(github.event.pull_request.title, 'Docs: draft catalog articles') ||
+      contains(github.event.pull_request.user.login, 'cursor')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge to main (squash)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          # Merge now if mergeable; otherwise enable auto-merge to complete
+          # once any required checks pass.
+          gh pr merge "$PR" -R "$REPO" --squash --delete-branch \
+            || gh pr merge "$PR" -R "$REPO" --squash --auto --delete-branch

@@ -1,34 +1,32 @@
 name: Daily doc refresh
 
-# Surfaces what changed in the AI tooling and internal-tools world each
-# weekday morning. Opens a GitHub issue summarizing deltas, and a PR if
-# any tracked version bumps were detected.
+# Each weekday morning:
+#   * Surfaces AI-tooling + internal-tools deltas in a GitHub issue.
+#   * For each brand-new internal-tools repo, generates a starter catalog
+#     article from its README + metadata (read via GH_PAT — no LLM/API key,
+#     and independent of whether Cursor can see the org).
+#   * Commits new articles + data/known-versions.json STRAIGHT TO MAIN.
 #
-# See scripts/check-updates.sh for the actual logic.
+# See scripts/check-updates.sh for the logic.
 
 on:
-  # Mon–Fri at 12:00 UTC = ~7am US Central (CDT)
   schedule:
-    - cron: "0 12 * * 1-5"
-  # Manual trigger from the Actions tab — useful when seeding state or
-  # debugging. Pass dry_run: "1" to skip issue / PR creation.
+    - cron: "0 12 * * 1-5"   # Mon–Fri 12:00 UTC ~ 7am US Central
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "Dry run — print findings, don't open issue/PR"
+        description: "Dry run — print findings, don't write/commit"
         required: false
         default: "0"
-      skip_pr:
-        description: "Skip the auto-PR step (still opens the issue)"
+      skip_draft:
+        description: "Skip generating starter articles (still posts issue + state)"
         required: false
         default: "0"
 
 permissions:
-  contents: write       # to commit state file updates and push the branch
-  issues: write         # to open the daily issue
-  pull-requests: write  # to open the version-bump PR
+  contents: write   # commit articles + state straight to main
+  issues: write     # open / append the daily issue
 
-# Don't pile up runs if a previous one is still going.
 concurrency:
   group: daily-doc-refresh
   cancel-in-progress: false
@@ -40,10 +38,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          # Need full history so we can push commits back.
           fetch-depth: 0
-          # Use the GH token so subsequent git ops authenticate.
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # Use GH_PAT so the push to main can trigger the Pages deploy.
+          # (A push made with the default GITHUB_TOKEN will NOT trigger other
+          # workflows.) Falls back to GITHUB_TOKEN if GH_PAT is unset.
+          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
 
       - name: Ensure required CLIs are present
         run: |
@@ -53,13 +52,10 @@ jobs:
 
       - name: Run check-updates.sh
         env:
-          # Default token — used for issue/PR creation in *this* repo
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Optional PAT with cross-org read for GlobalShopSolutions-InternalTools.
-          # If unset, the internal-tools section will show a setup-required note.
           GH_PAT: ${{ secrets.GH_PAT }}
           DRY_RUN: ${{ github.event.inputs.dry_run || '0' }}
-          SKIP_PR: ${{ github.event.inputs.skip_pr || '0' }}
+          SKIP_DRAFT: ${{ github.event.inputs.skip_draft || '0' }}
         run: |
           chmod +x scripts/check-updates.sh
           scripts/check-updates.sh
