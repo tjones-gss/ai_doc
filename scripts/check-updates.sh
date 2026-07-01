@@ -34,6 +34,7 @@ set -uo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 STATE_FILE="$ROOT/data/known-versions.json"
+OVERVIEW_PATH="$ROOT/docs/ai-tools-catalog/overview.md"
 NEWTOOLS_DIR="$ROOT/data/new-tools"
 DATE_UTC="$(date -u +%Y-%m-%d)"
 ISSUE_TITLE="AI Tools deltas — $DATE_UTC"
@@ -349,6 +350,11 @@ stage_handoff() {
 
 # ---- 8. Update state + commit handoffs STRAIGHT TO MAIN ------------------
 update_and_commit() {
+  if [ "$DRY_RUN" = "1" ]; then
+    log "[DRY_RUN] Would update state, regenerate overview, and commit state (+ any handoffs) to main."
+    return
+  fi
+
   local cd ct cx cr rs
   cd=$(cat /tmp/refresh-cursor-date.txt 2>/dev/null || echo ""); ct=$(cat /tmp/refresh-claude-tag.txt 2>/dev/null || echo "")
   cx=$(cat /tmp/refresh-codex-version.txt 2>/dev/null || echo ""); cr="[]"
@@ -364,10 +370,15 @@ update_and_commit() {
     | (if ($snapshots|length)>0 then .internal_tools.repo_snapshots=$snapshots else . end)
   ' "$STATE_FILE" > "$STATE_FILE.tmp" && mv "$STATE_FILE.tmp" "$STATE_FILE"
 
-  if [ "$DRY_RUN" = "1" ]; then log "[DRY_RUN] Would commit state (+ any handoffs) to main."; return; fi
+  if command -v node >/dev/null 2>&1; then
+    node "$ROOT/scripts/update-catalog-overview.js" || warn "Catalog overview regeneration failed."
+  else
+    warn "Node is unavailable; skipping catalog overview regeneration."
+  fi
+
   git config user.email "doc-refresh-bot@globalshopsolutions.dev"
   git config user.name  "doc-refresh-bot"
-  git add "$STATE_FILE" "$NEWTOOLS_DIR" 2>/dev/null
+  git add "$STATE_FILE" "$NEWTOOLS_DIR" "$OVERVIEW_PATH" 2>/dev/null
   if git diff --cached --quiet; then log "Nothing to commit."; return; fi
   local n; n=$(cat /tmp/refresh-handoffs.txt 2>/dev/null || echo 0)
   local msg="Auto: refresh known-versions.json — $DATE_UTC [skip ci]"

@@ -1,156 +1,195 @@
 ---
-title: "AI Tools at GSS"
-description: ""
+title: 'AI Tools at GSS'
+description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-05-05
+last_updated: 2026-07-01
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
-A plain-English directory of the AI tools, services, and related dev infrastructure used at Global Shop Solutions. Each entry below links to a dedicated page that explains what the tool is, why you'd use it, and how to get started — written for a non-technical reader.
+# AI Tools at GSS
 
-> **New here?** Skim the categories below, click into anything that sounds useful, and come back if you need help finding something. If a tool you've heard of isn't listed, [tell us](#missing-something) and we'll add it.
+This is the front door for the GSS AI tooling catalog. It indexes LaunchPad apps, MCP servers, AI-agent concepts, and the current InternalTools coverage backlog that feeds the future GSS Catalog and RAG retrieval layer.
 
-## How to read each article
+The detailed articles in this section explain what each tool is, who it is for, how to access it at GSS, and how it fits into the AI platform. The sidebar is generated from the catalog folders, and this overview is generated from the same docs plus `data/known-versions.json`.
 
-Every article in this collection follows the same shape, so you can scan any page and find what you need in the same place:
+## Catalog status
 
-1. **TL;DR** — what it is, who it's for (1–2 sentences).
-2. **Overview** — plain-English description.
-3. **Why use it** / **When to use it** — the problem it solves and concrete scenarios.
-4. **How to access / How to use** — URL, login, the golden path.
-5. **Common questions** — short FAQ.
-6. **How it works** *(optional)* — the AI/automation behind it, in non-technical terms.
-7. **Owner & support** — who to ask if something breaks.
+- Published catalog articles: **70**
+- LaunchPad app articles: **56**
+- MCP server articles: **10**
+- AI agent concept articles: **4**
+- InternalTools repos tracked: **100**
+- InternalTools repos still missing catalog coverage: **44**
+- Catalog last regenerated: **2026-07-01**
 
----
+## How this stays current
 
-## Internal apps on LaunchPad
+The daily catalog scout scans `GlobalShopSolutions-InternalTools`, compares the result with `data/known-versions.json`, and queues handoff files in `data/new-tools/` for:
 
-These are tools built in-house at GSS and hosted on [LaunchPad](https://launchpad.globalshopsolutions.dev/). They use your normal Global Shop Office 365 / SAML login.
+1. brand-new repos,
+2. repos whose metadata or `pushed_at` changed since the last scan, and
+3. repos that are present in InternalTools but do not yet have a catalog page, repo link, or LaunchPad app reference.
 
-### AI & MCP servers (LaunchPad-hosted)
-
-- [agents](launchpad/agents.md) — Registry for sharing and managing agent files across teams.
-- [book-of-armaments](mcp-servers/book-of-armaments.md) — Semantic search MCP for the Helpjuice knowledge base. *(LaunchPad app + MCP server.)*
-- [brain](launchpad/brain.md) — Institutional-memory layer; top of the GSS AI platform stack.
-- [bug-fixer](launchpad/bug-fixer.md) — *Stub — owner to fill in.*
-- [bug-triage-pack](launchpad/bug-triage-pack.md) — MCP gateway aggregating COBOL, GitHub, Service Web, and test-case tools for bug triage.
-- [clinic-utilities](launchpad/clinic-utilities.md) — Returns Clinic company-code info to AI assistants.
-- [cobol-mcp](launchpad/cobol-mcp.md) — Lets AI assistants read our COBOL source and SVN history.
-- [DashboardDesAIgner](launchpad/DashboardDesAIgner.md) — AI agent that turns plain English into DevExpress Dashboard XML.
-- [gab-codeeditor-mcp](launchpad/gab-codeeditor-mcp.md) — *Stub — owner to fill in.*
-- [gabmcpserver](launchpad/gabmcpserver.md) — *Stub — owner to fill in.*
-- [gss-doc-api](launchpad/gss-doc-api.md) — Document parsing API powered by OpenAI (invoices, sales orders).
-- [issue-maintenance-api](launchpad/issue-maintenance-api.md) — JWT-authenticated container version of the Issue Maintenance API.
-- [issue-manager-mcp](launchpad/issue-manager-mcp.md) — *Stub — owner to fill in.*
-- [log-parser](launchpad/log-parser.md) — Parses GSS SP2 log files (CoreLog/GSSEO/OCTSRS/ACU traces) into noise-filtered records.
-- [mcp-artifacts](launchpad/mcp-artifacts.md) — Team-organized library of AI skills, rules, and agent definitions.
-- [mcp-intelligence](mcp-servers/mcp-intelligence.md) — Development intelligence engine. *(LaunchPad app + MCP server.)*
-- [pe-ai-library](launchpad/pe-ai-library.md) — Centralized engineering AI rules and skills (global / guild / team-specific).
-- [pervasiveschema](launchpad/pervasiveschema.md) — Pervasive table/column schema + EO Object mappings exposed over MCP.
-- [qTest-MCP-Server](launchpad/qTest-MCP-Server.md) — Read-only MCP for qTest Manager (test cases, runs, requirements, defects).
-- [queue-routing](launchpad/queue-routing.md) — Triages the P&E Bugs queue with AI-recommended team routing.
-- [service-web-api](launchpad/service-web-api.md) — Modern .NET 9 API for IHOP_Net data, with built-in MCP endpoint.
-- [svn-ops](launchpad/svn-ops.md) — General-purpose SVN MCP server (checkout, log, diff, blame, commit, branch).
-- [team-14-zen-tunnel](launchpad/team-14-zen-tunnel.md) — Read-only Vanna-native SQL agent for Team 14's AI alerts data.
-- [testarchitect-mcp](launchpad/testarchitect-mcp.md) — Exposes TestArchitect test management data to AI assistants.
-
-### QA & testing
-
-- [TABugTracking](launchpad/TABugTracking.md) — Tracks bugs caught by Test Architect tests.
-- [tad-dashboard](launchpad/tad-dashboard.md) — Real-time UI for the Test Architect Distributed (TAD) platform.
-- [tad-database-service](launchpad/tad-database-service.md) — Central data store and REST API for TAD.
-- [tad-host-manager-service](launchpad/tad-host-manager-service.md) — TAD orchestration / control-plane service.
-- [tad-worker-service](launchpad/tad-worker-service.md) — Background job processor for TAD.
-- [TAD-Weekly-Stats](launchpad/TAD-Weekly-Stats.md) — Weekly TestArchitect testing statistics dashboard.
-- [Test-Case-Dashboard](launchpad/Test-Case-Dashboard.md) — Unified qTest + TestArchitect coverage dashboard.
-- [QA-daily-standup-rotation](launchpad/QA-daily-standup-rotation.md) — Picks who runs QA standup each day.
-- [QA-resolved-issues](launchpad/QA-resolved-issues.md) — Dashboard of issues resolved by QA.
-- [bug-traffic-dashboard](launchpad/bug-traffic-dashboard.md) — Real-time view of how service calls flow through P&E Bugs.
-- [CausingIssueDashboard](launchpad/CausingIssueDashboard.md) — Issues with their Causing-Issue relationships.
-- [program-issue-tracker](launchpad/program-issue-tracker.md) — Search every issue tied to a Program.
-- [zen-data-builder](launchpad/zen-data-builder.md) — Generate and manage test data in Actian Zen / Pervasive PSQL.
-
-### Developer tools
-
-- [arc-scanner](launchpad/arc-scanner.md) — Visualizes SQL table usage across our GitHub org.
-- [designerconsolidation](launchpad/designerconsolidation.md) — Smart WinForms `.Designer.vb` merge tool.
-- [globe-toolbox](launchpad/globe-toolbox.md) — Cross-platform tray launcher for GSS apps (Electron + React).
-- [gssbrowser](launchpad/gssbrowser.md) — GSS Browser on the web — for bug repro and AI-driven testing.
-- [GSSEOtogo](launchpad/GSSEOtogo.md) — *Stub — owner to fill in (GSSEO I/O over the web).*
-- [launchpad](launchpad/launchpad.md) — The host platform itself: how internal apps get scaffolded and deployed.
-- [zen-log-parser](launchpad/zen-log-parser.md) — Reads Zen / Pervasive database logs into a tabbed UI.
-- [bom-compare-generator](launchpad/bom-compare-generator.md) — Generates BOM .xlsx files for BOM Compare testing.
-- [hookmaintenance](launchpad/hookmaintenance.md) — Defines hook ID ranges and manages script hooks.
-- [featuretoggles](launchpad/featuretoggles.md) — Controls which features are available in the system.
-- [GSPLinkDecoder](launchpad/GSPLinkDecoder.md) — Quickly decodes `gsp://` links.
-
-### Product & docs
-
-- [globe-tv](launchpad/globe-tv.md) — Internal YouTube-like home for help videos.
-- [gsshelp-letterpress](launchpad/gsshelp-letterpress.md) — Export Helpjuice articles to Word/PDF on GSS letterhead.
-- [career-path-tracker](launchpad/career-path-tracker.md) — Log skills and track your career path quarter by quarter.
-- [qchat](launchpad/qchat.md) — Schedule quarterly check-ins.
-
-### Customer-facing & ops
-
-- [gss-stripe-connect](launchpad/gss-stripe-connect.md) — Onboards customers as GSS Stripe Connect Accounts.
-- [weekly-performance-dashboard](launchpad/weekly-performance-dashboard.md) — Maintenance & PPT-Bugs team weekly performance.
-- [mobile-crm-status](launchpad/mobile-crm-status.md) — Monitors MobileCRM endpoints and pings Teams when one goes down.
-- [ihop-rapid-relay](launchpad/ihop-rapid-relay.md) — *Stub — owner to fill in.*
-- [rapid-ihop-relay](launchpad/rapid-ihop-relay.md) — *Stub — owner to fill in.*
-- [quick-option-import-export-web](launchpad/quick-option-import-export-web.md) — Web tool for importing, editing, and exporting Option JSON files.
+Stage 2 consumes those handoffs to create or refresh articles. This page is regenerated by `scripts/update-catalog-overview.js` so the published overview shows both documented tools and the remaining coverage backlog.
 
 ---
 
-## Internal MCP servers and concepts
+## LaunchPad apps
 
-Everything below works with **any MCP-compatible AI agent** — Cursor, Claude Code, Codex, Augment AI, or anything else that speaks Model Context Protocol. Each agent has its own page in the **AI Tools** sidebar (Cursor, Claude Code, Codex, ChatGPT, Augment AI); this section covers the GSS-specific tools your agent can plug into.
+Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SAML login.
 
-> **💡 Easiest MCP setup.** Don't wire each MCP up by hand. Connect your AI agent to **`mcp-intelligence`** — it proxies every other downstream MCP we run, so you get the whole toolkit through one connection. Even easier: ask the agent to do it for you. "Configure my MCP for the GSS internal toolkit" with repo access is enough; the agent writes the config file. See [Cursor](../cursor.md#easy-mcp-setup-at-gss) or [Claude Code](../claude-code.md#easy-mcp-setup-at-gss) for the one-line config block.
+- [agents](launchpad/agents.md) - A LaunchPad-hosted MCP server for sharing, distributing, and managing agent files across teams.
+- [arc-scanner](launchpad/arc-scanner.md) - A web tool that scans every repo in a GitHub org for SQL table references and join relationships pulled from GabScript and SQL files, then visualizes the result as a heatmap, ranked list, and per-repo breakdown.
+- [bom-compare-generator](launchpad/bom-compare-generator.md) - A Python tool that generates a Bill of Material .xlsx file with user-defined or randomly-generated parts, used as input for BOM Compare testing.
+- [brain](launchpad/brain.md) - The institutional-memory layer for GSS. Passively collects knowledge from developer interactions, tickets, and tooling, then makes it queryable with hybrid search — so the next...
+- [bug-fixer](launchpad/bug-fixer.md) - A LaunchPad-hosted MCP server for bug-fix automation. Owner contact below for the specific scope.
+- [bug-traffic-dashboard](launchpad/bug-traffic-dashboard.md) - A real-time dashboard that tracks how service calls flow through the P&E Bugs queue.
+- [bug-triage-pack](launchpad/bug-triage-pack.md) - An MCP gateway server that bundles COBOL, GitHub, Service Web, and test-case tools behind a single endpoint, plus a curated set of Skills, Agents, and Rules tuned for triaging bugs.
+- [career-path-tracker](launchpad/career-path-tracker.md) - Track your career path through quarters. Log skills, achievements, and growth markers; export your data for review conversations and self-assessment.
+- [CausingIssueDashboard](launchpad/CausingIssueDashboard.md) - A dashboard for viewing issues that have a "Causing Issue" relationship in Issue Maintenance — i.e., bugs whose root cause is another bug.
+- [clinic-utilities](launchpad/clinic-utilities.md) - An MCP server that returns information about Clinic company codes, meant for AI assistants. Likely to grow with more Clinic-related lookups over time.
+- [cobol-mcp](launchpad/cobol-mcp.md) - An MCP server hosted on LaunchPad that lets AI assistants reach into our COBOL source code repo and SVN log history. The primary way our AI agents answer COBOL questions at GSS.
+- [DashboardDesAIgner](launchpad/DashboardDesAIgner.md) - An AI agent that converts plain-English descriptions into DevExpress Dashboard Designer XML.
+- [designerconsolidation](launchpad/designerconsolidation.md) - A smart WinForms `.Designer.vb` merge tool that resolves DevExpress designer-file conflicts at the control-and-property level.
+- [featuretoggles](launchpad/featuretoggles.md) - Controls which features are available in the system so teams can ship dark, roll out gradually, or kill-switch behavior without redeploying.
+- [gab-codeeditor-mcp](launchpad/gab-codeeditor-mcp.md) - A LaunchPad-hosted MCP server for the GAB code editor. Pre-dates the LaunchPad MCP kind tag, so it's still labeled "Web App" — but functionally it's an MCP. Owner contact below.
+- [gabmcpserver](launchpad/gabmcpserver.md) - An MCP server related to GAB (GSS's scripting language). Owner contact below for the specific scope.
+- [globe-toolbox](launchpad/globe-toolbox.md) - A cross-platform desktop tray app (Windows/macOS/Linux) that lives in your system tray and opens a popup of GSS apps you have access to.
+- [Globe TV](launchpad/globe-tv.md) - GSS's internal home for help videos. Think of it as a private YouTube — staff can find, watch, and (with permissions) upload short-form videos that explain how things work,...
+- [GSPLinkDecoder](launchpad/GSPLinkDecoder.md) - A tiny web app that quickly decodes `gsp://` links. Paste a link in, see what it points to. Saves you the hand-decoding when chasing bug reports or support tickets.
+- [gss-doc-api](launchpad/gss-doc-api.md) - An API that uses OpenAI to parse data out of documents. Currently supports invoices and sales orders, with more document types planned. Live at `docs.globalshopsolutions.ai`.
+- [gss-stripe-connect](launchpad/gss-stripe-connect.md) - A tool to onboard customers as GSS Stripe Connect Accounts — the workflow that lets a customer accept payments through GSS using Stripe under the hood.
+- [gssbrowser](launchpad/gssbrowser.md) - GSS Browser, on the web. Same backend code as the desktop GSS Browser, but browser-accessible — so it can be used to reproduce bugs and run automated AI-driven testing without...
+- [GSSEOtogo](launchpad/GSSEOtogo.md) - A LaunchPad-hosted service for GSSEO I/O against Pervasive over the web. Owner contact below for the specific scope.
+- [gsshelp-letterpress](launchpad/gsshelp-letterpress.md) - Exports articles from Helpjuice into Word or PDF using the official GSS letterhead. Lets you turn an online doc into a polished, shareable file customers (and execs) recognize.
+- [hookmaintenance](launchpad/hookmaintenance.md) - Defines hook ID ranges and manages script hooks within them — their details, settings, and activation status.
+- [ihop-rapid-relay](launchpad/ihop-rapid-relay.md) - A LaunchPad app related to IHOP (the GSS service-call backend) and an ATG-Edge "rapid relay" workflow. Owner contact below for the specific use case.
+- [issue-maintenance-api](launchpad/issue-maintenance-api.md) - The JWT-authenticated, container-hosted version of the Issue Maintenance API. Same surface as the legacy IIS version, but runs on the LaunchPad platform with platform-provided...
+- [issue-manager-mcp](launchpad/issue-manager-mcp.md) - A LaunchPad-hosted MCP server for issue/project creation. Pre-dates the LaunchPad MCP kind tag, so it's still labeled "Web App" — but functionally it's an MCP. Owner contact below.
+- [launchpad (the host platform itself)](launchpad/launchpad.md) - LaunchPad is the internal app-provisioning platform that hosts most of the apps in this catalog.
+- [log-parser](launchpad/log-parser.md) - An MCP server that parses GSS SP2 log files (CoreLog, GSSEO, OCTSRS, ACU COBOL traces) into structured, noise-filtered records that AI assistants can actually reason about.
+- [mcp-artifacts](launchpad/mcp-artifacts.md) - A team-organized library of AI skills, rules, and agent definitions. The artifacts in this library are read at runtime by the [mcp-intelligence MCP...
+- [mobile-crm-status](launchpad/mobile-crm-status.md) - Monitors MobileCRM endpoints (production, edge, and tenant APIs) and pings Microsoft Teams when one goes down. The "is mobile CRM healthy right now?" page.
+- [pe-ai-library](launchpad/pe-ai-library.md) - The centralized source of truth for engineering AI rules and skills at GSS. Provides modular, reusable standards (global, guild, and team-specific) and generates curated rule...
+- [pervasiveschema](launchpad/pervasiveschema.md) - A LaunchPad-hosted MCP server exposing the schema of all Pervasive tables and columns, plus their mappings to the EO Objects namespace (object name, grouping, property names).
+- [program-issue-tracker](launchpad/program-issue-tracker.md) - Search every issue tied to a specific Program. If you maintain a program in GSSERP and want a quick view of every bug, request, and customer call against it — this is the search.
+- [QA-daily-standup-rotation](launchpad/QA-daily-standup-rotation.md) - Picks who runs QA standup each day. Removes the awkward "uh, who's leading today?" moment. Just opens the page, see whose turn it is.
+- [QA-resolved-issues](launchpad/QA-resolved-issues.md) - A dashboard of every issue resolved by QA. Useful for weekly status, retrospectives, and showing "what we got done" to leadership.
+- [qchat](launchpad/qchat.md) - Schedules quarterly check-ins across teams so managers can publish slots, members can book, and calendar invites can be sent through Microsoft Graph.
+- [qTest-MCP-Server](launchpad/qTest-MCP-Server.md) - A read-only MCP server that lets AI agents query qTest Manager — test cases, runs, requirements, defects, and more.
+- [queue-routing](launchpad/queue-routing.md) - An MCP server that triages the P&E Bugs queue on Service Web. Analyzes incoming calls, recommends which team queue they belong in, and (when authorized) executes the transfer...
+- [quick-option-import-export-web](launchpad/quick-option-import-export-web.md) - A web-based tool for importing, editing, and exporting Option JSON files. Spreadsheet-style editing with full round-trip preservation, so the JSON you export matches what the...
+- [rapid-ihop-relay](launchpad/rapid-ihop-relay.md) - A LaunchPad app related to IHOP and a "rapid relay" workflow, owned by the ATG-Edge team.
+- [service-web-api](launchpad/service-web-api.md) - A modern .NET 9 Minimal API exposing all IHOP_Net data across 17 domains. Replaces the legacy `SW_CallService.Api` with pure inline SQL (no stored procedures), interactive...
+- [svn-ops (svn-mcp)](launchpad/svn-ops.md) - A general-purpose Subversion MCP server. Exposes the full SVN command surface (checkout, log, diff, blame, commit, branch, etc.) to MCP-compatible clients (Cursor, Claude Code,...
+- [TABugTracking](launchpad/TABugTracking.md) - Tracks bugs caught by Test Architect (TA) tests. The official place to see "which production bugs would have been caught by automation if we had the right test?".
+- [tad-dashboard](launchpad/tad-dashboard.md) - The real-time monitoring and administration dashboard for **Test Architect Distributed (TAD)**.
+- [tad-database-service](launchpad/tad-database-service.md) - The central data store and REST API for **Test Architect Distributed (TAD)**. Provides persistent storage, real-time updates, and the primary API surface for the TAD dashboard...
+- [tad-host-manager-service](launchpad/tad-host-manager-service.md) - The orchestration / control-plane API for **Test Architect Distributed (TAD)**. Sits between the dashboard and the individual `HostMachineService` instances on each physical...
+- [TAD-Weekly-Stats](launchpad/TAD-Weekly-Stats.md) - Weekly TestArchitect testing statistics dashboard. Shows what got tested, what passed, what failed, and how that's trending — at a weekly cadence.
+- [tad-worker-service](launchpad/tad-worker-service.md) - The background job processor for **Test Architect Distributed (TAD)**. Headless .NET 6 worker that assigns pending test issues to available VMs, retries failed notifications,...
+- [team-14-zen-tunnel](launchpad/team-14-zen-tunnel.md) - A read-only FastAPI + MCP service for querying `GLOBAL51Q` and `COMMON51Q` from Team 14's AI alerts platform.
+- [Test-Case-Dashboard](launchpad/Test-Case-Dashboard.md) - Unified test-coverage dashboard for **qTest** (manual test cases) and **TestArchitect** (automated tests).
+- [testarchitect-mcp](launchpad/testarchitect-mcp.md) - An MCP server that gives AI assistants access to TestArchitect test management data.
+- [weekly-performance-dashboard](launchpad/weekly-performance-dashboard.md) - Weekly performance dashboard for the Maintenance Operations, Maintenance OE, and PPT-Bugs teams.
+- [zen-data-builder](launchpad/zen-data-builder.md) - A Windows desktop tool that browses, generates, and manages test data inside Actian Zen / Pervasive PSQL databases (the legacy ERP backend).
+- [zen-log-parser](launchpad/zen-log-parser.md) - Parses and analyzes Pervasive Zen database log files. Turns a wall of cryptic log text into a tabbed interface where you can sift through queries, find slow ones, and identify...
 
-### MCP servers (used by any MCP-compatible AI agent)
+---
 
-GSS-internal:
+## MCP servers
 
-- [mcp-intelligence](mcp-servers/mcp-intelligence.md) — The shared knowledge layer for AI tools at GSS.
-- [internal-tools-docs](mcp-servers/internal-tools-docs.md) — Searches the internal-tools docs.
-- [internal-tools-status](mcp-servers/internal-tools-status.md) — Health/status checks for internal tools.
-- [book-of-armaments](mcp-servers/book-of-armaments.md) — Semantic search over Helpjuice articles.
-- [cobol-codebase](mcp-servers/cobol-codebase.md) — Reads our COBOL source repo (used by `cobol-mcp` on LaunchPad).
-- [microsoft-365](mcp-servers/microsoft-365.md) — Searches Outlook, SharePoint, and Teams content.
-- [devexpress](mcp-servers/devexpress.md) — Searches the DevExpress documentation.
+GSS-specific MCP servers that any MCP-compatible AI agent can use, including Cursor, Claude Code, Codex, and other clients.
 
-Third-party:
+- [MCP Server: book-of-armaments](mcp-servers/book-of-armaments.md) - Semantic search MCP server for the Helpjuice knowledge base. Lets AI assistants search GSS Helpjuice articles by meaning (not just keywords) and surface tribal knowledge from...
+- [MCP Server: cobol-codebase](mcp-servers/cobol-codebase.md) - Gives AI assistants read access to our COBOL source repository and SVN log history. The backbone behind the cobol-mcp LaunchPad app.
+- [MCP Server: DevExpress Docs](mcp-servers/devexpress.md) - Lets your AI agent search and pull DevExpress documentation directly into a session.
+- [MCP Server: GitHub](mcp-servers/github.md) - Lets your AI agent search code, manage pull requests, read/file issues, and inspect repos across GitHub — all without leaving the chat.
+- [MCP Server: internal-tools-docs](mcp-servers/internal-tools-docs.md) - Lets AI assistants search the internal-tools documentation site from inside an AI agent session. Saves you from copy-pasting from the docs portal.
+- [MCP Server: internal-tools-status](mcp-servers/internal-tools-status.md) - Lets AI assistants check the live health/status of internal tools (LaunchPad apps, MCP servers, infra) without leaving the AI agent session.
+- [MCP Server: mcp-intelligence](mcp-servers/mcp-intelligence.md) - The shared "memory" layer for AI tools at GSS. When your AI agent finishes a meaningful piece of work — a deployment, a bug fix, a design decision — it logs the outcome here....
+- [MCP Server: microsoft-365](mcp-servers/microsoft-365.md) - Lets AI agents search your Outlook email, Outlook calendar, Teams chat, SharePoint, and find meeting availability — all through your normal Microsoft 365 sign-in.
+- [MCP Server: monday.com](mcp-servers/monday.md) - Lets your AI agent read and update monday.com boards, items, columns, and updates using your GSS monday account. The bridge between AI assistants and our active project boards.
+- [MCP Server: Notion](mcp-servers/notion.md) - Lets your AI agent search and read Notion content (pages, databases, blocks) using your GSS Notion account.
 
-- [GitHub](mcp-servers/github.md) — Search code, manage PRs/issues across the GSS GitHub org.
-- [Notion](mcp-servers/notion.md) — Search and read Notion content.
-- [monday.com](mcp-servers/monday.md) — Read and update monday.com boards.
+---
 
-### AI agent concepts
+## AI agent concepts
 
-Background for anyone configuring or extending an AI coding agent. The framing is Claude Code's terminology; Cursor has direct analogues for each (`.cursor/rules/` for rules, `.cursor/mcp.json` for MCPs, Composer/Cloud Agents for agentic runs).
+Shared vocabulary for configuring, extending, and operating AI coding agents at GSS.
 
-- [Plugins](concepts/plugins.md) — Bundles of slash commands, skills, agents, hooks, and MCPs.
-- [Skills](concepts/skills.md) — Reusable task playbooks (the building blocks of plugins).
-- [Hooks](concepts/hooks.md) — Shell commands that fire on events (logging, policy, side effects).
-- [Subagents](concepts/subagents.md) — Spawning focused sub-agents for parallel or specialized work.
+- [Concept: Hooks](concepts/hooks.md) - Hooks are shell commands that the Claude Code harness runs automatically in response to events — before/after tool use, when a session starts, on user prompts.
+- [Concept: Plugins](concepts/plugins.md) - A Claude Code "plugin" is an installable bundle of slash commands, skills, agents, hooks, and MCP server definitions.
+- [Concept: Skills](concepts/skills.md) - A Claude Code "skill" is a reusable, structured prompt that teaches Claude how to handle a specific kind of task — e.g., "review a PR," "estimate codebase cost," "convert a...
+- [Concept: Subagents](concepts/subagents.md) - A subagent is a focused, throwaway sub-Claude that the main Claude session can spawn to handle one specific job.
 
 ---
 
 ## External AI services
 
-Third-party AI tools the company uses or licenses.
+Third-party AI tools the company uses or documents.
 
-- [Claude (claude.ai + Claude Code)](external/claude.md) — Anthropic's chat interface and CLI/IDE assistant.
-- [ChatGPT](external/chatgpt.md) — OpenAI's chat assistant.
-- [Cursor](external/cursor.md) — AI-first code editor used for in-IDE pair programming.
-- [Codex](external/codex.md) — OpenAI's code assistant.
+- [Cursor](../cursor.md) - AI-first code editor used for in-IDE pair programming.
+- [ChatGPT](../chatgpt.md) - OpenAI chat assistant used for analysis, drafting, and problem solving.
+- [Codex](../codex.md) - OpenAI coding agent and CLI workflow.
+- [Claude Code](../claude-code.md) - Anthropic coding agent and CLI workflow.
+- [Augment AI](../augment-ai.md) - AI coding assistant used by GSS teams.
+
+---
+
+## InternalTools coverage backlog
+
+These repos are known in `data/known-versions.json` but are not yet matched to a catalog article, InternalTools repo link, or LaunchPad app link. The daily automation queues them for article drafting or triage so the catalog can move toward complete coverage.
+
+- [.agents](https://github.com/GlobalShopSolutions-InternalTools/.agents)
+- [Quality-Pulse](https://github.com/GlobalShopSolutions-InternalTools/Quality-Pulse)
+- [appcart](https://github.com/GlobalShopSolutions-InternalTools/appcart)
+- [aps-scheduling-api](https://github.com/GlobalShopSolutions-InternalTools/aps-scheduling-api)
+- [artifact-mirroring-service](https://github.com/GlobalShopSolutions-InternalTools/artifact-mirroring-service)
+- [ashley-test1](https://github.com/GlobalShopSolutions-InternalTools/ashley-test1)
+- [atge-issue-traffic-manager](https://github.com/GlobalShopSolutions-InternalTools/atge-issue-traffic-manager)
+- [auth-test](https://github.com/GlobalShopSolutions-InternalTools/auth-test)
+- [bracket-helper](https://github.com/GlobalShopSolutions-InternalTools/bracket-helper)
+- [cursor-cloud-agent-test](https://github.com/GlobalShopSolutions-InternalTools/cursor-cloud-agent-test)
+- [desk-test2](https://github.com/GlobalShopSolutions-InternalTools/desk-test2)
+- [dev-petz-app](https://github.com/GlobalShopSolutions-InternalTools/dev-petz-app)
+- [docs](https://github.com/GlobalShopSolutions-InternalTools/docs)
+- [eoq](https://github.com/GlobalShopSolutions-InternalTools/eoq)
+- [feature-request](https://github.com/GlobalShopSolutions-InternalTools/feature-request)
+- [g2p-compare](https://github.com/GlobalShopSolutions-InternalTools/g2p-compare)
+- [g2p-tables-usage-parser](https://github.com/GlobalShopSolutions-InternalTools/g2p-tables-usage-parser)
+- [gss-command-center](https://github.com/GlobalShopSolutions-InternalTools/gss-command-center)
+- [hackplan](https://github.com/GlobalShopSolutions-InternalTools/hackplan)
+- [heartbeat](https://github.com/GlobalShopSolutions-InternalTools/heartbeat)
+- [issuemaintenance-simple-api](https://github.com/GlobalShopSolutions-InternalTools/issuemaintenance-simple-api)
+- [keycloak-theme](https://github.com/GlobalShopSolutions-InternalTools/keycloak-theme)
+- [like-and-gridscribe](https://github.com/GlobalShopSolutions-InternalTools/like-and-gridscribe)
+- [menu-telemetry](https://github.com/GlobalShopSolutions-InternalTools/menu-telemetry)
+- [monday-board-update](https://github.com/GlobalShopSolutions-InternalTools/monday-board-update)
+- [order-delete-inspector](https://github.com/GlobalShopSolutions-InternalTools/order-delete-inspector)
+- [petz-salesorders](https://github.com/GlobalShopSolutions-InternalTools/petz-salesorders)
+- [rapid-qtest-ta](https://github.com/GlobalShopSolutions-InternalTools/rapid-qtest-ta)
+- [report-id-tool](https://github.com/GlobalShopSolutions-InternalTools/report-id-tool)
+- [ret-sav-hel](https://github.com/GlobalShopSolutions-InternalTools/ret-sav-hel)
+- [schema-manager](https://github.com/GlobalShopSolutions-InternalTools/schema-manager)
+- [schema-manager-2](https://github.com/GlobalShopSolutions-InternalTools/schema-manager-2)
+- [schema-manager-3](https://github.com/GlobalShopSolutions-InternalTools/schema-manager-3)
+- [schema-viewer](https://github.com/GlobalShopSolutions-InternalTools/schema-viewer)
+- [team-6-app](https://github.com/GlobalShopSolutions-InternalTools/team-6-app)
+- [team13-hackatron](https://github.com/GlobalShopSolutions-InternalTools/team13-hackatron)
+- [team6hackathonrelay](https://github.com/GlobalShopSolutions-InternalTools/team6hackathonrelay)
+- [test-app](https://github.com/GlobalShopSolutions-InternalTools/test-app)
+- [test-app-to-get-access](https://github.com/GlobalShopSolutions-InternalTools/test-app-to-get-access)
+- [test1](https://github.com/GlobalShopSolutions-InternalTools/test1)
+- [test2](https://github.com/GlobalShopSolutions-InternalTools/test2)
+- [testing-conflict-detector](https://github.com/GlobalShopSolutions-InternalTools/testing-conflict-detector)
+- [trent](https://github.com/GlobalShopSolutions-InternalTools/trent)
+- [webhook-test](https://github.com/GlobalShopSolutions-InternalTools/webhook-test)
 
 ---
 
 ## Missing something?
 
-If a tool isn't listed and you think it should be, ping the catalog owner (Travis Jones — tjones@gssmail.com) with the tool name, link if any, and a one-liner about what it does. We add new entries on a rolling basis.
+If a tool is not listed and you think it should be, contact the catalog owner with the tool name, link if any, and a one-line description.
 
-> **Catalog last updated:** 2026-05-06
+- **Catalog owner:** [tjones@gssmail.com](mailto:tjones@gssmail.com)
