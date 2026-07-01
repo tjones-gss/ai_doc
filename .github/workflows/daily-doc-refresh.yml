@@ -1,11 +1,12 @@
 name: Daily doc refresh
 
 # Each weekday morning:
-#   * Surfaces AI-tooling + internal-tools deltas in a GitHub issue.
-#   * For each brand-new internal-tools repo, generates a starter catalog
-#     article from its README + metadata (read via GH_PAT — no LLM/API key,
-#     and independent of whether Cursor can see the org).
-#   * Commits new articles + data/known-versions.json STRAIGHT TO MAIN.
+#   * Surfaces AI-tooling + InternalTools / LaunchPad deltas in a GitHub issue.
+#   * Queues catalog handoffs for brand-new repos, changed repos, and repos that
+#     are missing catalog coverage so Stage 2 can draft or refresh articles from
+#     README + metadata (read via GH_PAT — no LLM/API key, and independent of
+#     whether Cursor can see the org).
+#   * Commits handoffs + data/known-versions.json STRAIGHT TO MAIN.
 #
 # See scripts/check-updates.sh for the logic.
 
