@@ -1,6 +1,6 @@
 ---
-title: "qchat"
-description: "Schedules quarterly check-ins across teams so managers can publish slots, members can book, and calendar invites can be sent through Microsoft Graph."
+title: 'qchat'
+description: 'Schedules quarterly check-ins across teams so managers can publish slots, members can book, and calendar invites can be sent through Microsoft Graph.'
 sidebar_position: 42
 last_updated: 2026-07-01
 tags: [ai-tools, gss-internal, launchpad]
@@ -65,7 +65,7 @@ Deployment uses a Docker image with Caddy for the static SPA and Node for the AP
 
 ## Owner & support
 
-- **Owner:** asmith@gssmail.com
+- **Owner:** [asmith@gssmail.com](mailto:asmith@gssmail.com)
 - **App page:** [qchat on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/qchat)
 - **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/qchat](https://github.com/GlobalShopSolutions-InternalTools/qchat)
 - **Related app:** [career-path-tracker](career-path-tracker.md) (the data you might bring to the check-in).

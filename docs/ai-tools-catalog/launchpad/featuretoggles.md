@@ -1,6 +1,6 @@
 ---
-title: "featuretoggles"
-description: "Controls which features are available in the system so teams can ship dark, roll out gradually, or kill-switch behavior without redeploying."
+title: 'featuretoggles'
+description: 'Controls which features are available in the system so teams can ship dark, roll out gradually, or kill-switch behavior without redeploying.'
 sidebar_position: 21
 last_updated: 2026-07-01
 tags: [ai-tools, gss-internal, launchpad]
@@ -32,6 +32,7 @@ The app is a LaunchPad-hosted React + ASP.NET service. The React UI builds into 
 - When an AI-assisted change needs a safe activation path after review.
 
 Don't use it for:
+
 - Permanent configuration that's not actually a "toggle." Real config belongs elsewhere.
 
 ## How to access it
@@ -71,7 +72,7 @@ Confirm LaunchPad is serving either the integrated API + SPA image or a proxy/st
 
 ## Owner & support
 
-- **Owner:** bbrambila@gssmail.com
+- **Owner:** [bbrambila@gssmail.com](mailto:bbrambila@gssmail.com)
 - **App page:** [featuretoggles on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/featuretoggles)
 - **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/featuretoggles](https://github.com/GlobalShopSolutions-InternalTools/featuretoggles)
 - **Last reviewed:** 2026-07-01
