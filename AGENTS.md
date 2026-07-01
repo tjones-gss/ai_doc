@@ -30,3 +30,13 @@
 - Git history favors short, imperative subjects such as `Fix mobile hamburger menu z-index issue`; keep subjects under 72 characters and add `Refs #123` in the body when applicable.
 - Branches follow descriptive slugs like `claude/enhance-docs-ui-design-011CV5tMRttQBeFWAkU5nGPZ`; reuse that structure for clarity and automated triage.
 - Pull requests should describe user impact, list the validation commands run (`npm run test:all`, `npm run lint`), include before/after screenshots for `docs/` or `src/pages`, and confirm `last_updated`, `static/img`, and config changes stay aligned.
+
+## Cursor Cloud specific instructions
+
+This is a single-service Docusaurus 3 documentation site (Node 22, npm). Standard commands live in `README.md` and `package.json` scripts; the notes below are only the non-obvious caveats.
+
+- The site is served under `baseUrl` `/ai_doc/`, so `npm start` serves the app at `http://localhost:3000/ai_doc/` (the bare `/` redirects). Use the `/ai_doc/` path when curling or navigating.
+- Playwright browsers are not part of `npm install`; the dependency refresh installs Chromium only. `playwright.config.js` also declares Firefox, WebKit, and Edge/Chrome channel projects that are not installed here, so run e2e with `npx playwright test --project=chromium`.
+- The Playwright HTML reporter auto-serves a report after the run and keeps the process alive (looks like a hang); results are already written to `test-results/`. Kill the specific PID, or run with `--reporter=list` when you just need pass/fail.
+- `npm run start` from `playwright.config.js` `webServer` reuses an already-running dev server locally (`reuseExistingServer` when `CI` is unset).
+- Pre-existing (not environment) failures as of setup: `npm run type-check` errors because `tsconfig.json` does not wire in Docusaurus module type aliases (`npm run validate` treats it as a warning); `npm run format:check`, `test:markdown`, `test:frontmatter`, and `test:links` fail on content issues; the build logs broken-link warnings; and `tests/e2e/verify-fixes.spec.js` hardcodes port 3001. Do not treat these as setup regressions.
