@@ -1,20 +1,20 @@
 ---
-title: 'log-parser'
+title: 'TC Navigation Catalog'
 description: 'Internal app created via Launchpad by zsandford@gssmail.com'
-sidebar_position: 35
+sidebar_position: 109
 last_updated: 2026-07-02
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
-# log-parser
+# TC Navigation Catalog
 
 > **TL;DR** — Internal app created via Launchpad by zsandford@gssmail.com
 
 ## Overview
 
-`log-parser` is part of the GSS InternalTools catalog. This page was generated from repository metadata and README content so the tool is discoverable in the AI Tools at GSS catalog and future RAG-backed GSS Catalog.
+`tc-navigation-catalog` is part of the GSS InternalTools catalog. This page was generated from repository metadata and README content so the tool is discoverable in the AI Tools at GSS catalog and future RAG-backed GSS Catalog.
 
-MCP server for structured analysis of GSS SP2 log files. Parses CoreLog, GSSEO, OCTSRS, and ACU COBOL trace formats with multi-line record reassembly, noise filtering, and cross-log correlation.
+REST service on LaunchPad that catalogs test ↔ program ↔ menu path mappings from TAD CacheData, plus mined TA script steps per menu path via testarchitect-mcp.
 
 ## Why use it
 
@@ -30,17 +30,19 @@ MCP server for structured analysis of GSS SP2 log files. Parses CoreLog, GSSEO, 
 
 ## How to access it
 
-- **LaunchPad app:** [https://launchpad.globalshopsolutions.dev/apps/log-parser](https://launchpad.globalshopsolutions.dev/apps/log-parser)
-- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/log-parser](https://github.com/GlobalShopSolutions-InternalTools/log-parser)
+- **LaunchPad app:** [https://launchpad.globalshopsolutions.dev/apps/tc-navigation-catalog](https://launchpad.globalshopsolutions.dev/apps/tc-navigation-catalog)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/tc-navigation-catalog](https://github.com/GlobalShopSolutions-InternalTools/tc-navigation-catalog)
 - **Status:** Confirm with the owner or LaunchPad tile.
 
 ## Setup and usage notes
 
 ```bash
-- pip install -r requirements-dev.txt
-- ruff check .
-- ruff format --check .
-- pytest
+- pip install -e ".[dev]"
+- set TAD_DATABASE_URL=http://localhost:7001
+- set TA_MCP_URL=http://localhost:8080/mcp
+- python -m catalog
+- LaunchPad internal app — port `8080`. `.deploy/dependencies.yaml` adds a **2Gi PVC** at `/data` for persistent SQLite.
+- Deployment uses **`strategy: Recreate`** (not RollingUpdate) because the PVC is `ReadWriteOnce` — only one pod can mount the volume at a time.
 
 ## How it fits the AI platform
 
@@ -50,12 +52,12 @@ The catalog treats InternalTools and LaunchPad apps as first-class AI context. K
 
 - **Primary language:** Python
 - **Catalog trigger:** new — New repository detected in GlobalShopSolutions-InternalTools.
-- **Repo last pushed:** 2026-05-05
+- **Repo last pushed:** 2026-07-01
 - **Repo topics:** `launchpad`, `owner-zsandford-at-gssmail-dot-com`, `starter`
 
 ## Owner & support
 
 - **Owner:** [zsandford@gssmail.com](mailto:zsandford@gssmail.com)
-- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/log-parser](https://github.com/GlobalShopSolutions-InternalTools/log-parser)
-- **App page:** [log-parser on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/log-parser)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/tc-navigation-catalog](https://github.com/GlobalShopSolutions-InternalTools/tc-navigation-catalog)
+- **App page:** [tc-navigation-catalog on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/tc-navigation-catalog)
 - **Last reviewed:** 2026-07-02

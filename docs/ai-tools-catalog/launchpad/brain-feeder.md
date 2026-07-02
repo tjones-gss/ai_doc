@@ -1,20 +1,20 @@
 ---
-title: 'log-parser'
-description: 'Internal app created via Launchpad by zsandford@gssmail.com'
-sidebar_position: 35
+title: 'brain-feeder'
+description: 'Feed...me...more!'
+sidebar_position: 62
 last_updated: 2026-07-02
 tags: [ai-tools, gss-internal, launchpad]
 ---
 
-# log-parser
+# brain-feeder
 
-> **TL;DR** — Internal app created via Launchpad by zsandford@gssmail.com
+> **TL;DR** — Feed...me...more!
 
 ## Overview
 
-`log-parser` is part of the GSS InternalTools catalog. This page was generated from repository metadata and README content so the tool is discoverable in the AI Tools at GSS catalog and future RAG-backed GSS Catalog.
+`brain-feeder` is part of the GSS InternalTools catalog. This page was generated from repository metadata and README content so the tool is discoverable in the AI Tools at GSS catalog and future RAG-backed GSS Catalog.
 
-MCP server for structured analysis of GSS SP2 log files. Parses CoreLog, GSSEO, OCTSRS, and ACU COBOL trace formats with multi-line record reassembly, noise filtering, and cross-log correlation.
+The public-facing gateway for feeding knowledge to the Brain. Users upload documents through the UI or API, an LLM extracts and curates valuable knowledge, users review what was extracted, and approved records get pushed to the Brain's batch feed endpoint.
 
 ## Why use it
 
@@ -30,17 +30,13 @@ MCP server for structured analysis of GSS SP2 log files. Parses CoreLog, GSSEO, 
 
 ## How to access it
 
-- **LaunchPad app:** [https://launchpad.globalshopsolutions.dev/apps/log-parser](https://launchpad.globalshopsolutions.dev/apps/log-parser)
-- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/log-parser](https://github.com/GlobalShopSolutions-InternalTools/log-parser)
+- **LaunchPad app:** [https://launchpad.globalshopsolutions.dev/apps/brain-feeder](https://launchpad.globalshopsolutions.dev/apps/brain-feeder)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/brain-feeder](https://github.com/GlobalShopSolutions-InternalTools/brain-feeder)
 - **Status:** Confirm with the owner or LaunchPad tile.
 
 ## Setup and usage notes
 
-```bash
-- pip install -r requirements-dev.txt
-- ruff check .
-- ruff format --check .
-- pytest
+No setup details were available in the README. Start with the LaunchPad page or repository, then ask the owner for access and environment details.
 
 ## How it fits the AI platform
 
@@ -50,12 +46,12 @@ The catalog treats InternalTools and LaunchPad apps as first-class AI context. K
 
 - **Primary language:** Python
 - **Catalog trigger:** new — New repository detected in GlobalShopSolutions-InternalTools.
-- **Repo last pushed:** 2026-05-05
+- **Repo last pushed:** 2026-05-19
 - **Repo topics:** `launchpad`, `owner-zsandford-at-gssmail-dot-com`, `starter`
 
 ## Owner & support
 
 - **Owner:** [zsandford@gssmail.com](mailto:zsandford@gssmail.com)
-- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/log-parser](https://github.com/GlobalShopSolutions-InternalTools/log-parser)
-- **App page:** [log-parser on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/log-parser)
+- **Repo:** [https://github.com/GlobalShopSolutions-InternalTools/brain-feeder](https://github.com/GlobalShopSolutions-InternalTools/brain-feeder)
+- **App page:** [brain-feeder on LaunchPad](https://launchpad.globalshopsolutions.dev/apps/brain-feeder)
 - **Last reviewed:** 2026-07-02

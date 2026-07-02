@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-07-01
+last_updated: 2026-07-02
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **70**
-- LaunchPad app articles: **56**
-- MCP server articles: **10**
+- Published catalog articles: **133**
+- LaunchPad app articles: **114**
+- MCP server articles: **15**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **100**
+- InternalTools repos tracked: **164**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-07-01**
+- Catalog last regenerated: **2026-07-02**
 
 ## How this stays current
 
@@ -38,59 +38,117 @@ Stage 2 consumes those handoffs to create or refresh articles. This page is rege
 
 Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SAML login.
 
+- [abhay-cool-app](launchpad/abhay-cool-app.md) - abhay cool app
 - [agents](launchpad/agents.md) - A LaunchPad-hosted MCP server for sharing, distributing, and managing agent files across teams.
+- [AI Success Stories](launchpad/ai-success-stories.md) - AI Success Stories is an internal tool for tracking and celebrating how our department uses AI in their day-to-day work.
+- [AI Tool Usage Tracker](launchpad/ai-tool-usage.md) - Track Ai tool seats and usage
+- [TAD Service Detector](launchpad/akhilesh-tad.md) - Internal app created via Launchpad by avattumilli@gssmail.com
 - [arc-scanner](launchpad/arc-scanner.md) - A web tool that scans every repo in a GitHub org for SQL table references and join relationships pulled from GabScript and SQL files, then visualizes the result as a heatmap, ranked list, and per-repo breakdown.
+- [Beacon](launchpad/beacon.md) - Internal app created via Launchpad by brennanhitchcock@gssmail.com
 - [bom-compare-generator](launchpad/bom-compare-generator.md) - A Python tool that generates a Bill of Material .xlsx file with user-defined or randomly-generated parts, used as input for BOM Compare testing.
 - [brain](launchpad/brain.md) - The institutional-memory layer for GSS. Passively collects knowledge from developer interactions, tickets, and tooling, then makes it queryable with hybrid search — so the next...
+- [brain-feeder](launchpad/brain-feeder.md) - Feed...me...more!
 - [bug-fixer](launchpad/bug-fixer.md) - A LaunchPad-hosted MCP server for bug-fix automation. Owner contact below for the specific scope.
 - [bug-traffic-dashboard](launchpad/bug-traffic-dashboard.md) - A real-time dashboard that tracks how service calls flow through the P&E Bugs queue.
 - [bug-triage-pack](launchpad/bug-triage-pack.md) - An MCP gateway server that bundles COBOL, GitHub, Service Web, and test-case tools behind a single endpoint, plus a curated set of Skills, Agents, and Rules tuned for triaging bugs.
+- [career-path-skills-maint](launchpad/career-path-skills-maint.md) - Internal app created via Launchpad by asmith@gssmail.com
 - [career-path-tracker](launchpad/career-path-tracker.md) - Track your career path through quarters. Log skills, achievements, and growth markers; export your data for review conversations and self-assessment.
+- [Carte Blanche](launchpad/carte-blanche.md) - A scratch pad app for quick diagrams and free-drawing that doesn''t look or feel terrible.
 - [CausingIssueDashboard](launchpad/CausingIssueDashboard.md) - A dashboard for viewing issues that have a "Causing Issue" relationship in Issue Maintenance — i.e., bugs whose root cause is another bug.
 - [clinic-utilities](launchpad/clinic-utilities.md) - An MCP server that returns information about Clinic company codes, meant for AI assistants. Likely to grow with more Clinic-related lookups over time.
+- [cobol-forge](launchpad/cobol-forge.md) - internal cobol compile server + dashboard for the r&d team
 - [cobol-mcp](launchpad/cobol-mcp.md) - An MCP server hosted on LaunchPad that lets AI assistants reach into our COBOL source code repo and SVN log history. The primary way our AI agents answer COBOL questions at GSS.
+- [cobolog - Quick User Manual](launchpad/cobolog.md) - CLI that adds removable debug logging (flow, watchpoints, PERFORM snapshots) to Fujitsu COBOL sources for bug triage.
+- [context-reader](launchpad/context-reader.md) - read context to see claims
+- [daily-crossword](launchpad/daily-crossword.md) - Test your GSS knowledge
 - [DashboardDesAIgner](launchpad/DashboardDesAIgner.md) - An AI agent that converts plain-English descriptions into DevExpress Dashboard Designer XML.
+- [delta-t](launchpad/delta-t.md) - Performance and speed improvements
 - [designerconsolidation](launchpad/designerconsolidation.md) - A smart WinForms `.Designer.vb` merge tool that resolves DevExpress designer-file conflicts at the control-and-property level.
+- [employee-assessments](launchpad/employee-assessments.md) - Unified quarterly workflow for engineering teams: schedule review chats, track skill assessments and focus skills, and capture structured quarterly reviews — replacing...
+- [escalation-tracker](launchpad/escalation-tracker.md) - this will facilitate escalating issues for new implementations through the proper channels.
 - [featuretoggles](launchpad/featuretoggles.md) - Controls which features are available in the system so teams can ship dark, roll out gradually, or kill-switch behavior without redeploying.
+- [GAB Agents Kit](launchpad/gab-agent-kit.md) - Centralized GAB development agent kit — coding rules, skills, and agent docs for Product & Engineering.
 - [gab-codeeditor-mcp](launchpad/gab-codeeditor-mcp.md) - A LaunchPad-hosted MCP server for the GAB code editor. Pre-dates the LaunchPad MCP kind tag, so it's still labeled "Web App" — but functionally it's an MCP. Owner contact below.
 - [gabmcpserver](launchpad/gabmcpserver.md) - An MCP server related to GAB (GSS's scripting language). Owner contact below for the specific scope.
+- [genii-quote](launchpad/genii-quote.md) - An intelligent quoting assistant that helps Global Shop Solutions quickly estimate and prepare quotes for customer custom requests by analyzing request details, identifying...
+- [GitHub Org Trawler](launchpad/git-org-trawler.md) - An application that is able to search through all available repos for information
+- [globalmasterfile-launchpad](launchpad/globalmasterfile-launchpad.md) - this is the globalmasterfile tool on launchpad as a webpage
 - [globe-toolbox](launchpad/globe-toolbox.md) - A cross-platform desktop tray app (Windows/macOS/Linux) that lives in your system tray and opens a popup of GSS apps you have access to.
 - [Globe TV](launchpad/globe-tv.md) - GSS's internal home for help videos. Think of it as a private YouTube — staff can find, watch, and (with permissions) upload short-form videos that explain how things work,...
 - [GSPLinkDecoder](launchpad/GSPLinkDecoder.md) - A tiny web app that quickly decodes `gsp://` links. Paste a link in, see what it points to. Saves you the hand-decoding when chasing bug reports or support tickets.
+- [gss-catalog](launchpad/gss-catalog.md) - A catalog of all tools, services and projects on LaunchPad. What it''s for, who it''s for, how to set it up and use it, and good use cases for each.
 - [gss-doc-api](launchpad/gss-doc-api.md) - An API that uses OpenAI to parse data out of documents. Currently supports invoices and sales orders, with more document types planned. Live at `docs.globalshopsolutions.ai`.
+- [GSS Document API - Admin Dashboard](launchpad/gss-document-api-account-management.md) - Account management / Admin tool.
+- [GAP Entry Wizard](launchpad/gss-projectcreation.md) - Internal app created via Launchpad by emarlow@gssmail.com
+- [gss-qa-step-recorder](launchpad/gss-qa-step-recorder.md) - Records GSS V6 clicks/keystrokes into reproducible numbered QA steps. Local .NET 8 / WPF, on-machine only.
 - [gss-stripe-connect](launchpad/gss-stripe-connect.md) - A tool to onboard customers as GSS Stripe Connect Accounts — the workflow that lets a customer accept payments through GSS using Stripe under the hood.
+- [gss-stripe-relay](launchpad/gss-stripe-relay.md) - The relay ("listening post") is the single outbound trust boundary for Stripe e-invoice creation
 - [gssbrowser](launchpad/gssbrowser.md) - GSS Browser, on the web. Same backend code as the desktop GSS Browser, but browser-accessible — so it can be used to reproduce bugs and run automated AI-driven testing without...
 - [GSSEOtogo](launchpad/GSSEOtogo.md) - A LaunchPad-hosted service for GSSEO I/O against Pervasive over the web. Owner contact below for the specific scope.
 - [gsshelp-letterpress](launchpad/gsshelp-letterpress.md) - Exports articles from Helpjuice into Word or PDF using the official GSS letterhead. Lets you turn an online doc into a polished, shareable file customers (and execs) recognize.
 - [hookmaintenance](launchpad/hookmaintenance.md) - Defines hook ID ranges and manages script hooks within them — their details, settings, and activation status.
 - [ihop-rapid-relay](launchpad/ihop-rapid-relay.md) - A LaunchPad app related to IHOP (the GSS service-call backend) and an ATG-Edge "rapid relay" workflow. Owner contact below for the specific use case.
+- [improvement-success](launchpad/improvement-success.md) - Internal app created via Launchpad by egillispie@gssmail.com
+- [in-house-tools](launchpad/in-house-tools.md) - Tools for In House Troubleshooting
+- [infralog](launchpad/infralog.md) - Scrape logs and store them in a ClickHouse database for AI consumption
+- [TA Test Finder (first slice)](launchpad/intelligent-ta.md) - TaFinder tells you which TestArchitect tests provably exercised a given program, function, screen, or table — turning "log all" run data into an auditable, searchable coverage...
 - [issue-maintenance-api](launchpad/issue-maintenance-api.md) - The JWT-authenticated, container-hosted version of the Issue Maintenance API. Same surface as the legacy IIS version, but runs on the LaunchPad platform with platform-provided...
+- [Issue Maintenance — Menu Ownership Dashboard](launchpad/issue-maintenance-menu-ownership.md) - Internal app created via Launchpad by cmasden@gssmail.com
 - [issue-manager-mcp](launchpad/issue-manager-mcp.md) - A LaunchPad-hosted MCP server for issue/project creation. Pre-dates the LaunchPad MCP kind tag, so it's still labeled "Web App" — but functionally it's an MCP. Owner contact below.
+- [Jenkins Build Monitor](launchpad/jenkins-build-status-bookmarklet.md) - A boolmarklet that brings up a build status for Jenkins builds with a summary of what step its on and test run status.
+- [jevins-cool-app](launchpad/jevins-cool-app.md) - Internal app created via Launchpad by jjoy@gssmail.com
 - [launchpad (the host platform itself)](launchpad/launchpad.md) - LaunchPad is the internal app-provisioning platform that hosts most of the apps in this catalog.
-- [log-parser](launchpad/log-parser.md) - An MCP server that parses GSS SP2 log files (CoreLog, GSSEO, OCTSRS, ACU COBOL traces) into structured, noise-filtered records that AI assistants can actually reason about.
+- [license-server](launchpad/license-server.md) - Test api for license reporting and artifacts. Streams appropriate version of worker version based on reported GS version.
+- [log-parser](launchpad/log-parser.md) - Internal app created via Launchpad by zsandford@gssmail.com
 - [mcp-artifacts](launchpad/mcp-artifacts.md) - A team-organized library of AI skills, rules, and agent definitions. The artifacts in this library are read at runtime by the [mcp-intelligence MCP...
 - [mobile-crm-status](launchpad/mobile-crm-status.md) - Monitors MobileCRM endpoints (production, edge, and tenant APIs) and pings Microsoft Teams when one goes down. The "is mobile CRM healthy right now?" page.
+- [Call Dashboard](launchpad/my-call-dashboard.md) - Real-time Call Dashboard for tracking Service Web calls through triage, development, and QA. Includes a local web dashboard, weekly reports, and Cursor IDE automation.
+- [TAD Analyzer](launchpad/nethum-abhay-tad-project.md) - intern project thing
+- [Newsletter](launchpad/newsletter.md) - Internal app created via Launchpad by avaldez@gssmail.com
+- [ni-revenue-tracker](launchpad/ni-revenue-tracker.md) - Overall revenue and hours to budget for New Implementations
+- [onsite — P&E ride-along scheduler](launchpad/onsite.md) - Internal app created via Launchpad by asmith@gssmail.com
+- [patch-maintenance](launchpad/patch-maintenance.md) - App for QA to manage Patch releases and view various information about patch manifests.
 - [pe-ai-library](launchpad/pe-ai-library.md) - The centralized source of truth for engineering AI rules and skills at GSS. Provides modular, reusable standards (global, guild, and team-specific) and generates curated rule...
 - [pervasiveschema](launchpad/pervasiveschema.md) - A LaunchPad-hosted MCP server exposing the schema of all Pervasive tables and columns, plus their mappings to the EO Objects namespace (object name, grouping, property names).
 - [program-issue-tracker](launchpad/program-issue-tracker.md) - Search every issue tied to a specific Program. If you maintain a program in GSSERP and want a quick view of every bug, request, and customer call against it — this is the search.
 - [QA-daily-standup-rotation](launchpad/QA-daily-standup-rotation.md) - Picks who runs QA standup each day. Removes the awkward "uh, who's leading today?" moment. Just opens the page, see whose turn it is.
+- [qa-qtest-metrics](launchpad/qa-qtest-metrics.md) - Internal app created via Launchpad by karrambide@gssmail.com
+- [qa-qtest-search-by-program](launchpad/qa-qtest-search-by-program.md) - Internal app created via Launchpad by ecortez@gssmail.com
 - [QA-resolved-issues](launchpad/QA-resolved-issues.md) - A dashboard of every issue resolved by QA. Useful for weekly status, retrospectives, and showing "what we got done" to leadership.
+- [qa-weeklystatus-dashboard](launchpad/qa-weeklystatus-dashboard.md) - This is a qa tool to use to track your weekly workload and keep track of your active calls and have it all connected in one place.
 - [qchat](launchpad/qchat.md) - Schedules quarterly check-ins across teams so managers can publish slots, members can book, and calendar invites can be sent through Microsoft Graph.
 - [qTest-MCP-Server](launchpad/qTest-MCP-Server.md) - A read-only MCP server that lets AI agents query qTest Manager — test cases, runs, requirements, defects, and more.
+- [QTEST-TA TEST CASE REPO LOOKUP](launchpad/qtest-ta-tc-repo-lookup.md) - Internal app created via Launchpad by karrambide@gssmail.com
 - [queue-routing](launchpad/queue-routing.md) - An MCP server that triages the P&E Bugs queue on Service Web. Analyzes incoming calls, recommends which team queue they belong in, and (when authorized) executes the transfer...
 - [quick-option-import-export-web](launchpad/quick-option-import-export-web.md) - A web-based tool for importing, editing, and exporting Option JSON files. Spreadsheet-style editing with full round-trip preservation, so the JSON you export matches what the...
 - [rapid-ihop-relay](launchpad/rapid-ihop-relay.md) - A LaunchPad app related to IHOP and a "rapid relay" workflow, owned by the ATG-Edge team.
+- [RepoHound](launchpad/repohound.md) - A tool to fuzzy search all orgs and repos
+- [saas-calculators](launchpad/saas-calculators.md) - A calculator to set up cloud accounts for customers, to set payment amounts based on selections
+- [semaphore](launchpad/semaphore.md) - A web implementation of Issue Maintenance
 - [service-web-api](launchpad/service-web-api.md) - A modern .NET 9 Minimal API exposing all IHOP_Net data across 17 domains. Replaces the legacy `SW_CallService.Api` with pure inline SQL (no stored procedures), interactive...
+- [service-web-telemetry](launchpad/service-web-telemetry.md) - Internal app created via Launchpad by avaldez@gssmail.com
+- [sitrep-tst](launchpad/sitrep-tst.md) - testing platform before porting over full application
+- [support-data-extraction-vault](launchpad/support-data-extraction-vault.md) - Internal app created via Launchpad by jjoy@gssmail.com
 - [svn-ops (svn-mcp)](launchpad/svn-ops.md) - A general-purpose Subversion MCP server. Exposes the full SVN command surface (checkout, log, diff, blame, commit, branch, etc.) to MCP-compatible clients (Cursor, Claude Code,...
 - [TABugTracking](launchpad/TABugTracking.md) - Tracks bugs caught by Test Architect (TA) tests. The official place to see "which production bugs would have been caught by automation if we had the right test?".
+- [tad-analysis-combined](launchpad/tad-analysis-combined.md) - tad analysis project built by the 2026 interns :)
 - [tad-dashboard](launchpad/tad-dashboard.md) - The real-time monitoring and administration dashboard for **Test Architect Distributed (TAD)**.
 - [tad-database-service](launchpad/tad-database-service.md) - The central data store and REST API for **Test Architect Distributed (TAD)**. Provides persistent storage, real-time updates, and the primary API surface for the TAD dashboard...
 - [tad-host-manager-service](launchpad/tad-host-manager-service.md) - The orchestration / control-plane API for **Test Architect Distributed (TAD)**. Sits between the dashboard and the individual `HostMachineService` instances on each physical...
+- [TAD Service Detector](launchpad/tad-service-detector.md) - Internal app created via Launchpad by asalimgereyeva@gssmail.com
+- [TAD Triage & Remediation-Draft Assistant](launchpad/tad-too-tuff.md) - Internal app created via Launchpad by kcao@gssmail.com
 - [TAD-Weekly-Stats](launchpad/TAD-Weekly-Stats.md) - Weekly TestArchitect testing statistics dashboard. Shows what got tested, what passed, what failed, and how that's trending — at a weekly cadence.
 - [tad-worker-service](launchpad/tad-worker-service.md) - The background job processor for **Test Architect Distributed (TAD)**. Headless .NET 6 worker that assigns pending test issues to available VMs, retries failed notifications,...
+- [talentlms-tool](launchpad/talentlms-tool.md) - Internal app created via Launchpad by asalimgereyeva@gssmail.com
+- [TC Navigation Catalog](launchpad/tc-navigation-catalog.md) - Internal app created via Launchpad by zsandford@gssmail.com
 - [team-14-zen-tunnel](launchpad/team-14-zen-tunnel.md) - A read-only FastAPI + MCP service for querying `GLOBAL51Q` and `COMMON51Q` from Team 14's AI alerts platform.
+- [Team Updates — Monday Board Summarizer](launchpad/team-updates.md) - Review team updates
+- [telemetrydata](launchpad/telemetrydata.md) - Internal app created via Launchpad by bbrambila@gssmail.com
 - [Test-Case-Dashboard](launchpad/Test-Case-Dashboard.md) - Unified test-coverage dashboard for **qTest** (manual test cases) and **TestArchitect** (automated tests).
+- [test-coverage-xcompare](launchpad/test-coverage-xcompare.md) - This app reviews repository unit tests and current TA tests to check for duplicated testing efforts and provide a better analysis of code coverage
 - [testarchitect-mcp](launchpad/testarchitect-mcp.md) - An MCP server that gives AI assistants access to TestArchitect test management data.
+- [Traveler](launchpad/traveler.md) - Developer workflow planning tool similar to Monday. Provides easy serviceweb call importing and agile cadence support.
+- [Updait](launchpad/updait.md) - A system for distilling project updates into a single, audience-focused, textual update
 - [weekly-performance-dashboard](launchpad/weekly-performance-dashboard.md) - Weekly performance dashboard for the Maintenance Operations, Maintenance OE, and PPT-Bugs teams.
 - [zen-data-builder](launchpad/zen-data-builder.md) - A Windows desktop tool that browses, generates, and manages test data inside Actian Zen / Pervasive PSQL databases (the legacy ERP backend).
 - [zen-log-parser](launchpad/zen-log-parser.md) - Parses and analyzes Pervasive Zen database log files. Turns a wall of cryptic log text into a tabbed interface where you can sift through queries, find slow ones, and identify...
@@ -102,15 +160,20 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 GSS-specific MCP servers that any MCP-compatible AI agent can use, including Cursor, Claude Code, Codex, and other clients.
 
 - [MCP Server: book-of-armaments](mcp-servers/book-of-armaments.md) - Semantic search MCP server for the Helpjuice knowledge base. Lets AI assistants search GSS Helpjuice articles by meaning (not just keywords) and surface tribal knowledge from...
+- [COBOL Build & Deploy MCP Server](mcp-servers/cobol-build-and-deploy-mcp.md) - MCP server that will build COBOL programs, launch a Clinic company, and deploy built programs to Company
 - [MCP Server: cobol-codebase](mcp-servers/cobol-codebase.md) - Gives AI assistants read access to our COBOL source repository and SVN log history. The backbone behind the cobol-mcp LaunchPad app.
 - [MCP Server: DevExpress Docs](mcp-servers/devexpress.md) - Lets your AI agent search and pull DevExpress documentation directly into a session.
 - [MCP Server: GitHub](mcp-servers/github.md) - Lets your AI agent search code, manage pull requests, read/file issues, and inspect repos across GitHub — all without leaving the chat.
 - [MCP Server: internal-tools-docs](mcp-servers/internal-tools-docs.md) - Lets AI assistants search the internal-tools documentation site from inside an AI agent session. Saves you from copy-pasting from the docs portal.
 - [MCP Server: internal-tools-status](mcp-servers/internal-tools-status.md) - Lets AI assistants check the live health/status of internal tools (LaunchPad apps, MCP servers, infra) without leaving the AI agent session.
 - [MCP Server: mcp-intelligence](mcp-servers/mcp-intelligence.md) - The shared "memory" layer for AI tools at GSS. When your AI agent finishes a meaningful piece of work — a deployment, a bug fix, a design decision — it logs the outcome here....
+- [mcp-intelligence-monitor](mcp-servers/mcp-intelligence-monitor.md) - A monitoring service for MCP-Intelligence for Cursor and Claude Code (maybe more tool support in future)
 - [MCP Server: microsoft-365](mcp-servers/microsoft-365.md) - Lets AI agents search your Outlook email, Outlook calendar, Teams chat, SharePoint, and find meeting availability — all through your normal Microsoft 365 sign-in.
 - [MCP Server: monday.com](mcp-servers/monday.md) - Lets your AI agent read and update monday.com boards, items, columns, and updates using your GSS monday account. The bridge between AI assistants and our active project boards.
 - [MCP Server: Notion](mcp-servers/notion.md) - Lets your AI agent search and read Notion content (pages, databases, blocks) using your GSS Notion account.
+- [Rocketlane MCP Server v2.7.1](mcp-servers/rocketlane-mcp.md) - MCP for connecting with Rocketlane
+- [SourceControlWatch](mcp-servers/sourcecontrolwatch.md) - Tracks file-level GitHub and SVN commits for GSS; local WinForms app plus a Launchpad API for queries, ingest, and mcp-intelligence.
+- [ui-standards](mcp-servers/ui-standards.md) - Description: RAG-backed MCP server for GSS WinForms UI standards, ScreenBuilder API reference, and visual compliance auditing.
 
 ---
 

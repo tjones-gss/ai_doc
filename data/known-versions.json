@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-07-01",
+  "_updated": "2026-07-02",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.197",
+    "claude_code_cli_release": "v2.1.198",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -31,7 +31,11 @@
       "TABugTracking",
       "TAD-Weekly-Stats",
       "Test-Case-Dashboard",
+      "abhay-cool-app",
       "agents",
+      "ai-success-stories",
+      "ai-tool-usage",
+      "akhilesh-tad",
       "appcart",
       "aps-scheduling-api",
       "arc-scanner",
@@ -39,87 +43,2030 @@
       "ashley-test1",
       "atge-issue-traffic-manager",
       "auth-test",
+      "beacon",
       "bom-compare-generator",
       "book-of-armaments",
       "bracket-helper",
       "brain",
+      "brain-feeder",
       "bug-fixer",
       "bug-traffic-dashboard",
       "bug-triage-pack",
+      "career-path-skills-maint",
       "career-path-tracker",
+      "carte-blanche",
       "clinic-utilities",
+      "cobol-build-and-deploy-mcp",
+      "cobol-forge",
       "cobol-mcp",
+      "cobolog",
+      "context-reader",
       "cursor-cloud-agent-test",
+      "daily-crossword",
+      "delta-t",
       "designerconsolidation",
       "desk-test2",
       "dev-petz-app",
       "docs",
+      "employee-assessments",
       "eoq",
+      "escalation-tracker",
       "feature-request",
       "featuretoggles",
       "g2p-compare",
       "g2p-tables-usage-parser",
+      "gab-agent-kit",
       "gab-codeeditor-mcp",
       "gabmcpserver",
+      "genii-quote",
+      "git-org-trawler",
+      "globalmasterfile-launchpad",
       "globe-toolbox",
       "globe-tv",
+      "gss-catalog",
       "gss-command-center",
       "gss-doc-api",
+      "gss-document-api-account-management",
+      "gss-projectcreation",
+      "gss-qa-step-recorder",
       "gss-stripe-connect",
+      "gss-stripe-relay",
       "gssbrowser",
       "gsshelp-letterpress",
       "hackplan",
       "heartbeat",
       "hookmaintenance",
       "ihop-rapid-relay",
+      "improvement-success",
+      "in-house-tools",
+      "infralog",
+      "intelligent-ta",
       "issue-maintenance-api",
+      "issue-maintenance-menu-ownership",
       "issue-manager-mcp",
       "issuemaintenance-simple-api",
+      "jenkins-build-status-bookmarklet",
+      "jevins-cool-app",
       "keycloak-theme",
+      "license-server",
       "like-and-gridscribe",
+      "log-parser",
       "mcp-artifacts",
       "mcp-intelligence",
+      "mcp-intelligence-monitor",
       "menu-telemetry",
       "mobile-crm-status",
       "monday-board-update",
+      "my-call-dashboard",
+      "nethum-abhay-tad-project",
+      "newsletter",
+      "ni-revenue-tracker",
+      "onsite",
       "order-delete-inspector",
+      "patch-maintenance",
       "pe-ai-library",
       "pervasiveschema",
       "petz-salesorders",
       "program-issue-tracker",
       "qTest-MCP-Server",
+      "qa-qtest-metrics",
+      "qa-qtest-search-by-program",
+      "qa-weeklystatus-dashboard",
       "qchat",
+      "qtest-ta-tc-repo-lookup",
       "queue-routing",
       "quick-option-import-export-web",
       "rapid-ihop-relay",
       "rapid-qtest-ta",
+      "repohound",
       "report-id-tool",
       "ret-sav-hel",
+      "rocketlane-mcp",
+      "saas-calculators",
       "schema-manager",
       "schema-manager-2",
       "schema-manager-3",
       "schema-viewer",
+      "semaphore",
       "service-web-api",
+      "service-web-telemetry",
+      "sitrep-tst",
+      "sourcecontrolwatch",
+      "support-data-extraction-vault",
       "svn-ops",
+      "tad-analysis-combined",
       "tad-dashboard",
       "tad-database-service",
       "tad-host-manager-service",
+      "tad-service-detector",
+      "tad-too-tuff",
       "tad-worker-service",
+      "talentlms-tool",
+      "tc-navigation-catalog",
       "team-14-zen-tunnel",
       "team-6-app",
+      "team-updates",
       "team13-hackatron",
       "team6hackathonrelay",
+      "telemetrydata",
       "test-app",
       "test-app-to-get-access",
+      "test-coverage-xcompare",
       "test1",
       "test2",
       "testarchitect-mcp",
       "testing-conflict-detector",
+      "traveler",
       "trent",
+      "ui-standards",
+      "updait",
       "webhook-test",
       "weekly-performance-dashboard",
       "zen-data-builder",
       "zen-log-parser"
-    ]
+    ],
+    "repo_snapshots": {
+      "schema-viewer": {
+        "description": "Database schema viewer",
+        "pushed_at": "2026-04-28T18:12:38Z",
+        "created_at": "2026-02-05T17:49:49Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/schema-viewer",
+        "topics": [
+          "owner-cmasden-at-gssmail-dot-com"
+        ]
+      },
+      "docs": {
+        "description": "Internal GitOps documentation site",
+        "pushed_at": "2026-06-19T14:07:02Z",
+        "created_at": "2026-02-05T20:43:37Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/docs",
+        "topics": [
+          "owner-hfutrell-at-gssmail-dot-com"
+        ]
+      },
+      "GSSEOtogo": {
+        "description": "GSSEO I/O with Pervasive via Web",
+        "pushed_at": "2026-03-02T22:37:56Z",
+        "created_at": "2026-02-11T19:45:16Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/GSSEOtogo",
+        "topics": [
+          "owner-aakram-at-gssmail-dot-com"
+        ]
+      },
+      "zen-data-builder": {
+        "description": "A Windows Forms tool for browsing, generating, and managing test data in Actian Zen / Pervasive PSQL databases via ODBC. Built for the GSSERP legacy ERP system to support QA, development, and data migration testing.",
+        "pushed_at": "2026-03-17T17:39:48Z",
+        "created_at": "2026-02-11T20:24:43Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/zen-data-builder",
+        "topics": [
+          "owner-tjones-at-gssmail-dot-com"
+        ]
+      },
+      "cobol-mcp": {
+        "description": "An MCP server to allow users to have access to an updated repo of our COBOL source code and SVN log data",
+        "pushed_at": "2026-06-30T21:05:49Z",
+        "created_at": "2026-02-11T20:30:26Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/cobol-mcp",
+        "topics": [
+          "owner-tjones-at-gssmail-dot-com"
+        ]
+      },
+      "auth-test": {
+        "description": null,
+        "pushed_at": "2026-02-12T00:59:33Z",
+        "created_at": "2026-02-12T00:38:25Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/auth-test",
+        "topics": [
+          "owner-hfutrell-at-gssmail-dot-com"
+        ]
+      },
+      "QA-resolved-issues": {
+        "description": "Dashboard that provides all Issues Resolved by QA",
+        "pushed_at": "2026-06-19T13:23:45Z",
+        "created_at": "2026-02-12T17:46:23Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/QA-resolved-issues",
+        "topics": [
+          "owner-pfuentes-at-gssmail-dot-com"
+        ]
+      },
+      "QA-daily-standup-rotation": {
+        "description": "QA Daily Standup Rotation",
+        "pushed_at": "2026-05-21T14:20:26Z",
+        "created_at": "2026-02-12T17:59:54Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/QA-daily-standup-rotation",
+        "topics": [
+          "owner-pfuentes-at-gssmail-dot-com"
+        ]
+      },
+      "Test-Case-Dashboard": {
+        "description": null,
+        "pushed_at": "2026-06-16T13:37:24Z",
+        "created_at": "2026-02-12T19:43:15Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/Test-Case-Dashboard",
+        "topics": [
+          "owner-jchheda-at-gssmail-dot-com"
+        ]
+      },
+      "testarchitect-mcp": {
+        "description": "MCP server providing AI assistants with access to TestArchitect test management data",
+        "pushed_at": "2026-06-25T15:42:07Z",
+        "created_at": "2026-02-12T19:45:22Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/testarchitect-mcp",
+        "topics": [
+          "owner-ssmith-at-gssmail-dot-com"
+        ]
+      },
+      "CausingIssueDashboard": {
+        "description": "Dashboard for viewing issues with Causing Issue relationships from Issue Maintenance",
+        "pushed_at": "2026-05-06T21:15:36Z",
+        "created_at": "2026-02-12T21:56:15Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/CausingIssueDashboard",
+        "topics": [
+          "owner-mevans-at-gssmail-dot-com"
+        ]
+      },
+      "test-app": {
+        "description": "Internal app created via Launchpad by hfutrell@gssmail.com",
+        "pushed_at": "2026-02-14T00:09:45Z",
+        "created_at": "2026-02-14T00:09:39Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/test-app",
+        "topics": [
+          "launchpad",
+          "owner-hfutrell-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "program-issue-tracker": {
+        "description": "App used to search all issues related to a Program",
+        "pushed_at": "2026-06-24T15:49:59Z",
+        "created_at": "2026-02-17T21:51:58Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/program-issue-tracker",
+        "topics": [
+          "launchpad",
+          "owner-pfuentes-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "tad-database-service": {
+        "description": "Test Architect Distributed - Database Service API (PostgreSQL, ASP.NET Core)",
+        "pushed_at": "2026-07-01T13:39:35Z",
+        "created_at": "2026-02-23T18:52:16Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-database-service",
+        "topics": [
+          "owner-ssmith-at-gssmail-dot-com"
+        ]
+      },
+      "schema-manager": {
+        "description": "Internal app created via Launchpad by cmasden@gssmail.com",
+        "pushed_at": "2026-05-21T15:31:21Z",
+        "created_at": "2026-02-23T19:34:56Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/schema-manager",
+        "topics": [
+          "launchpad",
+          "owner-cmasden-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "tad-host-manager-service": {
+        "description": null,
+        "pushed_at": "2026-05-07T13:36:17Z",
+        "created_at": "2026-02-23T19:51:19Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-host-manager-service",
+        "topics": [
+          "owner-ssmith-at-gssmail-dot-com"
+        ]
+      },
+      "tad-worker-service": {
+        "description": null,
+        "pushed_at": "2026-07-02T13:12:26Z",
+        "created_at": "2026-02-23T19:51:53Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-worker-service",
+        "topics": [
+          "owner-ssmith-at-gssmail-dot-com"
+        ]
+      },
+      "tad-dashboard": {
+        "description": null,
+        "pushed_at": "2026-07-02T13:13:06Z",
+        "created_at": "2026-02-23T19:52:12Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-dashboard",
+        "topics": [
+          "owner-ssmith-at-gssmail-dot-com"
+        ]
+      },
+      "menu-telemetry": {
+        "description": "Internal app created via Launchpad by cmasden@gssmail.com",
+        "pushed_at": "2026-06-24T17:53:50Z",
+        "created_at": "2026-02-23T22:40:33Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/menu-telemetry",
+        "topics": [
+          "launchpad",
+          "owner-cmasden-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "gsshelp-letterpress": {
+        "description": "Export articles from Helpjuice using the GSS standard letterhead into Word or PDF",
+        "pushed_at": "2026-03-05T04:13:51Z",
+        "created_at": "2026-02-24T03:45:32Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gsshelp-letterpress",
+        "topics": []
+      },
+      "pe-ai-library": {
+        "description": "Centralized source of truth for Engineering AI rules and skills. Provides modular, reusable standards (global, guild, and team-specific) and generates curated rule sets for each team to ensure clean AI context, prevent policy drift, and streamline onboarding.",
+        "pushed_at": "2026-02-25T18:34:19Z",
+        "created_at": "2026-02-24T17:23:06Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/pe-ai-library",
+        "topics": [
+          "owner-smedina-at-gssmail-dot-com"
+        ]
+      },
+      "gss-command-center": {
+        "description": null,
+        "pushed_at": "2026-02-24T20:31:43Z",
+        "created_at": "2026-02-24T19:56:03Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-command-center",
+        "topics": [
+          "owner-tmaynard-at-gssmail-dot-com"
+        ]
+      },
+      "trent": {
+        "description": "my own personal app",
+        "pushed_at": "2026-02-25T14:50:10Z",
+        "created_at": "2026-02-25T14:37:21Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/trent",
+        "topics": [
+          "launchpad",
+          "owner-tmaynard-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "qTest-MCP-Server": {
+        "description": "Repo for qTest MCP Server",
+        "pushed_at": "2026-02-25T16:42:45Z",
+        "created_at": "2026-02-25T16:39:21Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qTest-MCP-Server",
+        "topics": [
+          "owner-pfuentes-at-gssmail-dot-com"
+        ]
+      },
+      "zen-log-parser": {
+        "description": "A tool for parsing and analyzing Pervasive Zen database log files. Zen Log Parser transforms complex log data into an easy-to-navigate tabbed interface, allowing database administrators and developers to efficiently analyze SQL query performance and identify optimization opportunities.",
+        "pushed_at": "2026-03-05T03:09:51Z",
+        "created_at": "2026-02-25T18:43:01Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/zen-log-parser",
+        "topics": [
+          "launchpad",
+          "owner-cvanroekel-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "cursor-cloud-agent-test": {
+        "description": "A test environment for a cursor could agent",
+        "pushed_at": "2026-02-26T20:01:08Z",
+        "created_at": "2026-02-26T14:58:51Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/cursor-cloud-agent-test",
+        "topics": [
+          "launchpad",
+          "owner-tjones-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "schema-manager-2": {
+        "description": "Schema Manager 2 (React/API/MCP parallel track)",
+        "pushed_at": "2026-03-03T22:54:18Z",
+        "created_at": "2026-02-26T19:23:39Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/schema-manager-2",
+        "topics": [
+          "owner-hfutrell-at-gssmail-dot-com"
+        ]
+      },
+      "hookmaintenance": {
+        "description": "Hook Maintenance is a tool for defining hook ID ranges and managing the script hooks within them, including their details, settings, and activation status.",
+        "pushed_at": "2026-06-19T19:47:08Z",
+        "created_at": "2026-02-26T21:35:30Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/hookmaintenance",
+        "topics": [
+          "launchpad",
+          "owner-bbrambila-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "bom-compare-generator": {
+        "description": "A Python tool used to generate a Bill of Material .xlsx file with user defined or randomly generated parts to be used in BOM Compare.",
+        "pushed_at": "2026-06-24T13:44:41Z",
+        "created_at": "2026-02-27T13:30:40Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/bom-compare-generator",
+        "topics": [
+          "launchpad",
+          "owner-ashirley-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "GSPLinkDecoder": {
+        "description": "A simple web app to be able to decode gsp:// links quickly ",
+        "pushed_at": "2026-06-04T19:26:01Z",
+        "created_at": "2026-02-27T14:37:54Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/GSPLinkDecoder",
+        "topics": [
+          "launchpad",
+          "owner-ccraven-at-gssmail-dot-com"
+        ]
+      },
+      "quick-option-import-export-web": {
+        "description": null,
+        "pushed_at": "2026-03-10T19:13:46Z",
+        "created_at": "2026-02-27T17:48:24Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/quick-option-import-export-web",
+        "topics": [
+          "owner-jyu-at-gssmail-dot-com"
+        ]
+      },
+      "DashboardDesAIgner": {
+        "description": "Agent to build dashboard designer dashboards from natural language",
+        "pushed_at": "2026-04-09T12:56:33Z",
+        "created_at": "2026-03-02T04:06:16Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/DashboardDesAIgner",
+        "topics": [
+          "owner-tmaynard-at-gssmail-dot-com"
+        ]
+      },
+      "TAD-Weekly-Stats": {
+        "description": "Weekly TestArchitect testing statistics dashboard",
+        "pushed_at": "2026-05-29T16:17:20Z",
+        "created_at": "2026-03-02T16:13:36Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/TAD-Weekly-Stats",
+        "topics": [
+          "owner-mevans-at-gssmail-dot-com"
+        ]
+      },
+      "gssbrowser": {
+        "description": "GSS Browser on the web. Same backend code but on the web to reproduce bugs and do automated testing with new AI features.",
+        "pushed_at": "2026-03-19T22:03:53Z",
+        "created_at": "2026-03-02T19:35:51Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gssbrowser",
+        "topics": [
+          "owner-aakram-at-gssmail-dot-com"
+        ]
+      },
+      "arc-scanner": {
+        "description": "Scans all repos in a GitHub org to extract SQL table references and join relationships from GabScript and SQL files, then visualizes usage patterns via an interactive dashboard with heatmap, rankings, and per-repo breakdowns.",
+        "pushed_at": "2026-03-05T04:42:08Z",
+        "created_at": "2026-03-03T13:54:14Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/arc-scanner",
+        "topics": [
+          "launchpad",
+          "owner-avaldez-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "designerconsolidation": {
+        "description": "A smart WinForms designer file merge tool that resolves DevExpress .Designer.vb conflicts at the control and property level, replacing hours of manual line-by-line diffing with a 5-minute guided workflow.",
+        "pushed_at": "2026-03-04T18:58:07Z",
+        "created_at": "2026-03-03T22:53:11Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/designerconsolidation",
+        "topics": [
+          "launchpad",
+          "owner-mgumudavally-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "gss-stripe-connect": {
+        "description": "A tool to help onboard customers as GSS Stripe Connect Accounts",
+        "pushed_at": "2026-06-12T15:40:37Z",
+        "created_at": "2026-03-04T16:54:00Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-stripe-connect",
+        "topics": [
+          "launchpad",
+          "owner-mfranzen-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      ".agents": {
+        "description": null,
+        "pushed_at": "2026-03-04T18:20:46Z",
+        "created_at": "2026-03-04T18:20:46Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/.agents",
+        "topics": []
+      },
+      "agents": {
+        "description": "For sharing, distributing and managing agents files",
+        "pushed_at": "2026-03-05T14:51:50Z",
+        "created_at": "2026-03-04T19:18:35Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/agents",
+        "topics": [
+          "launchpad",
+          "owner-hfutrell-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "issue-manager-mcp": {
+        "description": "mcp server for handling issue/project creation",
+        "pushed_at": "2026-03-04T19:23:43Z",
+        "created_at": "2026-03-04T19:23:36Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/issue-manager-mcp",
+        "topics": [
+          "launchpad",
+          "owner-dgordon-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "petz-salesorders": {
+        "description": "Launch the GSS_SalesOrders form as a webpage which could then be used by AI to run and perform tests based on the feature implementation",
+        "pushed_at": "2026-03-04T20:06:33Z",
+        "created_at": "2026-03-04T20:06:27Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/petz-salesorders",
+        "topics": [
+          "launchpad",
+          "owner-mgulam-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "schema-manager-3": {
+        "description": "schema manager app",
+        "pushed_at": "2026-03-04T21:55:21Z",
+        "created_at": "2026-03-04T21:55:15Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/schema-manager-3",
+        "topics": [
+          "launchpad",
+          "owner-gbrenner-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "globe-tv": {
+        "description": "A place where we can store our help videos",
+        "pushed_at": "2026-05-23T18:21:41Z",
+        "created_at": "2026-03-04T23:15:20Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/globe-tv",
+        "topics": [
+          "launchpad",
+          "owner-tjones-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "bug-triage-pack": {
+        "description": "MCP gateway server for bug triage - aggregates COBOL, GitHub, Service Web, and test case tools into a single hosted endpoint. Skills, Agents, and Rules included for maximizing the tools.",
+        "pushed_at": "2026-06-19T16:23:52Z",
+        "created_at": "2026-03-05T18:11:34Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/bug-triage-pack",
+        "topics": [
+          "owner-zsandford-at-gssmail-dot-com"
+        ]
+      },
+      "ret-sav-hel": {
+        "description": "Internal app created via Launchpad by hchau@gssmail.com",
+        "pushed_at": "2026-03-10T19:58:50Z",
+        "created_at": "2026-03-06T17:30:40Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/ret-sav-hel",
+        "topics": [
+          "launchpad",
+          "owner-hchau-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "gss-doc-api": {
+        "description": "Internal app created via Launchpad by msvystun@gssmail.com",
+        "pushed_at": "2026-03-16T18:03:54Z",
+        "created_at": "2026-03-06T18:31:05Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-doc-api",
+        "topics": [
+          "launchpad",
+          "owner-msvystun-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "ashley-test1": {
+        "description": "Internal app created via Launchpad by asmith@gssmail.com",
+        "pushed_at": "2026-04-27T20:56:40Z",
+        "created_at": "2026-03-06T21:59:36Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/ashley-test1",
+        "topics": [
+          "launchpad",
+          "owner-asmith-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "queue-routing": {
+        "description": "MCP server for triaging the P&E Bugs queue on Service Web. Analyzes incoming calls, recommends routing to the correct team queue, and executes transfers with code impact analysis notes. Includes a webhook endpoint for Power Automate integration.",
+        "pushed_at": "2026-06-24T18:17:06Z",
+        "created_at": "2026-03-09T21:44:16Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/queue-routing",
+        "topics": [
+          "owner-zsandford-at-gssmail-dot-com"
+        ]
+      },
+      "weekly-performance-dashboard": {
+        "description": "Weekly performance dashboard for Maintenance Operations, Maintenance OE, and PPT-Bugs teams. Displays applied hours vs call counts with status breakdowns (Completed, In Testing) per employee and sub-team, with expandable call details. Data sourced from IHOP_Net si_action and Issue_Maintenance.",
+        "pushed_at": "2026-05-06T22:40:23Z",
+        "created_at": "2026-03-10T03:38:32Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/weekly-performance-dashboard",
+        "topics": [
+          "launchpad",
+          "owner-rravindranath-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "like-and-gridscribe": {
+        "description": "Converts screenshots of repeat groups for Header ID string, Widths, and Data types. Also allows manual input (case sensitive).",
+        "pushed_at": "2026-03-10T20:18:21Z",
+        "created_at": "2026-03-10T15:21:33Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/like-and-gridscribe",
+        "topics": [
+          "launchpad",
+          "owner-ccanizales-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "book-of-armaments": {
+        "description": "Semantic search MCP server for Helpjuice knowledge base articles. Built with .NET 10, pgvector, and Ollama local embeddings. Provides tools for article search, tribal knowledge  management, and background sync via the Model Context Protocol.",
+        "pushed_at": "2026-05-18T18:24:22Z",
+        "created_at": "2026-03-10T16:17:17Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/book-of-armaments",
+        "topics": [
+          "owner-brennanhitchcock-at-gssmail-dot-com"
+        ]
+      },
+      "mobile-crm-status": {
+        "description": "Internal app created via Launchpad by cmasden@gssmail.com",
+        "pushed_at": "2026-03-16T17:57:28Z",
+        "created_at": "2026-03-11T19:07:23Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mobile-crm-status",
+        "topics": [
+          "launchpad",
+          "owner-cmasden-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "TABugTracking": {
+        "description": "Tracking bugs caught by Test Architect tests",
+        "pushed_at": "2026-03-27T18:24:35Z",
+        "created_at": "2026-03-11T22:24:03Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/TABugTracking",
+        "topics": [
+          "owner-mevans-at-gssmail-dot-com"
+        ]
+      },
+      "hackplan": {
+        "description": "Internal app created via Launchpad by asmith@gssmail.com",
+        "pushed_at": "2026-04-08T13:03:39Z",
+        "created_at": "2026-03-12T21:24:13Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/hackplan",
+        "topics": [
+          "launchpad",
+          "owner-asmith-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "bug-traffic-dashboard": {
+        "description": "Real-time dashboard tracking service call flow through the P&E Bugs queue, showing incoming vs closed vs in-QA-testing metrics by team with weekly trends and call-level drill-down.",
+        "pushed_at": "2026-04-27T18:48:11Z",
+        "created_at": "2026-03-13T14:48:22Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/bug-traffic-dashboard",
+        "topics": [
+          "launchpad",
+          "owner-rravindranath-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "desk-test2": {
+        "description": "Internal app created via Launchpad by hfutrell@gssmail.com",
+        "pushed_at": "2026-03-16T13:48:14Z",
+        "created_at": "2026-03-16T13:48:08Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/desk-test2",
+        "topics": [
+          "launchpad",
+          "owner-hfutrell-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "g2p-compare": {
+        "description": "View decrypted diffs of .g2p (GAB packaged script) files across Git commits.",
+        "pushed_at": "2026-03-17T14:15:43Z",
+        "created_at": "2026-03-17T03:17:11Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/g2p-compare",
+        "topics": [
+          "launchpad",
+          "owner-cvanroekel-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "atge-issue-traffic-manager": {
+        "description": "An internal tool for ATG Edge team to manage and batch related issues for QA",
+        "pushed_at": "2026-03-19T14:24:41Z",
+        "created_at": "2026-03-17T14:59:31Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/atge-issue-traffic-manager",
+        "topics": [
+          "launchpad",
+          "owner-mfranzen-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "feature-request": {
+        "description": "This app will be a way to submit and upvote feature requests for Launchpad, Launchpad projects, and new projects",
+        "pushed_at": "2026-03-17T18:28:35Z",
+        "created_at": "2026-03-17T15:21:41Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/feature-request",
+        "topics": [
+          "launchpad",
+          "owner-smedina-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "featuretoggles": {
+        "description": "Feature Toggles allow to control which features are available in the system.",
+        "pushed_at": "2026-06-30T18:15:36Z",
+        "created_at": "2026-03-17T16:10:47Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/featuretoggles",
+        "topics": [
+          "launchpad",
+          "owner-bbrambila-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "heartbeat": {
+        "description": "Heartbeat is a tool for listing Customers that have this service enabled. It lists information for each Program and also for a Service Web Call to be created.",
+        "pushed_at": "2026-04-14T16:27:25Z",
+        "created_at": "2026-03-17T16:11:06Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/heartbeat",
+        "topics": [
+          "launchpad",
+          "owner-rduncan-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "clinic-utilities": {
+        "description": "An MCP server to return information regarding Clinic company codes. Possibly more things added over time.",
+        "pushed_at": "2026-06-04T23:02:39Z",
+        "created_at": "2026-03-17T18:42:45Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/clinic-utilities",
+        "topics": [
+          "launchpad",
+          "owner-bcorbin-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "keycloak-theme": {
+        "description": "GSS branded Keycloak login theme built with Keycloakify",
+        "pushed_at": "2026-03-19T02:25:16Z",
+        "created_at": "2026-03-19T02:20:07Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/keycloak-theme",
+        "topics": [
+          "owner-hfutrell-at-gssmail-dot-com"
+        ]
+      },
+      "mcp-intelligence": {
+        "description": "Development intelligence engine — accumulates organizational knowledge from MCP interactions, serves team-aware AI artifacts (skills, rules, agents), and exposes a REST API for upstream consumers.",
+        "pushed_at": "2026-06-30T22:45:30Z",
+        "created_at": "2026-03-19T16:48:30Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-intelligence",
+        "topics": [
+          "owner-zsandford-at-gssmail-dot-com"
+        ]
+      },
+      "mcp-artifacts": {
+        "description": "Team-organized library of AI skills, rules, and agent definitions.  Read by mcp-intelligence at runtime.",
+        "pushed_at": "2026-07-01T21:30:03Z",
+        "created_at": "2026-03-19T16:49:21Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-artifacts",
+        "topics": [
+          "owner-tjones-at-gssmail-dot-com"
+        ]
+      },
+      "brain": {
+        "description": "The Global Shop Solutions brain. Root Agent of Agents.",
+        "pushed_at": "2026-07-02T00:02:49Z",
+        "created_at": "2026-03-20T14:26:33Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/brain",
+        "topics": [
+          "launchpad",
+          "owner-hfutrell-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "globe-toolbox": {
+        "description": "Tool tray toolbox for the globe",
+        "pushed_at": "2026-06-29T19:37:30Z",
+        "created_at": "2026-03-20T19:20:22Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/globe-toolbox",
+        "topics": []
+      },
+      "test2": {
+        "description": "asdf",
+        "pushed_at": "2026-03-20T21:01:39Z",
+        "created_at": "2026-03-20T21:01:33Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/test2",
+        "topics": [
+          "launchpad",
+          "owner-tmaynard-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "g2p-tables-usage-parser": {
+        "description": "Internal app created via Launchpad by jrodriguez@gssmail.com",
+        "pushed_at": "2026-03-31T17:02:27Z",
+        "created_at": "2026-03-24T19:48:10Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/g2p-tables-usage-parser",
+        "topics": [
+          "launchpad",
+          "owner-jrodriguez-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "testing-conflict-detector": {
+        "description": "App used to detect conflicts with multiple Issues sent to testing with the same program",
+        "pushed_at": "2026-06-30T19:54:20Z",
+        "created_at": "2026-03-27T15:04:01Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/testing-conflict-detector",
+        "topics": [
+          "launchpad",
+          "owner-pfuentes-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "webhook-test": {
+        "description": "For testing webhook reception",
+        "pushed_at": "2026-04-01T21:25:53Z",
+        "created_at": "2026-04-01T19:26:23Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/webhook-test",
+        "topics": [
+          "launchpad",
+          "owner-hfutrell-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "order-delete-inspector": {
+        "description": "Inspect Pervasive tables affected by sales order deletion",
+        "pushed_at": "2026-04-14T20:32:12Z",
+        "created_at": "2026-04-01T19:50:49Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/order-delete-inspector",
+        "topics": [
+          "launchpad",
+          "owner-mgumudavally-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "Quality-Pulse": {
+        "description": "Dashboard to track how trips through testing ",
+        "pushed_at": "2026-07-01T13:12:33Z",
+        "created_at": "2026-04-01T21:42:25Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/Quality-Pulse",
+        "topics": [
+          "owner-mevans-at-gssmail-dot-com"
+        ]
+      },
+      "career-path-tracker": {
+        "description": "Track your career path through quarters. Log skills and export data.",
+        "pushed_at": "2026-04-30T17:49:55Z",
+        "created_at": "2026-04-02T13:35:07Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/career-path-tracker",
+        "topics": [
+          "launchpad",
+          "owner-gdeloscobos-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "monday-board-update": {
+        "description": "Currently for automatically updating the ATG-Edge Team's Bi-weekly update board. Could Expand to do more",
+        "pushed_at": "2026-06-22T14:37:56Z",
+        "created_at": "2026-04-02T18:57:42Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/monday-board-update",
+        "topics": [
+          "launchpad",
+          "owner-sharris-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "bracket-helper": {
+        "description": "Create and manage brackets.",
+        "pushed_at": "2026-04-03T17:43:30Z",
+        "created_at": "2026-04-02T20:08:30Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/bracket-helper",
+        "topics": [
+          "launchpad",
+          "owner-gdeloscobos-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "issuemaintenance-simple-api": {
+        "description": "Internal app created via Launchpad by gjames@gssmail.com",
+        "pushed_at": "2026-04-09T18:56:02Z",
+        "created_at": "2026-04-07T14:44:32Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/issuemaintenance-simple-api",
+        "topics": [
+          "launchpad",
+          "owner-gjames-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "gabmcpserver": {
+        "description": "GAB MCP server",
+        "pushed_at": "2026-04-09T20:32:09Z",
+        "created_at": "2026-04-07T17:31:53Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gabmcpserver",
+        "topics": [
+          "launchpad",
+          "owner-bbaker-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "team-14-zen-tunnel": {
+        "description": "Readonly Zen tunnel for Team 14 AI alerts",
+        "pushed_at": "2026-04-09T20:47:10Z",
+        "created_at": "2026-04-07T18:21:08Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/team-14-zen-tunnel",
+        "topics": [
+          "owner-msvystun-at-gssmail-dot-com"
+        ]
+      },
+      "gab-codeeditor-mcp": {
+        "description": "This is the mcp for gab codeeditor ",
+        "pushed_at": "2026-04-07T19:10:51Z",
+        "created_at": "2026-04-07T19:10:45Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gab-codeeditor-mcp",
+        "topics": [
+          "launchpad",
+          "owner-tparvathaneni-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "test1": {
+        "description": "Internal app created via Launchpad by jcipolla@gssmail.com",
+        "pushed_at": "2026-04-07T20:15:18Z",
+        "created_at": "2026-04-07T20:15:11Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/test1",
+        "topics": [
+          "launchpad",
+          "owner-jcipolla-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "aps-scheduling-api": {
+        "description": "stay out... be warned",
+        "pushed_at": "2026-04-09T18:35:44Z",
+        "created_at": "2026-04-07T21:59:19Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/aps-scheduling-api",
+        "topics": [
+          "owner-tmaynard-at-gssmail-dot-com"
+        ]
+      },
+      "rapid-ihop-relay": {
+        "description": "Internal app created via Launchpad by rravindranath@gssmail.com",
+        "pushed_at": "2026-04-07T22:24:51Z",
+        "created_at": "2026-04-07T22:24:46Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/rapid-ihop-relay",
+        "topics": [
+          "owner-rravindranath-at-gssmail-dot-com"
+        ]
+      },
+      "ihop-rapid-relay": {
+        "description": "Internal app created via Launchpad by rravindranath@gssmail.com",
+        "pushed_at": "2026-04-09T18:07:52Z",
+        "created_at": "2026-04-07T23:45:12Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/ihop-rapid-relay",
+        "topics": [
+          "launchpad",
+          "owner-rravindranath-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "team6hackathonrelay": {
+        "description": "Internal app created via Launchpad by ttrojacek@gssmail.com",
+        "pushed_at": "2026-04-08T02:35:16Z",
+        "created_at": "2026-04-08T02:35:07Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/team6hackathonrelay",
+        "topics": [
+          "owner-ttrojacek-at-gssmail-dot-com"
+        ]
+      },
+      "team-6-app": {
+        "description": "Team 6 Hackathon App.",
+        "pushed_at": "2026-04-09T18:57:19Z",
+        "created_at": "2026-04-08T12:46:57Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/team-6-app",
+        "topics": [
+          "launchpad",
+          "owner-ttrojacek-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "team13-hackatron": {
+        "description": "Team 13 Hack-a-thon project",
+        "pushed_at": "2026-04-09T18:45:30Z",
+        "created_at": "2026-04-08T14:05:58Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/team13-hackatron",
+        "topics": [
+          "launchpad",
+          "owner-scrow-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "rapid-qtest-ta": {
+        "description": "Internal app created via Launchpad by mgumudavally@gssmail.com",
+        "pushed_at": "2026-04-09T04:12:53Z",
+        "created_at": "2026-04-08T16:49:11Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/rapid-qtest-ta",
+        "topics": [
+          "launchpad",
+          "owner-mgumudavally-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "test-app-to-get-access": {
+        "description": "Creating this to try and get write access to the repo for hackathon",
+        "pushed_at": "2026-04-08T17:01:24Z",
+        "created_at": "2026-04-08T17:01:18Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/test-app-to-get-access",
+        "topics": [
+          "launchpad",
+          "owner-mgarza-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "pervasiveschema": {
+        "description": "Schema of all tables and columns and possibly their mappings to EO Objects namespace, objectName, Grouping and PropertyNames",
+        "pushed_at": "2026-04-09T19:44:57Z",
+        "created_at": "2026-04-09T15:57:27Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/pervasiveschema",
+        "topics": [
+          "launchpad",
+          "owner-aakram-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "svn-ops": {
+        "description": "Internal app created via Launchpad by zsandford@gssmail.com",
+        "pushed_at": "2026-04-09T16:50:40Z",
+        "created_at": "2026-04-09T16:49:44Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/svn-ops",
+        "topics": [
+          "launchpad",
+          "owner-zsandford-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "eoq": {
+        "description": "Internal app created via Launchpad by asmith@gssmail.com",
+        "pushed_at": "2026-06-04T21:23:19Z",
+        "created_at": "2026-04-13T16:17:55Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/eoq",
+        "topics": [
+          "launchpad",
+          "owner-asmith-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "issue-maintenance-api": {
+        "description": "Internal app created via Launchpad by cmasden@gssmail.com",
+        "pushed_at": "2026-06-29T20:29:09Z",
+        "created_at": "2026-04-13T16:52:34Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/issue-maintenance-api",
+        "topics": [
+          "launchpad",
+          "owner-cmasden-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "bug-fixer": {
+        "description": "Internal app created via Launchpad by zsandford@gssmail.com",
+        "pushed_at": "2026-04-14T19:19:32Z",
+        "created_at": "2026-04-14T13:38:20Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/bug-fixer",
+        "topics": [
+          "launchpad",
+          "owner-zsandford-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "artifact-mirroring-service": {
+        "description": "Mirrors artifacts to the artifact store",
+        "pushed_at": "2026-04-14T17:47:19Z",
+        "created_at": "2026-04-14T17:47:13Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/artifact-mirroring-service",
+        "topics": [
+          "launchpad",
+          "owner-hfutrell-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "dev-petz-app": {
+        "description": "Dev-PETZ feature development tracker for GSS_SalesOrders and GSS_Quotes — tracks features, assignments, and roadmap progress for the PETZ development team.",
+        "pushed_at": "2026-04-24T05:25:52Z",
+        "created_at": "2026-04-15T15:40:38Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/dev-petz-app",
+        "topics": [
+          "launchpad",
+          "owner-mgulam-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "service-web-api": {
+        "description": "Internal app created via Launchpad by cmasden@gssmail.com",
+        "pushed_at": "2026-06-10T18:03:53Z",
+        "created_at": "2026-04-16T15:49:04Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/service-web-api",
+        "topics": [
+          "launchpad",
+          "owner-cmasden-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "report-id-tool": {
+        "description": "Create  a new report ID and generate an xml.",
+        "pushed_at": "2026-05-14T13:53:42Z",
+        "created_at": "2026-04-16T16:47:38Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/report-id-tool",
+        "topics": [
+          "launchpad",
+          "owner-dhughes-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "appcart": {
+        "description": "An I.T. focused app store for Global Shop staff to browse, request security reviews of, and install trusted/approved apps.",
+        "pushed_at": "2026-04-23T17:05:01Z",
+        "created_at": "2026-04-20T14:36:44Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/appcart",
+        "topics": [
+          "launchpad",
+          "owner-sstarlin-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "qchat": {
+        "description": "Schedule quarterly check-ins",
+        "pushed_at": "2026-04-20T21:02:52Z",
+        "created_at": "2026-04-20T18:07:16Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qchat",
+        "topics": [
+          "launchpad",
+          "owner-asmith-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "sitrep-tst": {
+        "description": "testing platform before porting over full application",
+        "pushed_at": "2026-04-21T12:59:22Z",
+        "created_at": "2026-04-21T12:59:15Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/sitrep-tst",
+        "topics": [
+          "launchpad",
+          "owner-sfulsom-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "test-coverage-xcompare": {
+        "description": "This app reviews repository unit tests and current TA tests to check for duplicated testing efforts and provide a better analysis of code coverage",
+        "pushed_at": "2026-05-21T15:55:29Z",
+        "created_at": "2026-04-21T14:06:52Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/test-coverage-xcompare",
+        "topics": [
+          "launchpad",
+          "owner-mfranzen-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "qa-weeklystatus-dashboard": {
+        "description": "This is a qa tool to use to track your weekly workload and keep track of your active calls and have it all connected in one place. ",
+        "pushed_at": "2026-04-22T16:25:24Z",
+        "created_at": "2026-04-21T15:02:25Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-weeklystatus-dashboard",
+        "topics": [
+          "launchpad",
+          "owner-aelliot-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "team-updates": {
+        "description": "Review team updates",
+        "pushed_at": "2026-05-06T16:05:07Z",
+        "created_at": "2026-04-22T21:31:20Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/team-updates",
+        "topics": [
+          "launchpad",
+          "owner-avaldez-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "traveler": {
+        "description": "Developer workflow planning tool similar to Monday.  Provides easy serviceweb call importing and agile cadence support.",
+        "pushed_at": "2026-07-01T21:18:05Z",
+        "created_at": "2026-04-23T21:05:12Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/traveler",
+        "topics": [
+          "launchpad",
+          "owner-dgordon-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "ai-tool-usage": {
+        "description": "Track Ai tool seats and usage",
+        "pushed_at": "2026-05-01T03:19:30Z",
+        "created_at": "2026-04-24T13:01:45Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/ai-tool-usage",
+        "topics": [
+          "launchpad",
+          "owner-avaldez-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "qa-qtest-metrics": {
+        "description": "Internal app created via Launchpad by karrambide@gssmail.com",
+        "pushed_at": "2026-07-02T12:38:35Z",
+        "created_at": "2026-04-24T13:41:21Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
+        "topics": [
+          "launchpad",
+          "owner-karrambide-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "updait": {
+        "description": "A system for distilling project updates into a single, audience-focused, textual update",
+        "pushed_at": "2026-05-07T15:54:46Z",
+        "created_at": "2026-04-24T19:28:10Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/updait",
+        "topics": [
+          "launchpad",
+          "owner-sstarlin-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "saas-calculators": {
+        "description": "A calculator to set up cloud accounts for customers, to set payment amounts based on selections",
+        "pushed_at": "2026-05-28T15:24:05Z",
+        "created_at": "2026-04-28T15:13:36Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/saas-calculators",
+        "topics": [
+          "launchpad",
+          "owner-emarlow-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "infralog": {
+        "description": "Scrape logs and store them in a ClickHouse database for AI consumption",
+        "pushed_at": "2026-06-04T19:53:36Z",
+        "created_at": "2026-04-28T17:10:36Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/infralog",
+        "topics": [
+          "launchpad",
+          "owner-aakram-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "qa-qtest-search-by-program": {
+        "description": "Internal app created via Launchpad by ecortez@gssmail.com",
+        "pushed_at": "2026-04-29T20:31:34Z",
+        "created_at": "2026-04-28T20:27:52Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-search-by-program",
+        "topics": [
+          "launchpad",
+          "owner-ecortez-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "ai-success-stories": {
+        "description": "AI Success Stories is an internal tool for tracking and celebrating how our department uses AI in their day-to-day work. Team members submit monthly stories describing a problem they solved with AI, what tool they used, and the impact it had. ",
+        "pushed_at": "2026-04-29T19:40:27Z",
+        "created_at": "2026-04-29T17:58:12Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/ai-success-stories",
+        "topics": [
+          "launchpad",
+          "owner-smedina-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "qtest-ta-tc-repo-lookup": {
+        "description": "Internal app created via Launchpad by karrambide@gssmail.com",
+        "pushed_at": "2026-06-26T13:17:12Z",
+        "created_at": "2026-04-30T13:30:27Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qtest-ta-tc-repo-lookup",
+        "topics": [
+          "launchpad",
+          "owner-karrambide-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "log-parser": {
+        "description": "Internal app created via Launchpad by zsandford@gssmail.com",
+        "pushed_at": "2026-05-05T20:21:49Z",
+        "created_at": "2026-05-04T16:54:52Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/log-parser",
+        "topics": [
+          "launchpad",
+          "owner-zsandford-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "genii-quote": {
+        "description": "An intelligent quoting assistant that helps Global Shop Solutions quickly estimate and prepare quotes for customer custom requests by analyzing request details, identifying required work, suggesting pricing inputs, and producing a consistent, review-ready quote summary for the team.",
+        "pushed_at": "2026-06-09T15:31:06Z",
+        "created_at": "2026-05-05T19:54:10Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/genii-quote",
+        "topics": [
+          "launchpad",
+          "owner-mhowerton-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "career-path-skills-maint": {
+        "description": "Internal app created via Launchpad by asmith@gssmail.com",
+        "pushed_at": "2026-06-30T20:37:06Z",
+        "created_at": "2026-05-05T21:21:49Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/career-path-skills-maint",
+        "topics": [
+          "launchpad",
+          "owner-asmith-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "repohound": {
+        "description": "A tool to fuzzy search all orgs and repos",
+        "pushed_at": "2026-05-07T18:54:20Z",
+        "created_at": "2026-05-07T17:19:31Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/repohound",
+        "topics": [
+          "launchpad",
+          "owner-sstarlin-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "escalation-tracker": {
+        "description": "this will facilitate escalating issues for new implementations through the proper channels. ",
+        "pushed_at": "2026-05-12T21:26:00Z",
+        "created_at": "2026-05-10T11:52:34Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/escalation-tracker",
+        "topics": [
+          "launchpad",
+          "owner-sfulsom-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "context-reader": {
+        "description": "read context to see claims",
+        "pushed_at": "2026-05-11T20:04:27Z",
+        "created_at": "2026-05-11T19:57:37Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/context-reader",
+        "topics": [
+          "launchpad",
+          "owner-dgordon-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "cobol-build-and-deploy-mcp": {
+        "description": "MCP server that will build COBOL programs, launch a Clinic company, and deploy built programs to Company",
+        "pushed_at": "2026-06-05T05:05:01Z",
+        "created_at": "2026-05-13T17:42:14Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/cobol-build-and-deploy-mcp",
+        "topics": [
+          "launchpad",
+          "owner-smiller-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "newsletter": {
+        "description": "Internal app created via Launchpad by avaldez@gssmail.com",
+        "pushed_at": "2026-05-22T19:51:26Z",
+        "created_at": "2026-05-14T02:56:11Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/newsletter",
+        "topics": [
+          "launchpad",
+          "owner-avaldez-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "ui-standards": {
+        "description": "Description: RAG-backed MCP server for GSS WinForms UI standards, ScreenBuilder API reference, and visual compliance auditing. Enables AI agents to generate standards-compliant forms and developers to look up patterns and examples.",
+        "pushed_at": "2026-06-05T17:43:38Z",
+        "created_at": "2026-05-15T15:29:58Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/ui-standards",
+        "topics": [
+          "launchpad",
+          "owner-cvanroekel-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "brain-feeder": {
+        "description": "Feed...me...more!",
+        "pushed_at": "2026-05-19T22:28:04Z",
+        "created_at": "2026-05-15T17:47:25Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/brain-feeder",
+        "topics": [
+          "launchpad",
+          "owner-zsandford-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "beacon": {
+        "description": "Internal app created via Launchpad by brennanhitchcock@gssmail.com",
+        "pushed_at": "2026-06-25T18:09:22Z",
+        "created_at": "2026-05-18T15:01:45Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/beacon",
+        "topics": [
+          "launchpad",
+          "owner-brennanhitchcock-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "improvement-success": {
+        "description": "Internal app created via Launchpad by egillispie@gssmail.com",
+        "pushed_at": "2026-05-18T21:54:20Z",
+        "created_at": "2026-05-18T20:04:01Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/improvement-success",
+        "topics": [
+          "launchpad",
+          "owner-egillispie-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "carte-blanche": {
+        "description": "A scratch pad app for quick diagrams and free-drawing that doesn't look or feel terrible.",
+        "pushed_at": "2026-05-21T17:59:03Z",
+        "created_at": "2026-05-18T21:16:17Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/carte-blanche",
+        "topics": [
+          "launchpad",
+          "owner-sstarlin-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "daily-crossword": {
+        "description": "Test your GSS knowledge",
+        "pushed_at": "2026-06-01T18:48:03Z",
+        "created_at": "2026-05-20T18:16:57Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/daily-crossword",
+        "topics": [
+          "launchpad",
+          "owner-gdeloscobos-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "gss-document-api-account-management": {
+        "description": "Account management / Admin tool.",
+        "pushed_at": "2026-06-30T15:53:46Z",
+        "created_at": "2026-05-21T14:37:26Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-document-api-account-management",
+        "topics": [
+          "launchpad",
+          "owner-rseddon-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "sourcecontrolwatch": {
+        "description": "Tracks file-level GitHub and SVN commits for GSS; local WinForms app plus a Launchpad API for queries, ingest, and mcp-intelligence.",
+        "pushed_at": "2026-06-25T18:47:13Z",
+        "created_at": "2026-05-21T21:48:18Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/sourcecontrolwatch",
+        "topics": [
+          "launchpad",
+          "owner-bcorbin-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "onsite": {
+        "description": "Internal app created via Launchpad by asmith@gssmail.com",
+        "pushed_at": "2026-05-27T21:41:28Z",
+        "created_at": "2026-05-22T18:40:09Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/onsite",
+        "topics": [
+          "launchpad",
+          "owner-asmith-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "cobolog": {
+        "description": "CLI that adds removable debug logging (flow, watchpoints, PERFORM snapshots) to Fujitsu COBOL sources for bug triage. Used from Cursor with YAML configs; not a cluster service—developers run cobolog install locally, compile, and read COMPROC logs in the clinic.",
+        "pushed_at": "2026-05-28T14:59:22Z",
+        "created_at": "2026-05-28T03:55:18Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/cobolog",
+        "topics": [
+          "launchpad",
+          "owner-smiller-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "delta-t": {
+        "description": "Performance and speed improvements",
+        "pushed_at": "2026-06-04T00:11:06Z",
+        "created_at": "2026-05-30T19:27:00Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/delta-t",
+        "topics": [
+          "launchpad",
+          "owner-gdeloscobos-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "jevins-cool-app": {
+        "description": "Internal app created via Launchpad by jjoy@gssmail.com",
+        "pushed_at": "2026-06-02T17:05:39Z",
+        "created_at": "2026-06-02T17:05:30Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/jevins-cool-app",
+        "topics": [
+          "launchpad",
+          "owner-jjoy-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "tad-service-detector": {
+        "description": "Internal app created via Launchpad by asalimgereyeva@gssmail.com",
+        "pushed_at": "2026-06-10T15:30:45Z",
+        "created_at": "2026-06-02T18:34:31Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-service-detector",
+        "topics": [
+          "launchpad",
+          "owner-asalimgereyeva-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "ni-revenue-tracker": {
+        "description": "Overall revenue and hours to budget for New Implementations",
+        "pushed_at": "2026-06-02T19:50:16Z",
+        "created_at": "2026-06-02T19:09:33Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/ni-revenue-tracker",
+        "topics": [
+          "launchpad",
+          "owner-cpinaire-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "abhay-cool-app": {
+        "description": "abhay cool app",
+        "pushed_at": "2026-06-02T19:14:24Z",
+        "created_at": "2026-06-02T19:14:15Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/abhay-cool-app",
+        "topics": [
+          "launchpad",
+          "owner-agodavarthy-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "tad-too-tuff": {
+        "description": "Internal app created via Launchpad by kcao@gssmail.com",
+        "pushed_at": "2026-06-17T13:02:45Z",
+        "created_at": "2026-06-03T18:18:12Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-too-tuff",
+        "topics": [
+          "launchpad",
+          "owner-kcao-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "issue-maintenance-menu-ownership": {
+        "description": "Internal app created via Launchpad by cmasden@gssmail.com",
+        "pushed_at": "2026-06-24T15:51:53Z",
+        "created_at": "2026-06-03T18:48:59Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/issue-maintenance-menu-ownership",
+        "topics": [
+          "launchpad",
+          "owner-cmasden-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "akhilesh-tad": {
+        "description": "Internal app created via Launchpad by avattumilli@gssmail.com",
+        "pushed_at": "2026-06-10T15:30:47Z",
+        "created_at": "2026-06-04T05:48:49Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/akhilesh-tad",
+        "topics": [
+          "launchpad",
+          "owner-avattumilli-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "nethum-abhay-tad-project": {
+        "description": "intern project thing",
+        "pushed_at": "2026-06-10T16:07:36Z",
+        "created_at": "2026-06-04T19:39:43Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/nethum-abhay-tad-project",
+        "topics": [
+          "launchpad",
+          "owner-nweerasinghe-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "employee-assessments": {
+        "description": "Unified quarterly workflow for engineering teams: schedule review chats, track skill assessments and focus skills, and capture structured quarterly reviews — replacing Excel-based career path worksheets.",
+        "pushed_at": "2026-06-26T22:00:22Z",
+        "created_at": "2026-06-05T20:01:35Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/employee-assessments",
+        "topics": [
+          "launchpad",
+          "owner-asmith-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "talentlms-tool": {
+        "description": "Internal app created via Launchpad by asalimgereyeva@gssmail.com",
+        "pushed_at": "2026-06-19T15:23:07Z",
+        "created_at": "2026-06-05T20:02:48Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/talentlms-tool",
+        "topics": [
+          "launchpad",
+          "owner-asalimgereyeva-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "patch-maintenance": {
+        "description": "App for QA to manage Patch releases and view various information about patch manifests.",
+        "pushed_at": "2026-06-09T19:37:35Z",
+        "created_at": "2026-06-09T18:34:07Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/patch-maintenance",
+        "topics": [
+          "launchpad",
+          "owner-ksmith-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "gss-projectcreation": {
+        "description": "Internal app created via Launchpad by emarlow@gssmail.com",
+        "pushed_at": "2026-06-11T20:01:58Z",
+        "created_at": "2026-06-11T14:36:03Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-projectcreation",
+        "topics": [
+          "launchpad",
+          "owner-emarlow-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "cobol-forge": {
+        "description": "internal cobol compile server + dashboard for the r&d team",
+        "pushed_at": "2026-07-01T19:55:24Z",
+        "created_at": "2026-06-11T19:31:16Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/cobol-forge",
+        "topics": [
+          "launchpad",
+          "owner-kcao-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "tad-analysis-combined": {
+        "description": "tad analysis project built by the 2026 interns :)",
+        "pushed_at": "2026-06-12T19:50:35Z",
+        "created_at": "2026-06-11T21:08:34Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-analysis-combined",
+        "topics": [
+          "launchpad",
+          "owner-kcao-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "gab-agent-kit": {
+        "description": "Centralized GAB development agent kit — coding rules, skills, and agent docs for Product & Engineering. CI publishes it to the PE Artifacts tier so the team auto-installs the latest via Intelligence.",
+        "pushed_at": "2026-06-16T19:36:11Z",
+        "created_at": "2026-06-12T18:15:43Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gab-agent-kit",
+        "topics": [
+          "launchpad",
+          "owner-jjoy-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "in-house-tools": {
+        "description": "Tools for In House Troubleshooting",
+        "pushed_at": "2026-07-01T02:59:25Z",
+        "created_at": "2026-06-15T12:46:15Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/in-house-tools",
+        "topics": [
+          "launchpad",
+          "owner-avaldez-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "jenkins-build-status-bookmarklet": {
+        "description": "A boolmarklet that brings up a build status for Jenkins builds with a summary of what step its on and test run status.",
+        "pushed_at": "2026-07-01T18:51:13Z",
+        "created_at": "2026-06-15T16:08:28Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/jenkins-build-status-bookmarklet",
+        "topics": [
+          "launchpad",
+          "owner-jdombrowski-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "gss-qa-step-recorder": {
+        "description": "Records GSS V6 clicks/keystrokes into reproducible numbered QA steps. Local .NET 8 / WPF, on-machine only.",
+        "pushed_at": "2026-06-15T20:52:06Z",
+        "created_at": "2026-06-15T18:27:48Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-qa-step-recorder",
+        "topics": []
+      },
+      "git-org-trawler": {
+        "description": "An application that is able to search through all available repos for information",
+        "pushed_at": "2026-06-29T21:08:31Z",
+        "created_at": "2026-06-16T15:55:35Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/git-org-trawler",
+        "topics": [
+          "launchpad",
+          "owner-sharris-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "globalmasterfile-launchpad": {
+        "description": "this is the globalmasterfile tool on launchpad as a webpage",
+        "pushed_at": "2026-07-01T21:33:38Z",
+        "created_at": "2026-06-17T13:55:11Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/globalmasterfile-launchpad",
+        "topics": [
+          "launchpad",
+          "owner-nweerasinghe-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "license-server": {
+        "description": "Test api for license reporting and artifacts. Streams appropriate version of worker version based on reported GS version.",
+        "pushed_at": "2026-06-25T20:01:28Z",
+        "created_at": "2026-06-17T20:45:36Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/license-server",
+        "topics": [
+          "launchpad",
+          "owner-jonschwartz-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "mcp-intelligence-monitor": {
+        "description": "A monitoring service for MCP-Intelligence for Cursor and Claude Code (maybe more tool support in future)",
+        "pushed_at": "2026-06-25T13:07:58Z",
+        "created_at": "2026-06-19T18:08:05Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-intelligence-monitor",
+        "topics": [
+          "launchpad",
+          "owner-tjones-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "service-web-telemetry": {
+        "description": "Internal app created via Launchpad by avaldez@gssmail.com",
+        "pushed_at": "2026-07-01T20:17:20Z",
+        "created_at": "2026-06-23T14:14:14Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/service-web-telemetry",
+        "topics": [
+          "launchpad",
+          "owner-avaldez-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "telemetrydata": {
+        "description": "Internal app created via Launchpad by bbrambila@gssmail.com",
+        "pushed_at": "2026-06-23T14:19:35Z",
+        "created_at": "2026-06-23T14:19:27Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/telemetrydata",
+        "topics": [
+          "launchpad",
+          "owner-bbrambila-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "my-call-dashboard": {
+        "description": "Real-time Call Dashboard for tracking Service Web calls through triage, development, and QA. Includes a local web dashboard, weekly reports, and Cursor IDE automation.",
+        "pushed_at": "2026-06-24T20:30:54Z",
+        "created_at": "2026-06-24T05:06:07Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/my-call-dashboard",
+        "topics": [
+          "launchpad",
+          "owner-smiller-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "tc-navigation-catalog": {
+        "description": "Internal app created via Launchpad by zsandford@gssmail.com",
+        "pushed_at": "2026-07-01T22:00:31Z",
+        "created_at": "2026-06-25T15:11:03Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tc-navigation-catalog",
+        "topics": [
+          "launchpad",
+          "owner-zsandford-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "support-data-extraction-vault": {
+        "description": "Internal app created via Launchpad by jjoy@gssmail.com",
+        "pushed_at": "2026-06-30T15:12:30Z",
+        "created_at": "2026-06-26T18:53:12Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/support-data-extraction-vault",
+        "topics": [
+          "launchpad",
+          "owner-jjoy-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "gss-stripe-relay": {
+        "description": "The relay (\"listening post\") is the single outbound trust boundary for Stripe e-invoice creation",
+        "pushed_at": "2026-06-30T16:04:06Z",
+        "created_at": "2026-06-30T15:21:38Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-stripe-relay",
+        "topics": [
+          "launchpad",
+          "owner-mfranzen-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "rocketlane-mcp": {
+        "description": "MCP for connecting with Rocketlane",
+        "pushed_at": "2026-07-01T23:55:20Z",
+        "created_at": "2026-06-30T19:48:59Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/rocketlane-mcp",
+        "topics": [
+          "launchpad",
+          "owner-adsouza-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "intelligent-ta": {
+        "description": "TaFinder tells you which TestArchitect tests provably exercised a given program, function, screen, or table — turning \"log all\" run data into an auditable, searchable coverage index.",
+        "pushed_at": "2026-07-01T21:09:30Z",
+        "created_at": "2026-07-01T17:19:08Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/intelligent-ta",
+        "topics": [
+          "launchpad",
+          "owner-avattumilli-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "semaphore": {
+        "description": "A web implementation of Issue Maintenance",
+        "pushed_at": "2026-07-01T20:35:42Z",
+        "created_at": "2026-07-01T20:35:35Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/semaphore",
+        "topics": [
+          "launchpad",
+          "owner-sstarlin-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "gss-catalog": {
+        "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
+        "pushed_at": "2026-07-02T11:50:29Z",
+        "created_at": "2026-07-01T21:37:03Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
+        "topics": [
+          "launchpad",
+          "owner-tjones-at-gssmail-dot-com",
+          "starter"
+        ]
+      }
+    }
   }
 }
