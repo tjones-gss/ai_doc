@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **133**
-- LaunchPad app articles: **114**
-- MCP server articles: **15**
+- Published catalog articles: **138**
+- LaunchPad app articles: **118**
+- MCP server articles: **16**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **164**
+- InternalTools repos tracked: **169**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-07-02**
+- Catalog last regenerated: **2026-07-03**
 
 ## How this stays current
 
@@ -59,6 +59,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [cobol-forge](launchpad/cobol-forge.md) - internal cobol compile server + dashboard for the r&d team
 - [cobol-mcp](launchpad/cobol-mcp.md) - An MCP server hosted on LaunchPad that lets AI assistants reach into our COBOL source code repo and SVN log history. The primary way our AI agents answer COBOL questions at GSS.
 - [cobolog - Quick User Manual](launchpad/cobolog.md) - CLI that adds removable debug logging (flow, watchpoints, PERFORM snapshots) to Fujitsu COBOL sources for bug triage.
+- [commit-push-monday](launchpad/commit-push-monday.md) - Revert CRLF-only noise, prompt on untracked files, draft commit message (you approve), push, then update your Monday pulse.
 - [context-reader](launchpad/context-reader.md) - read context to see claims
 - [daily-crossword](launchpad/daily-crossword.md) - Test your GSS knowledge
 - [DashboardDesAIgner](launchpad/DashboardDesAIgner.md) - An AI agent that converts plain-English descriptions into DevExpress Dashboard Designer XML.
@@ -98,10 +99,13 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [Jenkins Build Monitor](launchpad/jenkins-build-status-bookmarklet.md) - A boolmarklet that brings up a build status for Jenkins builds with a summary of what step its on and test run status.
 - [jevins-cool-app](launchpad/jevins-cool-app.md) - Internal app created via Launchpad by jjoy@gssmail.com
 - [launchpad (the host platform itself)](launchpad/launchpad.md) - LaunchPad is the internal app-provisioning platform that hosts most of the apps in this catalog.
+- [Launchpad — chat-agent STAGING instance](launchpad/launchpad-chat-staging.md) - Make to help develop the chatbot for launchpad
 - [license-server](launchpad/license-server.md) - Test api for license reporting and artifacts. Streams appropriate version of worker version based on reported GS version.
 - [log-parser](launchpad/log-parser.md) - Internal app created via Launchpad by zsandford@gssmail.com
 - [mcp-artifacts](launchpad/mcp-artifacts.md) - A team-organized library of AI skills, rules, and agent definitions. The artifacts in this library are read at runtime by the [mcp-intelligence MCP...
+- [merge-nextrelease](launchpad/merge-nextrelease.md) - Merge the nextrelease branch into your current feature branch, resolve conflicts intelligently, commit, push, and restore any stashed work.
 - [mobile-crm-status](launchpad/mobile-crm-status.md) - Monitors MobileCRM endpoints (production, edge, and tenant APIs) and pings Microsoft Teams when one goes down. The "is mobile CRM healthy right now?" page.
+- [monday-pulse-updates](launchpad/monday-pulse-updates.md) - Post one PM-friendly Monday update per commit since the pulse’s last update (date + heading + summary only; no hashes in the body).
 - [Call Dashboard](launchpad/my-call-dashboard.md) - Real-time Call Dashboard for tracking Service Web calls through triage, development, and QA. Includes a local web dashboard, weekly reports, and Cursor IDE automation.
 - [TAD Analyzer](launchpad/nethum-abhay-tad-project.md) - intern project thing
 - [Newsletter](launchpad/newsletter.md) - Internal app created via Launchpad by avaldez@gssmail.com
@@ -172,6 +176,7 @@ GSS-specific MCP servers that any MCP-compatible AI agent can use, including Cur
 - [MCP Server: monday.com](mcp-servers/monday.md) - Lets your AI agent read and update monday.com boards, items, columns, and updates using your GSS monday account. The bridge between AI assistants and our active project boards.
 - [MCP Server: Notion](mcp-servers/notion.md) - Lets your AI agent search and read Notion content (pages, databases, blocks) using your GSS Notion account.
 - [Rocketlane MCP Server v2.7.1](mcp-servers/rocketlane-mcp.md) - MCP for connecting with Rocketlane
+- [GSS Community Skills Library](mcp-servers/skills-library.md) - Curated catalog of shared Cursor agent skills for GSS teams. Browse skills by bundle, see example prompts, open each skill’s docs site, and follow the guide to publish your own...
 - [SourceControlWatch](mcp-servers/sourcecontrolwatch.md) - Tracks file-level GitHub and SVN commits for GSS; local WinForms app plus a Launchpad API for queries, ingest, and mcp-intelligence.
 - [ui-standards](mcp-servers/ui-standards.md) - Description: RAG-backed MCP server for GSS WinForms UI standards, ScreenBuilder API reference, and visual compliance auditing.
 
