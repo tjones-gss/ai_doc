@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-07-03",
+  "_updated": "2026-07-06",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.199",
+    "claude_code_cli_release": "v2.1.201",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -283,7 +283,7 @@
       },
       "testarchitect-mcp": {
         "description": "MCP server providing AI assistants with access to TestArchitect test management data",
-        "pushed_at": "2026-06-25T15:42:07Z",
+        "pushed_at": "2026-07-06T12:22:42Z",
         "created_at": "2026-02-12T19:45:22Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/testarchitect-mcp",
@@ -369,7 +369,7 @@
       },
       "tad-dashboard": {
         "description": null,
-        "pushed_at": "2026-07-02T13:13:06Z",
+        "pushed_at": "2026-07-06T12:59:51Z",
         "created_at": "2026-02-23T19:52:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-dashboard",
@@ -1358,7 +1358,7 @@
       },
       "traveler": {
         "description": "Developer workflow planning tool similar to Monday.  Provides easy serviceweb call importing and agile cadence support.",
-        "pushed_at": "2026-07-02T23:22:51Z",
+        "pushed_at": "2026-07-06T09:19:44Z",
         "created_at": "2026-04-23T21:05:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/traveler",
@@ -1382,7 +1382,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-03T13:37:12Z",
+        "pushed_at": "2026-07-06T14:39:00Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1454,7 +1454,7 @@
       },
       "qtest-ta-tc-repo-lookup": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-06-26T13:17:12Z",
+        "pushed_at": "2026-07-06T14:03:32Z",
         "created_at": "2026-04-30T13:30:27Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qtest-ta-tc-repo-lookup",
@@ -1838,7 +1838,7 @@
       },
       "cobol-forge": {
         "description": "internal cobol compile server + dashboard for the r&d team",
-        "pushed_at": "2026-07-02T18:49:03Z",
+        "pushed_at": "2026-07-06T13:39:10Z",
         "created_at": "2026-06-11T19:31:16Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/cobol-forge",
@@ -2062,7 +2062,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-07-03T08:03:57Z",
+        "pushed_at": "2026-07-06T14:32:32Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
