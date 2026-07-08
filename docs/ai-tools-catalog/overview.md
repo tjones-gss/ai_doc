@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-07-07
+last_updated: 2026-07-08
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **138**
-- LaunchPad app articles: **118**
+- Published catalog articles: **139**
+- LaunchPad app articles: **119**
 - MCP server articles: **16**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **169**
+- InternalTools repos tracked: **168**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-07-07**
+- Catalog last regenerated: **2026-07-08**
 
 ## How this stays current
 
@@ -102,6 +102,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [Launchpad — chat-agent STAGING instance](launchpad/launchpad-chat-staging.md) - Make to help develop the chatbot for launchpad
 - [license-server](launchpad/license-server.md) - Test api for license reporting and artifacts. Streams appropriate version of worker version based on reported GS version.
 - [log-parser](launchpad/log-parser.md) - Internal app created via Launchpad by zsandford@gssmail.com
+- [log-viewer](launchpad/log-viewer.md) - See multiple logs and analyze better
 - [mcp-artifacts](launchpad/mcp-artifacts.md) - A team-organized library of AI skills, rules, and agent definitions. The artifacts in this library are read at runtime by the [mcp-intelligence MCP...
 - [merge-nextrelease](launchpad/merge-nextrelease.md) - Merge the nextrelease branch into your current feature branch, resolve conflicts intelligently, commit, push, and restore any stashed work.
 - [mobile-crm-status](launchpad/mobile-crm-status.md) - Monitors MobileCRM endpoints (production, edge, and tenant APIs) and pings Microsoft Teams when one goes down. The "is mobile CRM healthy right now?" page.
