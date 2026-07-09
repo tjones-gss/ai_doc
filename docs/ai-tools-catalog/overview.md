@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-07-08
+last_updated: 2026-07-09
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **139**
-- LaunchPad app articles: **119**
+- Published catalog articles: **141**
+- LaunchPad app articles: **121**
 - MCP server articles: **16**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **168**
+- InternalTools repos tracked: **169**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-07-08**
+- Catalog last regenerated: **2026-07-09**
 
 ## How this stays current
 
@@ -42,6 +42,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [agents](launchpad/agents.md) - A LaunchPad-hosted MCP server for sharing, distributing, and managing agent files across teams.
 - [AI Success Stories](launchpad/ai-success-stories.md) - AI Success Stories is an internal tool for tracking and celebrating how our department uses AI in their day-to-day work.
 - [AI Tool Usage Tracker](launchpad/ai-tool-usage.md) - Track Ai tool seats and usage
+- [Launchpad](launchpad/akhilesh-launchpad-testing.md) - testing ground for launchpad upgrades
 - [TAD Service Detector](launchpad/akhilesh-tad.md) - Internal app created via Launchpad by avattumilli@gssmail.com
 - [arc-scanner](launchpad/arc-scanner.md) - A web tool that scans every repo in a GitHub org for SQL table references and join relationships pulled from GabScript and SQL files, then visualizes the result as a heatmap, ranked list, and per-repo breakdown.
 - [Beacon](launchpad/beacon.md) - Internal app created via Launchpad by brennanhitchcock@gssmail.com
@@ -100,6 +101,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [jevins-cool-app](launchpad/jevins-cool-app.md) - Internal app created via Launchpad by jjoy@gssmail.com
 - [launchpad (the host platform itself)](launchpad/launchpad.md) - LaunchPad is the internal app-provisioning platform that hosts most of the apps in this catalog.
 - [Launchpad — chat-agent STAGING instance](launchpad/launchpad-chat-staging.md) - Make to help develop the chatbot for launchpad
+- [launchpad-chat-staging-v2](launchpad/launchpad-chat-staging-v2.md) - probe
 - [license-server](launchpad/license-server.md) - Test api for license reporting and artifacts. Streams appropriate version of worker version based on reported GS version.
 - [log-parser](launchpad/log-parser.md) - Internal app created via Launchpad by zsandford@gssmail.com
 - [log-viewer](launchpad/log-viewer.md) - See multiple logs and analyze better
