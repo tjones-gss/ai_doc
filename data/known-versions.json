@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-07-09",
+  "_updated": "2026-07-10",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.205",
+    "claude_code_cli_release": "v2.1.206",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -11,7 +11,7 @@
     "chatgpt_version": "5.5",
     "gpt_model": "5.5",
     "codex_model": "5.5-Codex",
-    "codex_cli_npm": "0.143.0"
+    "codex_cli_npm": "0.144.1"
   },
   "cursor": {
     "composer_model": "Composer 2",
@@ -213,7 +213,7 @@
       },
       "GSSEOtogo": {
         "description": "GSSEO I/O with Pervasive via Web",
-        "pushed_at": "2026-03-02T22:37:56Z",
+        "pushed_at": "2026-07-09T14:59:15Z",
         "created_at": "2026-02-11T19:45:16Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/GSSEOtogo",
@@ -369,7 +369,7 @@
       },
       "tad-dashboard": {
         "description": null,
-        "pushed_at": "2026-07-08T12:46:27Z",
+        "pushed_at": "2026-07-09T14:37:07Z",
         "created_at": "2026-02-23T19:52:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-dashboard",
@@ -540,7 +540,7 @@
       },
       "gssbrowser": {
         "description": "GSS Browser on the web. Same backend code but on the web to reproduce bugs and do automated testing with new AI features.",
-        "pushed_at": "2026-03-19T22:03:53Z",
+        "pushed_at": "2026-07-09T14:59:22Z",
         "created_at": "2026-03-02T19:35:51Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gssbrowser",
@@ -916,7 +916,7 @@
       },
       "globe-toolbox": {
         "description": "Tool tray toolbox for the globe",
-        "pushed_at": "2026-06-29T19:37:30Z",
+        "pushed_at": "2026-07-09T19:25:32Z",
         "created_at": "2026-03-20T19:20:22Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/globe-toolbox",
@@ -1006,7 +1006,7 @@
       },
       "monday-board-update": {
         "description": "Currently for automatically updating the ATG-Edge Team's Bi-weekly update board. Could Expand to do more",
-        "pushed_at": "2026-07-08T20:16:28Z",
+        "pushed_at": "2026-07-09T21:15:35Z",
         "created_at": "2026-04-02T18:57:42Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/monday-board-update",
@@ -1018,7 +1018,7 @@
       },
       "bracket-helper": {
         "description": "Create and manage brackets.",
-        "pushed_at": "2026-04-03T17:43:30Z",
+        "pushed_at": "2026-07-09T19:47:36Z",
         "created_at": "2026-04-02T20:08:30Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/bracket-helper",
@@ -1358,7 +1358,7 @@
       },
       "traveler": {
         "description": "Developer workflow planning tool similar to Monday.  Provides easy serviceweb call importing and agile cadence support.",
-        "pushed_at": "2026-07-09T14:20:43Z",
+        "pushed_at": "2026-07-09T18:18:51Z",
         "created_at": "2026-04-23T21:05:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/traveler",
@@ -1382,7 +1382,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-09T13:38:13Z",
+        "pushed_at": "2026-07-09T14:59:26Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1454,7 +1454,7 @@
       },
       "qtest-ta-tc-repo-lookup": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-06T14:03:32Z",
+        "pushed_at": "2026-07-10T13:45:22Z",
         "created_at": "2026-04-30T13:30:27Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qtest-ta-tc-repo-lookup",
@@ -1766,7 +1766,7 @@
       },
       "employee-assessments": {
         "description": "Unified quarterly workflow for engineering teams: schedule review chats, track skill assessments and focus skills, and capture structured quarterly reviews — replacing Excel-based career path worksheets.",
-        "pushed_at": "2026-07-08T17:53:23Z",
+        "pushed_at": "2026-07-09T21:22:04Z",
         "created_at": "2026-06-05T20:01:35Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/employee-assessments",
@@ -2026,7 +2026,7 @@
       },
       "semaphore": {
         "description": "A web implementation of Issue Maintenance",
-        "pushed_at": "2026-07-08T14:48:07Z",
+        "pushed_at": "2026-07-09T20:24:18Z",
         "created_at": "2026-07-01T20:35:35Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/semaphore",
@@ -2038,7 +2038,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-07-09T08:15:48Z",
+        "pushed_at": "2026-07-10T08:07:21Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2118,7 +2118,7 @@
       },
       "akhilesh-launchpad-testing": {
         "description": "testing ground for launchpad upgrades",
-        "pushed_at": "2026-07-09T13:58:12Z",
+        "pushed_at": "2026-07-10T13:02:00Z",
         "created_at": "2026-07-08T22:00:49Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/akhilesh-launchpad-testing",
