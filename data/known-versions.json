@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-07-10",
+  "_updated": "2026-07-13",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.206",
+    "claude_code_cli_release": "v2.1.207",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -11,11 +11,11 @@
     "chatgpt_version": "5.5",
     "gpt_model": "5.5",
     "codex_model": "5.5-Codex",
-    "codex_cli_npm": "0.144.1"
+    "codex_cli_npm": "0.144.3"
   },
   "cursor": {
     "composer_model": "Composer 2",
-    "latest_changelog_date": "2026-06-30"
+    "latest_changelog_date": "2026-07-10"
   },
   "internal_tools": {
     "_comment": "Last-seen list of repo names in GlobalShopSolutions-InternalTools, sorted. The workflow diffs this list against current to detect new/removed apps.",
@@ -110,7 +110,6 @@
       "jevins-cool-app",
       "keycloak-theme",
       "launchpad-chat-staging-v2",
-      "license-server",
       "like-and-gridscribe",
       "log-parser",
       "log-viewer",
@@ -155,6 +154,7 @@
       "service-web-api",
       "service-web-telemetry",
       "sitrep-tst",
+      "skillforge",
       "skills-library",
       "sourcecontrolwatch",
       "support-data-extraction-vault",
@@ -167,6 +167,7 @@
       "tad-too-tuff",
       "tad-worker-service",
       "talentlms-tool",
+      "tc-builder",
       "tc-navigation-catalog",
       "team-14-zen-tunnel",
       "team-6-app",
@@ -283,7 +284,7 @@
       },
       "testarchitect-mcp": {
         "description": "MCP server providing AI assistants with access to TestArchitect test management data",
-        "pushed_at": "2026-07-06T12:22:42Z",
+        "pushed_at": "2026-07-10T20:25:01Z",
         "created_at": "2026-02-12T19:45:22Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/testarchitect-mcp",
@@ -884,7 +885,7 @@
       },
       "mcp-intelligence": {
         "description": "Development intelligence engine — accumulates organizational knowledge from MCP interactions, serves team-aware AI artifacts (skills, rules, agents), and exposes a REST API for upstream consumers.",
-        "pushed_at": "2026-07-08T22:43:53Z",
+        "pushed_at": "2026-07-10T14:52:23Z",
         "created_at": "2026-03-19T16:48:30Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-intelligence",
@@ -894,7 +895,7 @@
       },
       "mcp-artifacts": {
         "description": "Team-organized library of AI skills, rules, and agent definitions.  Read by mcp-intelligence at runtime.",
-        "pushed_at": "2026-07-08T17:10:04Z",
+        "pushed_at": "2026-07-10T17:37:55Z",
         "created_at": "2026-03-19T16:49:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-artifacts",
@@ -1018,7 +1019,7 @@
       },
       "bracket-helper": {
         "description": "Create and manage brackets.",
-        "pushed_at": "2026-07-09T19:47:36Z",
+        "pushed_at": "2026-07-10T16:49:15Z",
         "created_at": "2026-04-02T20:08:30Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/bracket-helper",
@@ -1358,7 +1359,7 @@
       },
       "traveler": {
         "description": "Developer workflow planning tool similar to Monday.  Provides easy serviceweb call importing and agile cadence support.",
-        "pushed_at": "2026-07-09T18:18:51Z",
+        "pushed_at": "2026-07-10T20:33:23Z",
         "created_at": "2026-04-23T21:05:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/traveler",
@@ -1382,7 +1383,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-09T14:59:26Z",
+        "pushed_at": "2026-07-13T13:37:13Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1766,7 +1767,7 @@
       },
       "employee-assessments": {
         "description": "Unified quarterly workflow for engineering teams: schedule review chats, track skill assessments and focus skills, and capture structured quarterly reviews — replacing Excel-based career path worksheets.",
-        "pushed_at": "2026-07-09T21:22:04Z",
+        "pushed_at": "2026-07-10T20:18:11Z",
         "created_at": "2026-06-05T20:01:35Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/employee-assessments",
@@ -1814,7 +1815,7 @@
       },
       "cobol-forge": {
         "description": "internal cobol compile server + dashboard for the r&d team",
-        "pushed_at": "2026-07-09T13:31:10Z",
+        "pushed_at": "2026-07-10T18:41:26Z",
         "created_at": "2026-06-11T19:31:16Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/cobol-forge",
@@ -1901,18 +1902,6 @@
         "topics": [
           "launchpad",
           "owner-nweerasinghe-at-gssmail-dot-com",
-          "starter"
-        ]
-      },
-      "license-server": {
-        "description": "Test api for license reporting and artifacts. Streams appropriate version of worker version based on reported GS version.",
-        "pushed_at": "2026-06-25T20:01:28Z",
-        "created_at": "2026-06-17T20:45:36Z",
-        "archived": false,
-        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/license-server",
-        "topics": [
-          "launchpad",
-          "owner-jonschwartz-at-gssmail-dot-com",
           "starter"
         ]
       },
@@ -2014,7 +2003,7 @@
       },
       "intelligent-ta": {
         "description": "TaFinder tells you which TestArchitect tests provably exercised a given program, function, screen, or table — turning \"log all\" run data into an auditable, searchable coverage index.",
-        "pushed_at": "2026-07-08T18:59:55Z",
+        "pushed_at": "2026-07-10T14:58:24Z",
         "created_at": "2026-07-01T17:19:08Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/intelligent-ta",
@@ -2038,7 +2027,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-07-10T08:07:21Z",
+        "pushed_at": "2026-07-13T08:02:51Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2118,13 +2107,37 @@
       },
       "akhilesh-launchpad-testing": {
         "description": "testing ground for launchpad upgrades",
-        "pushed_at": "2026-07-10T13:02:00Z",
+        "pushed_at": "2026-07-10T15:32:40Z",
         "created_at": "2026-07-08T22:00:49Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/akhilesh-launchpad-testing",
         "topics": [
           "launchpad",
           "owner-avattumilli-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "tc-builder": {
+        "description": "Lets users take on click screen shots and upload videos of test steps for AI to turn into standardized testing formats. Logs steps into a catalog for future agents to use when building test cases for specific menu paths and programs.",
+        "pushed_at": "2026-07-13T13:56:53Z",
+        "created_at": "2026-07-10T15:59:06Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tc-builder",
+        "topics": [
+          "launchpad",
+          "owner-zsandford-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "skillforge": {
+        "description": "[Temporary] testing out skill publishing, compiling, and extracting.",
+        "pushed_at": "2026-07-11T23:52:43Z",
+        "created_at": "2026-07-11T16:27:57Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/skillforge",
+        "topics": [
+          "launchpad",
+          "owner-agodavarthy-at-gssmail-dot-com",
           "starter"
         ]
       }

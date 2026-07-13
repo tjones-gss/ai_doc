@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-07-10
+last_updated: 2026-07-13
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **141**
-- LaunchPad app articles: **121**
+- Published catalog articles: **143**
+- LaunchPad app articles: **123**
 - MCP server articles: **16**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **169**
+- InternalTools repos tracked: **170**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-07-10**
+- Catalog last regenerated: **2026-07-13**
 
 ## How this stays current
 
@@ -135,6 +135,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [service-web-api](launchpad/service-web-api.md) - A modern .NET 9 Minimal API exposing all IHOP_Net data across 17 domains. Replaces the legacy `SW_CallService.Api` with pure inline SQL (no stored procedures), interactive...
 - [service-web-telemetry](launchpad/service-web-telemetry.md) - Internal app created via Launchpad by avaldez@gssmail.com
 - [sitrep-tst](launchpad/sitrep-tst.md) - testing platform before porting over full application
+- [skillforge](launchpad/skillforge.md) - [Temporary] testing out skill publishing, compiling, and extracting.
 - [support-data-extraction-vault](launchpad/support-data-extraction-vault.md) - Internal app created via Launchpad by jjoy@gssmail.com
 - [svn-ops (svn-mcp)](launchpad/svn-ops.md) - A general-purpose Subversion MCP server. Exposes the full SVN command surface (checkout, log, diff, blame, commit, branch, etc.) to MCP-compatible clients (Cursor, Claude Code,...
 - [TABugTracking](launchpad/TABugTracking.md) - Tracks bugs caught by Test Architect (TA) tests. The official place to see "which production bugs would have been caught by automation if we had the right test?".
@@ -147,6 +148,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [TAD-Weekly-Stats](launchpad/TAD-Weekly-Stats.md) - Weekly TestArchitect testing statistics dashboard. Shows what got tested, what passed, what failed, and how that's trending — at a weekly cadence.
 - [tad-worker-service](launchpad/tad-worker-service.md) - The background job processor for **Test Architect Distributed (TAD)**. Headless .NET 6 worker that assigns pending test issues to available VMs, retries failed notifications,...
 - [talentlms-tool](launchpad/talentlms-tool.md) - Internal app created via Launchpad by asalimgereyeva@gssmail.com
+- [TC Builder](launchpad/tc-builder.md) - Lets users take on click screen shots and upload videos of test steps for AI to turn into standardized testing formats.
 - [TC Navigation Catalog](launchpad/tc-navigation-catalog.md) - Internal app created via Launchpad by zsandford@gssmail.com
 - [team-14-zen-tunnel](launchpad/team-14-zen-tunnel.md) - A read-only FastAPI + MCP service for querying `GLOBAL51Q` and `COMMON51Q` from Team 14's AI alerts platform.
 - [Team Updates — Monday Board Summarizer](launchpad/team-updates.md) - Review team updates
