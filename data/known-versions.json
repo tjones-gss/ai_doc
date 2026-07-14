@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-07-13",
+  "_updated": "2026-07-14",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.207",
+    "claude_code_cli_release": "v2.1.209",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -11,7 +11,7 @@
     "chatgpt_version": "5.5",
     "gpt_model": "5.5",
     "codex_model": "5.5-Codex",
-    "codex_cli_npm": "0.144.3"
+    "codex_cli_npm": "0.144.4"
   },
   "cursor": {
     "composer_model": "Composer 2",
@@ -284,7 +284,7 @@
       },
       "testarchitect-mcp": {
         "description": "MCP server providing AI assistants with access to TestArchitect test management data",
-        "pushed_at": "2026-07-10T20:25:01Z",
+        "pushed_at": "2026-07-13T18:59:56Z",
         "created_at": "2026-02-12T19:45:22Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/testarchitect-mcp",
@@ -316,7 +316,7 @@
       },
       "program-issue-tracker": {
         "description": "App used to search all issues related to a Program",
-        "pushed_at": "2026-07-02T14:51:48Z",
+        "pushed_at": "2026-07-14T13:00:45Z",
         "created_at": "2026-02-17T21:51:58Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/program-issue-tracker",
@@ -885,7 +885,7 @@
       },
       "mcp-intelligence": {
         "description": "Development intelligence engine — accumulates organizational knowledge from MCP interactions, serves team-aware AI artifacts (skills, rules, agents), and exposes a REST API for upstream consumers.",
-        "pushed_at": "2026-07-10T14:52:23Z",
+        "pushed_at": "2026-07-13T21:59:26Z",
         "created_at": "2026-03-19T16:48:30Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-intelligence",
@@ -895,7 +895,7 @@
       },
       "mcp-artifacts": {
         "description": "Team-organized library of AI skills, rules, and agent definitions.  Read by mcp-intelligence at runtime.",
-        "pushed_at": "2026-07-10T17:37:55Z",
+        "pushed_at": "2026-07-13T19:30:34Z",
         "created_at": "2026-03-19T16:49:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-artifacts",
@@ -949,7 +949,7 @@
       },
       "testing-conflict-detector": {
         "description": "App used to detect conflicts with multiple Issues sent to testing with the same program",
-        "pushed_at": "2026-06-30T19:54:20Z",
+        "pushed_at": "2026-07-13T18:58:40Z",
         "created_at": "2026-03-27T15:04:01Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/testing-conflict-detector",
@@ -1007,7 +1007,7 @@
       },
       "monday-board-update": {
         "description": "Currently for automatically updating the ATG-Edge Team's Bi-weekly update board. Could Expand to do more",
-        "pushed_at": "2026-07-09T21:15:35Z",
+        "pushed_at": "2026-07-13T15:58:12Z",
         "created_at": "2026-04-02T18:57:42Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/monday-board-update",
@@ -1019,7 +1019,7 @@
       },
       "bracket-helper": {
         "description": "Create and manage brackets.",
-        "pushed_at": "2026-07-10T16:49:15Z",
+        "pushed_at": "2026-07-13T23:26:40Z",
         "created_at": "2026-04-02T20:08:30Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/bracket-helper",
@@ -1359,7 +1359,7 @@
       },
       "traveler": {
         "description": "Developer workflow planning tool similar to Monday.  Provides easy serviceweb call importing and agile cadence support.",
-        "pushed_at": "2026-07-10T20:33:23Z",
+        "pushed_at": "2026-07-14T12:58:08Z",
         "created_at": "2026-04-23T21:05:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/traveler",
@@ -1383,7 +1383,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-13T13:37:13Z",
+        "pushed_at": "2026-07-14T12:38:07Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1551,7 +1551,7 @@
       },
       "ui-standards": {
         "description": "Description: RAG-backed MCP server for GSS WinForms UI standards, ScreenBuilder API reference, and visual compliance auditing. Enables AI agents to generate standards-compliant forms and developers to look up patterns and examples.",
-        "pushed_at": "2026-06-05T17:43:38Z",
+        "pushed_at": "2026-07-13T18:59:30Z",
         "created_at": "2026-05-15T15:29:58Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/ui-standards",
@@ -1575,7 +1575,7 @@
       },
       "beacon": {
         "description": "Internal app created via Launchpad by brennanhitchcock@gssmail.com",
-        "pushed_at": "2026-06-25T18:09:22Z",
+        "pushed_at": "2026-07-13T20:49:46Z",
         "created_at": "2026-05-18T15:01:45Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/beacon",
@@ -1623,7 +1623,7 @@
       },
       "gss-document-api-account-management": {
         "description": "Account management / Admin tool.",
-        "pushed_at": "2026-07-02T20:11:03Z",
+        "pushed_at": "2026-07-13T22:16:38Z",
         "created_at": "2026-05-21T14:37:26Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-document-api-account-management",
@@ -1767,7 +1767,7 @@
       },
       "employee-assessments": {
         "description": "Unified quarterly workflow for engineering teams: schedule review chats, track skill assessments and focus skills, and capture structured quarterly reviews — replacing Excel-based career path worksheets.",
-        "pushed_at": "2026-07-10T20:18:11Z",
+        "pushed_at": "2026-07-13T15:50:54Z",
         "created_at": "2026-06-05T20:01:35Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/employee-assessments",
@@ -1863,7 +1863,7 @@
       },
       "jenkins-build-status-bookmarklet": {
         "description": "A boolmarklet that brings up a build status for Jenkins builds with a summary of what step its on and test run status.",
-        "pushed_at": "2026-07-01T18:51:13Z",
+        "pushed_at": "2026-07-13T21:03:42Z",
         "created_at": "2026-06-15T16:08:28Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/jenkins-build-status-bookmarklet",
@@ -1895,7 +1895,7 @@
       },
       "globalmasterfile-launchpad": {
         "description": "this is the globalmasterfile tool on launchpad as a webpage",
-        "pushed_at": "2026-07-01T21:33:38Z",
+        "pushed_at": "2026-07-13T22:03:10Z",
         "created_at": "2026-06-17T13:55:11Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/globalmasterfile-launchpad",
@@ -1967,7 +1967,7 @@
       },
       "support-data-extraction-vault": {
         "description": "Internal app created via Launchpad by jjoy@gssmail.com",
-        "pushed_at": "2026-06-30T15:12:30Z",
+        "pushed_at": "2026-07-13T19:52:49Z",
         "created_at": "2026-06-26T18:53:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/support-data-extraction-vault",
@@ -2027,7 +2027,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-07-13T08:02:51Z",
+        "pushed_at": "2026-07-14T07:33:50Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2107,7 +2107,7 @@
       },
       "akhilesh-launchpad-testing": {
         "description": "testing ground for launchpad upgrades",
-        "pushed_at": "2026-07-10T15:32:40Z",
+        "pushed_at": "2026-07-13T21:40:48Z",
         "created_at": "2026-07-08T22:00:49Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/akhilesh-launchpad-testing",
@@ -2119,7 +2119,7 @@
       },
       "tc-builder": {
         "description": "Lets users take on click screen shots and upload videos of test steps for AI to turn into standardized testing formats. Logs steps into a catalog for future agents to use when building test cases for specific menu paths and programs.",
-        "pushed_at": "2026-07-13T13:56:53Z",
+        "pushed_at": "2026-07-13T21:37:01Z",
         "created_at": "2026-07-10T15:59:06Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tc-builder",
@@ -2131,7 +2131,7 @@
       },
       "skillforge": {
         "description": "[Temporary] testing out skill publishing, compiling, and extracting.",
-        "pushed_at": "2026-07-11T23:52:43Z",
+        "pushed_at": "2026-07-14T10:52:09Z",
         "created_at": "2026-07-11T16:27:57Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/skillforge",
