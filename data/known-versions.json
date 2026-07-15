@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-07-14",
+  "_updated": "2026-07-15",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.209",
+    "claude_code_cli_release": "v2.1.210",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -284,7 +284,7 @@
       },
       "testarchitect-mcp": {
         "description": "MCP server providing AI assistants with access to TestArchitect test management data",
-        "pushed_at": "2026-07-13T18:59:56Z",
+        "pushed_at": "2026-07-15T12:49:05Z",
         "created_at": "2026-02-12T19:45:22Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/testarchitect-mcp",
@@ -316,7 +316,7 @@
       },
       "program-issue-tracker": {
         "description": "App used to search all issues related to a Program",
-        "pushed_at": "2026-07-14T13:00:45Z",
+        "pushed_at": "2026-07-14T13:48:30Z",
         "created_at": "2026-02-17T21:51:58Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/program-issue-tracker",
@@ -328,7 +328,7 @@
       },
       "tad-database-service": {
         "description": "Test Architect Distributed - Database Service API (PostgreSQL, ASP.NET Core)",
-        "pushed_at": "2026-07-08T12:46:19Z",
+        "pushed_at": "2026-07-14T19:18:10Z",
         "created_at": "2026-02-23T18:52:16Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-database-service",
@@ -370,7 +370,7 @@
       },
       "tad-dashboard": {
         "description": null,
-        "pushed_at": "2026-07-09T14:37:07Z",
+        "pushed_at": "2026-07-14T19:21:13Z",
         "created_at": "2026-02-23T19:52:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-dashboard",
@@ -895,7 +895,7 @@
       },
       "mcp-artifacts": {
         "description": "Team-organized library of AI skills, rules, and agent definitions.  Read by mcp-intelligence at runtime.",
-        "pushed_at": "2026-07-13T19:30:34Z",
+        "pushed_at": "2026-07-15T12:48:03Z",
         "created_at": "2026-03-19T16:49:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-artifacts",
@@ -917,7 +917,7 @@
       },
       "globe-toolbox": {
         "description": "Tool tray toolbox for the globe",
-        "pushed_at": "2026-07-09T19:25:32Z",
+        "pushed_at": "2026-07-14T17:19:00Z",
         "created_at": "2026-03-20T19:20:22Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/globe-toolbox",
@@ -1007,7 +1007,7 @@
       },
       "monday-board-update": {
         "description": "Currently for automatically updating the ATG-Edge Team's Bi-weekly update board. Could Expand to do more",
-        "pushed_at": "2026-07-13T15:58:12Z",
+        "pushed_at": "2026-07-14T19:38:23Z",
         "created_at": "2026-04-02T18:57:42Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/monday-board-update",
@@ -1019,7 +1019,7 @@
       },
       "bracket-helper": {
         "description": "Create and manage brackets.",
-        "pushed_at": "2026-07-13T23:26:40Z",
+        "pushed_at": "2026-07-14T18:52:06Z",
         "created_at": "2026-04-02T20:08:30Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/bracket-helper",
@@ -1347,7 +1347,7 @@
       },
       "team-updates": {
         "description": "Review team updates",
-        "pushed_at": "2026-05-06T16:05:07Z",
+        "pushed_at": "2026-07-14T15:20:04Z",
         "created_at": "2026-04-22T21:31:20Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/team-updates",
@@ -1359,7 +1359,7 @@
       },
       "traveler": {
         "description": "Developer workflow planning tool similar to Monday.  Provides easy serviceweb call importing and agile cadence support.",
-        "pushed_at": "2026-07-14T12:58:08Z",
+        "pushed_at": "2026-07-14T22:59:48Z",
         "created_at": "2026-04-23T21:05:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/traveler",
@@ -1383,7 +1383,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-14T12:38:07Z",
+        "pushed_at": "2026-07-15T12:37:58Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1575,7 +1575,7 @@
       },
       "beacon": {
         "description": "Internal app created via Launchpad by brennanhitchcock@gssmail.com",
-        "pushed_at": "2026-07-13T20:49:46Z",
+        "pushed_at": "2026-07-14T17:49:28Z",
         "created_at": "2026-05-18T15:01:45Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/beacon",
@@ -1863,7 +1863,7 @@
       },
       "jenkins-build-status-bookmarklet": {
         "description": "A boolmarklet that brings up a build status for Jenkins builds with a summary of what step its on and test run status.",
-        "pushed_at": "2026-07-13T21:03:42Z",
+        "pushed_at": "2026-07-14T20:49:48Z",
         "created_at": "2026-06-15T16:08:28Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/jenkins-build-status-bookmarklet",
@@ -2003,7 +2003,7 @@
       },
       "intelligent-ta": {
         "description": "TaFinder tells you which TestArchitect tests provably exercised a given program, function, screen, or table — turning \"log all\" run data into an auditable, searchable coverage index.",
-        "pushed_at": "2026-07-10T14:58:24Z",
+        "pushed_at": "2026-07-14T21:14:27Z",
         "created_at": "2026-07-01T17:19:08Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/intelligent-ta",
@@ -2027,7 +2027,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-07-14T07:33:50Z",
+        "pushed_at": "2026-07-15T07:36:49Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2107,7 +2107,7 @@
       },
       "akhilesh-launchpad-testing": {
         "description": "testing ground for launchpad upgrades",
-        "pushed_at": "2026-07-13T21:40:48Z",
+        "pushed_at": "2026-07-14T13:39:56Z",
         "created_at": "2026-07-08T22:00:49Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/akhilesh-launchpad-testing",
@@ -2119,7 +2119,7 @@
       },
       "tc-builder": {
         "description": "Lets users take on click screen shots and upload videos of test steps for AI to turn into standardized testing formats. Logs steps into a catalog for future agents to use when building test cases for specific menu paths and programs.",
-        "pushed_at": "2026-07-13T21:37:01Z",
+        "pushed_at": "2026-07-14T13:22:02Z",
         "created_at": "2026-07-10T15:59:06Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tc-builder",
@@ -2131,7 +2131,7 @@
       },
       "skillforge": {
         "description": "[Temporary] testing out skill publishing, compiling, and extracting.",
-        "pushed_at": "2026-07-14T10:52:09Z",
+        "pushed_at": "2026-07-14T18:56:24Z",
         "created_at": "2026-07-11T16:27:57Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/skillforge",
