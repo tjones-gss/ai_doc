@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-07-16",
+  "_updated": "2026-07-17",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.211",
+    "claude_code_cli_release": "v2.1.212",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -284,7 +284,7 @@
       },
       "testarchitect-mcp": {
         "description": "MCP server providing AI assistants with access to TestArchitect test management data",
-        "pushed_at": "2026-07-15T18:39:54Z",
+        "pushed_at": "2026-07-16T19:47:00Z",
         "created_at": "2026-02-12T19:45:22Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/testarchitect-mcp",
@@ -380,7 +380,7 @@
       },
       "menu-telemetry": {
         "description": "Internal app created via Launchpad by cmasden@gssmail.com",
-        "pushed_at": "2026-07-15T22:17:06Z",
+        "pushed_at": "2026-07-16T21:36:33Z",
         "created_at": "2026-02-23T22:40:33Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/menu-telemetry",
@@ -643,7 +643,7 @@
       },
       "globe-tv": {
         "description": "A place where we can store our help videos",
-        "pushed_at": "2026-05-23T18:21:41Z",
+        "pushed_at": "2026-07-16T19:54:42Z",
         "created_at": "2026-03-04T23:15:20Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/globe-tv",
@@ -839,7 +839,7 @@
       },
       "featuretoggles": {
         "description": "Feature Toggles allow to control which features are available in the system.",
-        "pushed_at": "2026-06-30T18:15:36Z",
+        "pushed_at": "2026-07-17T05:16:26Z",
         "created_at": "2026-03-17T16:10:47Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/featuretoggles",
@@ -905,7 +905,7 @@
       },
       "brain": {
         "description": "The Global Shop Solutions brain. Root Agent of Agents.",
-        "pushed_at": "2026-07-02T19:42:50Z",
+        "pushed_at": "2026-07-16T13:33:55Z",
         "created_at": "2026-03-20T14:26:33Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/brain",
@@ -949,7 +949,7 @@
       },
       "testing-conflict-detector": {
         "description": "App used to detect conflicts with multiple Issues sent to testing with the same program",
-        "pushed_at": "2026-07-13T18:58:40Z",
+        "pushed_at": "2026-07-16T14:09:43Z",
         "created_at": "2026-03-27T15:04:01Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/testing-conflict-detector",
@@ -1359,7 +1359,7 @@
       },
       "traveler": {
         "description": "Developer workflow planning tool similar to Monday.  Provides easy serviceweb call importing and agile cadence support.",
-        "pushed_at": "2026-07-15T18:59:08Z",
+        "pushed_at": "2026-07-16T23:51:04Z",
         "created_at": "2026-04-23T21:05:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/traveler",
@@ -1383,7 +1383,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-16T12:37:01Z",
+        "pushed_at": "2026-07-17T12:37:43Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1623,7 +1623,7 @@
       },
       "gss-document-api-account-management": {
         "description": "Account management / Admin tool.",
-        "pushed_at": "2026-07-13T22:16:38Z",
+        "pushed_at": "2026-07-16T19:15:12Z",
         "created_at": "2026-05-21T14:37:26Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-document-api-account-management",
@@ -1695,7 +1695,7 @@
       },
       "tad-service-detector": {
         "description": "Internal app created via Launchpad by asalimgereyeva@gssmail.com",
-        "pushed_at": "2026-06-10T15:30:45Z",
+        "pushed_at": "2026-07-16T13:33:36Z",
         "created_at": "2026-06-02T18:34:31Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-service-detector",
@@ -1719,7 +1719,7 @@
       },
       "tad-too-tuff": {
         "description": "Internal app created via Launchpad by kcao@gssmail.com",
-        "pushed_at": "2026-07-08T18:08:26Z",
+        "pushed_at": "2026-07-17T02:27:26Z",
         "created_at": "2026-06-03T18:18:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-too-tuff",
@@ -1743,7 +1743,7 @@
       },
       "akhilesh-tad": {
         "description": "Internal app created via Launchpad by avattumilli@gssmail.com",
-        "pushed_at": "2026-06-10T15:30:47Z",
+        "pushed_at": "2026-07-16T13:33:34Z",
         "created_at": "2026-06-04T05:48:49Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/akhilesh-tad",
@@ -1767,7 +1767,7 @@
       },
       "employee-assessments": {
         "description": "Unified quarterly workflow for engineering teams: schedule review chats, track skill assessments and focus skills, and capture structured quarterly reviews — replacing Excel-based career path worksheets.",
-        "pushed_at": "2026-07-15T18:00:18Z",
+        "pushed_at": "2026-07-17T04:16:26Z",
         "created_at": "2026-06-05T20:01:35Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/employee-assessments",
@@ -1815,7 +1815,7 @@
       },
       "cobol-forge": {
         "description": "internal cobol compile server + dashboard for the r&d team",
-        "pushed_at": "2026-07-10T18:41:26Z",
+        "pushed_at": "2026-07-17T02:31:26Z",
         "created_at": "2026-06-11T19:31:16Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/cobol-forge",
@@ -1827,7 +1827,7 @@
       },
       "tad-analysis-combined": {
         "description": "tad analysis project built by the 2026 interns :)",
-        "pushed_at": "2026-07-08T21:00:23Z",
+        "pushed_at": "2026-07-16T13:33:32Z",
         "created_at": "2026-06-11T21:08:34Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-analysis-combined",
@@ -1979,7 +1979,7 @@
       },
       "gss-stripe-relay": {
         "description": "The relay (\"listening post\") is the single outbound trust boundary for Stripe e-invoice creation",
-        "pushed_at": "2026-06-30T16:04:06Z",
+        "pushed_at": "2026-07-16T16:15:21Z",
         "created_at": "2026-06-30T15:21:38Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-stripe-relay",
@@ -2003,7 +2003,7 @@
       },
       "intelligent-ta": {
         "description": "TaFinder tells you which TestArchitect tests provably exercised a given program, function, screen, or table — turning \"log all\" run data into an auditable, searchable coverage index.",
-        "pushed_at": "2026-07-15T23:03:04Z",
+        "pushed_at": "2026-07-16T23:54:26Z",
         "created_at": "2026-07-01T17:19:08Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/intelligent-ta",
@@ -2027,7 +2027,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-07-16T07:41:02Z",
+        "pushed_at": "2026-07-17T07:39:57Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2087,7 +2087,7 @@
       },
       "log-viewer": {
         "description": "See multiple logs and analyze better",
-        "pushed_at": "2026-07-08T19:49:34Z",
+        "pushed_at": "2026-07-17T04:15:26Z",
         "created_at": "2026-07-07T15:57:46Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/log-viewer",
@@ -2107,7 +2107,7 @@
       },
       "akhilesh-launchpad-testing": {
         "description": "testing ground for launchpad upgrades",
-        "pushed_at": "2026-07-14T13:39:56Z",
+        "pushed_at": "2026-07-16T13:33:38Z",
         "created_at": "2026-07-08T22:00:49Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/akhilesh-launchpad-testing",
@@ -2131,7 +2131,7 @@
       },
       "skillforge": {
         "description": "[Temporary] testing out skill publishing, compiling, and extracting.",
-        "pushed_at": "2026-07-16T04:40:05Z",
+        "pushed_at": "2026-07-16T23:10:26Z",
         "created_at": "2026-07-11T16:27:57Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/skillforge",
