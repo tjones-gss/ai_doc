@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-07-17",
+  "_updated": "2026-07-20",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.212",
+    "claude_code_cli_release": "v2.1.215",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -11,11 +11,11 @@
     "chatgpt_version": "5.5",
     "gpt_model": "5.5",
     "codex_model": "5.5-Codex",
-    "codex_cli_npm": "0.144.5"
+    "codex_cli_npm": "0.144.6"
   },
   "cursor": {
     "composer_model": "Composer 2",
-    "latest_changelog_date": "2026-07-10"
+    "latest_changelog_date": "2026-07-17"
   },
   "internal_tools": {
     "_comment": "Last-seen list of repo names in GlobalShopSolutions-InternalTools, sorted. The workflow diffs this list against current to detect new/removed apps.",
@@ -89,6 +89,7 @@
       "gss-doc-api",
       "gss-document-api-account-management",
       "gss-projectcreation",
+      "gss-propose",
       "gss-qa-step-recorder",
       "gss-stripe-connect",
       "gss-stripe-relay",
@@ -839,7 +840,7 @@
       },
       "featuretoggles": {
         "description": "Feature Toggles allow to control which features are available in the system.",
-        "pushed_at": "2026-07-17T05:16:26Z",
+        "pushed_at": "2026-07-17T16:23:33Z",
         "created_at": "2026-03-17T16:10:47Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/featuretoggles",
@@ -885,7 +886,7 @@
       },
       "mcp-intelligence": {
         "description": "Development intelligence engine — accumulates organizational knowledge from MCP interactions, serves team-aware AI artifacts (skills, rules, agents), and exposes a REST API for upstream consumers.",
-        "pushed_at": "2026-07-13T21:59:26Z",
+        "pushed_at": "2026-07-17T22:17:50Z",
         "created_at": "2026-03-19T16:48:30Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-intelligence",
@@ -895,7 +896,7 @@
       },
       "mcp-artifacts": {
         "description": "Team-organized library of AI skills, rules, and agent definitions.  Read by mcp-intelligence at runtime.",
-        "pushed_at": "2026-07-15T22:26:38Z",
+        "pushed_at": "2026-07-17T22:27:22Z",
         "created_at": "2026-03-19T16:49:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-artifacts",
@@ -917,7 +918,7 @@
       },
       "globe-toolbox": {
         "description": "Tool tray toolbox for the globe",
-        "pushed_at": "2026-07-14T17:19:00Z",
+        "pushed_at": "2026-07-17T21:45:56Z",
         "created_at": "2026-03-20T19:20:22Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/globe-toolbox",
@@ -1263,7 +1264,7 @@
       },
       "service-web-api": {
         "description": "Internal app created via Launchpad by cmasden@gssmail.com",
-        "pushed_at": "2026-06-10T18:03:53Z",
+        "pushed_at": "2026-07-17T13:44:11Z",
         "created_at": "2026-04-16T15:49:04Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/service-web-api",
@@ -1359,7 +1360,7 @@
       },
       "traveler": {
         "description": "Developer workflow planning tool similar to Monday.  Provides easy serviceweb call importing and agile cadence support.",
-        "pushed_at": "2026-07-16T23:51:04Z",
+        "pushed_at": "2026-07-17T15:27:42Z",
         "created_at": "2026-04-23T21:05:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/traveler",
@@ -1383,7 +1384,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-17T12:37:43Z",
+        "pushed_at": "2026-07-20T13:37:26Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1455,7 +1456,7 @@
       },
       "qtest-ta-tc-repo-lookup": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-10T13:45:22Z",
+        "pushed_at": "2026-07-17T15:12:23Z",
         "created_at": "2026-04-30T13:30:27Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qtest-ta-tc-repo-lookup",
@@ -1575,7 +1576,7 @@
       },
       "beacon": {
         "description": "Internal app created via Launchpad by brennanhitchcock@gssmail.com",
-        "pushed_at": "2026-07-14T17:49:28Z",
+        "pushed_at": "2026-07-17T16:19:39Z",
         "created_at": "2026-05-18T15:01:45Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/beacon",
@@ -1767,7 +1768,7 @@
       },
       "employee-assessments": {
         "description": "Unified quarterly workflow for engineering teams: schedule review chats, track skill assessments and focus skills, and capture structured quarterly reviews — replacing Excel-based career path worksheets.",
-        "pushed_at": "2026-07-17T04:16:26Z",
+        "pushed_at": "2026-07-17T21:57:35Z",
         "created_at": "2026-06-05T20:01:35Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/employee-assessments",
@@ -2003,7 +2004,7 @@
       },
       "intelligent-ta": {
         "description": "TaFinder tells you which TestArchitect tests provably exercised a given program, function, screen, or table — turning \"log all\" run data into an auditable, searchable coverage index.",
-        "pushed_at": "2026-07-16T23:54:26Z",
+        "pushed_at": "2026-07-17T14:32:33Z",
         "created_at": "2026-07-01T17:19:08Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/intelligent-ta",
@@ -2027,7 +2028,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-07-17T07:39:57Z",
+        "pushed_at": "2026-07-20T08:00:36Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2119,7 +2120,7 @@
       },
       "tc-builder": {
         "description": "Lets users take on click screen shots and upload videos of test steps for AI to turn into standardized testing formats. Logs steps into a catalog for future agents to use when building test cases for specific menu paths and programs.",
-        "pushed_at": "2026-07-15T14:34:01Z",
+        "pushed_at": "2026-07-17T22:17:38Z",
         "created_at": "2026-07-10T15:59:06Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tc-builder",
@@ -2131,13 +2132,25 @@
       },
       "skillforge": {
         "description": "[Temporary] testing out skill publishing, compiling, and extracting.",
-        "pushed_at": "2026-07-16T23:10:26Z",
+        "pushed_at": "2026-07-17T15:52:03Z",
         "created_at": "2026-07-11T16:27:57Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/skillforge",
         "topics": [
           "launchpad",
           "owner-agodavarthy-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "gss-propose": {
+        "description": "A webapp for publishing proposals you would like to directly link to chats in teams, proposals will persist and allow in-line comments and rework tracking much like a google doc.",
+        "pushed_at": "2026-07-17T19:14:05Z",
+        "created_at": "2026-07-17T19:13:57Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-propose",
+        "topics": [
+          "launchpad",
+          "owner-dgordon-at-gssmail-dot-com",
           "starter"
         ]
       }

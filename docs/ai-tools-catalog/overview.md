@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-07-17
+last_updated: 2026-07-20
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **143**
-- LaunchPad app articles: **123**
+- Published catalog articles: **144**
+- LaunchPad app articles: **124**
 - MCP server articles: **16**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **170**
+- InternalTools repos tracked: **171**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-07-17**
+- Catalog last regenerated: **2026-07-20**
 
 ## How this stays current
 
@@ -82,6 +82,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [gss-doc-api](launchpad/gss-doc-api.md) - An API that uses OpenAI to parse data out of documents. Currently supports invoices and sales orders, with more document types planned. Live at `docs.globalshopsolutions.ai`.
 - [GSS Document API - Admin Dashboard](launchpad/gss-document-api-account-management.md) - Account management / Admin tool.
 - [GAP Entry Wizard](launchpad/gss-projectcreation.md) - Internal app created via Launchpad by emarlow@gssmail.com
+- [gss-propose](launchpad/gss-propose.md) - A webapp for publishing proposals you would like to directly link to chats in teams, proposals will persist and allow in-line comments and rework tracking much like a google doc.
 - [gss-qa-step-recorder](launchpad/gss-qa-step-recorder.md) - Records GSS V6 clicks/keystrokes into reproducible numbered QA steps. Local .NET 8 / WPF, on-machine only.
 - [gss-stripe-connect](launchpad/gss-stripe-connect.md) - A tool to onboard customers as GSS Stripe Connect Accounts — the workflow that lets a customer accept payments through GSS using Stripe under the hood.
 - [gss-stripe-relay](launchpad/gss-stripe-relay.md) - The relay ("listening post") is the single outbound trust boundary for Stripe e-invoice creation
