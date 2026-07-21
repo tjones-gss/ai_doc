@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-07-20",
+  "_updated": "2026-07-21",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.215",
+    "claude_code_cli_release": "v2.1.216",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -94,6 +94,7 @@
       "gss-stripe-connect",
       "gss-stripe-relay",
       "gssbrowser",
+      "gssdrive",
       "gsshelp-letterpress",
       "hackplan",
       "heartbeat",
@@ -168,6 +169,7 @@
       "tad-too-tuff",
       "tad-worker-service",
       "talentlms-tool",
+      "tatesttools-mcp",
       "tc-builder",
       "tc-navigation-catalog",
       "team-14-zen-tunnel",
@@ -205,7 +207,7 @@
       },
       "docs": {
         "description": "Internal GitOps documentation site",
-        "pushed_at": "2026-06-19T14:07:02Z",
+        "pushed_at": "2026-07-20T21:56:26Z",
         "created_at": "2026-02-05T20:43:37Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/docs",
@@ -285,7 +287,7 @@
       },
       "testarchitect-mcp": {
         "description": "MCP server providing AI assistants with access to TestArchitect test management data",
-        "pushed_at": "2026-07-16T19:47:00Z",
+        "pushed_at": "2026-07-20T15:34:01Z",
         "created_at": "2026-02-12T19:45:22Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/testarchitect-mcp",
@@ -886,7 +888,7 @@
       },
       "mcp-intelligence": {
         "description": "Development intelligence engine — accumulates organizational knowledge from MCP interactions, serves team-aware AI artifacts (skills, rules, agents), and exposes a REST API for upstream consumers.",
-        "pushed_at": "2026-07-17T22:17:50Z",
+        "pushed_at": "2026-07-20T15:37:38Z",
         "created_at": "2026-03-19T16:48:30Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-intelligence",
@@ -896,7 +898,7 @@
       },
       "mcp-artifacts": {
         "description": "Team-organized library of AI skills, rules, and agent definitions.  Read by mcp-intelligence at runtime.",
-        "pushed_at": "2026-07-17T22:27:22Z",
+        "pushed_at": "2026-07-20T16:34:09Z",
         "created_at": "2026-03-19T16:49:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-artifacts",
@@ -906,7 +908,7 @@
       },
       "brain": {
         "description": "The Global Shop Solutions brain. Root Agent of Agents.",
-        "pushed_at": "2026-07-16T13:33:55Z",
+        "pushed_at": "2026-07-20T19:19:36Z",
         "created_at": "2026-03-20T14:26:33Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/brain",
@@ -918,7 +920,7 @@
       },
       "globe-toolbox": {
         "description": "Tool tray toolbox for the globe",
-        "pushed_at": "2026-07-17T21:45:56Z",
+        "pushed_at": "2026-07-20T22:25:25Z",
         "created_at": "2026-03-20T19:20:22Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/globe-toolbox",
@@ -1384,7 +1386,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-20T13:37:26Z",
+        "pushed_at": "2026-07-21T12:37:18Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1744,7 +1746,7 @@
       },
       "akhilesh-tad": {
         "description": "Internal app created via Launchpad by avattumilli@gssmail.com",
-        "pushed_at": "2026-07-16T13:33:34Z",
+        "pushed_at": "2026-07-20T14:21:01Z",
         "created_at": "2026-06-04T05:48:49Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/akhilesh-tad",
@@ -1768,7 +1770,7 @@
       },
       "employee-assessments": {
         "description": "Unified quarterly workflow for engineering teams: schedule review chats, track skill assessments and focus skills, and capture structured quarterly reviews — replacing Excel-based career path worksheets.",
-        "pushed_at": "2026-07-17T21:57:35Z",
+        "pushed_at": "2026-07-20T21:16:59Z",
         "created_at": "2026-06-05T20:01:35Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/employee-assessments",
@@ -1944,7 +1946,7 @@
       },
       "my-call-dashboard": {
         "description": "Real-time Call Dashboard for tracking Service Web calls through triage, development, and QA. Includes a local web dashboard, weekly reports, and Cursor IDE automation.",
-        "pushed_at": "2026-06-24T20:30:54Z",
+        "pushed_at": "2026-07-20T19:47:07Z",
         "created_at": "2026-06-24T05:06:07Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/my-call-dashboard",
@@ -1968,7 +1970,7 @@
       },
       "support-data-extraction-vault": {
         "description": "Internal app created via Launchpad by jjoy@gssmail.com",
-        "pushed_at": "2026-07-13T19:52:49Z",
+        "pushed_at": "2026-07-21T12:48:10Z",
         "created_at": "2026-06-26T18:53:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/support-data-extraction-vault",
@@ -2004,7 +2006,7 @@
       },
       "intelligent-ta": {
         "description": "TaFinder tells you which TestArchitect tests provably exercised a given program, function, screen, or table — turning \"log all\" run data into an auditable, searchable coverage index.",
-        "pushed_at": "2026-07-17T14:32:33Z",
+        "pushed_at": "2026-07-20T20:39:32Z",
         "created_at": "2026-07-01T17:19:08Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/intelligent-ta",
@@ -2028,7 +2030,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-07-20T08:00:36Z",
+        "pushed_at": "2026-07-21T07:47:55Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2108,7 +2110,7 @@
       },
       "akhilesh-launchpad-testing": {
         "description": "testing ground for launchpad upgrades",
-        "pushed_at": "2026-07-16T13:33:38Z",
+        "pushed_at": "2026-07-20T14:19:56Z",
         "created_at": "2026-07-08T22:00:49Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/akhilesh-launchpad-testing",
@@ -2120,7 +2122,7 @@
       },
       "tc-builder": {
         "description": "Lets users take on click screen shots and upload videos of test steps for AI to turn into standardized testing formats. Logs steps into a catalog for future agents to use when building test cases for specific menu paths and programs.",
-        "pushed_at": "2026-07-17T22:17:38Z",
+        "pushed_at": "2026-07-20T17:50:41Z",
         "created_at": "2026-07-10T15:59:06Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tc-builder",
@@ -2151,6 +2153,30 @@
         "topics": [
           "launchpad",
           "owner-dgordon-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "gssdrive": {
+        "description": "Provides GSSDrive executables and stores centralized GSSDrive data",
+        "pushed_at": "2026-07-20T19:04:58Z",
+        "created_at": "2026-07-20T14:45:01Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gssdrive",
+        "topics": [
+          "launchpad",
+          "owner-hfutrell-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "tatesttools-mcp": {
+        "description": "Deterministic toolset for analyzing, mapping, and generating TestArchitect test scripts with automated coverage analysis and source code control correlation",
+        "pushed_at": "2026-07-20T19:42:51Z",
+        "created_at": "2026-07-20T17:42:26Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tatesttools-mcp",
+        "topics": [
+          "launchpad",
+          "owner-ssmith-at-gssmail-dot-com",
           "starter"
         ]
       }

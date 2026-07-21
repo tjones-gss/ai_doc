@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-07-20
+last_updated: 2026-07-21
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **144**
-- LaunchPad app articles: **124**
-- MCP server articles: **16**
+- Published catalog articles: **146**
+- LaunchPad app articles: **125**
+- MCP server articles: **17**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **171**
+- InternalTools repos tracked: **173**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-07-20**
+- Catalog last regenerated: **2026-07-21**
 
 ## How this stays current
 
@@ -87,6 +87,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [gss-stripe-connect](launchpad/gss-stripe-connect.md) - A tool to onboard customers as GSS Stripe Connect Accounts — the workflow that lets a customer accept payments through GSS using Stripe under the hood.
 - [gss-stripe-relay](launchpad/gss-stripe-relay.md) - The relay ("listening post") is the single outbound trust boundary for Stripe e-invoice creation
 - [gssbrowser](launchpad/gssbrowser.md) - GSS Browser, on the web. Same backend code as the desktop GSS Browser, but browser-accessible — so it can be used to reproduce bugs and run automated AI-driven testing without...
+- [gssdrive](launchpad/gssdrive.md) - Provides GSSDrive executables and stores centralized GSSDrive data
 - [GSSEOtogo](launchpad/GSSEOtogo.md) - A LaunchPad-hosted service for GSSEO I/O against Pervasive over the web. Owner contact below for the specific scope.
 - [gsshelp-letterpress](launchpad/gsshelp-letterpress.md) - Exports articles from Helpjuice into Word or PDF using the official GSS letterhead. Lets you turn an online doc into a polished, shareable file customers (and execs) recognize.
 - [hookmaintenance](launchpad/hookmaintenance.md) - Defines hook ID ranges and manages script hooks within them — their details, settings, and activation status.
@@ -184,6 +185,7 @@ GSS-specific MCP servers that any MCP-compatible AI agent can use, including Cur
 - [Rocketlane MCP Server v2.7.1](mcp-servers/rocketlane-mcp.md) - MCP for connecting with Rocketlane
 - [GSS Community Skills Library](mcp-servers/skills-library.md) - Curated catalog of shared Cursor agent skills for GSS teams. Browse skills by bundle, see example prompts, open each skill’s docs site, and follow the guide to publish your own...
 - [SourceControlWatch](mcp-servers/sourcecontrolwatch.md) - Tracks file-level GitHub and SVN commits for GSS; local WinForms app plus a Launchpad API for queries, ingest, and mcp-intelligence.
+- [tatesttools-mcp](mcp-servers/tatesttools-mcp.md) - Deterministic toolset for analyzing, mapping, and generating TestArchitect test scripts with automated coverage analysis and source code control correlation
 - [ui-standards](mcp-servers/ui-standards.md) - Description: RAG-backed MCP server for GSS WinForms UI standards, ScreenBuilder API reference, and visual compliance auditing.
 
 ---
