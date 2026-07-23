@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-07-22",
+  "_updated": "2026-07-23",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.217",
+    "claude_code_cli_release": "v2.1.218",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -15,7 +15,7 @@
   },
   "cursor": {
     "composer_model": "Composer 2",
-    "latest_changelog_date": "2026-07-17"
+    "latest_changelog_date": "2026-07-22"
   },
   "internal_tools": {
     "_comment": "Last-seen list of repo names in GlobalShopSolutions-InternalTools, sorted. The workflow diffs this list against current to detect new/removed apps.",
@@ -383,7 +383,7 @@
       },
       "menu-telemetry": {
         "description": "Internal app created via Launchpad by cmasden@gssmail.com",
-        "pushed_at": "2026-07-16T21:36:33Z",
+        "pushed_at": "2026-07-22T18:12:50Z",
         "created_at": "2026-02-23T22:40:33Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/menu-telemetry",
@@ -469,7 +469,7 @@
       },
       "schema-manager-2": {
         "description": "Schema Manager 2 (React/API/MCP parallel track)",
-        "pushed_at": "2026-03-03T22:54:18Z",
+        "pushed_at": "2026-07-23T01:20:14Z",
         "created_at": "2026-02-26T19:23:39Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/schema-manager-2",
@@ -646,7 +646,7 @@
       },
       "globe-tv": {
         "description": "A place where we can store our help videos",
-        "pushed_at": "2026-07-16T19:54:42Z",
+        "pushed_at": "2026-07-22T19:34:13Z",
         "created_at": "2026-03-04T23:15:20Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/globe-tv",
@@ -898,7 +898,7 @@
       },
       "mcp-artifacts": {
         "description": "Team-organized library of AI skills, rules, and agent definitions.  Read by mcp-intelligence at runtime.",
-        "pushed_at": "2026-07-21T18:16:46Z",
+        "pushed_at": "2026-07-22T21:19:39Z",
         "created_at": "2026-03-19T16:49:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-artifacts",
@@ -1362,7 +1362,7 @@
       },
       "traveler": {
         "description": "Developer workflow planning tool similar to Monday.  Provides easy serviceweb call importing and agile cadence support.",
-        "pushed_at": "2026-07-22T03:25:15Z",
+        "pushed_at": "2026-07-23T02:14:32Z",
         "created_at": "2026-04-23T21:05:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/traveler",
@@ -1386,7 +1386,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-22T12:37:19Z",
+        "pushed_at": "2026-07-23T12:37:35Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1770,7 +1770,7 @@
       },
       "employee-assessments": {
         "description": "Unified quarterly workflow for engineering teams: schedule review chats, track skill assessments and focus skills, and capture structured quarterly reviews — replacing Excel-based career path worksheets.",
-        "pushed_at": "2026-07-21T21:46:38Z",
+        "pushed_at": "2026-07-22T20:58:50Z",
         "created_at": "2026-06-05T20:01:35Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/employee-assessments",
@@ -1830,7 +1830,7 @@
       },
       "tad-analysis-combined": {
         "description": "tad analysis project built by the 2026 interns :)",
-        "pushed_at": "2026-07-16T13:33:32Z",
+        "pushed_at": "2026-07-22T22:29:45Z",
         "created_at": "2026-06-11T21:08:34Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-analysis-combined",
@@ -1866,7 +1866,7 @@
       },
       "jenkins-build-status-bookmarklet": {
         "description": "A boolmarklet that brings up a build status for Jenkins builds with a summary of what step its on and test run status.",
-        "pushed_at": "2026-07-14T20:49:48Z",
+        "pushed_at": "2026-07-22T15:47:50Z",
         "created_at": "2026-06-15T16:08:28Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/jenkins-build-status-bookmarklet",
@@ -1898,7 +1898,7 @@
       },
       "globalmasterfile-launchpad": {
         "description": "this is the globalmasterfile tool on launchpad as a webpage",
-        "pushed_at": "2026-07-21T20:17:21Z",
+        "pushed_at": "2026-07-22T13:24:31Z",
         "created_at": "2026-06-17T13:55:11Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/globalmasterfile-launchpad",
@@ -1970,7 +1970,7 @@
       },
       "support-data-extraction-vault": {
         "description": "Internal app created via Launchpad by jjoy@gssmail.com",
-        "pushed_at": "2026-07-21T18:06:11Z",
+        "pushed_at": "2026-07-22T22:45:09Z",
         "created_at": "2026-06-26T18:53:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/support-data-extraction-vault",
@@ -2030,7 +2030,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-07-22T07:48:18Z",
+        "pushed_at": "2026-07-23T07:48:14Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2158,7 +2158,7 @@
       },
       "gssdrive": {
         "description": "Provides GSSDrive executables and stores centralized GSSDrive data",
-        "pushed_at": "2026-07-20T19:04:58Z",
+        "pushed_at": "2026-07-22T23:32:13Z",
         "created_at": "2026-07-20T14:45:01Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gssdrive",
@@ -2170,7 +2170,7 @@
       },
       "tatesttools-mcp": {
         "description": "Deterministic toolset for analyzing, mapping, and generating TestArchitect test scripts with automated coverage analysis and source code control correlation",
-        "pushed_at": "2026-07-21T20:10:05Z",
+        "pushed_at": "2026-07-22T15:37:47Z",
         "created_at": "2026-07-20T17:42:26Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tatesttools-mcp",
