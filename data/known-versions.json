@@ -1,6 +1,6 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-07-23",
+  "_updated": "2026-07-24",
   "anthropic": {
     "claude_code_cli_release": "v2.1.218",
     "model_opus": "4.7",
@@ -88,6 +88,7 @@
       "gss-command-center",
       "gss-doc-api",
       "gss-document-api-account-management",
+      "gss-mafia",
       "gss-projectcreation",
       "gss-propose",
       "gss-qa-step-recorder",
@@ -331,7 +332,7 @@
       },
       "tad-database-service": {
         "description": "Test Architect Distributed - Database Service API (PostgreSQL, ASP.NET Core)",
-        "pushed_at": "2026-07-21T17:27:48Z",
+        "pushed_at": "2026-07-23T14:48:46Z",
         "created_at": "2026-02-23T18:52:16Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-database-service",
@@ -353,7 +354,7 @@
       },
       "tad-host-manager-service": {
         "description": null,
-        "pushed_at": "2026-05-07T13:36:17Z",
+        "pushed_at": "2026-07-23T16:37:01Z",
         "created_at": "2026-02-23T19:51:19Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-host-manager-service",
@@ -373,7 +374,7 @@
       },
       "tad-dashboard": {
         "description": null,
-        "pushed_at": "2026-07-14T19:21:13Z",
+        "pushed_at": "2026-07-23T15:00:51Z",
         "created_at": "2026-02-23T19:52:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-dashboard",
@@ -469,7 +470,7 @@
       },
       "schema-manager-2": {
         "description": "Schema Manager 2 (React/API/MCP parallel track)",
-        "pushed_at": "2026-07-23T01:20:14Z",
+        "pushed_at": "2026-07-23T19:24:41Z",
         "created_at": "2026-02-26T19:23:39Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/schema-manager-2",
@@ -908,7 +909,7 @@
       },
       "brain": {
         "description": "The Global Shop Solutions brain. Root Agent of Agents.",
-        "pushed_at": "2026-07-20T19:19:36Z",
+        "pushed_at": "2026-07-23T21:25:55Z",
         "created_at": "2026-03-20T14:26:33Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/brain",
@@ -1362,7 +1363,7 @@
       },
       "traveler": {
         "description": "Developer workflow planning tool similar to Monday.  Provides easy serviceweb call importing and agile cadence support.",
-        "pushed_at": "2026-07-23T02:14:32Z",
+        "pushed_at": "2026-07-23T18:45:10Z",
         "created_at": "2026-04-23T21:05:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/traveler",
@@ -1386,7 +1387,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-23T12:37:35Z",
+        "pushed_at": "2026-07-24T12:37:26Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1626,7 +1627,7 @@
       },
       "gss-document-api-account-management": {
         "description": "Account management / Admin tool.",
-        "pushed_at": "2026-07-16T19:15:12Z",
+        "pushed_at": "2026-07-23T20:16:55Z",
         "created_at": "2026-05-21T14:37:26Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-document-api-account-management",
@@ -1970,7 +1971,7 @@
       },
       "support-data-extraction-vault": {
         "description": "Internal app created via Launchpad by jjoy@gssmail.com",
-        "pushed_at": "2026-07-22T22:45:09Z",
+        "pushed_at": "2026-07-23T14:55:56Z",
         "created_at": "2026-06-26T18:53:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/support-data-extraction-vault",
@@ -2030,7 +2031,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-07-23T07:48:14Z",
+        "pushed_at": "2026-07-24T07:47:25Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2122,7 +2123,7 @@
       },
       "tc-builder": {
         "description": "Lets users take on click screen shots and upload videos of test steps for AI to turn into standardized testing formats. Logs steps into a catalog for future agents to use when building test cases for specific menu paths and programs.",
-        "pushed_at": "2026-07-20T17:50:41Z",
+        "pushed_at": "2026-07-24T13:10:09Z",
         "created_at": "2026-07-10T15:59:06Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tc-builder",
@@ -2146,7 +2147,7 @@
       },
       "gss-propose": {
         "description": "A webapp for publishing proposals you would like to directly link to chats in teams, proposals will persist and allow in-line comments and rework tracking much like a google doc.",
-        "pushed_at": "2026-07-17T19:14:05Z",
+        "pushed_at": "2026-07-23T23:20:52Z",
         "created_at": "2026-07-17T19:13:57Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-propose",
@@ -2170,13 +2171,25 @@
       },
       "tatesttools-mcp": {
         "description": "Deterministic toolset for analyzing, mapping, and generating TestArchitect test scripts with automated coverage analysis and source code control correlation",
-        "pushed_at": "2026-07-22T15:37:47Z",
+        "pushed_at": "2026-07-24T12:17:25Z",
         "created_at": "2026-07-20T17:42:26Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tatesttools-mcp",
         "topics": [
           "launchpad",
           "owner-ssmith-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "gss-mafia": {
+        "description": "a helper tool to aid in having productive mob sessions",
+        "pushed_at": "2026-07-23T20:48:37Z",
+        "created_at": "2026-07-23T19:17:44Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-mafia",
+        "topics": [
+          "launchpad",
+          "owner-sharris-at-gssmail-dot-com",
           "starter"
         ]
       }

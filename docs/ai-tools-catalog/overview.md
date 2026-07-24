@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-07-23
+last_updated: 2026-07-24
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **146**
-- LaunchPad app articles: **125**
+- Published catalog articles: **147**
+- LaunchPad app articles: **126**
 - MCP server articles: **17**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **173**
+- InternalTools repos tracked: **174**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-07-23**
+- Catalog last regenerated: **2026-07-24**
 
 ## How this stays current
 
@@ -81,6 +81,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [gss-catalog](launchpad/gss-catalog.md) - A catalog of all tools, services and projects on LaunchPad. What it''s for, who it''s for, how to set it up and use it, and good use cases for each.
 - [gss-doc-api](launchpad/gss-doc-api.md) - An API that uses OpenAI to parse data out of documents. Currently supports invoices and sales orders, with more document types planned. Live at `docs.globalshopsolutions.ai`.
 - [GSS Document API - Admin Dashboard](launchpad/gss-document-api-account-management.md) - Account management / Admin tool.
+- [gss-mafia](launchpad/gss-mafia.md) - a helper tool to aid in having productive mob sessions
 - [GAP Entry Wizard](launchpad/gss-projectcreation.md) - Internal app created via Launchpad by emarlow@gssmail.com
 - [gss-propose](launchpad/gss-propose.md) - A webapp for publishing proposals you would like to directly link to chats in teams, proposals will persist and allow in-line comments and rework tracking much like a google doc.
 - [gss-qa-step-recorder](launchpad/gss-qa-step-recorder.md) - Records GSS V6 clicks/keystrokes into reproducible numbered QA steps. Local .NET 8 / WPF, on-machine only.
