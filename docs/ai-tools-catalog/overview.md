@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-07-24
+last_updated: 2026-07-27
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **147**
-- LaunchPad app articles: **126**
+- Published catalog articles: **148**
+- LaunchPad app articles: **127**
 - MCP server articles: **17**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **174**
+- InternalTools repos tracked: **175**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-07-24**
+- Catalog last regenerated: **2026-07-27**
 
 ## How this stays current
 
@@ -66,6 +66,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [DashboardDesAIgner](launchpad/DashboardDesAIgner.md) - An AI agent that converts plain-English descriptions into DevExpress Dashboard Designer XML.
 - [delta-t](launchpad/delta-t.md) - Performance and speed improvements
 - [designerconsolidation](launchpad/designerconsolidation.md) - A smart WinForms `.Designer.vb` merge tool that resolves DevExpress designer-file conflicts at the control-and-property level.
+- [document-ingest-onboarding](launchpad/document-ingest-onboarding.md) - Docs + downloads for the shared GSSUI skill that adds document import to any screen: Imported Documents grid, collapsible source-document panel (PDF/image/HTML viewer), and the Cross Reference Setup │ │ │ overlay.
 - [employee-assessments](launchpad/employee-assessments.md) - Unified quarterly workflow for engineering teams: schedule review chats, track skill assessments and focus skills, and capture structured quarterly reviews — replacing...
 - [escalation-tracker](launchpad/escalation-tracker.md) - this will facilitate escalating issues for new implementations through the proper channels.
 - [featuretoggles](launchpad/featuretoggles.md) - Controls which features are available in the system so teams can ship dark, roll out gradually, or kill-switch behavior without redeploying.
