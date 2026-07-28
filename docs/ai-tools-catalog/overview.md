@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-07-27
+last_updated: 2026-07-28
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **148**
+- Published catalog articles: **149**
 - LaunchPad app articles: **127**
-- MCP server articles: **17**
+- MCP server articles: **18**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **175**
+- InternalTools repos tracked: **176**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-07-27**
+- Catalog last regenerated: **2026-07-28**
 
 ## How this stays current
 
@@ -187,6 +187,7 @@ GSS-specific MCP servers that any MCP-compatible AI agent can use, including Cur
 - [Rocketlane MCP Server v2.7.1](mcp-servers/rocketlane-mcp.md) - MCP for connecting with Rocketlane
 - [GSS Community Skills Library](mcp-servers/skills-library.md) - Curated catalog of shared Cursor agent skills for GSS teams. Browse skills by bundle, see example prompts, open each skill’s docs site, and follow the guide to publish your own...
 - [SourceControlWatch](mcp-servers/sourcecontrolwatch.md) - Tracks file-level GitHub and SVN commits for GSS; local WinForms app plus a Launchpad API for queries, ingest, and mcp-intelligence.
+- [tad-mcp](mcp-servers/tad-mcp.md) - Mcp for getting TAD information
 - [tatesttools-mcp](mcp-servers/tatesttools-mcp.md) - Deterministic toolset for analyzing, mapping, and generating TestArchitect test scripts with automated coverage analysis and source code control correlation
 - [ui-standards](mcp-servers/ui-standards.md) - Description: RAG-backed MCP server for GSS WinForms UI standards, ScreenBuilder API reference, and visual compliance auditing.
 
