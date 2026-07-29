@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-07-28
+last_updated: 2026-07-29
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **149**
-- LaunchPad app articles: **127**
+- Published catalog articles: **152**
+- LaunchPad app articles: **130**
 - MCP server articles: **18**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **176**
+- InternalTools repos tracked: **179**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-07-28**
+- Catalog last regenerated: **2026-07-29**
 
 ## How this stays current
 
@@ -52,6 +52,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [bug-fixer](launchpad/bug-fixer.md) - A LaunchPad-hosted MCP server for bug-fix automation. Owner contact below for the specific scope.
 - [bug-traffic-dashboard](launchpad/bug-traffic-dashboard.md) - A real-time dashboard that tracks how service calls flow through the P&E Bugs queue.
 - [bug-triage-pack](launchpad/bug-triage-pack.md) - An MCP gateway server that bundles COBOL, GitHub, Service Web, and test-case tools behind a single endpoint, plus a curated set of Skills, Agents, and Rules tuned for triaging bugs.
+- [buzz](launchpad/buzz.md) - Buzz relay — team chat and agent workspace (mirror of the OSS block/buzz relay)
 - [career-path-skills-maint](launchpad/career-path-skills-maint.md) - Internal app created via Launchpad by asmith@gssmail.com
 - [career-path-tracker](launchpad/career-path-tracker.md) - Track your career path through quarters. Log skills, achievements, and growth markers; export your data for review conversations and self-assessment.
 - [Carte Blanche](launchpad/carte-blanche.md) - A scratch pad app for quick diagrams and free-drawing that doesn''t look or feel terrible.
@@ -75,6 +76,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [gabmcpserver](launchpad/gabmcpserver.md) - An MCP server related to GAB (GSS's scripting language). Owner contact below for the specific scope.
 - [genii-quote](launchpad/genii-quote.md) - An intelligent quoting assistant that helps Global Shop Solutions quickly estimate and prepare quotes for customer custom requests by analyzing request details, identifying...
 - [GitHub Org Trawler](launchpad/git-org-trawler.md) - An application that is able to search through all available repos for information
+- [GitHub PR Stats](launchpad/github-pr-stats.md) - This aggregates Pull Request Creation and Merge statistics across all of our R&D Repositories.
 - [globalmasterfile-launchpad](launchpad/globalmasterfile-launchpad.md) - this is the globalmasterfile tool on launchpad as a webpage
 - [globe-toolbox](launchpad/globe-toolbox.md) - A cross-platform desktop tray app (Windows/macOS/Linux) that lives in your system tray and opens a popup of GSS apps you have access to.
 - [Globe TV](launchpad/globe-tv.md) - GSS's internal home for help videos. Think of it as a private YouTube — staff can find, watch, and (with permissions) upload short-form videos that explain how things work,...
@@ -118,6 +120,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [Newsletter](launchpad/newsletter.md) - Internal app created via Launchpad by avaldez@gssmail.com
 - [ni-revenue-tracker](launchpad/ni-revenue-tracker.md) - Overall revenue and hours to budget for New Implementations
 - [onsite — P&E ride-along scheduler](launchpad/onsite.md) - Internal app created via Launchpad by asmith@gssmail.com
+- [Patch Delta Report](launchpad/patch-delta-report.md) - Interactive web app that generates Patch Delta Reports showing known bugs between two patch build numbers, helping customers understand what issues affect their selected patch.
 - [patch-maintenance](launchpad/patch-maintenance.md) - App for QA to manage Patch releases and view various information about patch manifests.
 - [pe-ai-library](launchpad/pe-ai-library.md) - The centralized source of truth for engineering AI rules and skills at GSS. Provides modular, reusable standards (global, guild, and team-specific) and generates curated rule...
 - [pervasiveschema](launchpad/pervasiveschema.md) - A LaunchPad-hosted MCP server exposing the schema of all Pervasive tables and columns, plus their mappings to the EO Objects namespace (object name, grouping, property names).
