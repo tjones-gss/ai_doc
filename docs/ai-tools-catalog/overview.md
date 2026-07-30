@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-07-29
+last_updated: 2026-07-30
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **152**
-- LaunchPad app articles: **130**
+- Published catalog articles: **153**
+- LaunchPad app articles: **131**
 - MCP server articles: **18**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **179**
+- InternalTools repos tracked: **180**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-07-29**
+- Catalog last regenerated: **2026-07-30**
 
 ## How this stays current
 
@@ -145,6 +145,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [skillforge](launchpad/skillforge.md) - [Temporary] testing out skill publishing, compiling, and extracting.
 - [support-data-extraction-vault](launchpad/support-data-extraction-vault.md) - Internal app created via Launchpad by jjoy@gssmail.com
 - [svn-ops (svn-mcp)](launchpad/svn-ops.md) - A general-purpose Subversion MCP server. Exposes the full SVN command surface (checkout, log, diff, blame, commit, branch, etc.) to MCP-compatible clients (Cursor, Claude Code,...
+- [ta-data-dashboard](launchpad/ta-data-dashboard.md) - This dashboard will be able to display TA data that is assigned in preconditions of a test case and be able to view this by tester
 - [TABugTracking](launchpad/TABugTracking.md) - Tracks bugs caught by Test Architect (TA) tests. The official place to see "which production bugs would have been caught by automation if we had the right test?".
 - [tad-analysis-combined](launchpad/tad-analysis-combined.md) - tad analysis project built by the 2026 interns :)
 - [tad-dashboard](launchpad/tad-dashboard.md) - The real-time monitoring and administration dashboard for **Test Architect Distributed (TAD)**.

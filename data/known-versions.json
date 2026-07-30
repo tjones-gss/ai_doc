@@ -1,6 +1,6 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-07-29",
+  "_updated": "2026-07-30",
   "anthropic": {
     "claude_code_cli_release": "v2.1.220",
     "model_opus": "4.7",
@@ -15,7 +15,7 @@
   },
   "cursor": {
     "composer_model": "Composer 2",
-    "latest_changelog_date": "2026-07-28"
+    "latest_changelog_date": "2026-07-29"
   },
   "internal_tools": {
     "_comment": "Last-seen list of repo names in GlobalShopSolutions-InternalTools, sorted. The workflow diffs this list against current to detect new/removed apps.",
@@ -166,6 +166,7 @@
       "sourcecontrolwatch",
       "support-data-extraction-vault",
       "svn-ops",
+      "ta-data-dashboard",
       "tad-analysis-combined",
       "tad-dashboard",
       "tad-database-service",
@@ -233,7 +234,7 @@
       },
       "zen-data-builder": {
         "description": "A Windows Forms tool for browsing, generating, and managing test data in Actian Zen / Pervasive PSQL databases via ODBC. Built for the GSSERP legacy ERP system to support QA, development, and data migration testing.",
-        "pushed_at": "2026-07-28T22:37:28Z",
+        "pushed_at": "2026-07-29T22:35:16Z",
         "created_at": "2026-02-11T20:24:43Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/zen-data-builder",
@@ -293,7 +294,7 @@
       },
       "testarchitect-mcp": {
         "description": "MCP server providing AI assistants with access to TestArchitect test management data",
-        "pushed_at": "2026-07-27T18:34:32Z",
+        "pushed_at": "2026-07-29T20:18:32Z",
         "created_at": "2026-02-12T19:45:22Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/testarchitect-mcp",
@@ -303,7 +304,7 @@
       },
       "CausingIssueDashboard": {
         "description": "Dashboard for viewing issues with Causing Issue relationships from Issue Maintenance",
-        "pushed_at": "2026-07-29T13:24:28Z",
+        "pushed_at": "2026-07-29T13:44:37Z",
         "created_at": "2026-02-12T21:56:15Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/CausingIssueDashboard",
@@ -337,7 +338,7 @@
       },
       "tad-database-service": {
         "description": "Test Architect Distributed - Database Service API (PostgreSQL, ASP.NET Core)",
-        "pushed_at": "2026-07-27T18:41:45Z",
+        "pushed_at": "2026-07-30T12:35:59Z",
         "created_at": "2026-02-23T18:52:16Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-database-service",
@@ -379,7 +380,7 @@
       },
       "tad-dashboard": {
         "description": null,
-        "pushed_at": "2026-07-23T15:00:51Z",
+        "pushed_at": "2026-07-29T18:04:38Z",
         "created_at": "2026-02-23T19:52:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-dashboard",
@@ -389,7 +390,7 @@
       },
       "menu-telemetry": {
         "description": "Internal app created via Launchpad by cmasden@gssmail.com",
-        "pushed_at": "2026-07-22T18:12:50Z",
+        "pushed_at": "2026-07-29T18:15:10Z",
         "created_at": "2026-02-23T22:40:33Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/menu-telemetry",
@@ -904,7 +905,7 @@
       },
       "mcp-artifacts": {
         "description": "Team-organized library of AI skills, rules, and agent definitions.  Read by mcp-intelligence at runtime.",
-        "pushed_at": "2026-07-29T12:35:28Z",
+        "pushed_at": "2026-07-29T17:03:14Z",
         "created_at": "2026-03-19T16:49:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-artifacts",
@@ -1074,7 +1075,7 @@
       },
       "gab-codeeditor-mcp": {
         "description": "This is the mcp for gab codeeditor ",
-        "pushed_at": "2026-04-07T19:10:51Z",
+        "pushed_at": "2026-07-29T16:53:31Z",
         "created_at": "2026-04-07T19:10:45Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gab-codeeditor-mcp",
@@ -1224,7 +1225,7 @@
       },
       "issue-maintenance-api": {
         "description": "Internal app created via Launchpad by cmasden@gssmail.com",
-        "pushed_at": "2026-06-29T20:29:09Z",
+        "pushed_at": "2026-07-29T15:54:15Z",
         "created_at": "2026-04-13T16:52:34Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/issue-maintenance-api",
@@ -1392,7 +1393,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-29T13:38:46Z",
+        "pushed_at": "2026-07-30T12:39:41Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1692,7 +1693,7 @@
       },
       "jevins-cool-app": {
         "description": "Internal app created via Launchpad by jjoy@gssmail.com",
-        "pushed_at": "2026-06-02T17:05:39Z",
+        "pushed_at": "2026-07-29T16:54:32Z",
         "created_at": "2026-06-02T17:05:30Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/jevins-cool-app",
@@ -1764,7 +1765,7 @@
       },
       "nethum-abhay-tad-project": {
         "description": "intern project thing",
-        "pushed_at": "2026-07-29T13:06:05Z",
+        "pushed_at": "2026-07-29T16:55:44Z",
         "created_at": "2026-06-04T19:39:43Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/nethum-abhay-tad-project",
@@ -1836,7 +1837,7 @@
       },
       "tad-analysis-combined": {
         "description": "tad analysis project built by the 2026 interns :)",
-        "pushed_at": "2026-07-29T13:36:09Z",
+        "pushed_at": "2026-07-29T20:54:27Z",
         "created_at": "2026-06-11T21:08:34Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-analysis-combined",
@@ -1940,7 +1941,7 @@
       },
       "telemetrydata": {
         "description": "Internal app created via Launchpad by bbrambila@gssmail.com",
-        "pushed_at": "2026-06-23T14:19:35Z",
+        "pushed_at": "2026-07-29T16:54:50Z",
         "created_at": "2026-06-23T14:19:27Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/telemetrydata",
@@ -2012,7 +2013,7 @@
       },
       "intelligent-ta": {
         "description": "TaFinder tells you which TestArchitect tests provably exercised a given program, function, screen, or table — turning \"log all\" run data into an auditable, searchable coverage index.",
-        "pushed_at": "2026-07-29T08:04:43Z",
+        "pushed_at": "2026-07-29T17:15:26Z",
         "created_at": "2026-07-01T17:19:08Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/intelligent-ta",
@@ -2036,7 +2037,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-07-29T07:56:01Z",
+        "pushed_at": "2026-07-30T07:48:03Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2152,7 +2153,7 @@
       },
       "gss-propose": {
         "description": "A webapp for publishing proposals you would like to directly link to chats in teams, proposals will persist and allow in-line comments and rework tracking much like a google doc.",
-        "pushed_at": "2026-07-29T03:19:50Z",
+        "pushed_at": "2026-07-30T03:08:58Z",
         "created_at": "2026-07-17T19:13:57Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-propose",
@@ -2176,7 +2177,7 @@
       },
       "tatesttools-mcp": {
         "description": "Deterministic toolset for analyzing, mapping, and generating TestArchitect test scripts with automated coverage analysis and source code control correlation",
-        "pushed_at": "2026-07-28T20:27:25Z",
+        "pushed_at": "2026-07-29T20:51:55Z",
         "created_at": "2026-07-20T17:42:26Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tatesttools-mcp",
@@ -2236,7 +2237,7 @@
       },
       "patch-delta-report": {
         "description": "Interactive web app that generates Patch Delta Reports showing known bugs between two patch build numbers, helping customers understand what issues affect their selected patch.",
-        "pushed_at": "2026-07-28T23:11:10Z",
+        "pushed_at": "2026-07-29T16:44:14Z",
         "created_at": "2026-07-28T20:49:18Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/patch-delta-report",
@@ -2248,13 +2249,25 @@
       },
       "buzz": {
         "description": "Buzz relay — team chat and agent workspace (mirror of the OSS block/buzz relay)",
-        "pushed_at": "2026-07-29T13:20:04Z",
+        "pushed_at": "2026-07-29T18:37:00Z",
         "created_at": "2026-07-28T22:48:27Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/buzz",
         "topics": [
           "launchpad",
           "owner-kcao-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "ta-data-dashboard": {
+        "description": "This dashboard will be able to display TA data that is assigned in preconditions of a test case and be able to view this by tester",
+        "pushed_at": "2026-07-30T01:11:44Z",
+        "created_at": "2026-07-30T01:11:37Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/ta-data-dashboard",
+        "topics": [
+          "launchpad",
+          "owner-aelliot-at-gssmail-dot-com",
           "starter"
         ]
       }
