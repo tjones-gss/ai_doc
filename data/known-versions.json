@@ -1,6 +1,6 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-07-31",
+  "_updated": "2026-08-03",
   "anthropic": {
     "claude_code_cli_release": "v2.1.220",
     "model_opus": "4.7",
@@ -294,7 +294,7 @@
       },
       "testarchitect-mcp": {
         "description": "MCP server providing AI assistants with access to TestArchitect test management data",
-        "pushed_at": "2026-07-29T20:18:32Z",
+        "pushed_at": "2026-07-31T18:50:14Z",
         "created_at": "2026-02-12T19:45:22Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/testarchitect-mcp",
@@ -849,7 +849,7 @@
       },
       "featuretoggles": {
         "description": "Feature Toggles allow to control which features are available in the system.",
-        "pushed_at": "2026-07-17T16:23:33Z",
+        "pushed_at": "2026-07-31T15:13:27Z",
         "created_at": "2026-03-17T16:10:47Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/featuretoggles",
@@ -1393,7 +1393,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-31T12:37:24Z",
+        "pushed_at": "2026-08-03T13:39:16Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1429,7 +1429,7 @@
       },
       "infralog": {
         "description": "Scrape logs and store them in a ClickHouse database for AI consumption",
-        "pushed_at": "2026-07-28T13:23:04Z",
+        "pushed_at": "2026-07-31T18:44:26Z",
         "created_at": "2026-04-28T17:10:36Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/infralog",
@@ -1465,7 +1465,7 @@
       },
       "qtest-ta-tc-repo-lookup": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-24T13:51:10Z",
+        "pushed_at": "2026-07-31T13:29:59Z",
         "created_at": "2026-04-30T13:30:27Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qtest-ta-tc-repo-lookup",
@@ -1837,7 +1837,7 @@
       },
       "tad-analysis-combined": {
         "description": "tad analysis project built by the 2026 interns :)",
-        "pushed_at": "2026-07-31T13:16:29Z",
+        "pushed_at": "2026-08-03T13:50:45Z",
         "created_at": "2026-06-11T21:08:34Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-analysis-combined",
@@ -2037,7 +2037,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-07-31T07:59:55Z",
+        "pushed_at": "2026-08-03T08:08:50Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2153,7 +2153,7 @@
       },
       "gss-propose": {
         "description": "A webapp for publishing proposals you would like to directly link to chats in teams, proposals will persist and allow in-line comments and rework tracking much like a google doc.",
-        "pushed_at": "2026-07-31T01:27:33Z",
+        "pushed_at": "2026-07-31T18:06:31Z",
         "created_at": "2026-07-17T19:13:57Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-propose",
@@ -2177,7 +2177,7 @@
       },
       "tatesttools-mcp": {
         "description": "Deterministic toolset for analyzing, mapping, and generating TestArchitect test scripts with automated coverage analysis and source code control correlation",
-        "pushed_at": "2026-07-31T12:16:20Z",
+        "pushed_at": "2026-07-31T18:00:44Z",
         "created_at": "2026-07-20T17:42:26Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tatesttools-mcp",
@@ -2213,7 +2213,7 @@
       },
       "tad-mcp": {
         "description": "Mcp for getting TAD information",
-        "pushed_at": "2026-07-28T13:54:55Z",
+        "pushed_at": "2026-07-31T16:23:10Z",
         "created_at": "2026-07-28T13:12:14Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-mcp",
@@ -2225,7 +2225,7 @@
       },
       "github-pr-stats": {
         "description": "This aggregates Pull Request Creation and Merge statistics across all of our R&D Repositories.",
-        "pushed_at": "2026-07-28T14:53:08Z",
+        "pushed_at": "2026-07-31T14:35:38Z",
         "created_at": "2026-07-28T13:35:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/github-pr-stats",
@@ -2249,7 +2249,7 @@
       },
       "buzz": {
         "description": "Buzz relay — team chat and agent workspace (mirror of the OSS block/buzz relay)",
-        "pushed_at": "2026-07-29T18:37:00Z",
+        "pushed_at": "2026-07-31T16:07:02Z",
         "created_at": "2026-07-28T22:48:27Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/buzz",
@@ -2261,7 +2261,7 @@
       },
       "ta-data-dashboard": {
         "description": "This dashboard will be able to display TA data that is assigned in preconditions of a test case and be able to view this by tester",
-        "pushed_at": "2026-07-30T18:33:43Z",
+        "pushed_at": "2026-08-01T03:29:29Z",
         "created_at": "2026-07-30T01:11:37Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/ta-data-dashboard",
