@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-08-04",
+  "_updated": "2026-08-05",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.221",
+    "claude_code_cli_release": "v2.1.222",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -148,6 +148,7 @@
       "quick-option-import-export-web",
       "rapid-ihop-relay",
       "rapid-qtest-ta",
+      "release-hub",
       "repohound",
       "report-id-tool",
       "ret-sav-hel",
@@ -849,7 +850,7 @@
       },
       "featuretoggles": {
         "description": "Feature Toggles allow to control which features are available in the system.",
-        "pushed_at": "2026-07-31T15:13:27Z",
+        "pushed_at": "2026-08-04T19:51:37Z",
         "created_at": "2026-03-17T16:10:47Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/featuretoggles",
@@ -905,7 +906,7 @@
       },
       "mcp-artifacts": {
         "description": "Team-organized library of AI skills, rules, and agent definitions.  Read by mcp-intelligence at runtime.",
-        "pushed_at": "2026-08-03T16:40:37Z",
+        "pushed_at": "2026-08-04T16:55:33Z",
         "created_at": "2026-03-19T16:49:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-artifacts",
@@ -995,7 +996,7 @@
       },
       "Quality-Pulse": {
         "description": "Dashboard to track how trips through testing ",
-        "pushed_at": "2026-08-03T18:48:15Z",
+        "pushed_at": "2026-08-04T21:58:25Z",
         "created_at": "2026-04-01T21:42:25Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/Quality-Pulse",
@@ -1393,7 +1394,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-08-04T13:37:31Z",
+        "pushed_at": "2026-08-05T13:39:30Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1837,7 +1838,7 @@
       },
       "tad-analysis-combined": {
         "description": "tad analysis project built by the 2026 interns :)",
-        "pushed_at": "2026-08-04T13:33:55Z",
+        "pushed_at": "2026-08-04T21:48:41Z",
         "created_at": "2026-06-11T21:08:34Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-analysis-combined",
@@ -1905,7 +1906,7 @@
       },
       "globalmasterfile-launchpad": {
         "description": "this is the globalmasterfile tool on launchpad as a webpage",
-        "pushed_at": "2026-08-03T20:33:49Z",
+        "pushed_at": "2026-08-04T20:10:14Z",
         "created_at": "2026-06-17T13:55:11Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/globalmasterfile-launchpad",
@@ -1953,7 +1954,7 @@
       },
       "my-call-dashboard": {
         "description": "Real-time Call Dashboard for tracking Service Web calls through triage, development, and QA. Includes a local web dashboard, weekly reports, and Cursor IDE automation.",
-        "pushed_at": "2026-07-24T18:48:16Z",
+        "pushed_at": "2026-08-04T22:34:05Z",
         "created_at": "2026-06-24T05:06:07Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/my-call-dashboard",
@@ -2037,7 +2038,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-08-04T07:52:18Z",
+        "pushed_at": "2026-08-05T07:52:56Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2129,7 +2130,7 @@
       },
       "tc-builder": {
         "description": "Lets users take on click screen shots and upload videos of test steps for AI to turn into standardized testing formats. Logs steps into a catalog for future agents to use when building test cases for specific menu paths and programs.",
-        "pushed_at": "2026-08-03T20:37:05Z",
+        "pushed_at": "2026-08-05T13:12:39Z",
         "created_at": "2026-07-10T15:59:06Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tc-builder",
@@ -2213,7 +2214,7 @@
       },
       "tad-mcp": {
         "description": "Mcp for getting TAD information",
-        "pushed_at": "2026-08-04T13:24:38Z",
+        "pushed_at": "2026-08-04T15:15:47Z",
         "created_at": "2026-07-28T13:12:14Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-mcp",
@@ -2249,7 +2250,7 @@
       },
       "buzz": {
         "description": "Buzz relay — team chat and agent workspace (mirror of the OSS block/buzz relay)",
-        "pushed_at": "2026-07-31T16:07:02Z",
+        "pushed_at": "2026-08-04T19:44:04Z",
         "created_at": "2026-07-28T22:48:27Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/buzz",
@@ -2268,6 +2269,18 @@
         "topics": [
           "launchpad",
           "owner-aelliot-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "release-hub": {
+        "description": "Coordinates the release pipeline: QA testing, management approval, and IT submission to the Microsoft Store.",
+        "pushed_at": "2026-08-04T22:50:06Z",
+        "created_at": "2026-08-04T22:19:44Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/release-hub",
+        "topics": [
+          "launchpad",
+          "owner-zwu-at-gssmail-dot-com",
           "starter"
         ]
       }

@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-08-04
+last_updated: 2026-08-05
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **153**
-- LaunchPad app articles: **131**
+- Published catalog articles: **154**
+- LaunchPad app articles: **132**
 - MCP server articles: **18**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **180**
+- InternalTools repos tracked: **181**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-08-04**
+- Catalog last regenerated: **2026-08-05**
 
 ## How this stays current
 
@@ -136,6 +136,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [queue-routing](launchpad/queue-routing.md) - An MCP server that triages the P&E Bugs queue on Service Web. Analyzes incoming calls, recommends which team queue they belong in, and (when authorized) executes the transfer...
 - [quick-option-import-export-web](launchpad/quick-option-import-export-web.md) - A web-based tool for importing, editing, and exporting Option JSON files. Spreadsheet-style editing with full round-trip preservation, so the JSON you export matches what the...
 - [rapid-ihop-relay](launchpad/rapid-ihop-relay.md) - A LaunchPad app related to IHOP and a "rapid relay" workflow, owned by the ATG-Edge team.
+- [release-hub](launchpad/release-hub.md) - Coordinates the release pipeline: QA testing, management approval, and IT submission to the Microsoft Store.
 - [RepoHound](launchpad/repohound.md) - A tool to fuzzy search all orgs and repos
 - [saas-calculators](launchpad/saas-calculators.md) - A calculator to set up cloud accounts for customers, to set payment amounts based on selections
 - [semaphore](launchpad/semaphore.md) - A web implementation of Issue Maintenance
