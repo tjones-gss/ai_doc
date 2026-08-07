@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-08-06
+last_updated: 2026-08-07
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **154**
-- LaunchPad app articles: **132**
+- Published catalog articles: **155**
+- LaunchPad app articles: **133**
 - MCP server articles: **18**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **181**
+- InternalTools repos tracked: **182**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-08-06**
+- Catalog last regenerated: **2026-08-07**
 
 ## How this stays current
 
@@ -82,6 +82,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [Globe TV](launchpad/globe-tv.md) - GSS's internal home for help videos. Think of it as a private YouTube — staff can find, watch, and (with permissions) upload short-form videos that explain how things work,...
 - [GSPLinkDecoder](launchpad/GSPLinkDecoder.md) - A tiny web app that quickly decodes `gsp://` links. Paste a link in, see what it points to. Saves you the hand-decoding when chasing bug reports or support tickets.
 - [gss-catalog](launchpad/gss-catalog.md) - A catalog of all tools, services and projects on LaunchPad. What it''s for, who it''s for, how to set it up and use it, and good use cases for each.
+- [Cloudflare OS: An AI productivity environment](launchpad/gss-cloudflare-os.md) - Internal Global Shop Solutions fork of Cloudflare OS for secure AI agents, Gadgets Workshop applications, and Launchpad-hosted company workflows, including the GSS Copilot...
 - [gss-doc-api](launchpad/gss-doc-api.md) - An API that uses OpenAI to parse data out of documents. Currently supports invoices and sales orders, with more document types planned. Live at `docs.globalshopsolutions.ai`.
 - [GSS Document API - Admin Dashboard](launchpad/gss-document-api-account-management.md) - Account management / Admin tool.
 - [gss-mafia](launchpad/gss-mafia.md) - a helper tool to aid in having productive mob sessions
