@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-08-07",
+  "_updated": "2026-08-10",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.224",
+    "claude_code_cli_release": "v2.1.226",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -117,6 +117,7 @@
       "jevins-cool-app",
       "keycloak-theme",
       "launchpad-chat-staging-v2",
+      "launchpad-cli-download",
       "like-and-gridscribe",
       "log-parser",
       "log-viewer",
@@ -296,7 +297,7 @@
       },
       "testarchitect-mcp": {
         "description": "MCP server providing AI assistants with access to TestArchitect test management data",
-        "pushed_at": "2026-08-05T13:45:15Z",
+        "pushed_at": "2026-08-07T17:27:14Z",
         "created_at": "2026-02-12T19:45:22Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/testarchitect-mcp",
@@ -382,7 +383,7 @@
       },
       "tad-dashboard": {
         "description": null,
-        "pushed_at": "2026-08-06T15:12:43Z",
+        "pushed_at": "2026-08-07T14:10:58Z",
         "created_at": "2026-02-23T19:52:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-dashboard",
@@ -897,7 +898,7 @@
       },
       "mcp-intelligence": {
         "description": "Development intelligence engine — accumulates organizational knowledge from MCP interactions, serves team-aware AI artifacts (skills, rules, agents), and exposes a REST API for upstream consumers.",
-        "pushed_at": "2026-08-06T12:51:34Z",
+        "pushed_at": "2026-08-07T18:59:46Z",
         "created_at": "2026-03-19T16:48:30Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-intelligence",
@@ -907,7 +908,7 @@
       },
       "mcp-artifacts": {
         "description": "Team-organized library of AI skills, rules, and agent definitions.  Read by mcp-intelligence at runtime.",
-        "pushed_at": "2026-08-06T18:24:49Z",
+        "pushed_at": "2026-08-08T03:42:47Z",
         "created_at": "2026-03-19T16:49:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-artifacts",
@@ -929,7 +930,7 @@
       },
       "globe-toolbox": {
         "description": "Tool tray toolbox for the globe",
-        "pushed_at": "2026-07-27T18:58:23Z",
+        "pushed_at": "2026-08-07T21:48:59Z",
         "created_at": "2026-03-20T19:20:22Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/globe-toolbox",
@@ -1395,7 +1396,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-08-07T12:37:12Z",
+        "pushed_at": "2026-08-10T12:38:06Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1467,7 +1468,7 @@
       },
       "qtest-ta-tc-repo-lookup": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-07-31T13:29:59Z",
+        "pushed_at": "2026-08-07T17:42:32Z",
         "created_at": "2026-04-30T13:30:27Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qtest-ta-tc-repo-lookup",
@@ -1827,7 +1828,7 @@
       },
       "cobol-forge": {
         "description": "internal cobol compile server + dashboard for the r&d team",
-        "pushed_at": "2026-08-03T16:57:55Z",
+        "pushed_at": "2026-08-07T18:59:59Z",
         "created_at": "2026-06-11T19:31:16Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/cobol-forge",
@@ -1839,7 +1840,7 @@
       },
       "tad-analysis-combined": {
         "description": "tad analysis project built by the 2026 interns :)",
-        "pushed_at": "2026-08-06T16:58:57Z",
+        "pushed_at": "2026-08-07T20:42:59Z",
         "created_at": "2026-06-11T21:08:34Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-analysis-combined",
@@ -1907,7 +1908,7 @@
       },
       "globalmasterfile-launchpad": {
         "description": "this is the globalmasterfile tool on launchpad as a webpage",
-        "pushed_at": "2026-08-06T19:50:33Z",
+        "pushed_at": "2026-08-07T18:49:29Z",
         "created_at": "2026-06-17T13:55:11Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/globalmasterfile-launchpad",
@@ -2039,7 +2040,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-08-07T07:30:52Z",
+        "pushed_at": "2026-08-10T07:30:28Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2131,7 +2132,7 @@
       },
       "tc-builder": {
         "description": "Lets users take on click screen shots and upload videos of test steps for AI to turn into standardized testing formats. Logs steps into a catalog for future agents to use when building test cases for specific menu paths and programs.",
-        "pushed_at": "2026-08-05T17:58:34Z",
+        "pushed_at": "2026-08-07T20:18:23Z",
         "created_at": "2026-07-10T15:59:06Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tc-builder",
@@ -2179,7 +2180,7 @@
       },
       "tatesttools-mcp": {
         "description": "Deterministic toolset for analyzing, mapping, and generating TestArchitect test scripts with automated coverage analysis and source code control correlation",
-        "pushed_at": "2026-08-07T12:08:45Z",
+        "pushed_at": "2026-08-07T18:46:00Z",
         "created_at": "2026-07-20T17:42:26Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tatesttools-mcp",
@@ -2251,7 +2252,7 @@
       },
       "buzz": {
         "description": "Buzz relay — team chat and agent workspace (mirror of the OSS block/buzz relay)",
-        "pushed_at": "2026-08-06T13:39:21Z",
+        "pushed_at": "2026-08-07T18:59:52Z",
         "created_at": "2026-07-28T22:48:27Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/buzz",
@@ -2275,7 +2276,7 @@
       },
       "release-hub": {
         "description": "Coordinates the release pipeline: QA testing, management approval, and IT submission to the Microsoft Store.",
-        "pushed_at": "2026-08-06T22:11:43Z",
+        "pushed_at": "2026-08-07T21:15:13Z",
         "created_at": "2026-08-04T22:19:44Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/release-hub",
@@ -2287,13 +2288,25 @@
       },
       "gss-cloudflare-os": {
         "description": "Internal Global Shop Solutions fork of Cloudflare OS for secure AI agents, Gadgets Workshop applications, and Launchpad-hosted company workflows, including the GSS Copilot Gatekeeper.",
-        "pushed_at": "2026-08-06T19:23:30Z",
+        "pushed_at": "2026-08-07T20:27:45Z",
         "created_at": "2026-08-06T16:56:02Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-cloudflare-os",
         "topics": [
           "launchpad",
           "owner-kcao-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "launchpad-cli-download": {
+        "description": "Download the lp CLI and set it up — a simple page to grab the lp.exe binary and get your terminal talking to LaunchPad",
+        "pushed_at": "2026-08-07T19:36:12Z",
+        "created_at": "2026-08-07T18:20:20Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/launchpad-cli-download",
+        "topics": [
+          "launchpad",
+          "owner-avattumilli-at-gssmail-dot-com",
           "starter"
         ]
       }
