@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-08-12
+last_updated: 2026-08-13
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **156**
-- LaunchPad app articles: **134**
+- Published catalog articles: **159**
+- LaunchPad app articles: **137**
 - MCP server articles: **18**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **183**
+- InternalTools repos tracked: **186**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-08-12**
+- Catalog last regenerated: **2026-08-13**
 
 ## How this stays current
 
@@ -45,6 +45,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [Launchpad](launchpad/akhilesh-launchpad-testing.md) - testing ground for launchpad upgrades
 - [TAD Service Detector](launchpad/akhilesh-tad.md) - Internal app created via Launchpad by avattumilli@gssmail.com
 - [arc-scanner](launchpad/arc-scanner.md) - A web tool that scans every repo in a GitHub org for SQL table references and join relationships pulled from GabScript and SQL files, then visualizes the result as a heatmap, ranked list, and per-repo breakdown.
+- [Assembly](launchpad/assembly.md) - Assembly is a document sharing and review app, share proposals, review and collaborate to improve.
 - [Beacon](launchpad/beacon.md) - Internal app created via Launchpad by brennanhitchcock@gssmail.com
 - [bom-compare-generator](launchpad/bom-compare-generator.md) - A Python tool that generates a Bill of Material .xlsx file with user-defined or randomly-generated parts, used as input for BOM Compare testing.
 - [brain](launchpad/brain.md) - The institutional-memory layer for GSS. Passively collects knowledge from developer interactions, tickets, and tooling, then makes it queryable with hybrid search — so the next...
@@ -114,6 +115,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [log-parser](launchpad/log-parser.md) - Internal app created via Launchpad by zsandford@gssmail.com
 - [log-viewer](launchpad/log-viewer.md) - See multiple logs and analyze better
 - [mcp-artifacts](launchpad/mcp-artifacts.md) - A team-organized library of AI skills, rules, and agent definitions. The artifacts in this library are read at runtime by the [mcp-intelligence MCP...
+- [melanie-dashboard](launchpad/melanie-dashboard.md) - show me my to dos
 - [merge-nextrelease](launchpad/merge-nextrelease.md) - Merge the nextrelease branch into your current feature branch, resolve conflicts intelligently, commit, push, and restore any stashed work.
 - [mobile-crm-status](launchpad/mobile-crm-status.md) - Monitors MobileCRM endpoints (production, edge, and tenant APIs) and pings Microsoft Teams when one goes down. The "is mobile CRM healthy right now?" page.
 - [monday-pulse-updates](launchpad/monday-pulse-updates.md) - Post one PM-friendly Monday update per commit since the pulse’s last update (date + heading + summary only; no hashes in the body).
@@ -144,6 +146,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [semaphore](launchpad/semaphore.md) - A web implementation of Issue Maintenance
 - [service-web-api](launchpad/service-web-api.md) - A modern .NET 9 Minimal API exposing all IHOP_Net data across 17 domains. Replaces the legacy `SW_CallService.Api` with pure inline SQL (no stored procedures), interactive...
 - [service-web-telemetry](launchpad/service-web-telemetry.md) - Internal app created via Launchpad by avaldez@gssmail.com
+- [serviceweb-payroll-calls](launchpad/serviceweb-payroll-calls.md) - Show me the payroll calls
 - [sitrep-tst](launchpad/sitrep-tst.md) - testing platform before porting over full application
 - [skillforge](launchpad/skillforge.md) - [Temporary] testing out skill publishing, compiling, and extracting.
 - [support-data-extraction-vault](launchpad/support-data-extraction-vault.md) - Internal app created via Launchpad by jjoy@gssmail.com
