@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-08-14",
+  "_updated": "2026-08-17",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.232",
+    "claude_code_cli_release": "v2.1.233",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -202,6 +202,7 @@
       "trent",
       "ui-standards",
       "updait",
+      "vip-calendar",
       "webhook-test",
       "weekly-performance-dashboard",
       "zen-data-builder",
@@ -240,7 +241,7 @@
       },
       "zen-data-builder": {
         "description": "A Windows Forms tool for browsing, generating, and managing test data in Actian Zen / Pervasive PSQL databases via ODBC. Built for the GSSERP legacy ERP system to support QA, development, and data migration testing.",
-        "pushed_at": "2026-08-13T22:14:46Z",
+        "pushed_at": "2026-08-14T17:55:04Z",
         "created_at": "2026-02-11T20:24:43Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/zen-data-builder",
@@ -344,7 +345,7 @@
       },
       "tad-database-service": {
         "description": "Test Architect Distributed - Database Service API (PostgreSQL, ASP.NET Core)",
-        "pushed_at": "2026-08-13T14:27:47Z",
+        "pushed_at": "2026-08-14T19:37:45Z",
         "created_at": "2026-02-23T18:52:16Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-database-service",
@@ -366,7 +367,7 @@
       },
       "tad-host-manager-service": {
         "description": null,
-        "pushed_at": "2026-08-13T16:30:02Z",
+        "pushed_at": "2026-08-14T15:35:02Z",
         "created_at": "2026-02-23T19:51:19Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-host-manager-service",
@@ -386,7 +387,7 @@
       },
       "tad-dashboard": {
         "description": null,
-        "pushed_at": "2026-08-14T12:33:33Z",
+        "pushed_at": "2026-08-14T19:39:06Z",
         "created_at": "2026-02-23T19:52:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-dashboard",
@@ -901,7 +902,7 @@
       },
       "mcp-intelligence": {
         "description": "Development intelligence engine — accumulates organizational knowledge from MCP interactions, serves team-aware AI artifacts (skills, rules, agents), and exposes a REST API for upstream consumers.",
-        "pushed_at": "2026-08-12T23:06:44Z",
+        "pushed_at": "2026-08-14T20:57:58Z",
         "created_at": "2026-03-19T16:48:30Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-intelligence",
@@ -911,7 +912,7 @@
       },
       "mcp-artifacts": {
         "description": "Team-organized library of AI skills, rules, and agent definitions.  Read by mcp-intelligence at runtime.",
-        "pushed_at": "2026-08-13T22:39:53Z",
+        "pushed_at": "2026-08-16T21:14:02Z",
         "created_at": "2026-03-19T16:49:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-artifacts",
@@ -1375,7 +1376,7 @@
       },
       "traveler": {
         "description": "Developer workflow planning tool similar to Monday.  Provides easy serviceweb call importing and agile cadence support.",
-        "pushed_at": "2026-08-12T20:53:37Z",
+        "pushed_at": "2026-08-14T17:59:21Z",
         "created_at": "2026-04-23T21:05:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/traveler",
@@ -1399,7 +1400,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-08-14T11:37:28Z",
+        "pushed_at": "2026-08-17T11:36:45Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1471,7 +1472,7 @@
       },
       "qtest-ta-tc-repo-lookup": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-08-07T17:42:32Z",
+        "pushed_at": "2026-08-14T12:48:28Z",
         "created_at": "2026-04-30T13:30:27Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qtest-ta-tc-repo-lookup",
@@ -1591,7 +1592,7 @@
       },
       "beacon": {
         "description": "Internal app created via Launchpad by brennanhitchcock@gssmail.com",
-        "pushed_at": "2026-08-12T13:38:03Z",
+        "pushed_at": "2026-08-14T17:58:00Z",
         "created_at": "2026-05-18T15:01:45Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/beacon",
@@ -1923,7 +1924,7 @@
       },
       "mcp-intelligence-monitor": {
         "description": "A monitoring service for MCP-Intelligence for Cursor and Claude Code (maybe more tool support in future)",
-        "pushed_at": "2026-06-25T13:07:58Z",
+        "pushed_at": "2026-08-14T21:33:23Z",
         "created_at": "2026-06-19T18:08:05Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-intelligence-monitor",
@@ -2043,7 +2044,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-08-14T07:31:06Z",
+        "pushed_at": "2026-08-17T07:20:47Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2171,7 +2172,7 @@
       },
       "gssdrive": {
         "description": "Provides GSSDrive executables and stores centralized GSSDrive data",
-        "pushed_at": "2026-08-13T02:48:10Z",
+        "pushed_at": "2026-08-14T18:38:08Z",
         "created_at": "2026-07-20T14:45:01Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gssdrive",
@@ -2346,6 +2347,18 @@
         "topics": [
           "launchpad",
           "owner-dgordon-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "vip-calendar": {
+        "description": "Shared calendar of upcoming VIP visits, so anyone can check what's already been reported to Marketing. To announce a visit or change, or cancel one.. email the details to vip@gssmail.com and it will appear here.",
+        "pushed_at": "2026-08-14T22:01:17Z",
+        "created_at": "2026-08-14T17:20:10Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/vip-calendar",
+        "topics": [
+          "launchpad",
+          "owner-tjones-at-gssmail-dot-com",
           "starter"
         ]
       }

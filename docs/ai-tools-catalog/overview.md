@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-08-14
+last_updated: 2026-08-17
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **159**
-- LaunchPad app articles: **137**
+- Published catalog articles: **160**
+- LaunchPad app articles: **138**
 - MCP server articles: **18**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **186**
+- InternalTools repos tracked: **187**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-08-14**
+- Catalog last regenerated: **2026-08-17**
 
 ## How this stays current
 
@@ -172,6 +172,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [testarchitect-mcp](launchpad/testarchitect-mcp.md) - An MCP server that gives AI assistants access to TestArchitect test management data.
 - [Traveler](launchpad/traveler.md) - Developer workflow planning tool similar to Monday. Provides easy serviceweb call importing and agile cadence support.
 - [Updait](launchpad/updait.md) - A system for distilling project updates into a single, audience-focused, textual update
+- [vip-calendar](launchpad/vip-calendar.md) - Shared calendar of upcoming VIP visits, so anyone can check what''s already been reported to Marketing.
 - [weekly-performance-dashboard](launchpad/weekly-performance-dashboard.md) - Weekly performance dashboard for the Maintenance Operations, Maintenance OE, and PPT-Bugs teams.
 - [zen-data-builder](launchpad/zen-data-builder.md) - A Windows desktop tool that browses, generates, and manages test data inside Actian Zen / Pervasive PSQL databases (the legacy ERP backend).
 - [zen-log-parser](launchpad/zen-log-parser.md) - Parses and analyzes Pervasive Zen database log files. Turns a wall of cryptic log text into a tabbed interface where you can sift through queries, find slow ones, and identify...
