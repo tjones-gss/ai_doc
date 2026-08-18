@@ -2,7 +2,7 @@
 title: 'AI Tools at GSS'
 description: 'Directory of GSS AI tools, LaunchPad apps, MCP servers, agent concepts, and InternalTools catalog coverage.'
 sidebar_position: 1
-last_updated: 2026-08-17
+last_updated: 2026-08-18
 tags: [ai-tools, gss-internal, catalog, index]
 ---
 
@@ -14,13 +14,13 @@ The detailed articles in this section explain what each tool is, who it is for, 
 
 ## Catalog status
 
-- Published catalog articles: **160**
-- LaunchPad app articles: **138**
+- Published catalog articles: **162**
+- LaunchPad app articles: **140**
 - MCP server articles: **18**
 - AI agent concept articles: **4**
-- InternalTools repos tracked: **187**
+- InternalTools repos tracked: **189**
 - InternalTools repos still missing catalog coverage: **44**
-- Catalog last regenerated: **2026-08-17**
+- Catalog last regenerated: **2026-08-18**
 
 ## How this stays current
 
@@ -68,6 +68,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [DashboardDesAIgner](launchpad/DashboardDesAIgner.md) - An AI agent that converts plain-English descriptions into DevExpress Dashboard Designer XML.
 - [delta-t](launchpad/delta-t.md) - Performance and speed improvements
 - [designerconsolidation](launchpad/designerconsolidation.md) - A smart WinForms `.Designer.vb` merge tool that resolves DevExpress designer-file conflicts at the control-and-property level.
+- [doc-gap-dashboard](launchpad/doc-gap-dashboard.md) - Displays the end user (public) documentation gaps between published HelpJuice documentation and user features.
 - [document-ingest-onboarding](launchpad/document-ingest-onboarding.md) - Docs + downloads for the shared GSSUI skill that adds document import to any screen: Imported Documents grid, collapsible source-document panel (PDF/image/HTML viewer), and the Cross Reference Setup │ │ │ overlay.
 - [employee-assessments](launchpad/employee-assessments.md) - Unified quarterly workflow for engineering teams: schedule review chats, track skill assessments and focus skills, and capture structured quarterly reviews — replacing...
 - [escalation-tracker](launchpad/escalation-tracker.md) - this will facilitate escalating issues for new implementations through the proper channels.
@@ -75,6 +76,7 @@ Internal tools built at GSS and usually hosted on LaunchPad with Office 365 / SA
 - [GAB Agents Kit](launchpad/gab-agent-kit.md) - Centralized GAB development agent kit — coding rules, skills, and agent docs for Product & Engineering.
 - [gab-codeeditor-mcp](launchpad/gab-codeeditor-mcp.md) - A LaunchPad-hosted MCP server for the GAB code editor. Pre-dates the LaunchPad MCP kind tag, so it's still labeled "Web App" — but functionally it's an MCP. Owner contact below.
 - [gabmcpserver](launchpad/gabmcpserver.md) - An MCP server related to GAB (GSS's scripting language). Owner contact below for the specific scope.
+- [gapew](launchpad/gapew.md) - GAP Entry Wizard
 - [genii-quote](launchpad/genii-quote.md) - An intelligent quoting assistant that helps Global Shop Solutions quickly estimate and prepare quotes for customer custom requests by analyzing request details, identifying...
 - [GitHub Org Trawler](launchpad/git-org-trawler.md) - An application that is able to search through all available repos for information
 - [GitHub PR Stats](launchpad/github-pr-stats.md) - This aggregates Pull Request Creation and Merge statistics across all of our R&D Repositories.

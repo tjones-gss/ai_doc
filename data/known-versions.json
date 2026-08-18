@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-08-17",
+  "_updated": "2026-08-18",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.233",
+    "claude_code_cli_release": "v2.1.234",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -15,7 +15,7 @@
   },
   "cursor": {
     "composer_model": "Composer 2",
-    "latest_changelog_date": "2026-08-13"
+    "latest_changelog_date": "2026-08-17"
   },
   "internal_tools": {
     "_comment": "Last-seen list of repo names in GlobalShopSolutions-InternalTools, sorted. The workflow diffs this list against current to detect new/removed apps.",
@@ -70,6 +70,7 @@
       "designerconsolidation",
       "desk-test2",
       "dev-petz-app",
+      "doc-gap-dashboard",
       "docs",
       "document-ingest-onboarding",
       "employee-assessments",
@@ -82,6 +83,7 @@
       "gab-agent-kit",
       "gab-codeeditor-mcp",
       "gabmcpserver",
+      "gapew",
       "genii-quote",
       "git-org-trawler",
       "github-pr-stats",
@@ -271,7 +273,7 @@
       },
       "QA-resolved-issues": {
         "description": "Dashboard that provides all Issues Resolved by QA",
-        "pushed_at": "2026-06-19T13:23:45Z",
+        "pushed_at": "2026-08-17T15:32:28Z",
         "created_at": "2026-02-12T17:46:23Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/QA-resolved-issues",
@@ -345,7 +347,7 @@
       },
       "tad-database-service": {
         "description": "Test Architect Distributed - Database Service API (PostgreSQL, ASP.NET Core)",
-        "pushed_at": "2026-08-14T19:37:45Z",
+        "pushed_at": "2026-08-18T01:41:27Z",
         "created_at": "2026-02-23T18:52:16Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-database-service",
@@ -367,7 +369,7 @@
       },
       "tad-host-manager-service": {
         "description": null,
-        "pushed_at": "2026-08-14T15:35:02Z",
+        "pushed_at": "2026-08-18T01:12:16Z",
         "created_at": "2026-02-23T19:51:19Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-host-manager-service",
@@ -387,7 +389,7 @@
       },
       "tad-dashboard": {
         "description": null,
-        "pushed_at": "2026-08-14T19:39:06Z",
+        "pushed_at": "2026-08-17T20:27:36Z",
         "created_at": "2026-02-23T19:52:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-dashboard",
@@ -1376,7 +1378,7 @@
       },
       "traveler": {
         "description": "Developer workflow planning tool similar to Monday.  Provides easy serviceweb call importing and agile cadence support.",
-        "pushed_at": "2026-08-14T17:59:21Z",
+        "pushed_at": "2026-08-17T22:51:02Z",
         "created_at": "2026-04-23T21:05:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/traveler",
@@ -1400,7 +1402,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-08-17T11:36:45Z",
+        "pushed_at": "2026-08-18T11:38:40Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1568,7 +1570,7 @@
       },
       "ui-standards": {
         "description": "Description: RAG-backed MCP server for GSS WinForms UI standards, ScreenBuilder API reference, and visual compliance auditing. Enables AI agents to generate standards-compliant forms and developers to look up patterns and examples.",
-        "pushed_at": "2026-07-21T19:43:22Z",
+        "pushed_at": "2026-08-17T15:38:08Z",
         "created_at": "2026-05-15T15:29:58Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/ui-standards",
@@ -1784,7 +1786,7 @@
       },
       "employee-assessments": {
         "description": "Unified quarterly workflow for engineering teams: schedule review chats, track skill assessments and focus skills, and capture structured quarterly reviews — replacing Excel-based career path worksheets.",
-        "pushed_at": "2026-08-13T22:20:47Z",
+        "pushed_at": "2026-08-17T17:10:33Z",
         "created_at": "2026-06-05T20:01:35Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/employee-assessments",
@@ -2044,7 +2046,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-08-17T07:20:47Z",
+        "pushed_at": "2026-08-18T07:16:15Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2172,7 +2174,7 @@
       },
       "gssdrive": {
         "description": "Provides GSSDrive executables and stores centralized GSSDrive data",
-        "pushed_at": "2026-08-14T18:38:08Z",
+        "pushed_at": "2026-08-18T03:46:08Z",
         "created_at": "2026-07-20T14:45:01Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gssdrive",
@@ -2340,7 +2342,7 @@
       },
       "assembly": {
         "description": "Assembly is a document sharing and review app, share proposals, review and collaborate to improve.",
-        "pushed_at": "2026-08-14T09:02:26Z",
+        "pushed_at": "2026-08-17T20:21:14Z",
         "created_at": "2026-08-12T18:44:05Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/assembly",
@@ -2359,6 +2361,30 @@
         "topics": [
           "launchpad",
           "owner-tjones-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "gapew": {
+        "description": "GAP Entry Wizard",
+        "pushed_at": "2026-08-17T16:23:58Z",
+        "created_at": "2026-08-17T16:23:50Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gapew",
+        "topics": [
+          "launchpad",
+          "owner-rduncan-at-gssmail-dot-com",
+          "starter"
+        ]
+      },
+      "doc-gap-dashboard": {
+        "description": "Displays the end user (public) documentation gaps between published HelpJuice documentation and user features. The application will analyze a configured set of repos/branches weekly. Provides a dashboard of history and trending gaps. Also provides drilldown to see gaps and recommendations for remediation.",
+        "pushed_at": "2026-08-17T20:32:43Z",
+        "created_at": "2026-08-17T20:32:34Z",
+        "archived": false,
+        "html_url": "https://github.com/GlobalShopSolutions-InternalTools/doc-gap-dashboard",
+        "topics": [
+          "launchpad",
+          "owner-jonschwartz-at-gssmail-dot-com",
           "starter"
         ]
       }
