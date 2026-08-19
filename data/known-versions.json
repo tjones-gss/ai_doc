@@ -1,8 +1,8 @@
 {
   "_comment": "State file for the daily-doc-refresh workflow. The workflow reads this, compares against freshly-fetched values, and opens an issue (always) plus an optional PR if a clean version bump is detected. Edit by hand to mark a value as 'known but skip auto-PR' or to seed initial values.",
-  "_updated": "2026-08-18",
+  "_updated": "2026-08-19",
   "anthropic": {
-    "claude_code_cli_release": "v2.1.234",
+    "claude_code_cli_release": "v2.1.235",
     "model_opus": "4.7",
     "model_sonnet": "4.6",
     "model_haiku": "4.5"
@@ -11,7 +11,7 @@
     "chatgpt_version": "5.5",
     "gpt_model": "5.5",
     "codex_model": "5.5-Codex",
-    "codex_cli_npm": "0.147.0"
+    "codex_cli_npm": "0.148.0"
   },
   "cursor": {
     "composer_model": "Composer 2",
@@ -347,7 +347,7 @@
       },
       "tad-database-service": {
         "description": "Test Architect Distributed - Database Service API (PostgreSQL, ASP.NET Core)",
-        "pushed_at": "2026-08-18T01:41:27Z",
+        "pushed_at": "2026-08-18T19:04:22Z",
         "created_at": "2026-02-23T18:52:16Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-database-service",
@@ -379,7 +379,7 @@
       },
       "tad-worker-service": {
         "description": null,
-        "pushed_at": "2026-07-06T15:17:36Z",
+        "pushed_at": "2026-08-18T17:31:04Z",
         "created_at": "2026-02-23T19:51:53Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-worker-service",
@@ -389,7 +389,7 @@
       },
       "tad-dashboard": {
         "description": null,
-        "pushed_at": "2026-08-17T20:27:36Z",
+        "pushed_at": "2026-08-18T17:58:22Z",
         "created_at": "2026-02-23T19:52:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/tad-dashboard",
@@ -822,7 +822,7 @@
       },
       "g2p-compare": {
         "description": "View decrypted diffs of .g2p (GAB packaged script) files across Git commits.",
-        "pushed_at": "2026-07-21T21:50:12Z",
+        "pushed_at": "2026-08-18T20:12:50Z",
         "created_at": "2026-03-17T03:17:11Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/g2p-compare",
@@ -904,7 +904,7 @@
       },
       "mcp-intelligence": {
         "description": "Development intelligence engine — accumulates organizational knowledge from MCP interactions, serves team-aware AI artifacts (skills, rules, agents), and exposes a REST API for upstream consumers.",
-        "pushed_at": "2026-08-14T20:57:58Z",
+        "pushed_at": "2026-08-18T21:13:24Z",
         "created_at": "2026-03-19T16:48:30Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-intelligence",
@@ -914,7 +914,7 @@
       },
       "mcp-artifacts": {
         "description": "Team-organized library of AI skills, rules, and agent definitions.  Read by mcp-intelligence at runtime.",
-        "pushed_at": "2026-08-16T21:14:02Z",
+        "pushed_at": "2026-08-19T06:37:55Z",
         "created_at": "2026-03-19T16:49:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/mcp-artifacts",
@@ -936,7 +936,7 @@
       },
       "globe-toolbox": {
         "description": "Tool tray toolbox for the globe",
-        "pushed_at": "2026-08-07T21:48:59Z",
+        "pushed_at": "2026-08-18T21:14:03Z",
         "created_at": "2026-03-20T19:20:22Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/globe-toolbox",
@@ -1294,7 +1294,7 @@
       },
       "report-id-tool": {
         "description": "Create  a new report ID and generate an xml.",
-        "pushed_at": "2026-05-14T13:53:42Z",
+        "pushed_at": "2026-08-18T15:51:46Z",
         "created_at": "2026-04-16T16:47:38Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/report-id-tool",
@@ -1378,7 +1378,7 @@
       },
       "traveler": {
         "description": "Developer workflow planning tool similar to Monday.  Provides easy serviceweb call importing and agile cadence support.",
-        "pushed_at": "2026-08-17T22:51:02Z",
+        "pushed_at": "2026-08-19T06:02:17Z",
         "created_at": "2026-04-23T21:05:12Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/traveler",
@@ -1402,7 +1402,7 @@
       },
       "qa-qtest-metrics": {
         "description": "Internal app created via Launchpad by karrambide@gssmail.com",
-        "pushed_at": "2026-08-18T11:38:40Z",
+        "pushed_at": "2026-08-19T11:37:06Z",
         "created_at": "2026-04-24T13:41:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/qa-qtest-metrics",
@@ -1786,7 +1786,7 @@
       },
       "employee-assessments": {
         "description": "Unified quarterly workflow for engineering teams: schedule review chats, track skill assessments and focus skills, and capture structured quarterly reviews — replacing Excel-based career path worksheets.",
-        "pushed_at": "2026-08-17T17:10:33Z",
+        "pushed_at": "2026-08-18T22:06:35Z",
         "created_at": "2026-06-05T20:01:35Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/employee-assessments",
@@ -1998,7 +1998,7 @@
       },
       "gss-stripe-relay": {
         "description": "The relay (\"listening post\") is the single outbound trust boundary for Stripe e-invoice creation",
-        "pushed_at": "2026-07-16T16:15:21Z",
+        "pushed_at": "2026-08-18T19:37:05Z",
         "created_at": "2026-06-30T15:21:38Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-stripe-relay",
@@ -2046,7 +2046,7 @@
       },
       "gss-catalog": {
         "description": "A catalog of all tools, services and projects on LaunchPad. What it's for, who it's for, how to set it up and use it, and good use cases for each.",
-        "pushed_at": "2026-08-18T07:16:15Z",
+        "pushed_at": "2026-08-19T07:16:50Z",
         "created_at": "2026-07-01T21:37:03Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gss-catalog",
@@ -2174,7 +2174,7 @@
       },
       "gssdrive": {
         "description": "Provides GSSDrive executables and stores centralized GSSDrive data",
-        "pushed_at": "2026-08-18T03:46:08Z",
+        "pushed_at": "2026-08-19T12:14:16Z",
         "created_at": "2026-07-20T14:45:01Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/gssdrive",
@@ -2234,7 +2234,7 @@
       },
       "github-pr-stats": {
         "description": "This aggregates Pull Request Creation and Merge statistics across all of our R&D Repositories.",
-        "pushed_at": "2026-07-31T14:35:38Z",
+        "pushed_at": "2026-08-18T15:26:05Z",
         "created_at": "2026-07-28T13:35:21Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/github-pr-stats",
@@ -2342,7 +2342,7 @@
       },
       "assembly": {
         "description": "Assembly is a document sharing and review app, share proposals, review and collaborate to improve.",
-        "pushed_at": "2026-08-17T20:21:14Z",
+        "pushed_at": "2026-08-19T06:10:58Z",
         "created_at": "2026-08-12T18:44:05Z",
         "archived": false,
         "html_url": "https://github.com/GlobalShopSolutions-InternalTools/assembly",
